@@ -1,0 +1,67 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+	<display-name>Archetype Created Web Application</display-name>
+	<servlet>
+		<servlet-name>AddTrainerServlet</servlet-name>
+		<display-name>AddTrainerServlet</display-name>
+		<description></description>
+		<servlet-class>com.fitness.servlet.AddTrainerServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>AllTrainersServlet</servlet-name>
+		<display-name>AllTrainersServlet</display-name>
+		<description></description>
+		<servlet-class>com.fitness.servlet.AllTrainersServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>DeleteTrainerServlet</servlet-name>
+		<display-name>DeleteTrainerServlet</display-name>
+		<description></description>
+		<servlet-class>com.fitness.servlet.DeleteTrainerServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>UpdateTrainerServlet</servlet-name>
+		<display-name>UpdateTrainerServlet</display-name>
+		<description></description>
+		<servlet-class>com.fitness.servlet.UpdateTrainerServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>SearchTrainerServlet</servlet-name>
+		<display-name>SearchTrainerServlet</display-name>
+		<description></description>
+		<servlet-class>com.fitness.servlet.SearchTrainerServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>DownloadFileServlet</servlet-name>
+		<display-name>DownloadFileServlet</display-name>
+		<description></description>
+		<servlet-class>com.fitness.servlet.DownloadFileServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AddTrainerServlet</servlet-name>
+		<url-pattern>/AddTrainerServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>AllTrainersServlet</servlet-name>
+		<url-pattern>/AllTrainersServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>DeleteTrainerServlet</servlet-name>
+		<url-pattern>/DeleteTrainerServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>UpdateTrainerServlet</servlet-name>
+		<url-pattern>/UpdateTrainerServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>SearchTrainerServlet</servlet-name>
+		<url-pattern>/SearchTrainerServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>DownloadFileServlet</servlet-name>
+		<url-pattern>/DownloadFileServlet</url-pattern>
+	</servlet-mapping>
+</web-app>

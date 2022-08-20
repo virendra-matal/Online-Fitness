@@ -1,0 +1,11 @@
+.BackImage {
+	background-image: linear-gradient(to right, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.9)),url("https://thumbs.dreamstime.com/b/muscular-athletic-bodybuilder-fitness-model-posing-exercis-weights-exercises-gym-64856941.jpg");
+	background-size: cover;
+	width: 100%;
+	height: 100vh;   
+	   
+}
+
+.zigzag{
+	clip-path: polygon(0 0, 100% 0, 100% 78%, 75% 100%, 39% 85%, 0 100%);
+}

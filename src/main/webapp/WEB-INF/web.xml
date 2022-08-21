@@ -7,44 +7,49 @@
 	<servlet>
 		<servlet-name>AddTrainerServlet</servlet-name>
 		<display-name>AddTrainerServlet</display-name>
-		<description></description>
 		<servlet-class>com.fitness.servlet.AddTrainerServlet</servlet-class>
+		<load-on-startup>0</load-on-startup>
 	</servlet>
 	<servlet>
 		<servlet-name>AllTrainersServlet</servlet-name>
 		<display-name>AllTrainersServlet</display-name>
-		<description></description>
 		<servlet-class>com.fitness.servlet.AllTrainersServlet</servlet-class>
+		<load-on-startup>1</load-on-startup>
 	</servlet>
 	<servlet>
 		<servlet-name>DeleteTrainerServlet</servlet-name>
 		<display-name>DeleteTrainerServlet</display-name>
 		<description></description>
 		<servlet-class>com.fitness.servlet.DeleteTrainerServlet</servlet-class>
+		<load-on-startup>2</load-on-startup>
 	</servlet>
 	<servlet>
 		<servlet-name>UpdateTrainerServlet</servlet-name>
 		<display-name>UpdateTrainerServlet</display-name>
 		<description></description>
 		<servlet-class>com.fitness.servlet.UpdateTrainerServlet</servlet-class>
+		<load-on-startup>3</load-on-startup>
 	</servlet>
 	<servlet>
 		<servlet-name>SearchTrainerServlet</servlet-name>
 		<display-name>SearchTrainerServlet</display-name>
 		<description></description>
 		<servlet-class>com.fitness.servlet.SearchTrainerServlet</servlet-class>
+		<load-on-startup>4</load-on-startup>
 	</servlet>
 	<servlet>
 		<servlet-name>DownloadFileServlet</servlet-name>
 		<display-name>DownloadFileServlet</display-name>
 		<description></description>
 		<servlet-class>com.fitness.servlet.DownloadFileServlet</servlet-class>
+		<load-on-startup>5</load-on-startup>
 	</servlet>
 	<servlet>
 		<servlet-name>OpenFileInDesktopServlet</servlet-name>
 		<display-name>OpenFileInDesktopServlet</display-name>
 		<description></description>
 		<servlet-class>com.fitness.servlet.OpenFileInDesktopServlet</servlet-class>
+		<load-on-startup>6</load-on-startup>
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>AddTrainerServlet</servlet-name>

@@ -1,3 +1,4 @@
+<%@page import="java.awt.Desktop"%>
 <%@page import="java.io.File"%>
 <%@page import="java.io.FileInputStream"%>
 <%@page import="com.fitness.model.Trainer"%>
@@ -61,7 +62,12 @@
 									<td>${trainer.firstName}${trainer.lastName}</td>
 									<td>${trainer.username}</td>
 									<td>${trainer.address}${trainer.city }, ${trainer.state }-${trainer.zip }</td>
-									<td>${trainer.resume} 
+									<td>
+									<%-- <form action="../OpenFileInDesktopServlet" method="get">
+									<input type="hidden" value="${trainer.resume}" name="cv">
+									<button name="btn" class="btn btn-outline-warning" type="submit"><i class="fa-solid fa-eye"></i></button>
+									</form> --%>
+									<a>${trainer.resume}</a> 
 
 									<form action="../DownloadFileServlet" method="get">
 									<input type="hidden" value="${trainer.resume}" name="cv">
@@ -161,13 +167,14 @@
 	};
 	
 	const AddActive=(id)=>{
-		console.log("TRainer Id id: ",id);
+		console.log("Trainer Id id: ",id);
 		$('#trainer'+id+'').addClass('bg-secondary text-light');
 		$('#trainer'+id+'').focus();
 		setTimeout(() => {
 			$('#trainer'+id+'').removeClass('bg-secondary text-light');
 		}, 2000);
 		$('#searchdata').hide();
+		var info=$("#input").val("");
 	};
 	
 	function startdownload(identifier){

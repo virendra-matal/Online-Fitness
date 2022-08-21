@@ -29,7 +29,7 @@
 		<div class="collapse navbar-collapse " id="navbarSupportedContent">
 			<ul class="navbar-nav ml-auto mx-5">
 				<li class="nav-item "><a class="nav-link mx-2 text-white"
-					href="/OnlineFitness/index.jsp">Home </a></li>
+					href="/OnlineFitness">Home </a></li>
 				<li class="nav-item"><a class="nav-link mx-2 text-white"
 					href="/OnlineFitness/Jsp/TrainerForm.jsp">Add Trainer</a></li>
 

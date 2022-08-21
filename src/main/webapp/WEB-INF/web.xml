@@ -40,6 +40,12 @@
 		<description></description>
 		<servlet-class>com.fitness.servlet.DownloadFileServlet</servlet-class>
 	</servlet>
+	<servlet>
+		<servlet-name>OpenFileInDesktopServlet</servlet-name>
+		<display-name>OpenFileInDesktopServlet</display-name>
+		<description></description>
+		<servlet-class>com.fitness.servlet.OpenFileInDesktopServlet</servlet-class>
+	</servlet>
 	<servlet-mapping>
 		<servlet-name>AddTrainerServlet</servlet-name>
 		<url-pattern>/AddTrainerServlet</url-pattern>
@@ -64,4 +70,13 @@
 		<servlet-name>DownloadFileServlet</servlet-name>
 		<url-pattern>/DownloadFileServlet</url-pattern>
 	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>OpenFileInDesktopServlet</servlet-name>
+		<url-pattern>/OpenFileInDesktopServlet</url-pattern>
+	</servlet-mapping>
+	
+	
+	<welcome-file-list>
+		<welcome-file>Jsp/Base.jsp</welcome-file>
+	</welcome-file-list>
 </web-app>

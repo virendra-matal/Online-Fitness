@@ -1,0 +1,97 @@
+<!--
+title: Company Setup
+description: 
+published: true
+date: 2023-09-20T10:18:34.796Z
+tags: admin
+editor: ckeditor
+dateCreated: 2023-02-07T11:07:17.130Z
+-->
+
+<p style="text-align:center;"><strong>Use Cases for Company Master</strong></p>
+<ul>
+  <li>The Company Master function allows authorized users to create a company, or multiple companies under a group company. The user can create and maintain separate products, inventory, and order information for different companies.&nbsp;</li>
+  <li>A company is a legal entity formed by a group of individuals or stakeholders with the primary goal of conducting business activities, providing goods, services, or both, and generating profits. Companies are established to pursue various commercial objectives and often operate within a specific industry or sector.</li>
+  <li>The purpose of a company creation module in ETP Unify is to enable the setup and management of companies or businesses that you Use in ETP Unify to conduct their operations. This module available in&nbsp; ETP Unify is designed to be used by multiple companies or retail chains, each with its own distinct settings, products, inventory, and reporting requirements.</li>
+  <li>Multi-Tenant Support: The module allows ETP Unify to support multiple companies or retail chains as separate tenants within the same software instance. Each company operates independently with its own data, ensuring data isolation and security.</li>
+  <li>Company Profile Setup: Users can create and set up the profiles of individual companies within ETP Unify. This involves defining company-specific information, such as business name, address, contact details, tax settings, and other relevant business information.</li>
+  <li>Sales and Transactions: The module tracks sales, transactions, and order history for each company separately. It allows for accurate reporting and analysis of company-specific sales performance.</li>
+  <li>Financial Reporting: Companies can generate financial reports specific to their operations, such as sales reports, profit and loss statements, and inventory valuation reports.</li>
+  <li>Data Segregation and Security: The module ensures data segregation between companies, protecting sensitive business information and preventing unauthorized access to data.</li>
+  <li>Consolidated Reporting: For administrators or higher-level users, the module may provide consolidated reporting that aggregates data from all companies for an overview of the entire ETP Unify.</li>
+  <li>In summary, a company creation module in ETP Unify facilitates the seamless onboarding and management of multiple companies or retail chains within ETP Unify. It provides the necessary tools and controls for each company to operate independently while benefiting from the shared functionalities and infrastructure.</li>
+</ul>
+<p style="text-align:center;">Below are the steps to configure Company set up</p>
+<p>&nbsp;</p>
+<p><i>List Screen</i></p>
+<figure class="image image_resized" style="width:100%;"><img src="https://lh5.googleusercontent.com/eashtM8ZYd9v0BHXqTTgso93OWUzdAXDIoHKao4rU0nLW27r3K5BFn9m3gtu0WXarpYBhrQ4Uf5q1z1T91xE4g-ga4HMqYO_1c_BKF44SZMt9hczvGKQ20BsbTJe1Cp7S2p4gqCr5J1Kt9TQ4wkJwKw"></figure>
+<ul>
+  <li>The company master which is available under Etp Unify → Administration → Company set up when opened&nbsp; will show the card view of all the companies available under the selected group.</li>
+  <li>The card view screen will look like above screenshot. If no companies are available, then the screen will look blank.</li>
+  <li>The card will show below details,<ul>
+      <li>Company Name and Status</li>
+      <li>Company Logo attached while configuring the company</li>
+      <li>Exchange Rate Type which is added while configuration of the company.</li>
+      <li>Currency which is added while configuration of the company.</li>
+      <li>3 dot button which has a sub-option as edit, when clicked on edit it will open the create screen with all the configured company details already populated into the screen.<ul>
+          <li>The User can edit all the details under the company except the group through the edit and update options.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+<p><i>Create Screen</i></p>
+<p><i>Basic Information</i></p>
+<ul>
+  <li>The User can click on the button in the right bottom of the card view screen, to open the create screen.</li>
+  <li>The create screen will have the below details so that the User has to enter details to create a company set up.<ul>
+      <li>Company Logo place holder where the User can upload the company Logo of the company being created, the same will be shown in the card view when the company is created. The image should be in 400*100 px size for the system to accept the image. The system will not accept if any image other than the said px has been uploaded and shows a error in the screen.</li>
+      <li>Company Code* is a unique mandatory free field where the User can enter the company code as a record in Unify for further Use.</li>
+      <li>Name* Here the User can enter the Company Name,this is a Mandatory column.</li>
+      <li>Group* The group the user has selected while logging into ETP Unify, in the session data will already be populated, the user cannot delete or edit this detail. This is a read only column.</li>
+      <li>Language* This is a drop down from where the user can select the Language used by the Company. This language will be made as the company Language from this selection onwards.This is a Mandatory field.</li>
+      <li>Establishment&nbsp; Date* Here the user can select the establishment date of the company. This is a Mandatory field.</li>
+      <li>Default Node The user can select here the default node which can be set for the entire company. Once the same is set the node selected under this will be used as the default node on any company transaction.</li>
+      <li>Tax Declaration Number* This is a Tax declaration number where the user can save for further Use in Unify.</li>
+      <li>Reg Number* The User can enter the Registration Number of the company they are creating as a record in ETP Unify.</li>
+      <li>Company URL This is a free field to enter the Company URL of the specific company created. The URL should be a valid URL or the space will show an error display.</li>
+    </ul>
+  </li>
+</ul>
+<p>(Screenshot below)</p>
+<figure class="image image_resized" style="width:100%;"><img src="https://lh3.googleusercontent.com/uukUmTLhoNiepCrO1Yx6TimkkGLWeIohEiE9RlJbfiG59BiETZJH7xk8tOS9UmfQWBHPhqvKbo_6DzyaPUMrvfVH8R1cXLhHUdfsAhN1jnmXTH3qHo52_m1OD1iLI0yLWiBOw73xij1rLj3fzLF9_3o"></figure>
+<p><i>Company Address</i></p>
+<ul>
+  <li>Country* This is a Mandatory drop down field where the User can select the country of incorporation. Based on the selection, the city and state will be populated in the next columns as per the country.</li>
+  <li>State* This is a Mandatory drop down field where the User can select the State of the company. Based on the selection, the city will be populated in the next columns as per the State.This drop down will populate the City based on the Country selection in the previous drop down.</li>
+  <li>City*&nbsp; This is a Mandatory drop down field where the User can select the city of the company. This drop down will populate the City based on the state selection in the previous drop down.</li>
+  <li>Addresses 1 and 2 These are 2 different free fields where the User can enter the address of the company being&nbsp; created in below 2 address fields.</li>
+  <li>Postal Code* &nbsp;This is a field to insert the Postal Code corresponding to the address entered above.</li>
+</ul>
+<figure class="image image_resized" style="width:100%;"><img src="https://lh5.googleusercontent.com/4-SbCsIfxra8WIUrGUk_NDOYp5lTKII0g1spFWt7g9X-Fnrse4LiiuimwRSgWzY0rn3SmPckeED6HI4-UmFyoQHEfDN6u87BoTI1QaMzqa3iRPGrnsQr659ZUP3WojrR5Z5mNhZHXyaGLBdj-yoAUR4"></figure>
+<p><i>Currency Details</i></p>
+<ul>
+  <li>Local Currency* &nbsp;This is a field to insert the currency that will be used by the Company for any transactions or exchanges. This Currency will be applicable to the stores/Nodes used created under this company.</li>
+  <li>Exchange Rate Type*The exchange Rate Type, which helps determine the local currency value against other foreign currencies.</li>
+  <li>Currency Rate Update Method* This has 2 options to mark by the User, The User can either select the <i>Manual Rate Entry </i>so that the User can enter the currency rate updates manually where its necessary or the system will automatically update in necessary places if Auto Rate Entry is selected.</li>
+  <li>Currency Rate Refresh Frequency* This will have 2 options to refresh the currency rate it can be either Hourly or Daily. The User can select either of those options.</li>
+  <li>Digit Seperator* the Digit Separator can be defined here as well. This separator will be used throughout the company for its currency display.</li>
+</ul>
+<figure class="image image_resized" style="width:100%;"><img src="https://lh4.googleusercontent.com/lw9DGXvSngmUf8adXdsFZlF3B8yMOjZTKhpq1aLTxPd9S73VKhse879jikWdWDH8E7MOoAJvifDx2p4Fww36YTA3JLvJdI2kKhXV--jNcqUCSiOxKQz6AKXikX6angW3SsWPUovspjuc__CHemdbPdQ"></figure>
+<p><i>Other Information</i></p>
+<figure class="image image_resized" style="width:100%;"><img src="https://lh3.googleusercontent.com/1g-RBsyWjKJoDtICNvQ7GjrHuAAm1jkC597gUZYaTZ14t-nSozF_iFozL20LnBUMYbKkDZ-_sE0uhscog-A-Bm4zh-u-HMoUCeJ29Ez7P-dzDL0scu55LFnwvO9OA4VdOD6mAuuxM1JMnrIa32QxnCY"></figure>
+<ul>
+  <li>Localization* &nbsp;is captured from the predefined drop down values - this helps in case the company is from a specific country which requires specific localizations like BIR, GST etc. If your country has no specific localizations, the ‘Base’ option can be selected.</li>
+  <li>Product Date Manintainance at* - <i>Group </i>if this is set to group then the User will be able to see details like products etcc not only from the company he has logged in but also from the companies where the PDML(Product Date Manintainance Level) is Group. If its set to Company then the user can only view Products from the company only.</li>
+  <li>Time Zone* The appropriate Timezone can be set based on the company Localization or Incorporation.</li>
+  <li>Inventory Valuation*The inventory valuation can be specific as per options in the drop down by which the company follows.</li>
+  <li>Costing Method* This is to specify the costing method followed by the company. The User can Use the drop down to select the various types of costing Method.</li>
+  <li>Costing Level* &nbsp;The User can select either Company level or Node level for the Costing set. If Cost is at Node level, in Product Master the costing method set in Replenishment details will be applicable for product related transactions.</li>
+  <li>Accounting year Period This is to mention the accounting year period the company complies to. The User can select the starting month of the Accounting time period from the drop down.</li>
+  <li>Date Format From this date format drop down, the User can select the date format that the company will follow throughout ETP unify wherever date is involved.</li>
+  <li>Date Separator can be defined here as well. This separator will be used throughout the company for its Date display.</li>
+  <li>Week Starting Day* Here the User can select the starting Day of the week, when the company starts to work.</li>
+  <li>After entering all the Mandatory columns above, the User can click on save to save the details and a new card view with the added details will be shown in the List screen after a success message.</li>
+  <li>If the User wants to discard the Screen will go back to the List screen and show the previous details already available.</li>
+</ul>
+<figure class="image image_resized" style="width:20px;"><img src="https://lh5.googleusercontent.com/401zlNJLBkGxZtVST7K3LazvoqGTy6acJkQzjgt9tmd_pdjbHNLaMbTqE8VCHLB-zILHC8Tp_vaFqFTgQ82_7pJx5x45c-MD8WBOqol5xHuc6S4_2mSzR_VoWqL_vt0uQetZjFmAbZeDVFWjPuQDgQY"></figure>

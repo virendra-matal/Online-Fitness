@@ -1,0 +1,150 @@
+<!--
+title: Charge Definition
+description: 
+published: true
+date: 2023-09-27T12:38:41.838Z
+tags: 
+editor: ckeditor
+dateCreated: 2023-07-14T03:45:10.650Z
+-->
+
+<h1><strong>Charge Definition</strong></h1>
+<p>The charge definition allows users to define charges which will be further applicable on billing, transfer order and purchase orders.</p>
+<p>Charge in business can be termed as demanding an amount of money as the price for a good or service.</p>
+<p>There are multiple types of charges: delivery charge, other charges, GST charge, UTGST, VAT,TCS etc.</p>
+<p><strong>Example</strong>: Let's say a customer buys a product ABC for price 100$ from Electronics Store on billing customer asks for delivery and store user applies delivery charge of 5$ to the product.&nbsp;</p>
+<p>Therefore now customer will have to pay total 105$ to store and bill will have below line items:</p>
+<p>ABC&nbsp; 100$</p>
+<p>Delivery charge 5$</p>
+<p>Total amount : 105$</p>
+<p><strong>List Screen</strong></p>
+<p>Over here, users can view all the existing Charges created. Users can edit and delete the records, and also can add new ones.</p>
+<p>You can use the search bar to <strong>search </strong>existing charges by the <strong>Charge code</strong> or <strong>Name </strong>on the list screen<strong>.&nbsp;&nbsp;</strong></p>
+<p>Each record in list screen has three dots ‘</p>
+<figure class="image image_resized" style="width:10px;"><img src="https://lh4.googleusercontent.com/3plAbGC9FeFsd9mkP_tgdJwLoxrowpPXb_taCH35XNadkmJQ5YBSWxr5VqFIQ9RP3ebQ80gK-0e10kMNxQAmrsQ_7fdWzSTTXpg9SIwiGrhZR7nAktuCzZ6P3a-4F28Zi9a57GkwHbZLMUJyeQzT4w"></figure>
+<p>’,&nbsp; against it and they will have below following options</p>
+<ul>
+  <li><strong>View - </strong>This option will open up the creation screen with pre-populated data for users to view, in read only mode.</li>
+  <li><strong>Edit </strong>- This option will open up the creation screen with pre-populated data for users to edit, users can details in this mode.</li>
+  <li><strong>Delete </strong>- This option will allow users to delete the record only if it is not used.</li>
+</ul>
+<figure class="image image_resized" style="width:100%;"><img src="https://lh3.googleusercontent.com/DcvobD7LPCbzSuERNj6njQG34ZZl6YJQjtoVqn8KlJ8PdQgYvxeUTd300F1BmCb-QGhRKCu3_z3SlVzy8nFwff2E995HiSP21BFr1nzv1MZTeDeGrEdr4FgkB1lFodmAsE8ptoz3QfHSpqvC6yYzCqM"></figure>
+<p><strong>Charge Definition creation</strong></p>
+<p>You can define a new charge by clicking on the ‘</p>
+<figure class="image image_resized" style="width:25px;"><img src="https://lh6.googleusercontent.com/knF_ssqdpuQkhsiVAJ9oaUTh-YmbvmguqHqLnDK8FgTNSJMjK5z9lCbHsa19OaOkVMlMn75_q2IW4lYyWxYx3B1MtcL7_8yG_Q5gejHZuMV4LLqyT6OJBWs460tCYJ3X0i9VvmmuIKIbRA8Q7_0hog" alt="threedots image"></figure>
+<p>’&nbsp; add button available in the main screen on the bottom right corner.</p>
+<p>On click of the “+” button , a screen will be visible to create a new charge definition.</p>
+<figure class="image image_resized" style="width:100%;"><img src="https://lh5.googleusercontent.com/1H0AHO3K5vgtTxcABv_lGH8ER8NnFKLV27ppf8pLX3JiSA85HwVxKhOY-F_BrAcjhLPjF9DYyb9nm30IauG0yrSRYF-OMt5HDBbBUaz9jk-DqLDSH17PhyL0mrWQaZA1Fll3N29mDaExsiv9ShkYrjU"></figure>
+<p>Below are Fields where you will be able to define data:</p>
+<ul>
+  <li><strong>Charge Code : The unique code of a charge.&nbsp;</strong></li>
+  <li><strong>Charge Name : The name of a charge. This name is printed on all external documents</strong></li>
+  <li><strong>Charge Description : Detailed description for defining charge.</strong></li>
+  <li><strong>Charge Status : Status for charge can be active or inactive.</strong></li>
+  <li><strong>Charge Category : The categories for which charge will be defined.</strong>
+    <ul>
+      <li>Basic Value&nbsp;</li>
+      <li>Tax</li>
+      <li>Discount</li>
+      <li>Charges</li>
+      <li>Net Total</li>
+      <li>Gross Total</li>
+    </ul>
+  </li>
+  <li><strong>Inclusive Charges : This means that if there are any charges other than the item charges, then those charges are termed as Internal Charges.</strong></li>
+  <li><strong>Charge For : The Charge applicability for which charge is defined.</strong>
+    <ul>
+      <li>Header Charge (If charge is defined for header then it will be applicable charge model defined for header)</li>
+      <li>Line Charge</li>
+    </ul>
+  </li>
+  <li><strong>Calculation Method : The calculation factor that is used to calculate the charge amount.&nbsp;</strong>
+    <ul>
+      <li>Quantity Based</li>
+      <li>Value based</li>
+    </ul>
+  </li>
+  <li><strong>Charge Handling : The type that is used to handle various charges.</strong>
+    <ul>
+      <li>Flat Value (This means a value will be defined for charge and it will be applied without checking any condition)</li>
+      <li>Condition Based (This means a value will be defined for charge and it will be applied post checking defined condition)</li>
+    </ul>
+  </li>
+  <li><strong>Calculation Type : This calculation type is used to calculate Flat value charge handling. A charge is calculated by multiplying the calculation factor and the base selected in the Calculation method field.&nbsp;</strong>
+    <ul>
+      <li>Percentage Based (Calculation will be percentage based. “Currency Conversion Factor”, “Currency” and “Exchange Rate Type” will remain Inactive when this option is selected)</li>
+      <li>Amount Value (Calculation will be amount based. “Currency Conversion Factor”, “Currency” and “Exchange Rate Type” will remain Active when this option is selected)</li>
+    </ul>
+  </li>
+  <li><strong>Charge Value : This value will be defined only when charge handling is Flat value.</strong>
+    <ul>
+      <li>The value will be in Percentage when “CalcType = Percentage”</li>
+      <li>The value will be Amount when “CalcType = Amount”</li>
+    </ul>
+  </li>
+  <li><strong>Charge Sign : This sign indicates whether charge is positive or negative. This will be used only in case of Header Charges.</strong>
+    <ul>
+      <li>+ (Plus / Positive)</li>
+      <li>– (Minus / Negative)</li>
+    </ul>
+  </li>
+  <li><strong>Charge Applicable : The charge applicable indicates that charge is applicable on which type of transactions.</strong>
+    <ul>
+      <li>Sales</li>
+      <li>Purchase</li>
+      <li>Transfer</li>
+    </ul>
+  </li>
+  <li><strong>Print Charge : This indicates whether charge will be printed on documents or invoices.</strong></li>
+  <li><strong>Charge Type : This indicates the type of charge used in charge definition.</strong>
+    <ul>
+      <li>CGST</li>
+      <li>SGST</li>
+      <li>IGST</li>
+      <li>UTGST</li>
+      <li>Others</li>
+    </ul>
+  </li>
+</ul>
+<p>&nbsp;</p>
+<ul>
+  <li><strong>Charge Currency : This indicates the currency for which charge is defined ].(example USD)</strong></li>
+  <li><strong>Exchange Rate Type : This indicates the exchange rate type for which charge is defined. (example: Fixed exchange rate)</strong></li>
+  <li><strong>Charge Definition Condition Details :&nbsp;</strong></li>
+</ul>
+<p>This section will allow defining conditions for condition based charge handling. Based on the below defined fields conditional charge will be applied on transactions.</p>
+<p><strong>Example</strong>: Users may say that a delivery charge of 5$ will be applicable on invoice having products of Bags, then the same can be done using below fields.</p>
+<ul>
+  <li><strong>Attribute Type (1,2&amp;3) : This field indicates the attribute type for which charge is defined. (It can be selected upto 3 levels, field will have attributes related to product, customer &amp; store)&nbsp;</strong></li>
+  <li><strong>Attribute Value (1,2&amp;3) : This field indicates the attribute value for which charge is defined. (It can be selected upto 3 levels, field will have attribute values&nbsp; related to selected attribute type)</strong></li>
+  <li><strong>Valid From Date : This field will define the start date from when the charge slab will be active.</strong></li>
+  <li><strong>Valid To Date : This field will define the end date for the charge slab.</strong></li>
+  <li><strong>Condition Based Handling : This field will indicate whether charge handling will be based on flat value or slab.</strong>
+    <ul>
+      <li>Charge value (A value will be defined in charge value field if this option is selected)</li>
+      <li>Slab (A charge slab selected will be applicable on transactions if this options is selected)</li>
+    </ul>
+  </li>
+  <li><strong>Slab : This field indicates which charge slab will be used for charge calculation while transaction processing.(This will be diabled if ‘Charge Value’ is true for condition based handling)</strong></li>
+</ul>
+<p>Slab will ensure that a particular charge Amount will only be applicable when the Line/Header Amount falls within a particular Slab Range.</p>
+<p>E.g., Slabs ABC is selected here. (It has the following Slabs</p>
+<p>1001 - 2000 = Slab Value 150</p>
+<p>2001 - 3000 = Slab Value 250)</p>
+<figure class="image image_resized" style="width:100%;"><img src="https://lh3.googleusercontent.com/sPVQu_RiameWSK28S034Qs9BxYMCr1BLybYWPFJJwuo1MvNiwtlBplZjVA5pYgF1IW6-wTQ4LucixYNRYZETR6omYGp6HCYvtgs_oceWKeK_bZvOuGMyxm0BBpdPFlQd_j_W7znBezhf9Z0v5pLqobE"></figure>
+<p>Consider that this applicable on Header level only</p>
+<p>Now during the billing if the Bill Amount is 1250 then the Charge Amount 150 will be applied directly.</p>
+<ul>
+  <li><strong>Charge Value : This field indicates the charge value defined for above conditions, i.e. this value will be applicable only if defined conditions are true.</strong></li>
+</ul>
+<p>(This will be disabled if ‘SLAB’ is true for condition based handling)</p>
+<ul>
+  <li><strong>Discard button - On click of this button users will be able to remove the captured data in above fields, and it will be reset to default view.</strong></li>
+  <li><strong>Add button - This button allows the user to add defined conditions for charge handling.</strong></li>
+</ul>
+<p>&nbsp;</p>
+<p>Once a user clicks on add button records will get displayed in the grid and it will have edit and delete option against it if the user wishes to change the existing value then the same can be done using the edit option.</p>
+<ul>
+  <li><strong>Discard button : This button on the creation and edit screen will allow users to redirect to the list screen without saving the changes.</strong></li>
+  <li><strong>Save button : This button on the creation and edit screen will allow users to redirect to the list screen post saving the changes.</strong></li>
+</ul>

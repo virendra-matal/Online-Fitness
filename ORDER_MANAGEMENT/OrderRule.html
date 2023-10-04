@@ -1,0 +1,67 @@
+<!--
+title: Order Rule
+description: 
+published: true
+date: 2023-07-24T09:58:12.560Z
+tags: order
+editor: ckeditor
+dateCreated: 2023-02-07T09:08:32.586Z
+-->
+
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Order Rules is a function in Ordazzle which helps the user define a set of rules, using order related conditions, which will check all new orders coming into Ordazzle. Based on the conditions, ORR decides whether to further process orders or to put it on hold for the user to inspect.&nbsp; If ORR is not set up, this step is skipped and the order directly goes into Smart Order Routing.</p>
+<figure class="image image_resized" style="width:100%;"><img src="https://lh6.googleusercontent.com/01o6KWF5CavOUE-uUlf4LTKpBLGjiXiYB3zJiBSYg3FmArU2aN9zx-wSByD_s_thzlhlOdUrwceAIizC9MHzFz6dPDCeIntv5Il8JY_2ISQogTi200EAJZxLMxY3b1X_DJClmtq3gyNvpIG6YLyZ0g"></figure>
+<h2>Order Rule Creation</h2>
+<p>While on the Order Rule screen, the user can create a new rule by clicking on the ‘+’ icon. After doing this, the user will have two options:</p>
+<p>Create New: This will open a fresh screen for Order Rule creation.</p>
+<p>Use Template: This will open the template selection screen. Over here the user can select predefined templates to build upon.</p>
+<figure class="image image_resized" style="width:100%;"><img src="https://lh6.googleusercontent.com/RANfZZlM9XKl_EiPNQoS5HTqnSffZvuR8Y_tCfPfdSTjOs7OEQo_34jKXJt7XsFqfv36hINPrEU2z1Gl-03qgVsNT1a97IMJOjm13MGCxnQcJ6wUGZqFOQIco22H1T6jrRFBySt56J8-VZJY9qYt0A"></figure>
+<h2>Basic Details:</h2>
+<p>While creating a rule, the user will have to input some basic information. This includes:</p>
+<p>Channel / Shop: The Seller Channel for which the user wants to create the Order Rule. This list will contain all active Seller Channels based on the company selected. There can only be one Order Rule active per Seller Channel at any given time.</p>
+<p>Name: The user can define a name for the Order Rule</p>
+<p>Status: The user can decide whether the rule will be active or inactive</p>
+<p>After filling in the basic details, the user will be able to see a right hand side panel consisting of ‘Condition Builder’, where the conditions for the Order Rule are decided, and ‘Actions’, which define whether the order is put on hold or passed into the system.</p>
+<figure class="image image_resized" style="width:100%;"><img src="https://lh5.googleusercontent.com/z0vUlo4u2DRXoihyyV2H7mObJq59twgebljIOrgXmbIrmu1FUlmBgUpBXE5nOBQiBTI7aoETrIhr96mH9mS9QeOFmeCNBTOJUkHzPTbGm5Y3L9PKXW8lThXcEi8sZ7vtprohtAXM73rQ-p42flXZTw"></figure>
+<h2>Condition Builder:</h2>
+<p>Now, the user will be able to start defining conditions for the Order Rule. This is done in the ‘Condition Builder’ section.&nbsp;</p>
+<p>Order Conditions:</p>
+<p>Delivery Mode: This checks the Delivery Mode assigned to the receiving order. The options are BOPIS(Buy-online-pickup-in-store) or Delivery.</p>
+<p>Payment Mode: This checks the Payment Mode assigned to the receiving order. The options are Prepaid or COD (Cash On Delivery).</p>
+<p>Order Priority: This checks the Order Priority of receiving order. The options are Standard or Express priority.</p>
+<p>Fulfillment By: This checks the Fulfillment assigned to the receiving order. The options are Fulfillment By Seller or Fulfillment By Marketplace</p>
+<p>Postal Code: This checks the serviceability of the order based on the Postal Code</p>
+<p>Order Value - This checks the Order Total of the order received and compares it with the defined condition. Users can define Order value conditions as &lt; X amount, &gt;X amount, &lt;= X amount, &gt;=X amount, Between X and Y amount.&nbsp;</p>
+<p>Customer Conditions:</p>
+<p>Status: This will check the status of the Customer in Ordazzle</p>
+<p>Product Conditions:</p>
+<p>Product Catalog: This checks the Product Catalog of every product in the order. If a single product in the order belongs to the selected catalog, the action will be executed for that order. Note: Should this be Catalog instead of order? Same for below</p>
+<p>Product Category: This checks the Product Category of every product in the order. If a single product in the order belongs to the selected category, the action will be executed for that order.</p>
+<p>Brand: This checks the Brand of every product in the order. If a single product in the order belongs to the selected brand, the action will be executed for that order.</p>
+<p>Product Code: This checks the Seller SKU Code value of every product in the order. If a single product in the order matches the selected code, the action will be executed for that order.</p>
+<p>Common Tags: This checks the Common Tags of every product in the order. If a single product in the order matches the selected tag, the action will be executed for that order.</p>
+<p>My Tags: This checks the My Tags of every product in the order. If a single product in the order matches the selected tag, the action will be executed for that order.</p>
+<h4>Actions:</h4>
+<p>There are two possible actions that can be attached to Order Rules:</p>
+<p>&nbsp;</p>
+<p>Pass: If an order is ‘Passed’, that means the order should successfully pass through the Order Rules and go forward for processing, getting updated in Ordazzle with a ‘Received’ status.</p>
+<p>Hold: If an order is put on ‘Hold’, that means the order has not successfully passed through the Order Rules and the user needs to check this order and decide whether to process it or cancel it.</p>
+<h2>Steps to create an Order Rule:</h2>
+<p>Click on the ‘Start box’ and select a condition.</p>
+<p>After selecting a condition, click on the condition box and select/define values for it.</p>
+<p>To attach another condition, click on the ‘value’ box (white color) and then select the next condition.</p>
+<figure class="image image_resized" style="width:100%;"><img src="https://lh5.googleusercontent.com/fCgl0zrBZdlNpwDE6m0Z_T1niIlCAXodAbEMSG718vF9x2gEImQdSEAjLQp-5SgJv0e9o4KD7WKJ2CHBp5jc31t4AzyN9yXA9NLolj3Ao0Bp0Nu8neme2mzeRDBp29aI_tPfmtsl35667Wte7onYCw"></figure>
+<p>Users can end the rule by clicking on the final ‘value’ box and selecting the desired action to add below it.</p>
+<p>For example, the user may have the condition that all orders which are COD Delivery Orders should be put on hold, while all other orders should be passed into the system and go into the allocation stage.</p>
+<p>If the user chooses ‘Delivery Mode’ as the first condition, they will then have the option to add a condition of ‘Delivery’. After selecting one of the conditions within ‘Delivery Mode’, the user may want an additional check of ‘Payment Mode’. For this, the user will now need to select the ‘value box’ of ‘Delivery’ and then click ‘Payment Mode’. Over there, the user can now select the payment mode of ‘COD’, and accordingly add an action of ‘Hold’ to this. This will put all ‘Delivery’ orders which have the ‘COD’ payment method on ‘Hold’ for the user to take further actions.</p>
+<h3>How to make changes in the existing Order Rule:</h3>
+<p>The user can search any existing rules they have made through the search bar, using the rule name or the channel/shop. After finding the rule they are looking for, they can edit the rule as they see fit, including changing its active status.&nbsp;</p>
+<p>Users can add more condition values to the existing Order Rule by clicking on the condition box and defining more values.</p>
+<p>Users can edit the selected value in any product condition by clicking on the condition value box and adding or removing the values in it.</p>
+<p>If the User wants to delete any condition box or condition value box, User has to delete all the conditions and actions which are dependent on that box first.&nbsp;</p>
+<figure class="image image_resized" style="width:100%;"><img src="https://lh4.googleusercontent.com/cRE2r6iFYoalKPgKrKNEQcbvI2egKwZOtGElsKFjoiQn6Tznfpm8VUu5vIC8dqiCJJZs-TpU7WO3FRlDdEi1uslxqmpJP1SDm-374PSgFZW3vBJj-QZv2sf2aIpZs74n_VmqThGJVb0oeWJUIIiCFg"></figure>
+<h3>Create Rules using Templates:</h3>
+<p>Users can select the option of ‘Use Template’ to create an Order Rule using a predefined template.</p>
+<p>There are 6 predefined templates available to select from in the template list. All templates have a predefined rule that fulfills different use cases.</p>
+<figure class="image image_resized" style="width:100%;"><img src="https://lh6.googleusercontent.com/WbFLa2L2LUeBy7S-AuC0HeiU-gtM_u6h5lazYQZZFU2ucpJqMHhVjBKpuEBZ6EL7EQuI6M8_eYFaMNQJQor1S4oo4lsD3ScxFQnPXcbxqNjf2BpXDcdx443CVom84NRJFnFP4bG6YdzWCujBmXoQbg"></figure>
+<p>After selecting a template, the Order Rule creation window will open. The User will need to input the basic details of Seller Channel, Rule Name and Status, after which a predefined Order Rule will be displayed on the screen.</p>
+<p>The user can either select the Seller Channel along with the Rule Name and save it as a new Order Rule, or the user can edit the conditions and actions in the condition builder.</p>

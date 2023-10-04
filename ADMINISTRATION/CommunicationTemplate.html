@@ -1,0 +1,61 @@
+<!--
+title: Communication Template
+description: 
+published: true
+date: 2023-09-28T09:25:17.233Z
+tags: 
+editor: ckeditor
+dateCreated: 2023-07-17T05:15:54.503Z
+-->
+
+<h1>Communication-Template-Wiki-ETP-Unify</h1>
+<h3>Communication Template Use cases and Capabilities:</h3>
+<p>Order Confirmation: When a customer places an order online or in-store, an automated order confirmation email or message can be sent using a template. This reassures the customer that their order has been received and is being processed.</p>
+<p>Shipping and Delivery Updates: Templates can be used to send automated shipping and delivery notifications to customers, including tracking information. This keeps customers informed about the status of their orders and enhances the overall shopping experience.</p>
+<p>Receipts and Invoices: Retail software can generate receipts and invoices automatically using templates. This helps in maintaining a professional and consistent look for financial documents while saving time on manual data entry.</p>
+<p>Promotional Campaigns: Retailers often run marketing campaigns to promote products, sales, or events. Communication templates can be used for creating email newsletters, social media posts, or text messages to reach out to customers with these promotions.</p>
+<p>The communication template module in ETP Unify enables us to save a particular content with variables so that when any event like bill execution or orders being placed or on occasion of a promotion execution, the appropriate event content will be sent to the customer with variables like customer name and invoice amount are rightly inserted and sent to the customer over chosen media.</p>
+<p>The User can add templates based on the media type and events based on the approval for the content from the DLT and the sms providers for sms sendings and approval from Meta group for any WA message sendings via the provider. The WA content approvals can be placed through the WA provider login screens itself.<br>There are no content approvals required for Gmail/Mail contents as of now.</p>
+<p>DLT Registration process for sms</p>
+<p>DLT authentication process for sms templates in India(Only Mandatory for India)</p>
+<p>The user has to create a header which will also be the Sender* for message sending.</p>
+<p>Login into DLT and Navigate to Headers → Sms headers → Click on add → Select type as Other → Select category as Consumer goods and Automobiles → Enter header of your choice in find your header(Preferably entity name) and click on search Icon , if the header is available then the message will be shown if the header is available then the User should click on Submit for approval.</p>
+<p>For creation and usage of any new template in Text local(or for any sms provider in India). A template has to be created and authorized by DLT and the same has to be authorized by Text local as well.<br>Refer below for Steps to avail template authorization below from DLT.</p>
+<p>Login DLT and navigate to Templates → content templates → +add→ Select template type as service and consent type as Implicit → Select header with pre approved header(as mentioned in above header creation navigation)→ Enter a valid template name→select template message type as text → enter the Template message with variants if needed and add the entity name in the end of the template message then save.<br>Then the templates will be sent for approval for Each template will have a unique template id in the content template list with the status as - Approved, pending and Disapproved.<br>The template will be approved and then the User can create a template in text local with the same template ID.</p>
+<p>Refer below for Steps to avail template authorization below from Text local.</p>
+<p>Login text local → Navigate to Send → Templates and drafts→ Click on request new template → Enter Valid Title(Template name) → Enter DLT Template ID that has been approved by DLT → Select category as Service implicit → Select sender as ETPPOS → Enter the same template message that has been approved by DLT and Click on Request new template. Once it is approved it will show as status active in → Send → Templates and Drafts. Then the user can proceed with using the same template to send messages.</p>
+<p>Note:</p>
+<p>The user will not be able to edit the approved template while sending a message.<br>No spaces should be allowed in variable values.<br>Only 30 characters can be inserted into a variable - as per DLT<br>In DLT, more than 2 variables cannot be in the same space of the sms content.</p>
+<h2>User Manual for Communication provider</h2>
+<p>The communication Template Module is available under ETP Unify→Administration→Communication Template. The User can navigate to the above and make use of the module.<br>&nbsp;</p>
+<figure class="image image_resized" style="width:100%;"><img src="/communication_template-1.png" alt="communication_template-1.png"></figure>
+<p><strong>Communication Template List Screen</strong>:</p>
+<figure class="image image_resized" style="width:100%;"><img src="/communication_template-2.png" alt="communication_template-2.png"></figure>
+<p>The List screen has the below details.</p>
+<p>Each line entry will be a different template.<br>Event This will be the event on which this template content with the variables will be triggered to the end customer on any event execution example, on save of a bill, the “Thank you for your purchase” message content will get triggered the name of the event will be displayed here.</p>
+<p>Template Name The name of the template given by the User while creating the Template. The Template name entered should be unique.</p>
+<p>Media This is the type of media that the template is created with on creation of the template.</p>
+<p>Channels In case the template is dedicated to specific channels only and not on the company level, then those channels will be shown here.</p>
+<p>Language The Language that the template is created with will be shown here.</p>
+<p>Status To notify the active/Inactive status of the template this column will be shown.</p>
+<p>Three dot Buttons<br>Edit User can click on the edit option and the screen will navigate to the creation screen with already available details of the specific sms template prepopulated in the screen. I should be able to edit the template name,Template editor space,select variants and the channels as well. The Language and Events will remain uneditable.<br>Delete The User can use this function to delete the specific template. Only inactive templates can be deleted and when user tries to delete a active sms template record a validation should be available stating - You cannot delete an active sms template, Kindly deactivate and try deleting the record.<br>Activate/Inactivate Users will be able to activate and deactivate the template with the help of these buttons.<br>Search Box This is a search box where the User will be able to search by Channel Name,Event name and template name.</p>
+<p>Active/Inactive Drop down This is a drop down between active/inactive, the list view will show data according to the status assigned here. By default the drop down will show - ALL(Both active and inactive columns )</p>
+<p><strong>Create Screen of Communication Template</strong>:</p>
+<p>When the User clicks on the plus icon available in the right bottom of the list screen, the user will be able to navigate to the create screen.<br>&nbsp;</p>
+<figure class="image image_resized" style="width:100%;"><img src="/communication_template-3.png" alt="communication_template-3.png"></figure>
+<p>The below fields will be available for all media and providers</p>
+<p>Communication Media* This is a drop down from where the User will be able to view the media for the templates.</p>
+<p>Communication Provider* The User will be able to view the providers available based on the selected media in the previous drop down.</p>
+<p>Template Name* The User will be able to enter a name which should be unique in this free field.</p>
+<p>Event* This is a Drop down where the User will be able to select the event that they want to create a template for. Based on the event selection, the content appropriate to the event will be displayed on the Template editor field.</p>
+<p>Available events for message content as per below</p>
+<p>Customer creation<br>Promotion<br>Order creation<br>Thank you for purchase</p>
+<p>Language* The User can select the Language of the template being created.</p>
+<p>Select Variable The variables appropriate to the selected event will be displayed here, the user can click on the variables to insert into the message content.</p>
+<p>Add Channel This is a non mandatory option, where the User can click on this button and all the channels for which the user has rights from channel will pop up below in a card view and the User can multi select on the same. The user can make use of the - “Select all” button if he wants to select all the channels the user has rights for.</p>
+<p>Except the above columns Template ID* will be available for below providers so that the user needs to update the template ID approved for the below message content being created from the respective SMS/WA providers.</p>
+<p>SMS Provider - Enablex<br>WA Provider - TextLocal<br>WA Provider - Gupshup</p>
+<p>For the above providers the template ID is a mandatory field.</p>
+<p>Below Points to be noted while creation of a Template</p>
+<p>The User cannot create more than one template with the same name<br>The User cannot create more than one template with the same Language<br>The User cannot create more than one template with the same media and same provider<br>The User cannot create more than one template with the same Language, media and provider<br>The User cannot create more than one template with the same Language and Event<br>The User cannot create more than one template with the same Language, Event and provider.<br>There is no message content review body or approval needed for email contents.</p>
+<p>Based on above Validations the user can create a template and after attachment of the templates in Retail config template and store mapping to the pos is executed. The same content will be sent to the customer on execution of any events mentioned above.</p>

@@ -1,0 +1,503 @@
+<!--
+title: Product Master
+description: 
+published: true
+date: 2023-10-03T10:16:18.504Z
+tags: product
+editor: ckeditor
+dateCreated: 2023-02-07T09:41:49.012Z
+-->
+
+<h1>&nbsp; &nbsp; &nbsp; &nbsp; PRODUCT MASTER-WIKI-ETP UNIFY</h1>
+<h3><strong>Product Master Use Cases and Capabilities:</strong></h3>
+<p>A Product Master in a retail software system is a centralized repository of information about the products a retailer sells. It serves as a critical component for managing and optimizing various retail operations.&nbsp;</p>
+<ul>
+  <li><strong>Inventory Management</strong>: The Product Master helps retailers keep track of their inventory. It stores information about product names, SKUs, descriptions, prices, and quantities. Retailers can use this data to ensure they have the right amount of stock on hand, reducing both overstocking and understocking issues.</li>
+  <li><strong>Pricing Strategy</strong>: Retailers can use the Product Master to set and adjust pricing strategies. By storing information about product costs, margins, and competitor pricing, retailers can make data-driven decisions to optimize their pricing.</li>
+  <li><strong>Merchandising</strong>: Retailers can use the Product Master to plan and execute their merchandising strategies. This includes organizing products by categories, brands, and attributes, as well as managing product hierarchies and relationships.</li>
+  <li><strong>Order Fulfillment</strong>: When customers place orders, the Product Master can help determine product availability, lead times, and shipping options. This ensures that customers receive accurate information about delivery times and product availability.</li>
+  <li><strong>Multi-channel Retailing</strong>: In a multi-channel retail environment (e.g., brick-and-mortar stores, e-commerce, mobile apps), the Product Master ensures consistency in product information across all channels. Customers should see the same product details and prices regardless of where they interact with the retailer.</li>
+  <li><strong>Vendor Management</strong>: Retailers can use the Product Master to manage relationships with suppliers and vendors. It can store information about vendor contacts, contracts, and performance metrics.</li>
+  <li><strong>Loss Prevention</strong>: Retailers can use the Product Master to track and monitor high-value or high-risk items, aiding in loss prevention efforts. This includes tracking serial numbers, security features, and alerting systems for suspicious activities.</li>
+</ul>
+<h2 style="text-align:center;"><strong>Product Master User Manual:</strong></h2>
+<p>The Product Master is available under <strong>ETP Unify → Product Management → Product Master.</strong> The User can navigate through the above and open the Product Master module.</p>
+<p><strong>Product Master List Screen</strong></p>
+<p>Products in the List screen will be displayed as per below logic.</p>
+<p>If the PDML flag of the company in the Company Master module&nbsp; is in “Group Level” in company Master, then all the other companies in the specific group of the company you are viewing the product master list will be shown. If PDML is in “Company Level”, then&nbsp; the details will be displayed based on the records available in the company only.</p>
+<figure class="image image_resized" style="width:100%;"><img src="https://lh3.googleusercontent.com/cDFPH5jeNAjY5UfPmGufcaSIcpwBnMypzne-cEeU3s3O2RSyAYOBQgPcnWAXmvq-B5fhqEdpN8MAtHXbs6W43uCTBA4BMvwSe9SYuAaNjg2fI-9TiNRwzjwRLha6Q-EKTHlipPiikveCt7XC0DvzBt0"></figure>
+<p>Below are the details available in the list screen of product master. The Tickers will not be displayed for Vendor Users.</p>
+<p><strong>All Products Ticker </strong>Here the User will be able to view all the products count that are available in the Product Master for the specific company. If the PDML flag of the company is in “Group Level” in company Master, then all the other companies in the specific group of the company you are viewing the product master list will be shown.</p>
+<p><strong>Listed Products Ticker</strong>(Based on MarketPlace data)<strong> </strong>Here the User will be able to view all the products that have been listed in the market places.When clicked on the same, the list screen will load the products based on the above Ticker action name in the list screen.If the PDML flag of the company is in “Group Level” in company Master, then all the other companies in the specific group of the company you are viewing the product master list will be shown.</p>
+<p><strong>Rejected by MP Ticker</strong>(Based on MarketPlace data)<strong>&nbsp; </strong>Here the User will be able to view all the products that have been rejected by the market places. When clicked on the same, the list screen will load the products based on the above Ticker action name in the list screen.If the PDML flag of the company is in “Group Level” in company Master, then all the other companies in the specific group of the company you are viewing the product master list will be shown.</p>
+<p><strong>Listing Pending Ticker</strong>(Based on MarketPlace data)<strong>&nbsp; </strong>Here the User will be able to view all the products that have been pending to list in their respective market places. When clicked on the same, the list screen will load the products based on the above Ticker action name in the list screen.If the PDML flag of the company is in “Group Level” in company Master, then all the other companies in the specific group of the company you are viewing the product master list will be shown.</p>
+<p><strong>Delisted Ticker</strong>(Based on MarketPlace data)<strong> </strong>The User will be able to view all the products that have been Delisted by the Market places. When clicked on the same, the list screen will load the products based on the above Ticker action name in the list screen.If the PDML flag of the company is in “Group Level” in company Master, then all the other companies in the specific group of the company you are viewing the product master list will be shown.</p>
+<p><strong>Ready to List Ticker</strong>(Based on MarketPlace data)<strong> </strong>The User will be able to view all the products that are ready to be Listed in the Market places. When clicked on the same, the list screen will load the products based on the above Ticker action name in the list screen.If the PDML flag of the company is in “Group Level” in company Master, then all the other companies in the specific group of the company you are viewing the product master list will be shown.</p>
+<p><strong>In Draft Ticker </strong>(Based on Product Master data) The User will be able to view all the products that are in the draft status in the Product Master. When clicked on the same, the list screen will load the products based on the above Ticker action name in the list screen.If the PDML flag of the company is in “Group Level” in company Master, then all the other companies in the specific group of the company you are viewing the product master list will be shown.</p>
+<p><strong>Failed Products Ticker </strong>(Based on Product Master data) The User will be able to view all the products that are failed i.e the screen was closed while creating a Product Master record or the user clicks on discard while creating a product, The user can use the section to view the prefilled details of the product being created. When clicked on the same, the list screen will load the products based on the above Ticker action name in the list screen.If the PDML flag of the company is in “Group Level” in company Master, then all the other companies in the specific group of the company you are viewing the product master list will be shown.</p>
+<p><strong>Filters</strong></p>
+<figure class="image image_resized" style="width:100%;"><img src="https://lh4.googleusercontent.com/490tEWZF_a3XRmsCRljBRzko9UwKKdNC3UviwFN7Ezk6T8gLtAGDnhkRnbyDAZcd4XCSuZmd0T7cYgQRMU2vn1hWbSgDeNQvOl46UVGziL5FKXMPTSWxUVhfSpT56Dg9m3rd0rDF63MA4fvT8eHPQwQ"></figure>
+<figure class="image image_resized" style="width:100%;"><img src="https://lh4.googleusercontent.com/I-YETWGQwt0tFLaAR0y0cSXeqVc9YBxseuwvP1FuA0f5otNkh6OEW_LIAKlUjQplGuw0tyBiB2RjEhN4n2vd0KeUDfvnllV_iSMdsEaZEo7ygHYkFjXgUrwL3xmn-GNvZa9PWAPxCP0DCpN8PTcMDKg"></figure>
+<p>When clicked on the above filter option, a side bar will appear in the right side of the screen where various filter options will appear. The Filters are as below.</p>
+<ul>
+  <li><strong>Filter By Below this filter by all the filtering attributes will be available, the User can click on the same and use it to filter values under each filter options to view the same on the list screen.</strong></li>
+  <li><strong>Save Filter function and Saved Filter drop down Here the User can multi selected values across filters and click on save filter, the same filter with values selected on the UI will be saved as a separate function and the User can make use of the same customized filter to view the details on the list screen. These saved filters can be seen under saved filters, filter option, when clicked on the same User will be able to view customized filters that are saved in the Product Master.</strong></li>
+  <li><strong>Product Type Here the User can filter the products available in the product Master list screen based on the product types like finished products,GV physical and GV digital that are available in the List screen.</strong></li>
+  <li>The below filters are Product Attribute filters, when clicked on them the values from Common master based on each product attribute will be displayed and user can multi select the values and when clicked on Apply, the List screen will show all the products attached to the specific product attribute values in the List screen. The product Attribute filters are <strong>Product Category,Product Sub category,Brand,Product Class, Product subclass,Procurement Group, Department,Season,Gender,Age Group</strong>.</li>
+  <li><strong>Product Catalog Here the Product catalogs available in the product catalog module will be shown as filter values, the User can multi-select the same and view the list screen with products based on the catalogs selected.</strong></li>
+  <li><strong>Market Place Here the User will be able to view the Market places available for the company and User can click on the market places to view the Products based on the market places they are listed in in the List screen.</strong></li>
+  <li><strong>Channel Shop/Store Here the User will be able to view the Channel shops and stores available for the company and User can click on the list values to view the Products based on the market places they are listed in in the List screen.</strong></li>
+  <li><strong>Product Status The User will be able to view the Products based on Active,Inactive and Draft statuses in the list screen based on the selections.</strong></li>
+  <li><strong>Product Configuration Here the User will be able to view the Product Configurations like Standard, Parent, Bundled and Child, where the user will be able to select the same and view the products in the list screen based on the selections applied. This detail cannot be changed through edit Product.&nbsp;</strong></li>
+  <li><strong>Product Listing Status Here the User will be able to view the Product Listing statuses where the user will be able to select the same and view the products in the list screen based on the selections applied.</strong></li>
+  <li><strong>Common Tags and MyTags Here the Common Tags and My tags will be shown, the User can view the list screen products based on the tags selected.</strong></li>
+  <li><strong>Created On The user can select a date based on the from and To dates of the product creation, so that the Products created on those days will be shown in the screen.</strong></li>
+  <li><strong>EOSS Flag The Products can be viewed based on the EOSS flag selection or not.</strong></li>
+  <li><strong>Vendor The User will be able to view the List screen based on the Products created related to the Vendor that is mapped to the product while creation.</strong></li>
+  <li><strong>Apply and Clear The User can click on apply after selecting the filter values so that the same products with all those filters can be viewed on the List screen. The Clear button will Remove all the selections done in the filter section.</strong></li>
+</ul>
+<p><i><strong>Products will be shown as per below in the List screen</strong></i></p>
+<figure class="image image_resized" style="width:100%;"><img src="https://lh3.googleusercontent.com/yzSJIfp6GhTP-dR0prtDYkmyKydMjK-hqRBUIg-ruLe6BBapQh_jnWizoSNf9xhzEuRpIMvqwAm0tKDNGP-9fBOcAjoJFCp1LQeVpuNkyjHBF8u8bRlFZTBKKKZZM50Cw6gdXtIXp02Oj-987reX48A"></figure>
+<p>The List screen will show a list of 20 products, when scrolled below will load the next set of products.Below details will be available for each Product.</p>
+<p><strong>Product Image </strong>The List screen will show the images attached to each Products, when clicked on the same the Product images will be expanded and shown, the User can click on the left,right navigate icon and view the other images attached to the Product.</p>
+<figure class="image image_resized" style="width:100%;"><img src="https://lh4.googleusercontent.com/-XqsWsX_EV1FrDkoUMJ00gtyqfU2AHLBPf2uB_-mfrFKJ2xpHo2umpdInytXo9I3PHSjV8gkkpdrSB0vQB5E0IzPQC8rzsRX5KFTIjXjOh9QcT4cWQkA4Kn2cgDQv8ky9Gnz7Hf3bLxRZ3hpxBs2a78"></figure>
+<p>Below details will be available for each Product.</p>
+<ul>
+  <li>Product Code</li>
+  <li>Product Name</li>
+  <li>Date and Time of the creation&nbsp; of the Product.</li>
+  <li>Catalog to which this Product is attached to</li>
+  <li>Category</li>
+  <li>Tags attached to the Product</li>
+  <li>The Stock of the Product available across stores, if a variant Product then the number of variants will be shown here.</li>
+  <li><strong>3 Dot Button The 3 dot button will have below details,</strong>
+    <ul>
+      <li><i>Edit Product details</i>, where the User can edit product Details except for the product Code through this screen, the create screen will open and the User can edit and save the details of the Product from this screen.</li>
+      <li><i>Edit Inventory</i> Here the User can click and edit the inventory allocated to the stores.</li>
+      <li><i>Edit Listing The User can click on this option to edit the Listing details of the specific Product.</i></li>
+      <li><i>Delete </i>The Product can be deleted using this option, the Product should be in deactivated status for the delete function to work.</li>
+      <li><i>Expand The Product will expand and show the other details like Marketplace and SKUs</i></li>
+    </ul>
+  </li>
+</ul>
+<p><strong>Description </strong>The Description of the product will be shown under expand and Marketplace&nbsp;</p>
+<p><strong>Marketplace details </strong>In case if the below Product has been Listed in any MP then those details will be shown below Description. Below details will be displayed reg MP.</p>
+<ul>
+  <li><strong>SKU Code</strong> of the Product Listed</li>
+  <li><strong>Channels </strong>that the Product is listed at</li>
+  <li><strong>Country </strong>The country of the Channel</li>
+  <li><strong>Shop </strong>Name of the Channel</li>
+  <li><strong>Current Price</strong> of the Product at the specific MP</li>
+  <li><strong>Offer Price</strong> of the Product at the specific MP</li>
+  <li><strong>Cost Price</strong> of the Product at the specific MP</li>
+  <li><strong>Margin </strong>percentage of the product at the specific MP</li>
+  <li><strong>Activated ON The Local Time of the Product being activated on</strong></li>
+  <li><strong>Last SYNC The Last Sync time of the Product in the specific MP</strong></li>
+  <li><strong>Status The Status of the Product in the specific MP will be displayed here</strong></li>
+</ul>
+<figure class="image image_resized" style="width:100%;"><img src="https://lh4.googleusercontent.com/8R__uyDTvoa6hEKo9mtT-2e-kihP8FQhZQzW0_yZ-l5fgYDBaS_wzATdMxlaraPLbjxWZYi1OzlkxyS3T-mbM8u8nFsvg9y-fxwovyuWr9eYLVoUuTkJD07VKJRHG_m8neHzmh2NG7hcZAJeysq6a_M"></figure>
+<p><i><strong>Creation Screen of Product Master</strong></i></p>
+<figure class="image image_resized" style="width:98.72%;"><img src="https://lh3.googleusercontent.com/dJ7IsDxJ1Ydd5nZZyv7AtOwNSJkWxS6cZrgSyc-TRmgUkLCThtj40oVVvbzLh9eOaicl1un3UkXAFk0_5fiR43m9ohezlfEIR17bWE2FzQ9hktGBsHZkjBFV9mkKwpeQrLlD3WLm42P817IOk7qHy1s"></figure>
+<p>The User can click on the Plus Icon to create a new Product. The User will be able to view two options: the Upload Product and Single Create.</p>
+<p><i><strong>Product Single Create&nbsp;</strong></i></p>
+<p>When the User clicks on single create the below create screen will be displayed.</p>
+<figure class="image image_resized" style="width:100%;"><img src="https://lh3.googleusercontent.com/nUvHm6M_AJ4-_7GIvuZQA7Xy4jEyI9sxKawbrsHoRNZL1R_hcOZ01X7NTUKHVWUH_g9YxHdVMGBaW9vH2l319y_D0Yxj3NZFVVTGSMfWrUuzdVPKkrSte8LIMa59qHy8jGWI9UhshQ5Tl-_wb0QZHzQ"></figure>
+<p>The User will be able to view below details at first</p>
+<p><i><strong>Basic Information</strong></i></p>
+<p><strong>Catalog ID </strong>The Catalogs will be shown in a drop down from the Product Catalog screen. The User can click on any catalog for which the User wants to create a Product for. When clicked on the same, the screen will load all the columns selected in the Product Catalog and will be displayed for creation of the Product.The Mandatory and edit and visiblity of columns will be based on the selected catalog.</p>
+<p><strong>Product Status </strong>The Product status can be either in Draft or active, the User can choose the status of the Product from this section</p>
+<p><strong>Product Code </strong>The User can enter the Product Code of the Product being created, the Product Code should be Unique for each Product.</p>
+<p><strong>Product Name </strong>The Product Name can be entered in this space.</p>
+<p><strong>Product Configuration </strong>The type of Product Configuration to be created can be selected here. The Options will be Standard,Parent and Bundled. Based on this selection the User can view changes in the UI below for creation.This detail cannot be changed through edit Product.Incase of bundled,is selected for the product, the Lot Control cannot be batch or serialized.</p>
+<p><strong>Product Type </strong>The User can select the Type of Product they want to create from the Drop down. The User will be able to select the Values from the Drop down.</p>
+<p><strong>LOT Control</strong> The User can select the type of lot they want to allocate to the product if the product is under LOT Control. If not LOT controlled then NOT USED can be selected here.This detail cannot be changed through edit Product.</p>
+<p><strong>Is Template </strong>The User can click on the same if the Product being created is a Template, Meaning, The User can click on the same while creating a Product and the Image section , Node details and Listing cannot be performed for a Is Template Product. This is a sample of a Product to be created and not an actual Product. The User can create and save this Template and the same can be attached in the Product Catalog of which the Template is attached to, so that when the same Catalog is selected next time on Product creation, the details of the template will be already prefilled based on the template attached to this catalog and the User does not have to go through the hassle of adding all the details for similar Products.</p>
+<figure class="image image_resized" style="width:100%;"><img src="https://lh5.googleusercontent.com/_K3X8snDjVM_T5weVC6j3P0bg62G9_9Uadgl6-cF0AfCE4vCHSLgzcqOIx-wbHN3RIbASx-IaJFD4pi2GWuXvowYYP0sI5u6YP6J1bJQy_ui2jegm64HsUr2K-vGOJxqskgbfngi4596j74-tfZgpSs"></figure>
+<p><strong>Saleable </strong>The User can click on the same if the Product can be sold. In the scenario where few products can be created as packing materials or for store use, which are not saleable. Only if this flag is clicked, then the Product will be visible in the POS and other transactional modules like stock in and Stock Out.</p>
+<p><strong>Costing Allowed </strong>The User will be able to click on the Product if the Product can be considered under Costing. If this flag is enabled then the product costing will be shown in modules like CostList and other cost involving modules and calculations.</p>
+<p><strong>EOSS Flag&nbsp;</strong> The End Of Season Sale flag can be enabled based on the Product if necessary.</p>
+<p><strong>Inventory Handling </strong>This flag can be enabled if the Product can be included in all the Inventory related modules and operations that are being Performed.</p>
+<p><i><strong>Product Attribute Details</strong>&nbsp;</i></p>
+<figure class="image image_resized" style="width:100%;"><img src="https://lh4.googleusercontent.com/2WxoXOVkrhfrLJTRL1g7-vl0E_oqPiyAPfnZQMWNU3WyOpMT-PA8VSjXuWiqsVRM7k1SwlP4sTnJt-jj65aFXKdOw-CqIqylfDsmD-FPQ1Z2svpsapqy0ZKmOztZNOQ3Vc3RBvuPj1S7wFPRKwyHSlk"></figure>
+<p>All the below attributes will be shown based on the selected catalog.</p>
+<p>The below drop downs will load the details available in the Common Master and show in the drop down so that the same attributes can be attached to the Product being created.</p>
+<p>The Attributes are as below</p>
+<ul>
+  <li>Product Brand</li>
+  <li>Product Segment</li>
+  <li>Product Category&nbsp;</li>
+  <li>Product Sub Category</li>
+  <li>Product Class</li>
+  <li>Season</li>
+  <li>Department</li>
+  <li>Procurement Group</li>
+  <li>Price Point</li>
+  <li>Product Sub Class</li>
+</ul>
+<p>Note : Based on the selections on Brand and Product Sub-Category selected here, the Vendor drop down will show the vendors available for the specific Brand and Sub-Category.</p>
+<p><strong>Item Condition </strong>Here the User can mention the condition of the Product, if New or Refurbished or Old.</p>
+<p><strong>EAN/UAN Number </strong>This is the same as a Product Alias. The User can enter a Unique EAN number for the Product to be created.</p>
+<p><strong>Product Dimensions</strong></p>
+<figure class="image image_resized" style="width:100%;"><img src="https://lh4.googleusercontent.com/_ctc4X7CL0vkcjGiA5oGFVSoWAlt3mOH9VWvp3rCtL4Q0TeoTndH5znEKcThoeZc5hXwFkNLdUBFIJoEObQG-stNwbJ0PdN7EUrq1aFKa9gPH2-LgfMB7uecELj-Ys_t3rKrSt902t8Nsp-qxTbhyd0"></figure>
+<p><strong>UOM </strong>This drop down will show values created under UOM in common Master. There is a relationshiop between this UOM drop down and the “UOM set” drop down below and also the “Sales Price UOM” and “Sales AUOM” drop downs below <strong>Price details.</strong></p>
+<p>The UOM value selected in the UOM drop down will be considered as the BASE UOM in the UOM conversion module, from where all the UOM sets which has the same Base UOM as the UOM drop down selected above will be shown in the “UOM set” drop down.</p>
+<p>Eg The UOM is selected as ‘Piece’ and in the UOM conversion module, 3 uom sets are created as of below</p>
+<figure class="table" style="float:left;width:468pt;">
+  <table style="border-bottom:none;border-left:none;border-right:none;border-top:none;">
+    <tbody>
+      <tr>
+        <td style="border-bottom:1pt solid #000000;border-left:1pt solid #000000;border-right:1pt solid #000000;border-top:1pt solid #000000;padding:5pt;vertical-align:top;">UOM Set</td>
+        <td style="border-bottom:1pt solid #000000;border-left:1pt solid #000000;border-right:1pt solid #000000;border-top:1pt solid #000000;padding:5pt;vertical-align:top;">Base UOM</td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1pt solid #000000;border-left:1pt solid #000000;border-right:1pt solid #000000;border-top:1pt solid #000000;padding:5pt;vertical-align:top;">UOM set 1</td>
+        <td style="border-bottom:1pt solid #000000;border-left:1pt solid #000000;border-right:1pt solid #000000;border-top:1pt solid #000000;padding:5pt;vertical-align:top;">Piece</td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1pt solid #000000;border-left:1pt solid #000000;border-right:1pt solid #000000;border-top:1pt solid #000000;padding:5pt;vertical-align:top;">UOM set 2</td>
+        <td style="border-bottom:1pt solid #000000;border-left:1pt solid #000000;border-right:1pt solid #000000;border-top:1pt solid #000000;padding:5pt;vertical-align:top;">Bag</td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1pt solid #000000;border-left:1pt solid #000000;border-right:1pt solid #000000;border-top:1pt solid #000000;padding:5pt;vertical-align:top;">UOM set 3</td>
+        <td style="border-bottom:1pt solid #000000;border-left:1pt solid #000000;border-right:1pt solid #000000;border-top:1pt solid #000000;padding:5pt;vertical-align:top;">Piece</td>
+      </tr>
+    </tbody>
+  </table>
+</figure>
+<p>Then the UOM set 1 and UOM set 3 will be shown in the UOM set drop down.</p>
+<p><strong>Item Package Quantity </strong>This is a free field where the User can enter the numerical of the item by which the Product will be available based on the above UOM selected.</p>
+<p>For eg - 2 pieces, here “2” numerical can be entered here.</p>
+<p><strong>L*W*H </strong>Here the Length, width and the height of the product can be entered in seperate free fields.</p>
+<p><strong>Volume </strong>Here the User can enter the volume of the product being created.</p>
+<p><strong>Package Content </strong>The User can enter the package content in numeics of the product being created.</p>
+<p><strong>Use Alternative UOM </strong>This is a check box where the User can check, if the Product can have an alternative UOM, if this check box is Clicked then the UOM set drop down will be enabled.</p>
+<p><strong>UOM set </strong>If the above Use Alternative UOM is selected, this drop down will be enabled and the UOM set values from UOM Conversion will be shown as values, based on the UOM selected.(As explained in the UOM section)</p>
+<p><strong>Quantity Decimals </strong>This is a drop down where if the Product can be sold in decimals, eg - in 2.78 meters, then the same can be enabled here, this affects the POS and other Transactional modules.</p>
+<p><strong>Gross weight </strong>Here the User will be able to enter the gross weight of the product.</p>
+<p><strong>Net weight </strong>Here the User will be able to enter the net weight of the Product, where the net weight should be lesser than the gross weight.</p>
+<p><strong>Product Expiry and warranty Details</strong></p>
+<figure class="image image_resized" style="width:100%;"><img src="https://lh4.googleusercontent.com/Dc3Gi1He2CBaNg4Qwqlhr1s97RACNmOsiHr8KxQmXTKFFpZCy70CB3udlXAq2lY4d7Qy_kSnUO1lT9_8LU-eIZIBUcP-nRRIPNGANaMeF7EOBu4SqTEJNObaJnxv42O987kNgWq6cSb6XBPLLGBuREA"></figure>
+<p><strong>Warranty Period UOM </strong>If the product is under expiry the User can select a period say like Year, Month or a week.</p>
+<p><strong>Warranty Period </strong>The User can enter a numerical which is related to the Warranty period UOM.&nbsp;</p>
+<p><strong>Vendor </strong>This is a drop down where the User will be able to select the Vendor that can be allocated for the Product. This Vendor selection will be based on the Brand and Product Sub-Category selected in the Product Attribute section.</p>
+<p><strong>Warranty Type </strong>If warranty is available for the Product, then the User can select the warranty type available for the Product if Manufacturer or seller or Market Place.</p>
+<p><strong>HSN Code </strong>Here the User will be able to select the HSN code for the Product, which populates data from Common Master.</p>
+<p><strong>Returnable, Return Window UOM and Return Window </strong>These 3 columns are connected, if the Product is returnable, then the User needs to click on the returnable check Box.&nbsp; Once the check Box is clicked the return Window UOM will be enabled and the User can select the UOM of the Return,within Day, month, week and Year, Once this drop down value is selected, then the Return window free field will be opened for the User to enter the numeric of uom of the return thats allowed.</p>
+<p><strong>Country Of Origin </strong>This is a Drop down where the User will be able to select the country of origin if applicable</p>
+<p><strong>Consignment </strong>This is a check box where the User can click on the check box if the Product is a consignment Product. If the same is clicked and enabled, then the Vendor drop down will be made Mandatory.</p>
+<p><strong>Price Details</strong></p>
+<figure class="image image_resized" style="width:100%;"><img src="https://lh5.googleusercontent.com/4YjKvgJchxkcAxDS-WfBct0i-Q1bHuYx1yIRYhzg_sKHZ6YEMHtRxMVBg7XOFmTdNkanrUMWf1IEnJuQJPFNlNMX2OiQ8O_RWLYQ-iRczHFdrYLF6hX5_jSmwSOE5y4GRTfZoh7-L7oo-itX6kt-n5w"></figure>
+<p><strong>Sales Price </strong>Here the User can enter the Sales Price of the Product being created.The Sales Price should be more than Offer price. The same price will be displayed in modules like POS and other transactional modules.</p>
+<p><strong>Offer Price </strong>Here the Offer price can be entered for the Product. The Offer Price should be lesser than the Sales Price.The same price will be displayed in modules like POS and other transactional modules.</p>
+<p><strong>Cost Price </strong>The Cost Price of the Product can be entered here.The same price will be displayed in modules like POS and other transactional modules.</p>
+<p><strong>Buffer Stock </strong>The Buffer Stock of the Product Can be entered in this free field.</p>
+<p><strong>Sales Price Quantity </strong>The Sales Price quantity can be entered in this free field. Eg 2 pieces of this product will be $4.</p>
+<p><strong>Sales Price UOM </strong>The sales Price UOM will be the same as the UOM selected, the User can select the same from the drop down, which will be the value from the UOM Conversion and UOM selected above. This field will be enabled only when the UOM set value is selected. Based on the Logic mentioned in UOM this drop down value can be selected.</p>
+<p><strong>Sales Auom </strong>Here the User can select the AUOM as per the logic mentioned above in the UOM section.</p>
+<p><strong>Sales Price AUOM </strong>The sales Price for AUOM will be mentioned here, this will be the sales price for the selected AUOM of this Product.</p>
+<p><strong>Is Multi Pricing Allowed </strong>If this flag is selected, this product will have multi pricings. If the same is selected, then the No. Of prices to show column will be enabled.</p>
+<p><strong>No. Of Prices to show </strong>This is a space where the User will be able to enter the number of prices that will be displayed for the product.</p>
+<p><strong>Currency </strong>Here the User will be able to enter the Currency of the Product.</p>
+<p><strong>Charge Model </strong>Here the User will be able to view the line level charge models defined in the charge definition module. If charges are applicable, then the same can be attached to the Product through this drop down</p>
+<p><strong>Product Hierarchy Details</strong></p>
+<figure class="image image_resized" style="width:100%;"><img src="https://lh5.googleusercontent.com/uXr-gWD5wDBpn5RBXkqgkUWo0YSTzZRuQD4N23DsdhQ-cR3lDzlKtr5tEe65qtJwFQgIENV5ML5_qp4AaRU8dZXx4B0q3CXiLSZErRA6MkaRxGockc0GeYBAB3qB0YTiXwuKTFSuh6JvgCB-CJkAVNE"></figure>
+<p>Here all the Hierarchies available under Merchandise Hierarchy will be shown (ie)</p>
+<ul>
+  <li>Base Hierarchy</li>
+  <li>Hierarchy 1</li>
+  <li>Hierarchy 2</li>
+  <li>Hierarchy 3</li>
+  <li>Hierarchy 4</li>
+</ul>
+<p>All these Hierarchies will show the Values from Hierarchy creation created for each Hierarchy base, 1,2,3 and 4.(Refer Hierarchy Type and Hierarchy creation wiki for Hierarchy creation Process). Hierarchy is attached to a product as a filter or search criteria and can be used in Product search and filtering in modules like instore Catalog and Sell under POS Module.</p>
+<p><strong>If the Hierarchy is “Auto Create”</strong>, then the same will be disabled for selection.Since the Hierarchy will be pulled as the values selected under each product attribute selected under the Hierarchy type while creation of the Hierarchy type.</p>
+<p>When opened through the “Edit Product”, the product attribute values selected will be shown as the hierarchy values in non-editable mode.</p>
+<p><strong>If the Hierarchy is Not Auto create</strong>, then the details available under the Hierarchy from hierarchy creation will be shown as per the levels, so that the User can select the Hierarchy for this Product.There can be 10 levels of hierarchy levels for selection, if available in the Hierarchy creation will populate in the UI and will be available for selection.</p>
+<figure class="image image_resized" style="width:100%;"><img src="https://lh6.googleusercontent.com/tuyXMfLNnl4JaBWcViWRt9uip38sdrr1u7PSgEIDArwhxPszyYxAb88wWsacEWbd_dJ0o81Rfn4ARgduO8MqGm-eorIdEkr2jl_DbNEJdLc0zG3AxiWMY95XwvLcJ11R41sH9rRVa9k1RjBwFIIKP7I"></figure>
+<p><strong>Additional Attributes</strong></p>
+<figure class="image image_resized" style="width:100%;"><img src="https://lh4.googleusercontent.com/bbQjd9mZr-ePJ5Pjo8ejOna-COAVCBDAYqN8HwZnWTt1nkLoAVF6P7vlOSfyxy6KBB8dn_BuNWoErsrvfy8eVJ1Xqe5Daf49LSsuuACK3hhpImDohmiMjGsIButbvWKr9et7JhadazGW7QVIjs5ToXk"></figure>
+<p>If any additional attributes are available in the selected catalog, then the same will be available for selection or input here.</p>
+<p><strong>Add Products in Bundle</strong></p>
+<figure class="image image_resized" style="width:100%;"><img src="https://lh6.googleusercontent.com/XFPvbFkpcj_OHbGz7F4yvuemxnbWZEWJoY81UBamONC5G8BB5MkZCiuJQZc_3hVnjg8LUnnoG5-Gpaut5j0uPuDIQH0HfMpNU1Rdi2R1-IxDuHNJlQ0QOXzgW1d__0JY9_94oRFBzpZONvf0TbG7gjk"></figure>
+<p>This section will be available if the product is a Bundled product selected under Product Configuration..Below columns will be available to fill up.</p>
+<p><strong>Select Product Sku/Name/Scan EAN No </strong>The User can scan the EAN number or search for the product to be bundled. When a product is selected, the below details of the product from product Master will be displayed and is not editable.</p>
+<ul>
+  <li>UOM</li>
+  <li>QTY</li>
+  <li>Sales price</li>
+  <li>Offer Price</li>
+  <li>Cost Price</li>
+</ul>
+<p>The User can click on the “Add option” to add the product to the grid and cannot be editable. The Qty can be edited with the help of the pencil icon available for each product. The User can delete the product added to the grid with the help of the delete icon available for each product added to the grid.The Products added will be saved to the grid with the above details.</p>
+<p>The <strong>total </strong>of all the products will be shown at the total for all the above columns.</p>
+<p>The Unified <strong>Bundle Price </strong>Can be entered in this column The details like sales price,Offer price and Cost Price can be entered. The same price details validations will be applicable here.</p>
+<p><strong>Product Description</strong></p>
+<p>Here the description of the product can be entered. The details of the entire Product can be mentioned in this section of the Product Master Module.The count of the characters entered in the Description box will be shown in the right top of the description box as Character count / (slash) the actual counts entered. The User can also edit the details entered with the tool bar available in the top of the description box.</p>
+<figure class="image image_resized" style="width:100%;"><img src="https://lh5.googleusercontent.com/PODzv4h84QESQeR6MwedLXWXeymshNv6Zp56Y7Hppg4JlEPz56jckdcvpOH33LGZzG-T9UTKG5qyI4YLCDLkV0yk8zY_L_VXP1PMEcoRRqruIasGieQgtz-YI05zV1w-2_B2DkVfLHl-vXt9yVvdpBo"></figure>
+<p><strong>Variant Details&nbsp;</strong></p>
+<figure class="image image_resized" style="width:100%;"><img src="https://lh6.googleusercontent.com/uNM7vch2cO3l21g47Z_lYe4UbLUir3_zUkq5LXIx1GZpweuf_s5cDTFECOI9sU9PbQSzmwdJQa0D78q9XuXrcl9O04xRvlgiT2hakwBhaPak-fvSI2-gmK3GABjtnkm44nLxnzJfFNbN48zlE6O1gU4"></figure>
+<p>This section will be if the Product is a parent and child(Variant Product) selected under Product Configuration.</p>
+<p>3 Dropdowns based on the X,Y,Z dimensions mentioned in the product Catalog will be shown , the User can Multiselect the required variant dimension values and click on create so that the combinations of selected values will be displayed in a below grid with below details.</p>
+<ul>
+  <li><strong>Variant code</strong> as per mentioned combination in the product Catalog selected</li>
+  <li><strong>X,Y,Z Dimension</strong> values selected above with the proper code combination.</li>
+  <li><strong>Dimensions and Weight details This detail will be mentioned based on the parent details provided above in a single colum with (/) in between.</strong></li>
+  <li><strong>EAN Number</strong> to view and edit the detail</li>
+  <li><strong>Sales Price of the parent</strong></li>
+  <li><strong>Offer Price</strong> of the Parent</li>
+  <li><strong>Cost Price</strong> of the Parent</li>
+  <li>UOM/AUOM Available for the Product</li>
+  <li><strong>Active/Inactive The User will be able to activate and inactivate the specific variant with the help of the toggle button.</strong></li>
+</ul>
+<p><strong>Edit Variant</strong></p>
+<figure class="image image_resized" style="width:100%;"><img src="https://lh5.googleusercontent.com/bkVJTjXntUj1P7UaV--2hO6pYVIOwmlw9QoX9_GNK3SrO69YKzbPrRWThqSuNumc6DkyyUdRzQ2SizwXI1-MudBqq1AwMqgkU74OjweGecIvwq57duHn8iX71RUJReFQQm-zNUfwOlmtpE6-NDjxs68"></figure>
+<p>The User will be able to edit the variant with the help of this button. The User can click on the pencil Icon and edit each line entry.</p>
+<p><strong>Edit Dimensions </strong>When the User clicks on the Dimensions column, a pop up will be opened, where the User will be able to edit the dimension details.</p>
+<figure class="image image_resized" style="width:100%;"><img src="https://lh6.googleusercontent.com/kMzO_dR226KtV_06NVLnT9skryOwUyUqv9kwjnzBECHBnMhSjciAd9YPOL9PWVAkhbewoRTo5meZEycujNA8oOjjlgbrkzCONmvonQq6NA6yMBW4R_KB9Vii4hA5JFUFxUKxhaZnSHHFUYtlmRLV7xQ"></figure>
+<p>The User can change the detail and click on YES to close the pop up.</p>
+<p><strong>Copy the above dimensions values to other SKUs which are having same </strong>is an option where the Use can select a variant dimension&nbsp; value and copy the same dimension details for all the other SKUs with the same variant dimension value.</p>
+<p><strong>The SKU EAN </strong>Can be entered in the EAN column for the specific SKU.</p>
+<p><strong>Price and UOM SKU details</strong></p>
+<figure class="image image_resized" style="width:100%;"><img src="https://lh5.googleusercontent.com/w-SxB6kiVr4XJ7gij4NjKQExvqrTVHTwx8FzZpj5eOFwNrOOmjh2x-UwatI4hqHu0fJ8Btyf3QapT7Ylh9mUy_h7sXuUu5NIFEcPfVkvYO4s7HO7mSRx1avc_kdJnllNvaxqL7PLWG1vSj2yyyX4FJs"></figure>
+<p>To edit any of the below details the User can click on any of the below said columns and a pop up will be displayed, where the details can be inserted and selected.</p>
+<ul>
+  <li><strong>Cost Price Free Numerical Field</strong></li>
+  <li><strong>Offer Price Free Numerical Field</strong></li>
+  <li><strong>Price Free Numerical Field</strong></li>
+  <li><strong>Sales Price QTY Free Numerical Field</strong></li>
+  <li><strong>Sales Price UOM Drop down from Common Master</strong></li>
+  <li><strong>Sales AUOM Drop down from Common Master</strong></li>
+  <li><strong>Sales Price for AUOM Free Numerical Field</strong></li>
+</ul>
+<p><strong>Copy to All Checkbox </strong>The User will be able to click on this check box and when clicked on the same, all the below SKUs will be displayed with the same price and UOM details of this specific SKU.</p>
+<p><strong>Product Image and Video&nbsp;</strong></p>
+<figure class="image image_resized" style="width:100%;"><img src="https://lh6.googleusercontent.com/XvG64kWfZqjDxlXd6c54E5mrdGXMdPXJXcGfoo3CMQ_WDklpYhBTwC0UyLSIIk43xKnjOUN4hgBe7Fim9gt07wMN_XG7itxqSus4BDmH4Nk2i1DOFLsVxIY0BC4Cf6zBSZBUA0-Fo71hItWnFb2Pj0s"></figure>
+<p><strong>Image </strong>Here the User will be able to upload or insert image link to add images to the image section. 10 images can be added to one product.Multiple images can be uploaded at once.Maximum 10 pictures per variant, size between 500X500 and 762X1100 px, maximum file size per image = 1MB, and image file types permitted : JPG/JPEG,PNG. Users can add either image or URL for the product. If some images are added and would like to add the URL then first remove the images and try to add the URL, else the URL button will be in disable mode till the removal of Images. This is a Mandatory Column.</p>
+<p>InCase of Creating <strong>Variants </strong>The User can select on a drop down(Image Applicable at Dimension</p>
+<p>) where the User can mention on which dimension basis the products will be uploaded.When clicked on the same, the User will be able view the image placeholder based on the count of variants with the dimensions mentioned above.</p>
+<figure class="image image_resized" style="width:99.69%;"><img src="https://lh5.googleusercontent.com/uJYTHSmm2p9HJFasQ_1hvmXGXjyegSNSxOyOwFkGqYMfy7g0bAL8EenMWIpFmF1FHeXL1M0YgrGMff1fKSZdcPKq8vahHOR6bWbQYwTrRkoP9TT_48XA0lqKsxbmBwlgxKtbXa20RrRBFlW-wLj70n8"></figure>
+<p><strong>Video </strong>The User can Copy the Video URL below to upload the Video.Can add the 3 video URL of the Product.</p>
+<p>The User can click on the plus Icon to add another image upload placeholder and the minus sign to delete an image upload placeholder.</p>
+<p>For Vides the User can click on the Add more option to add a video placeholder and to delete the User can click on the delete icon available in the video upload section.</p>
+<p><strong>Customer Demographics</strong></p>
+<figure class="image image_resized" style="width:100%;"><img src="https://lh6.googleusercontent.com/JRRmxbXjEEPHYGAKTcrdT6CshjxVZRcG6yYtH2BDsNrR5YScXR9OQ9x-jlxVDXlM8bG1tNEossjgpK3KpW5t-PnhZLBrv3LWFx6qhFRKFAsFRDDa6Mv_ymKEkbb82gG8VYQ6F8N6uwLZyzx4j2OOytc"></figure>
+<p><strong>Drop ship </strong>Here in case the product can be drop shipped, then the same check box can be clicked on.</p>
+<p><strong>Not to Print in Bill </strong>If the Product is not needed to be printed in bill, then the same check box can be selected.</p>
+<p><strong>Digital </strong>If the product is a digital product, then the same check box can be clicked on.</p>
+<p><strong>Is Hazardous </strong>If the Product is a Hazardous product then the same checkbox can be clicked.</p>
+<p><strong>Is Essential</strong> If the Product is an Essential product then the same checkbox can be clicked.</p>
+<p>&nbsp;The below dropdowns will show the values from common Master, in case the same is applicable, the User will be able to select the values from the respective drop downs.</p>
+<ul>
+  <li>Target Customer Segment</li>
+  <li>Nationality</li>
+  <li>Ethnicity</li>
+  <li>Target Customer Affordability Range</li>
+  <li>Occupation</li>
+</ul>
+<p><strong>Age Group </strong>Age Group values will be shown from the age group definition module, then the User will be able to select a value for the same.</p>
+<p><strong>Gender </strong>The gender can be selected, if the Product will be applicable only to a specific gender, this is for easy filtration and search processes in other modules.</p>
+<p><strong>Last Receipt Date </strong>Can be selected for this Product with this date selection column.</p>
+<p><strong>Common Tags </strong>The Common Tags from the Tag master will be shown here and the User can attach the Tags here for the Product.</p>
+<p><strong>My Tags </strong>Here the User can enter any tags applicable for the product and click on “Space” button to create the tag, the same tag will be attached to the Product on creation.</p>
+<p><strong>Save</strong> button can be clicked to save this Product, then the product will be saved and will be visible in the list screen. In case any Mandatory field is not filled then the screen will mandate to enter the details before saving.</p>
+<p><strong>Discard </strong>can be clicked to discard the product being created, the entered details will be available in the&nbsp;</p>
+<p><strong>Product Replenishment Section</strong></p>
+<figure class="image image_resized" style="width:100%;"><img src="https://lh5.googleusercontent.com/CxopFuDp0YQiKZV0taOy_2LW1A_IDA7rnCtkztBQs8CREvDrs-UBzb4nJyPKwW3egmhi8kCBmQQoWbPmOmYH92-G7b1DEXlAqIDvipMpjereEUHSWHRIokboklPDrXOWTW0HRtXCFQ67eo8aQTNATSY"></figure>
+<p>When the product is saved, the below pop up will be shown, here the User can allocate inventory for each store available under the user based on User access rights and also the store will be available in the UI based on the brand mapping done for the store, if the selected product does not pass the brand mapping rule, then the stores allocated to that product only will be shown. When clicked on the above pop up as yes, then the below screen will be displayed and the Node details will be viewed.</p>
+<figure class="image image_resized" style="width:100%;"><img src="https://lh4.googleusercontent.com/9P1NcJ-aQuUiDmRl9PSpgSCGyn8tQRnVn-WxMymIgtJHZtwikyxx4OvRjaWM3XzkXCdY-xM8R2bq4nQ7t8JBZfseYNdr2CDObt4IWFAydx2Wn0EdgJqYNt67JnmKjMhahUoY-pcSj6fGm1dkSH6c7Xs"></figure>
+<p>The User can Multi Select the nodes and click on add button to view the inventory addition screen.</p>
+<figure class="image image_resized" style="width:100%;"><img src="https://lh4.googleusercontent.com/nuLHcHHoY7-Bx5i6QyuAHmTJiK5HdWmq125Ucv1EovzpgJ0MaGQppflEvZslmQzv_V74_zT6d1LK_uu8OhHJX4OOl6rMbjoy96wXSMtP1trXTUJ83nH1FwAZ0Ph4i7SI8k9srpQBJ8uwHEK2YmzDkJw"></figure>
+<p>A <strong>Search </strong>Box will appear in the left top of the screen where the User will be able to search the Nodes based on Code and Name.</p>
+<p>The User can Use the <strong>Product Details </strong>button to return to the product Details screen, which is available on the right side top of the screen.</p>
+<p><strong>Save/Discard </strong>The User can use the save button to save the details of the inventory and can User the Discard button to return to the List screen. When this details is saved, the Product Listing pop up will be displayed, the User can click on yes to continue with Product Listing. The User can click on add node option to add new nodes while creating.</p>
+<p>Below Details will be available based on the inventory addition to Node screen. Columns as per below</p>
+<p><strong>Nodes</strong> selected will be displayed with the Node codes here.(Standard Product)</p>
+<p><strong>Costing Method </strong>Here the Costing Methods for the Products pertaining to each node can be selected. When Standard Costing is selected, a record will be generated in the costlist module based on the inventory and price of the product mentioned in the Product price and inventory details.</p>
+<p><strong>Please Note</strong> : Standard Costing will always be at the Company Level.</p>
+<p><strong>Inventory Valuation </strong>Here the inventory valuation of the product for the Node can be selected.</p>
+<p><strong>Default Allocation Method </strong>Here the Default allocation method of the product for the Node can be selected.</p>
+<p><strong>Inventory </strong>The inventory can be entered here for the specific Product and Node. The Inventory cannot be lesser than the safety stock and ROP(Reorder Point)</p>
+<p><strong>Default Buffer Stock&nbsp; </strong>The Buffer stock for the store and the product can be entered here.</p>
+<p><strong>Safety Stock </strong>The Buffer stock for the store and the product can be entered here. The Safety should&nbsp; be lesser than the ROP in business scenarios. The screen will show validations based on the same.</p>
+<p><strong>ROP(Reorder Point) </strong>The Reorder Quantity for the store and the product can be entered here. The Reorder Quantity should be lesser than the Inventory in business scenarios. The screen will show validations based on the same.</p>
+<p><strong>ReOrder Quantity </strong>The Reorder Quantity for the store and the product can be entered here.</p>
+<p><strong>Inventory Total </strong>The inventory summary total of the specified node will be shown as a total below Inventory Line.</p>
+<p>The User can enter these details and save the data and the inventory similar to stock take/Stock in will be created for the store with this specific Product.</p>
+<p>When the same is saved, below pop up will be displayed to list the Product in MP available for the company. When clicked on yes, the listing screen will be opened.</p>
+<figure class="image image_resized" style="width:100%;"><img src="https://lh5.googleusercontent.com/6gyQILksfVsqnYkO7T5GW5OirksmdZVp32C7XA4CTyYELYNpCtBcYpb-9d7Cwo5tgMlSJokfyuglD-yC1tVqzdSV-9NoCZQILZnygWNKjmy2DP-GAdQ2s0eO5k_eUyOlYx_V8ahMaSbyXK-jT-802uk"></figure>
+<p><strong>Edit Inventory Details</strong></p>
+<figure class="image image_resized" style="width:100%;"><img src="https://lh4.googleusercontent.com/bxNUhk_GfPS3wJCObaUG1imJI9RhrIerGDYcBXqCB_b5RjDu1nyDwgnAQeTpMajTf-mTMdL_SNvVqXvIvy2lLnHDC4p9Jd8BR-LhzKDdjaIhaaYFWi-WIHAiZbhvBRqPbQUqpSOJW6To7bpaS0hspN4"></figure>
+<p>The columns and details in the edit screen will be similar to that of a create screen. A pencil icon will appear at the end of each line entry and the user can click on the same to edit the details of the specific line entry. When the edit is completed the Save button can be clicked and the details will get saved.</p>
+<p><strong>Allocated </strong>A non editable column will be shown where the allocated quantity of the product for the specific store will be displayed in the UI.</p>
+<p>The newly added nodes will be shown below in edit with “0” as values in all the sections.</p>
+<p><strong>Variant Product Replenishment details create</strong></p>
+<figure class="image image_resized" style="width:100%;"><img src="https://lh4.googleusercontent.com/epbzgJOBD4poNbB6CCLcGKaNXozXxLXNCS0CO2JzdcabC6e5x9pmINu7QqvMdigg9M_L880zp1o-LMGkhEMkmfbEhw6CWPzsVOSnO-yVRopy622fdxAbLHBPdMyflBg0A_heZsG-Qe7aSY-CKjE47_s"></figure>
+<p>When a Variant product is created and the Replenishment/Inventory details will look like above.</p>
+<p>A side bar will be shown where the User will be able to view the selected Nodes for updating the Inventory details.</p>
+<p>The User can click on each Node to update the inventory details for each node, when a node is updated with all these details, the User can click on the next node to update the inventory details, when clicked on the next detail, the UI will refresh and show with no details. The details of the previous node will be saved to the grid.</p>
+<p>The User can click on the add node to add or remove other node details which is near the search box.</p>
+<p><strong>Inventory Total </strong>The inventory summary total of the specified node will be shown as a total below Inventory Line.The Total will refresh when a node is changed.</p>
+<p><strong>Inventory Across stores </strong>The Total across all the stores will be shown in the left bottom of the screen.</p>
+<p>The User will be able to close the side bar with the help of the close pointer in the sidebar.</p>
+<p><strong>Variant Details Edit in Replenishment section</strong></p>
+<figure class="image image_resized" style="width:100%;"><img src="https://lh3.googleusercontent.com/D7flQJxandxWrtoYMBeHWNDTLdYHfQ660IHM7u3Hlnd-01bXWheRqu24_7pNQ49yTV0MtXLneSadnkgAyubQxl_BrxTDeu34h0xVMYRZWqyAkYTaoG7y5vNbDUJxyK4JPL-EEXDVcq9QZ8n6kx49xDg"></figure>
+<p>The edit screen in Product Details will look similar to the create screen as mentioned above.</p>
+<p>In addition to the same below will be available in the edit screen.</p>
+<p><strong>Allocated </strong>A non editable detail will be shown where the allocated quantity of the product for the specific store will be displayed in the UI below inventory details.</p>
+<p>Note: <strong>The Copy to All </strong>is a function in create for both Standard and Variant products both in create and edit screens, where when clicked on, the details entered in the specific space will be copied to all the other spaces in the Line entry.&nbsp;</p>
+<p><strong>Product Master Uploads</strong></p>
+<p>Here the User will be able to perform upload of products and details of the products he wants to create in bulk and does not to go through the hassle of&nbsp; adding huge amount of product data through single create. The Option is available in the List screen, when the plus button is clicked, an option to add products in bulk will be shown when the Plus button is expanded.</p>
+<figure class="image image_resized" style="width:100%;"><img src="https://lh3.googleusercontent.com/dJ7IsDxJ1Ydd5nZZyv7AtOwNSJkWxS6cZrgSyc-TRmgUkLCThtj40oVVvbzLh9eOaicl1un3UkXAFk0_5fiR43m9ohezlfEIR17bWE2FzQ9hktGBsHZkjBFV9mkKwpeQrLlD3WLm42P817IOk7qHy1s"></figure>
+<p>When the User clicks on the “Product Upload” option, then the below section opens up</p>
+<figure class="image image_resized" style="width:100%;"><img src="https://lh4.googleusercontent.com/vWNu4iAE5b4BQ0jGBMflgyhj0Fd4GKSQJNVMnr2nXL7laLyOv7mq_u7AJyzOspL6WMtLorj64rbL2XoKO7DFMRCN1fmYwgLNslGo2ekJLhtjyok7gWu1A9OmAptznkhlfh5vbJv90mhTSTPILudpbq0"></figure>
+<p>The screen will have 5 sections namely</p>
+<ul>
+  <li>Download Template</li>
+  <li>Upload New Products</li>
+  <li>Product Update</li>
+  <li>Download History</li>
+  <li>Upload History</li>
+</ul>
+<p><strong>Download Template</strong></p>
+<p>Here the User will be able to download a Template to create products in bulk by upload.</p>
+<p>Below are the Options available.</p>
+<p><strong>Product Catalog*</strong> Here the User can select a Product Catalog for which the Products to be created from the Drop down.</p>
+<p><strong>No Of products/Styles* </strong>Here the User can insert the number of Products of styles that are needed to be created.(maximum of 1000 Products per Upload)</p>
+<p><strong>No. Of Style Sku’s </strong>Here the User can insert the number of style Products to be created.</p>
+<p><strong>Select Channel </strong>If the Product is to be listed in a specific channel this drop down can be selected to be listed in a channel/</p>
+<p><strong>Select Channel Category </strong>Based on the above selected channel, the selected Category will be shown here and the User can select the category from this drop down.</p>
+<p><strong>Add Channel </strong>One more set of channel and category can be added if needed.</p>
+<p><strong>Download Template </strong>When the User clicks on this button, the template for above selected details will start getting downloaded. A message will be shown in the UI where a Job ID will be shown, the User can use the same job ID to find the downloaded template in the “Download History” section.</p>
+<figure class="image image_resized" style="width:100%;"><img src="https://lh5.googleusercontent.com/1qpobx3YYpfSkZRnmSNIxb8bcGow2A-OjM7zka4vbT48BDeqTE0EHANAiZYh4OtqFo1_lMAMkh2g0pkQWXVv3cSaANflEUBBW1rApL7X9yzV2sdRAayiF0GIZuvFdXZhgaOjG1odkHdOnNKzZcBwtf0"></figure>
+<p><strong>Upload New Products</strong></p>
+<figure class="image image_resized" style="width:100%;"><img src="https://lh4.googleusercontent.com/fBB_5OFmGLANxHCleunKs6j0coRaaeKfKSBfvlttnozQOGhwIpKJfMyQaQ_EZ4Iy1XI3Grivwblyfy0XH47xtQW7eh_uqtjX0g7OlVfhhA-6D02lihJwYIiAEo_db8l0Z7zYrLEMfgkpU4Qu1UqGh8E"></figure>
+<p>This is a section to upload new Products to the Product Master through Upload.</p>
+<p>Here the UI will have 2 Upload options, one will be to upload the Images for the Product Uploads.</p>
+<p>The Other option is to upload the downloaded Template with details added into it.</p>
+<p>There will be a note, above the Upload options to instruct the Do’s and Dont’s of the Upload.</p>
+<p><strong>Product Update</strong></p>
+<p>This is a section to upload update products to the Product Master .</p>
+<p>Here the UI will have 2 Upload options, one will be to upload the Images for the Product Uploads.</p>
+<p>The Other option is to upload the downloaded update Template with details added into it.</p>
+<p>There will be a note, above the Upload options to instruct the Do’s and Dont’s of the Upload.</p>
+<p><strong>Download History</strong></p>
+<figure class="image image_resized" style="width:100%;"><img src="https://lh5.googleusercontent.com/qonistvugOGDnfepaSh--ZH-uuVc1Gg9b4DdfYXCBLfaGehjUMe5-GzZS67WcEhtp_O5TvKtZARLjY6SpohZAKCxyXOCdxak4kqwzCqlfxBeMA76fRT6ikCd0dZWjsJxOD9i2LzamOl-ZZSW3S5ytPs"></figure>
+<p>In this screen, we will be able to download the new products and update(edit of already available product details) here. Below options will be available in this screen.</p>
+<p><strong>Search</strong> Here the User will be able to search based on JobID,User,Type,CatalogName etc.</p>
+<p><strong>From and To Dates</strong> Here the User can search the templates based on the dates entered in these columns.</p>
+<p>Based on above filters and search, the below list will show details.</p>
+<p><strong>Download Link </strong>Here the User can download the template when clicked on this download Link.</p>
+<p><strong>Upload History</strong></p>
+<p>In this screen, we will be able to download the new products and update(edit of already available product details) here. Below options will be available in this screen.</p>
+<p><strong>Search</strong> Here the User will be able to search based on JobID,User,Type,CatalogName etc.</p>
+<p><strong>From and To Dates</strong> Here the User can search the templates based on the dates entered in these columns.</p>
+<p>Based on above filters and search, the below list will show details.</p>
+<p><strong>Download Link </strong>Here the User can download the template when clicked on this download Link.</p>
+<figure class="image image_resized" style="width:100%;"><img src="https://lh5.googleusercontent.com/EcnksFNznpaLTNQdgrH2Kn3kA26wReZ_Cq0tp0SFiq5cUr36GBLhNZm1-PA7AGRknnEpMSf14YXS9v8PFBJhtp82pfITY8SOHqkeYeg-93MIXD9otmvxJPI06GHe4-FyTcBq-fzXElthuAVoqZshNg0"></figure>
+<p>The “<i>Clear</i>”<strong> </strong>button will clear all the filters and search details entered below on both the upload and download screens.</p>
+<p><strong>Process of uploading Products</strong></p>
+<p><strong>New Upload</strong></p>
+<p><strong>Note</strong></p>
+<p>When the Template is opened, it will have below sections&nbsp;</p>
+<ul>
+  <li>Instructions : The Instructions for the Template will be shown here.</li>
+</ul>
+<figure class="image image_resized" style="width:100%;"><img src="https://lh6.googleusercontent.com/WacrdJXUaZmdp2kvgMFsmQv7bapTX3qjJ2rQkcHtPw7UMbxzW9klvY5Y3E3_LZU3bwG7mN0i68bsWAjnp6zvSAAb01OCRsLVdUoJLhmT0Pj7b5KZJSmK7InoAPLbOkOFcfD90Dc34-66QamO52zBnYs"></figure>
+<ul>
+  <li>Multi-select Values : The Common tags will be available for the same the User can use this when creating a product.</li>
+</ul>
+<figure class="image image_resized" style="width:100%;"><img src="https://lh4.googleusercontent.com/O_Z04srQ0T8zGTE7EcfT6nMMvdugLrY0LyHO688si-mzfVdny6n1_eMCSqXhxhQcS1HQDHBH1eNJ6avUY4_Vz5d6rYP0MR5rFcv9mrZHGrnm5QZ6mxeeydwWvmjh0Q2qEZtZ6FPvLgTDkx5o2qNnn9Q"></figure>
+<ul>
+  <li>Product Style : Here as per the product catalog, all the columns will be available. The Mandatory columns will be highlighted with Red and the optional columns will be highlighted as orange.</li>
+</ul>
+<figure class="image image_resized" style="width:100%;"><img src="https://lh5.googleusercontent.com/GyA14XZ2EW3VLft8qpgKe5xWvco4I-YVdwuUxmH7qU1LCgT6mcvNQQ7xbk3UXi7FNQLTnLwcdFRLEeiFUGjEheNeY-9E8n2t-sOEqqg8gOPHfrO8P3hLs9dhJh5GyvNRexAtV-g0BxlsSjd7TStEbZg"></figure>
+<ul>
+  <li>Style : Here the User can add the variant product if available here. For this details to be uploaded, the product configuration in “Products_style column”</li>
+</ul>
+<figure class="image image_resized" style="width:100%;"><img src="https://lh3.googleusercontent.com/xNwg8L2y6-y6HACfF1Ss2Kudf17bXQ74jDcBIl2fqkgKPgwZkwBIQPt1UTYGSP-lGG4vSmTSqIy5Tfv0jt-7EjMb92KZtL1OD7g6jIUyC43-Qlc10QOBJVS_ayhYIQUwJb-4ve-yTMHOxyRt7QXig7E"></figure>
+<ul>
+  <li>Hierarchy : Here the User can enter the hierarchy details based on the products we need to upload.</li>
+</ul>
+<figure class="image image_resized" style="width:100%;"><img src="https://lh3.googleusercontent.com/Itjj9shK66FuIgv78i2PvM1TxupDlbYf7lIPW3hnVc-3OVEpWwSQuuKj4c-xCTjCPuvvjOkYbbM0O1RWbxTBBIwKjIVDpVMczaYkZNVeh9OHQ-S2LlPUeFOrVVAib87SJnT2Xs_tR6WGAxlZAy2HrdY"></figure>
+<p><i>Step One</i></p>
+<p>The User can download a new Template from the “Download Template” screen and the details of the new Products can be entered in this sheet.</p>
+<p><i>Step Two</i></p>
+<p>The User can upload the same sheet in the “New Upload Products” with the Template in one upload space and images in one upload space.</p>
+<p><i>Step Three&nbsp;</i></p>
+<p>The User will now have to redirect to the “Upload History screen”, here the user can view based on the job id.If some issues are available with the uploaded template the User can download the issue available sheet, then the user can alter and upload the sheet again to add the product.</p>
+<p><i>Step Four</i></p>
+<p>When the details are successfully uploaded, the specific line entry in the upload screen will be shown as completed in the status column.</p>
+<p>The issues and status will be displayed in the last 2 columns of the template once upload is completed. Those columns are Upload status - which will mention the upload statuses as Fai, if upload was not completed or Success if the specific line entry is uploaded. If the upload is successful, the specific Record will get uploaded and will be viewed in the product Master List UI.</p>
+<figure class="image image_resized" style="width:100%;"><img src="https://lh5.googleusercontent.com/KRGZ_YSloWSQeRM4filIR9ZydJ2017FR_fMe2kDOvRTRVu6erid7FAyUw6yXjeuHlicWbLq3v781AIROX2LI4NXq_vWcRIkBmt6UMBBTfZLKwqXBxKgl1wpAjs0ncoV1VfeFeytRMF8RhmxEj3X4Dhg"></figure>
+<p><strong>Update Product</strong></p>
+<figure class="image image_resized" style="width:100%;"><img src="https://lh3.googleusercontent.com/Zz7O470zsQv0Hl_t3wCD1RK2u1ZCJAsJpYCfLca7GTKmxCBa9X6zEIV7mTW5nYfJ817Tzfph3ak4d-a4lCrnPBtuQ2SyoJ2JSTSUgKM9R1L1tsbmSztjzGHtHTiQXo1MAC1nZ9KBKJ_60GJQF64XG3Y"></figure>
+<p>The User can export the product details using the filter options and the edit the product based on below</p>
+<figure class="image image_resized" style="width:100%;"><img src="https://lh3.googleusercontent.com/fiL34wkn86VOONdL7BYKYTHJ-TrkM9ebsM0S45hO9P4A1DybHZGKGSgkU93Az-Zhk1F2o0cKtUsp-RbPHLdm_ptr8XJGZUz3e9vThYSq7WW_Lc9JWIznJd5_kmJkSKS5RQlYVYkSj2_psFziONTsINs"></figure>
+<p>The below updates can be performed with ETP Unify.</p>
+<ul>
+  <li>Price Update</li>
+  <li>Stock Update</li>
+  <li>All fields Update.</li>
+</ul>
+<p>The details can be entered in the downloaded templates for update from the downloaded sheet from the “Download Sheet” screen.</p>
+<p>The User can enter the details and upload the same in the “Product Update” Screen and upload the edited details of the product. The upload will be successful or&nbsp; face error based on the details added. The User can follow up on this Upload in the Upload Template screen.</p>
+<p><strong>Marketplace Integration</strong></p>
+<p style="text-align:justify;">Over here, marketplace specific information can be input and saved per channel. This includes prices, lead time, planned listing and delisting dates and channel specific SKU codes. Pre-orders for products can also be set up by defining the availability dates.</p>
+<figure class="image image_resized" style="width:100%;"><img src="https://lh6.googleusercontent.com/rA9lziYUG9SXh2LSmHbzUPYZtTbBglidr1BIKQ-HM1bV7Zec_ub_ljYpAnAmo7DvzFMbUp1AI7_hXyvV--tmwtX6XB_jgj5G2ffPrP0sS6CFk0DywPl7hs31BM-4NfwVn3qWoTi32vLwqX51IxbzLjc"></figure>
+<figure class="image image_resized" style="width:100%;"><img src="https://lh4.googleusercontent.com/BbyOqfkGJrOM4tYWKCClfj6R032FjzcYwAMEQ7EDs4yPF3uRhnCH9-k39Og5Hj91JPwuFBAywn2eHAD6MHuApxFVlMAOQhE5HMq69EfUkyvNUrS5pdnaTrUW9lIamvqudAF8yJajQ5oCintYp2PO-OA"></figure>
+<p style="text-align:justify;"><strong>Product Marketplace Integration</strong> Here, User can see the list of Marketplace. Users need to select the Marketplace, based on the selection the Channel shops will be displayed.</p>
+<p style="text-align:justify;"><strong>Marketplace Category</strong> : Users need to attach the MP Category and based on the category the MP attributes will be displayed. User need to fill the attribute details and list the Product on the Marketplace.</p>
+<p style="text-align:justify;">Once the user marks the status as Ready to List, the product will be pushed to the channels using Batch Jobs</p>
+<p style="text-align:justify;">Offer Name, Offer Price and Offer From Date / To Date : If a User wants to give any offer for a Product he can mention the Offer name and Offer Price. User can also add the offer validity by adding Offer From Date and Time / Offer To Date and Time.</p>
+<p style="text-align:justify;"><strong>Lead Time To Ship</strong> : User can add lead time to ship for Products in Hrs. This will be considered as an SLA for the product and if the Order is received, the Product should be delivered within the mentioned time.</p>
+<p style="text-align:justify;"><strong>Base Price</strong>: User can also attach Sale price Marketplace wise.</p>
+<p style="text-align:justify;"><strong>Release Date</strong>: User can make the Product RTL and schedule the Product releasing date to specific Channel when Product has to be listed.</p>
+<p style="text-align:justify;"><strong>Delist Date</strong>: User can schedule delisting of the Product at specific Date and ETP Unify will delist it on mentioned dateUser can schedule delisting of the Product at specific Date and ETP Unify will delist it on mentioned date.</p>
+<p style="text-align:justify;"><strong>Availability Date</strong>: Availability date can be updated for Pre-order Product</p>
+<p style="text-align:justify;"><strong>Listing Date</strong>: Listing Date is received from the Marketplace once the Product is listed.</p>
+<p style="text-align:justify;"><strong>Marketplace Attribute</strong>: Marketplace Attributes vary from one Marketplace to another and are based on the selected category.</p>
+<p style="text-align:justify;"><strong>Product Listing Requirements For Marketplace</strong></p>
+<p style="text-align:justify;">&nbsp;</p>
+<p style="text-align:justify;"><strong>Blibli</strong></p>
+<ul>
+  <li>Image once assigned to the Product cannot be changed</li>
+  <li>Size and color once assigned to the Product cannot be changed</li>
+  <li>Store/Warehouse once assigned to the Product cannot be changed</li>
+  <li>Brand Assigned to the Product cannot be changed</li>
+  <li>New color or Size variant product cannot be added to already existing product.</li>
+  <li>While creating a variant product, the user has to assign all colors and all sizes selected.</li>
+  <li>Offer To and From date in Blibli is currently not supported in the Product creation, but user need to select in ETP Unify by default</li>
+</ul>
+<p><strong>Lazada</strong></p>
+<ul>
+  <li>Product item description should not have any HTML tags(such as YouTube link or 3rd party URL link)</li>
+</ul>
+<p><strong>Shopee</strong></p>
+<ul>
+  <li>"Offer To" and "From date" are currently not supported in the product creation API of Shopee, if you need to use ``Offer Price with Offer period then use the Promotion Function.</li>
+  <li>Product description should be added in plain text.</li>
+  <li>Video should be MP4 format, max 30 MB size duration should be 10s-60s</li>
+  <li>Product can't be saved with no shipping options selected</li>
+</ul>
+<p><strong>Shopify</strong></p>
+<ul>
+  <li>Once the options get created we can not update it</li>
+  <li>You can not delist single item from the style product in shopify, user has to delist all the products</li>
+</ul>
+<p><strong>Tokopedia</strong></p>
+<ul>
+  <li>We are removing spaces from SKU Code as it is not allowed in Tokopedia</li>
+</ul>
+<p><strong>Zalora</strong></p>
+<ul>
+  <li>In Product creation, size has to be selected for successful listing</li>
+  <li>"Offer To" and "From date" are currently not supported in product creation API</li>
+  <li>New products on sale during product creation are not allowed. Kindly remove the discount given on the Product</li>
+</ul>
+<p style="text-align:justify;"><strong>Magento</strong></p>
+<ul>
+  <li>For creating a Product on Magento User needs to create his own attributes and attribute set.</li>
+  <li>Additional default attributes with Global Attributes to be created for ETP Unify in Magento by Seller/ProjectTeam</li>
+  <li>All Product attributes from Product catalog will be created as Text Attributes in Magento.Only Style SKU attributes such as color, size will be created as Global and Dropdown type.</li>
+</ul>
+<p style="text-align:justify;"><strong><u>PRODUCTS CAN ALSO BE UPLOADED TO ETP Unify. FOR MORE INFORMATION, YOU CAN CLICK HERE TO VISIT THE PRODUCT UPLOAD SECTION</u></strong></p>

@@ -1,0 +1,59 @@
+<!--
+title: Rounding Off Rules
+description: 
+published: true
+date: 2023-07-27T19:16:22.972Z
+tags: 
+editor: ckeditor
+dateCreated: 2023-07-26T19:39:23.855Z
+-->
+
+<h1><strong>Rounding Off Rules</strong></h1>
+<p>The purpose of the rounding-off rules master is to round off the prices or other amounts automatically based on the rounding-off rule configured for the company. The rounding-off rule determines whether the number is rounded upwards, downwards, or to the nearest multiple. The rounding-off table defines how the number is rounded off within different ranges. Rounding off is used to express totals as a specific whole or decimal value. It can be used to even odd fractions for smaller sums or to create so-called psychological prices, such as $9.90.&nbsp;</p>
+<p><strong>Impact:&nbsp;</strong></p>
+<p><strong>&nbsp;</strong>The rounding-off rule will be used while creating pricelists and will also be configured in the retail configuration template (Round Off rule property is available in Configuration type -Store Front-&gt;General Settings) which will be applied in billing.</p>
+<figure class="image image_resized" style="width:688px;"><img src="https://lh6.googleusercontent.com/PIhnd-J4n_57viY11gC1EYxEJzTaNhQGL_No4SBLgG6OIkerzEdxbxVycp2D_jWTy24nM_8Mgkcft1TCee66N9HE394TZGmT5wQYho7p6piTGIYchYYAymGg5HhcO3mjV94AmJ8gX0OqeKaHMci0W7U"></figure>
+<p><strong>List Screen</strong></p>
+<p>The list screen of the rounding-off rules master will display the predefined rounding-off rules and the user can activate any one of the available rounding-off rules which can later be used while creating the pricelists and configuring in the retail configuration template.</p>
+<p>Whenever a new company is created, by default rounding-off rules will be available upon opening the rounding-off rule master, and by default ‘No Round Off’ rule will be activated for the company. Users can deactivate the existing rule and activate the required round-off rule.</p>
+<figure class="image image_resized" style="width:696px;"><img src="https://lh3.googleusercontent.com/u6bQk4DouQYaBBv6fJ0q57G_04HOlf-IC6zaSEd6lr7Vt2xW58NgOWTocdl2emlgGntwNoiB5320QB9LPRmySVWfX-pO1-tZbUiDiURP5tmfBd52gZAy0D2BWAh3tIMTI1XbgIlB7NMZkh5CjbO_16I"></figure>
+<p><strong>Rounding Off Rules and Examples:</strong></p>
+<p>The following are the rounding-off rules that will be available for activation.</p>
+<figure class="table" style="float:left;">
+  <table style="border-bottom:none;border-left:none;border-right:none;border-top:none;">
+    <tbody>
+      <tr>
+        <td style="border-bottom:1pt solid #000000;border-left:1pt solid #000000;border-right:1pt solid #000000;border-top:1pt solid #000000;padding:5pt;"><strong>Rounding Off Rule</strong></td>
+        <td style="border-bottom:1pt solid #000000;border-left:1pt solid #000000;border-right:1pt solid #000000;border-top:1pt solid #000000;padding:5pt;">
+          <p>The following rules will be available for activation</p>
+          <p><strong>A. No Round OFF</strong></p>
+          <p><strong>B. Rounding to Currency Default</strong></p>
+          <p><strong>C. Nearest Integer</strong></p>
+          <p><strong>D. Nearest Price with unit value 0</strong></p>
+          <p><strong>E. Nearest with unit value 5</strong></p>
+          <p><strong>F.Nearest with unit value 9</strong></p>
+          <p><strong>G.Round Up Nearest Multiple of 10</strong></p>
+          <p><strong>H.RoundDown Nearest Multiple 10</strong></p>
+          <p><strong>I.Round Up Nearest Multiple of 100</strong></p>
+          <p><strong>J.RoundDown Nearest Multiple 100</strong></p>
+          <p><strong>K.Round Up Nearest Multiple of 1000</strong></p>
+          <p><strong>L.RoundDown Nearest Multiple 1000</strong></p>
+          <p>E.g., If the Calculated Number is 15798.578</p>
+          <p>and If the CurrencyDefault is defined for 1 Decimal then the value will be:</p>
+          <p>A. No Round OFF - 15798.5</p>
+          <p>B. Rounding to Currency Default - 15798.6</p>
+          <p>C. Nearest Integer - 15787</p>
+          <p>D. Nearest Price with unit value 0 - 15790</p>
+          <p>E. Nearest with unit value 5 - 15785</p>
+          <p>F.Nearest with unit value 9 - 15789</p>
+          <p>G.Round Up Nearest Multiple of 10 - 15790</p>
+          <p>H.RoundDown Nearest Multiple 10 -15780</p>
+          <p>I.Round Up Nearest Multiple of 100 - 15800</p>
+          <p>J.RoundDown Nearest Multiple 100 - 15700</p>
+          <p>K.Round Up Nearest Multiple of 1000 - 16000</p>
+          <p>L.RoundDown Nearest Multiple 1000 - 15000</p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</figure>

@@ -1,0 +1,285 @@
+<!--
+title: Sales Return
+description: 
+published: true
+date: 2023-02-17T04:34:15.232Z
+tags: order
+editor: ckeditor
+dateCreated: 2023-02-07T09:01:25.769Z
+-->
+
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; The Sales Return function in Ordazzle allows users to create as well as process sales returns for any configured channel. Users can create their own sales return request here, or can also check and process returns initiated from the configured channels.</p>
+<figure class="image image_resized" style="width:100%;"><img src="https://lh4.googleusercontent.com/Ncf1daErH1ls_Lc9V0TFT87PnJdXO2k5N-6dA25Nad9pofp1KJnBWnGXb6L433PQRQSflYT6Q8SQpDMD0_4zbnO1yCzgvz_RvW7SuY2c62wCgGzcVTzjP-_qnJMLlVBx-_XtYuRQk_OFCrTneRz7qw"></figure>
+<h1><strong>Sales Return screen elements&nbsp;</strong></h1>
+<p>The order processing screen also consists of 3 sections.&nbsp;</p>
+<p>Sales Return Tickers</p>
+<figure class="image image_resized" style="width:624px;"><img src="https://lh3.googleusercontent.com/a27u0xv6VZV0G0CmXzR7Z829NpxV-AWrXHcKEzHVPT8UmKkkhv41TZADruIKbcclUiUqqrIihfQhuGIEDBdoNRH_bwWWxack66M2Qe8gnt5pwoYfJGmKB-xnuEo3_vs6nim_7AjdejO_ak6SG-SC5A"></figure>
+<p>The Sales Return Tickers are tabs available in the Sales Return screen to display the return orders in the logical groups based on status. The List consists of 9 tickers.</p>
+<p>&nbsp;Namely - All, New, Approved, InTransit, Received, QC Putaway, Sttl. Approved (Settlement Approved), Settled, Exceptions.&nbsp;</p>
+<p>The ‘ALL’ ticker displays orders of all the statuses.&nbsp;</p>
+<ul>
+  <li>New - Displays return orders just created manually or received from channels.</li>
+  <li>Approved - Return orders with the status as Approved</li>
+  <li>InTransit - Return orders with the status as Shipped</li>
+  <li>Received - Return orders with the status as Stock Received</li>
+  <li>QC Putaway - Return orders with the status as QC Putaway</li>
+  <li>Sttl. Approved - Return orders with the status as Settlement Approved</li>
+  <li>Settled - Return orders with the status as Settled</li>
+  <li>Exceptions - Return orders with the status as Rejected</li>
+  <li>Error - Error orders that have products which are not available in Ordazzle are displayed here.</li>
+</ul>
+<p>On clicking any ticker, the respective order list will populate.</p>
+<p>Every ticker also has a count on it. This denotes the no. of orders available in the ticker. (for that company)</p>
+<p>Order Actions&nbsp;</p>
+<figure class="image image_resized" style="width:100%;"><img src="https://lh3.googleusercontent.com/O6kN3OMDHN11KsijFIUxRM_zmwhaT8AB1CPCehu5M5vC0x2DS4nfx5-gKqCXt7udRpOE6e9MmhehkEKx6_ApX6qAyPs4ytDkR-_cwNfwR5QGjuxWw8h4eoPfFiqY3gI7v6CR8jOMlGAHxurrM6We_Q"></figure>
+<p>This section consists of action buttons that are required to process a return order in Ordazzle.&nbsp;</p>
+<p>Users need to select the order that they need to process, then click on the desired action button.</p>
+<p>Each button performs a different action on the return order.&nbsp;</p>
+<p>Bulk order processing &amp; partial order processing is not allowed for return orders. Although, while creating or receiving return orders, partial lines of the order or order qty are allowed.</p>
+<p>Not all action buttons will be available on the screen. Action buttons will appear as per status of selected order.</p>
+<p>The detailed understanding of Return Order Processing is provided in its section. The list of order actions is as below -</p>
+<ul>
+  <li>Approve - Users can accept return intimation &amp; start processing return</li>
+  <li>Reject - Users can refuse return intimation (in some cases, depending on the channel and their restrictions, the user may need to check this on the seller portal)</li>
+  <li>Arrange Shipment - Users can book return shipments using integrated carriers, or mark return shipments arranged by non integrated carriers. (Not required for MP logistics order)</li>
+  <li>To Receive - User can receive the returned stock to the appropriate inspection location</li>
+  <li>QC and Putaway - Users can perform quality check &amp; add its data here</li>
+  <li>Approve Refund/Replacement/Exchange - After QC, users can process refunds, replacements or exchanges as per the return type of the order.</li>
+  <li>Payment - Users need to perform an extra step to add the payment details of the refund transaction using this action.</li>
+</ul>
+<p>Sales Return List</p>
+<figure class="image image_resized" style="width:624px;"><img src="https://lh3.googleusercontent.com/UzhSu5Q7z60vbrhVfI2WA8SprMUX36mUwDvPXvRAN2SjT718cFkI87i6iZWq3-keOjoEUO389Xobki82LkgozzjqWoXWj81QEN47kALROpJcaOEfj97VrlNW_VvaNAfHRlPH-lTUL_USaSQQS23nSg"></figure>
+<p>Sales Return list is where you can find all the returns received from all Seller channels, as well as returns created by the user. The basic details of the orders are provided in the list.</p>
+<p>The columns available in the Sales Return list are -</p>
+<ul>
+  <li>RETURN ORDER - This is the Return number received from the channel. This value is always unique for a seller channel. Users can also click on this number to open the Summary screen of the order.</li>
+  <li>RETURN DATE - This is the date-time at which Return request was placed on the channel or generated in Ordazzle. The value will be shown in the user's browser timezone.</li>
+  <li>ORDER# - This shows the order number of the original order against which return is generated.</li>
+  <li>NODE - This shows the Node name to which the order is allocated for Return receiving. The values will not be available for New orders.</li>
+  <li>CHANNEL/SHOP - This is the name of the seller channel defined in Ordazzle from where the order is received.</li>
+  <li>RETURN QTY - This shows the number of products available in the Return order. Each product can have multiple units returned.</li>
+  <li>STATUS - This displays the status of the return order. The different statuses are -</li>
+</ul>
+<p>New - When Return intimation is received in the Ordazzle or created in Ordazzle.</p>
+<p>Approved - When return intimation is accepted by the user will be processed further.</p>
+<p>Rejected - When return intimation is rejected by the user.</p>
+<p>Shipped - When the reverse logistics is arranged by the user for seller logistics return orders.&nbsp;</p>
+<p>Stock Received - When the Return order items are received at the selected warehouse.&nbsp;</p>
+<p>QC Putaway - When return stock is received &amp; quality check is done on the returned items.</p>
+<p>Settlement Approved - When the refund amount is confirmed for the return order with the type Refund.</p>
+<p>Settled - When the return of refund is processed successfully based on the type of return.</p>
+<p>Each order row also has a checkbox at the left side by which the order can be selected for processing.</p>
+<p>At the right side of the row has the down arrow using which the user can expand the return order to see the expanded order view.</p>
+<h1><strong>Order Expanded View&nbsp;</strong></h1>
+<p>When the user clicks on the down arrow in the return order list the order opens in an expanded view.</p>
+<figure class="image image_resized" style="width:100%;"><img src="https://lh6.googleusercontent.com/KoX0V0JdWSa3ZiDevi5MoEndK1r5LS40klYskVIAVzJHbjeqYRwTqXHL1cOBB15oS2h3o8m_V1LlMan3IPx-J3wDazd253DhxmwChWPfdkXNQnzCewMMSjgv_j9L10ydR7gwkJ_n3YzJx8-ha2ltyQ"></figure>
+<p>Order expanded view shows information -</p>
+<ul>
+  <li>Tags - User can apply any tag to search the return orders by tag. Applied tags can be seen &amp; removed from here.</li>
+  <li>Delivery Date - It shows the delivery date of the original order.</li>
+  <li>Order Total - This shows the return amount of the order as received from the channel. In case the return is generated in the Ordazzle then this shows the sum of Line Net total of the original order that is returning here. Any header or line charges (exclusive) will not be considered in return.</li>
+  <li>Logistics By - This display if the return logistics is by Seller or MP. The value is only displayed if provided by Marketplace during return intimation.</li>
+  <li>Product Image - This shows the default image of the product from ordazzle. For variants if separate image/s are available the same will be displayed here.</li>
+  <li>Product Name - Name of the product as available in ordazzle is displayed here.</li>
+  <li>SKU Code - SKU code of the product as received in order is displayed here.</li>
+  <li>Unit - This displays the line quantity of the return order item.</li>
+  <li>Shipping Fee - If any shipping fee is charged for return then the same will be displayed here.</li>
+  <li>Return Amount (Line) - This displayed the Line Return amount for the order line.</li>
+  <li>Return Status Progression - This displays the progression of the Return order line status. All the past statuses of the order line are displayed here in the sequence. Along with status it also shows date &amp; time at which the status was updated for the line.</li>
+</ul>
+<h1><strong>Return Order Processing</strong></h1>
+<p>Following are the actions that user can perform on Return Orders in Ordazzle -</p>
+<h2><strong>Approve Return</strong></h2>
+<p>By this user can accept return intimation &amp; start processing return. Users can select any 1 return order with status New &amp; click on the Approve button. This will open the following window.</p>
+<figure class="image image_resized" style="width:100%;"><img src="https://lh3.googleusercontent.com/xfzX0ZQB4eDxaQAzsSjhDDMoDhoTn7Dm_t8DLu79ibNbMdAzhR6clufCHvUO7ngN2LSbmzuTyzLmHR2Rap41TGD3qi2dYWxjTDDMuGZHIFevtJGCVupuGaXn_sCAIShPlJdOHXhudRpOTo48f95ehQ"></figure>
+<p>The Approve window contains&nbsp;</p>
+<ul>
+  <li>Return Order#</li>
+  <li>return product details that has : Return product code, name &amp; image of the product from original order that buyer wants to return</li>
+  <li>Return Qty - Qty of the product that is requested for return</li>
+  <li>Reason - Reason selected by buyer for return. Seller can check this &amp; decide for return processing</li>
+  <li>Return Type - This is the type by which the seller can compensate the buyer for the return. The options can be Refund (where seller can refund full or partial amount of the original item), Replacement (where seller can send new unit/s of the same product against return), Exchange (where seller can send different product against the return. Ex- Different color or size).The value can be preselected if coming from channel or it can be selected here if some unknown value (Other) coming from channel.</li>
+  <li>Delivery Date - This displays the date of original order delivery to verify against the return window limit, if any as per seller’s policy.</li>
+  <li>Order Total - This displays total or return order. Same value is applicable for refund for the Return &amp; Refund type.</li>
+  <li>Logistics By - User can select if the reverse logistics will be arranged by seller or marketplace. Mostly if the original order is having logistics arranged by marketplace then the same applies for return as well.</li>
+  <li>Reason &amp; Remark - Seller can select reason from predefined values &amp; remark for his/her return acceptance.</li>
+  <li>Receiving Node - Use can select a fulfillment node where the seller can receive the return product. The system will show all fulfillment nodes of the channel to select from.</li>
+</ul>
+<p>After entering the above data user click on save button. This will change the order status to Approved. If there is any marketplace call available then the system will also update the return acceptance at the marketplace.</p>
+<h2><strong>Reject Return</strong></h2>
+<p>Users can refuse return intimation requested by buyer (Note - make sure if marketplace allows to reject the return &amp; update at marketplace as well else return may get auto accepted after some period). Users can select any 1 return order with status New &amp; click on the Approve button. This will open the following window.</p>
+<figure class="image image_resized" style="width:100%;"><img src="https://lh4.googleusercontent.com/ZA5mSvOlkacnPRAHg8D7BF1AwGwHJ-m1_WvnCGDzmG572B05CtHB09fF5xeoa7tTw64Y2qGDgBqEcCKZbwPvEQy4U9Z2RPMZZdalAj99zN0KOaxBNw0bHVXtbRGjiA6UocReszmQ1zU-H-WZ0V_qLQ"></figure>
+<ul>
+  <li>The Reject window contains all the fields almost similar to the Approve Return window, except it does not have the ‘Receiving Node’ field as return will never get shipped back if reducing the intimation. Also the reasons for the ‘Reject Return’ type will be displayed in this screen for seller’s selection.</li>
+  <li>After entering the above data user click on save button. This will change the order status to Rejected. Seller should also update reject return status at Seller channel incase API for Reject return not available. The respective message will be displayed in ordazzle’s popup as per channels.</li>
+</ul>
+<h2><strong>Arrange Shipment</strong></h2>
+<p>Now for orders having logistics by seller, users can book return shipment using integrated carriers or mark return shipment arranged by non integrated carrier us. (Not required for MP logistics order). Users can select any Approved order&nbsp; by clicking on the ‘Arrange Shipment’ button.</p>
+<figure class="image image_resized" style="width:100%;"><img src="https://lh5.googleusercontent.com/RBQXarx1XogiiZGHpto3aJ0r8y3WPk5SVdxMsEzRME5c7JLT4Tg__A9uPu3rhyfNWtDMO8bUfMk9UKAtZHhHxzeGzfxURSViz0Osts4hngYFRsaCepa9vl6T__1GuTNJLLTGrWv5tuzX9n3QkKCsXg"></figure>
+<ul>
+  <li>Similar to the carrier selection in the order processing screen, users can select from integrated, non-integrated with manual AWB or List AWB carrier list. Carriers that provide return logistics will only be displayed in this list.</li>
+  <li>After selecting the integrated or non-integrated List AWB carrier user can add planned pickup date-time same it. The available tracking no will automatically populate for non-integrated with List AWB, while for integrated carriers it will get updated after successful shipment booking.</li>
+  <li>While for selecting non-integrated with manual AWB carrier users has to also enter the Tracking Number in the provided field before clicking on the save button.</li>
+  <li>After entering the above data user click on save button. This will change the order status to Shipped. For return with logistics by marketplace, this step is not required &amp; should be skipped.</li>
+</ul>
+<h2><strong>Receive Return Stock</strong></h2>
+<p>Users can receive the return stock on an appropriate inspection location using this action. For orders with status shipped or Approved, users can select the order &amp; click on ‘To Receive’ button. It will open the following window.</p>
+<figure class="image image_resized" style="width:70.49%;"><img src="https://lh5.googleusercontent.com/Va7wPyI2hITLpShRh_RLwPjVTw-xpp-x1GU1YVX_HaOIWE0AtiBR7lGCqxZZdFxKq6W9ck0p-d4809WUN-az_NkFDd-3sgFW43l5Om6Z_dWU3JizGhQ-IHchobxI1fA4rKqHtVpAtYLiY48TCYqIaw"></figure>
+<ul>
+  <li>Under Inspection Location - User can select any one of the Inspection location (Location Type = Inspection) of the receiving node at which the returned product will be received &amp; stocked.</li>
+  <li>Remark - Users can also add any remark here.</li>
+  <li>After entering the above data user click on save button. This will change the order status to Received.</li>
+</ul>
+<h2><strong>QC and Putaway</strong></h2>
+<p>Users can perform the quality check on the received return product &amp; add relevant data using this action. Users can select any Received order &amp; click on QC and Putaway button.The following window will open.</p>
+<figure class="image image_resized" style="width:100%;"><img src="https://lh3.googleusercontent.com/p3o1jb_qWPWQX9oAaOQlcLvZU2IHLxMUEtPju3B_0Q6VbgF0kohOj1U5gLX2Xo8eRp0ixcQSvM1Kyg3TCPrgE1pUp5Mgv_WsmJqnuCaxmFRaCefKjYa35NRnUGWOvWluQI1hvm-m8QzDDMJHuVelKA"></figure>
+<ul>
+  <li>Product section - It will show product identification details as Code, Name &amp; return Qty</li>
+  <li>QC Images &amp; Video - User can upload max 5 images &amp; 3 videos per returned product of the quality check performed on the returned stock.</li>
+  <li>QC Result - As per product’s condition, user can select as QC Pass (if product in good condition) or QC Fail (If product is not in good condition)</li>
+  <li>QC Reason - Based on QC Result selection relevant reason options will populate to select from.</li>
+  <li>Remark - User can also add any remark if required</li>
+  <li>Inventory location - User can select the location where the returned product will finally be stored. The QC Passed product can be stored in any of the approved locations so the same will be available to allocate to any new order. The QC Failed product can be stored in any rejected location so it will be separated from allocatable stock. Relevant locations based on selected QC Result will populate for selection</li>
+  <li>Batch/Lot/Serial No - If the returned product is lot controlled then its lot / serial no. can be entered here. If the reference of the original order is available then its original lot/serial no will be auto displayed here, else can be entered by the user.</li>
+</ul>
+<p>&nbsp;</p>
+<h2><strong>Approve Refund/Replacement/Exchange</strong></h2>
+<p>After QC users can process refund, replacement or exchange as per the selected return type of the order. Users can select any QC and Putaway order &amp; click on Approve Refund or Approve Replacement/Exchange button.</p>
+<figure class="image image_resized" style="width:70.08%;"><img src="https://lh4.googleusercontent.com/HfoO_2sMZfPdAqKVIDfPp5XLqFDwdEg9l4TZwzB2fI_KJPxjKPnY47AnYa6XgRmRPCOFTRpKonAKLLJug98TNkfR-mDDHn7OTRH-Jo4M4ow-cu_oOIoshrKA4-MBQK2sLbQ2nXCPz6uPoIJH4QPwOg"></figure>
+<ul>
+  <li>If the Return Type is Refund, then the screen will display the return amount &amp; Remark. Here users can confirm the return amount to refund to the buyer &amp; can enter any remarks if required.</li>
+</ul>
+<figure class="image image_resized" style="width:70.78%;"><img src="https://lh5.googleusercontent.com/MERf03c80pRzqLBlVkPy3qSpO-bR4GhvHBmnYDPIcAuEmeGs-Q0wuCQaFrnK_OVP1u7X0FwgGv7f5b_npY8iSuqEsbss9GOG9Wg5LsGb3KW6yZFIbyC_jvnhUg5NESHFfZ9bQaIKO_OO7UZD7bvZtw"></figure>
+<ul>
+  <li>If the Return Type is Replacement then the user can select the replacement order in the field, this should be the regular order from the order processing module that is being processed &amp; sent as replacement for the return. It will consist of the same seller channel &amp;&nbsp; product as the return order. Users can also add remarks here.</li>
+  <li>If the Return Type is Exchange then the user can select the exchange order in the field, this should be the regular order from the order processing module that is being processed &amp; sent as replacement for the return. It will consist of the same seller channel but different products from the return order. Users can also add remarks here.</li>
+  <li>After selecting the required data &amp; clicking on the Save button in above windows, order status will be saved to Settled for return type Replacement/Exchange and Settlement Approved for return type Refund.</li>
+</ul>
+<h2><strong>Payment</strong></h2>
+<p>Incase of refund, the user needs to perform an extra step to add the payment details of the refund transaction using this action. Users can click on any order in Settlement Approved status &amp; click on Payment action. It will open the following window.</p>
+<figure class="image image_resized" style="width:70.96%;"><img src="https://lh4.googleusercontent.com/0TyHiBYJyIiPmnxgGWDP4YVe9MbuLDq0EA4mIaFW2dDUG-5TFBXMlqiW7zPWLLYUzS1LELHUc4cNKCb2bRE4rtzdjGSYPziBjkek23EQYmsf9MnQrtgIRKPBNpFvwLBwDI1xIQV6YZFL1746ak77Tg"></figure>
+<ul>
+  <li>Return Amount - The return amount of the order will be displayed here for reference.</li>
+  <li>Payment Ref 1, Ref 2 &amp; Ref 3 - These are the Payment Reference fields for the Refund transactions performed by the seller. Users can add transaction ID, document no., token no. or any other reference value of the transaction here.</li>
+  <li>Payment Date - Users can add the date at which the refund transaction was done.</li>
+  <li>Remarks can also be added in this action window.</li>
+  <li>On click of save the entered transaction details will be saved &amp; order status will change to Settled.</li>
+</ul>
+<h1><strong>Return Summary View</strong></h1>
+<p>The summary view is the detailed view of the return order. This can be opened by clicking on the Return Order# in the row. The summary screen consists of the following data.</p>
+<figure class="image image_resized" style="width:100%;"><img src="https://lh4.googleusercontent.com/Yg2DG1kiaQdoAJwoGOtH8wtxsVJ7FXgvnZjsCzWtAsLGG5SybOWTX-8qL5BmXpkINDfQyi1c-GTwrCWtndChy2k3wkhvz7oYGRhQOTH1KtynntR2xjnlbAcKOtp4rcnP3zhiZViiY06VxUfOgCcUVw"></figure>
+<h2><strong>Return Order Summary</strong></h2>
+<p>This section contains all the header level details of the return order. You can find the following details in this section.</p>
+<ul>
+  <li>Return Order Number</li>
+  <li>Order Total (Return Total)</li>
+  <li>Delivery Date</li>
+  <li>Customer Details - It has Customer’s Name, Phone Number, EmailID, Shipping Address &amp; billing Address of the original order or as sent by channel.</li>
+</ul>
+<h2><strong>Status wise details</strong></h2>
+<p>This section shows the status wise details provided by the user or updated in the return order (Like Tracking No. received from Integrated carrier after arranging shipment).</p>
+<ul>
+  <li>The status wise details are displayed in the following sections.</li>
+  <li>Approve Return</li>
+  <li>Refund Return</li>
+  <li>Return Shipment</li>
+  <li>To Receive</li>
+  <li>QC and Putaway</li>
+  <li>Approve Refund</li>
+  <li>Approve Replacement/Exchange</li>
+  <li>Payment</li>
+</ul>
+<h1><strong>Other Functions in Return List</strong></h1>
+<h2><strong>Manual Return Creation</strong></h2>
+<ul>
+  <li>Users can create return intimation manually for the already delivered orders from Ordazzle. User to click on + button in the return list which will open the return creation screen.</li>
+</ul>
+<figure class="image image_resized" style="width:100%;"><img src="https://lh6.googleusercontent.com/dAJAm74t7bFR-EYYg6hycrz7zY9S2sdmJitNTi_JAv4VIyDZx1tjGBeAOS3W2zMomDXniedoha9vGnaUkG6e1_edgzKfN_IIdnUaFebEIg7L0d2IIXERWrRi9fiwtEVk7aIccKKjR8FT2bjAMHWjJg"></figure>
+<ul>
+  <li>It opens the order selection screen which will display all the previously delivered orders from ordazzle. Users can search here based on Order No, Product Code, Customer Name, Seller Channel.</li>
+  <li>Users can select any order from this list using the SELECT button. This will populate its data in the return creation screen.</li>
+</ul>
+<figure class="image image_resized" style="width:100%;"><img src="https://lh4.googleusercontent.com/dWlJngnrNY_0FcNq3wE1oniWQEsxTz5QWeqBhlas2TtVBn-V1DnKTQyQ0VCPmXZ7s0FcnI8JH87lGg3HlZ89wYRduZtKvG16ATmfMJs6rtHuHlLYwSuAI9ZA7mM91RK5A-hGzpYDrCz4GB9ulq_37w"></figure>
+<ul>
+  <li>Return creation screen will display the details of order as Order Total, Delivery Date, Customer Name, Delivery Address, Channel/Shop, Logistics By (of delivered order), Delivery Method (of delivered order).</li>
+  <li>Then it also has a product section that displays all the product lines available in delivered order. The product details as Name, Code, Image, Order Qty will be displayed here.</li>
+  <li>It also has a checkbox to select which of the order products the user wants to add in this return intimation. It can be further controlled at line quantity level using following fields</li>
+  <li>The quantity level fields available in the section are,<ul>
+      <li>Returned Qty - If this order product has already returned &amp; its return process is completed(settled) then its line Qty is displayed here.</li>
+      <li>Returned Intimation Qty - If this order product has already in return process but not settled then its line Qty is displayed here.</li>
+      <li>To Return Qty - This displays the final Qty that the user wants to add in this return intimation. This will by default show the value</li>
+    </ul>
+  </li>
+</ul>
+<p>= (Order Qty - Returned Qty - To Return Qty)</p>
+<ul>
+  <li>Users can reduce this To Return Qty or adjust back up to the calculated point using the + and - buttons.</li>
+  <li>After selecting the orders with desired products for return &amp; return qty, user should also select the Return reason as communicated by buyer also with remark if any.</li>
+  <li>After adding all data &amp; clicking on save this will created as a new return order &amp; appear is list with status as New.</li>
+</ul>
+<h2><strong>Order Filter</strong></h2>
+<figure class="image image_resized" style="width:100%;"><img src="https://lh6.googleusercontent.com/1i4E-McB_7ITATDi7AkvH1yNrN1_WrYXPA5ueEBlG74totguiyNbAmKr31e3sSl99-87tg3VasknNAVphdj6vwbPrWrUVPU6p4r1TrX4hk18tY9Gvc18DMxZG1bDVLrtaR-5v3po65yO-Hg_f1R_qw"></figure>
+<ul>
+  <li>Users can filter the list of return orders using the Filter icon available on screen. On click of the button it opens the filter panel that has different criteria to apply order filters.</li>
+  <li>Users can select one or more filters at a time &amp; apply it. Applied filters can be seen in the order list &amp; users can remove any criteria from there as well.</li>
+  <li>Users can also save a particular set of filter criteria using the ‘Save Filter’ option. This will create a filter view that can be used for personal view or can also be shared with others using the button of ‘Share with others’.</li>
+</ul>
+<h2><strong>Return Order Export</strong></h2>
+<ul>
+  <li>Users can export selected orders in the pdf document to get all the order data in tabular format.</li>
+  <li>If the user wants to export return orders of any ticker then the user can click on Export without selecting any order. All the orders of the current ticker will be considered for export.</li>
+  <li>Else user can also manually select multiple orders and export them</li>
+</ul>
+<h2><strong>Order Search &amp; Sort</strong></h2>
+<ul>
+  <li>Order can be searched in this field using different order fields like Order Number, Return No, Tracking No, Order Date, Order Tag, etc.</li>
+  <li>Users can also sort the orders based on criteria as latest to show first or oldest to show first</li>
+</ul>
+<figure class="image image_resized" style="width:35px;"><img src="https://lh5.googleusercontent.com/YV_9PQZiqmj-9JiLgNCq7_K7D95JuSbNLbWONPX04XSaaIzinEen5nJj4Ud_LEOLnTxDbHLo1RKR5EdIhSdbldmgPE2GDd_3ECoOQQrFM1aCxIArZ1W2SiSDuHoc1ejsL7bGKYHiUEZ7fEbtyV1KgA"></figure>
+<ul>
+  <li>If the user wants to export return orders of any ticker then the user can click on Export without selecting any order. All the orders of the current ticker will be considered for export.</li>
+  <li>Else user can also manually select multiple orders and export them</li>
+</ul>
+<h2><strong>Order Search &amp; Sort</strong></h2>
+<ul>
+  <li>Order can be searched in this field using different order fields like Order Number, Return No, Tracking No, Order Date, Order Tag, etc.</li>
+  <li>Users can also sort the orders based on criteria as latest to show first or oldest to show first.</li>
+</ul>
+<h2><strong>Refresh</strong></h2>
+<ul>
+  <li>Users can click on the refresh button provided on the screen to get the updated records of orders in the list screen, in case any user has processed any order in another instance or if order is getting updated by system.</li>
+</ul>
+<figure class="image image_resized" style="width:36px;"><img src="https://lh5.googleusercontent.com/baAROKB_r1aUTEm9BGCjAW3-h8tMbjjG2nJbtoqh0fkUTYbmWyQHP5-p3PZQ57cYeL39X6AXI2xXP0-um4icAD24Q7_eifLRkl5XmN621fN8thceThsFKduq5PoPIddAicjd7cu6sOO9nOEABmRhuA"></figure>
+<h2><strong>Company selection</strong></h2>
+<ul>
+  <li>As like other masters users can change the company at the top side of the screen to see records of other companies. User can see all the companies that he/she has access to.</li>
+</ul>
+<h1><strong>Marketplaces Return Order Processing in Ordazzle -</strong></h1>
+<p>Return orders of following marketplaces can be processed from Ordazzle &amp; it will update the changes in the marketplace.</p>
+<h2><strong>Lazada</strong></h2>
+<ul>
+  <li>New return order placed on Lazada will also be received in the Ordazzle.</li>
+  <li>Users can approve the Return Order which will accept the Return on Lazada as well (with ‘Return and Refund’ option).</li>
+  <li>Users can also reject the Return (‘Reject Return’ option) Order if the user wants to reject the return on Lazada.&nbsp; (Note - If the user wants to do ‘Refund without Return’ option then kindly select the option on Lazada without processing the order in ordazzle. As Ordazzle does not support the option.)</li>
+  <li>Also when receiving a return in Ordazzle it will also update the Return Received on Lazada. (Note - Hence Receive return should only be performed in ordazzle when the return parcel is actually received at seller).</li>
+  <li>When approving the refund in ordazzle it will also Approve the Refund on Lazada &amp; initiate refund on Lazada.</li>
+</ul>
+<h2><strong>Shopee</strong></h2>
+<ul>
+  <li>New return orders placed on Shopee will also be received in the Ordazzle.</li>
+  <li>Users can Receive the Return Order after accepting the return in Ordazzle which will accept the Return on Shopee as well. This will approve the return &amp; initiate refund on Shopee.</li>
+  <li>If a user wants to Reject the return then the user can perform the action in Ordazzle but the return order must be manually rejected on the Shopee platform as well. As Ordazzle does not support Reject Return for Shopee.</li>
+</ul>
+<h2><strong>Zalora</strong></h2>
+<ul>
+  <li>New return orders placed on Zalora will also be received in the Ordazzle.</li>
+  <li>Users can approve the Return Order which will accept the Return on Zalora as well (applicable for&nbsp; Returns sent from Customer directly to seller)</li>
+  <li>Users can also reject the Return Order if the user wants to reject the return on Zalora. (applicable for&nbsp; Returns sent from Customer directly to seller)</li>
+  <li>Also when receiving a return in Ordazzle it will also update the Return Received on Zalora. (applicable for&nbsp; Returns sent from Customer directly to seller)</li>
+</ul>
+<h2><strong>Blibli</strong></h2>
+<ul>
+  <li>New return orders placed on Blibli will also be received in the Ordazzle.</li>
+  <li>But processing done for the order in Ordazzle will not be updated to Blibli as Blibli does not have any update APIs.</li>
+</ul>
+<p>For other Marketplaces (Tokopedia) &amp; Webstores (Magento, Shopify &amp; Custom) Sales return Order functionality is not integrated but users can create manual return for the Delivered Orders of the Channel in Ordazzle. And process the return to arrange return shipment &amp; receive product back at warehouse.</p>

@@ -1,0 +1,204 @@
+<!--
+title: Charge Model
+description: 
+published: true
+date: 2023-09-27T12:35:13.798Z
+tags: 
+editor: ckeditor
+dateCreated: 2023-07-12T05:45:32.893Z
+-->
+
+<h1><strong>Charge Model</strong></h1>
+<p>This feature of Charge Model will allow business users to create multiple charge Models that will be valid for a certain time period which can be applied for Bill/Invoices for respective stores. Charge models can be created for both header level and line level charges and can be defined for Flat Values or with condition based values charge definitions.</p>
+<p><strong>Example 1 : Zara Tshirt and Shirt Products are applied with CGSTTax , Charge Model can be defined for Header and Line .</strong></p>
+<p><strong>Formula for Tax Calculation = Amount* Tax Percentage /Total Tax Amount Applicable.</strong></p>
+<p><strong>Rounding off Tax will be displayed.</strong></p>
+<p><strong>Tax Inclusive Calculation:-</strong></p>
+<figure class="table" style="float:left;">
+  <table style="border-bottom:none;border-left:none;border-right:none;border-top:none;">
+    <tbody>
+      <tr>
+        <td style="border-bottom:1pt solid #000000;border-left:1pt solid #000000;border-right:1pt solid #000000;border-top:1pt solid #000000;padding:5pt;vertical-align:top;">
+          <p style="text-align:center;"><strong>Product Name</strong></p>
+        </td>
+        <td style="border-bottom:1pt solid #000000;border-left:1pt solid #000000;border-right:1pt solid #000000;border-top:1pt solid #000000;padding:5pt;vertical-align:top;">
+          <p style="text-align:center;"><strong>Quantity</strong></p>
+        </td>
+        <td style="border-bottom:1pt solid #000000;border-left:1pt solid #000000;border-right:1pt solid #000000;border-top:1pt solid #000000;padding:5pt;vertical-align:top;">
+          <p style="text-align:center;"><strong>Rate</strong></p>
+        </td>
+        <td style="border-bottom:1pt solid #000000;border-left:1pt solid #000000;border-right:1pt solid #000000;border-top:1pt solid #000000;padding:5pt;vertical-align:top;">
+          <p style="text-align:center;"><strong>Amount</strong></p>
+        </td>
+        <td style="border-bottom:1pt solid #000000;border-left:1pt solid #000000;border-right:1pt solid #000000;border-top:1pt solid #000000;padding:5pt;vertical-align:top;">
+          <p style="text-align:center;"><strong>Tax Applicable</strong></p>
+        </td>
+        <td style="border-bottom:1pt solid #000000;border-left:1pt solid #000000;border-right:1pt solid #000000;border-top:1pt solid #000000;padding:5pt;vertical-align:top;">
+          <p style="text-align:center;"><strong>Tax %&nbsp;</strong></p>
+        </td>
+        <td style="border-bottom:1pt solid #000000;border-left:1pt solid #000000;border-right:1pt solid #000000;border-top:1pt solid #000000;padding:5pt;vertical-align:top;"><strong>Post&nbsp; Amount on Tax Calculation</strong></td>
+        <td style="border-bottom:1pt solid #000000;border-left:1pt solid #000000;border-right:1pt solid #000000;border-top:1pt solid #000000;padding:5pt;vertical-align:top;"><strong>Pre-GST</strong></td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1pt solid #000000;border-left:1pt solid #000000;border-right:1pt solid #000000;border-top:1pt solid #000000;padding:5pt;vertical-align:top;">Zara&nbsp; 18T-Shirt</td>
+        <td style="border-bottom:1pt solid #000000;border-left:1pt solid #000000;border-right:1pt solid #000000;border-top:1pt solid #000000;padding:5pt;vertical-align:top;">
+          <p style="text-align:right;">1</p>
+        </td>
+        <td style="border-bottom:1pt solid #000000;border-left:1pt solid #000000;border-right:1pt solid #000000;border-top:1pt solid #000000;padding:5pt;vertical-align:top;">
+          <p style="text-align:right;">10</p>
+        </td>
+        <td style="border-bottom:1pt solid #000000;border-left:1pt solid #000000;border-right:1pt solid #000000;border-top:1pt solid #000000;padding:5pt;vertical-align:top;">
+          <p style="text-align:right;">10</p>
+        </td>
+        <td style="border-bottom:1pt solid #000000;border-left:1pt solid #000000;border-right:1pt solid #000000;border-top:1pt solid #000000;padding:5pt;vertical-align:top;">CGST</td>
+        <td style="border-bottom:1pt solid #000000;border-left:1pt solid #000000;border-right:1pt solid #000000;border-top:1pt solid #000000;padding:5pt;vertical-align:top;">
+          <p style="text-align:right;"><strong>5</strong></p>
+        </td>
+        <td style="border-bottom:1pt solid #000000;border-left:1pt solid #000000;border-right:1pt solid #000000;border-top:1pt solid #000000;padding:5pt;vertical-align:top;"><strong>0.48(10*5/(100+5)</strong></td>
+        <td style="border-bottom:1pt solid #000000;border-left:1pt solid #000000;border-right:1pt solid #000000;border-top:1pt solid #000000;padding:5pt;vertical-align:top;"><strong>9.52</strong></td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1pt solid #000000;border-left:1pt solid #000000;border-right:1pt solid #000000;border-top:1pt solid #000000;padding:5pt;vertical-align:top;">Zara Formal Shirt</td>
+        <td style="border-bottom:1pt solid #000000;border-left:1pt solid #000000;border-right:1pt solid #000000;border-top:1pt solid #000000;padding:5pt;vertical-align:top;">
+          <p style="text-align:right;">2</p>
+        </td>
+        <td style="border-bottom:1pt solid #000000;border-left:1pt solid #000000;border-right:1pt solid #000000;border-top:1pt solid #000000;padding:5pt;vertical-align:top;">
+          <p style="text-align:right;">20</p>
+        </td>
+        <td style="border-bottom:1pt solid #000000;border-left:1pt solid #000000;border-right:1pt solid #000000;border-top:1pt solid #000000;padding:5pt;vertical-align:top;">
+          <p style="text-align:right;">40</p>
+        </td>
+        <td style="border-bottom:1pt solid #000000;border-left:1pt solid #000000;border-right:1pt solid #000000;border-top:1pt solid #000000;padding:5pt;vertical-align:top;">CGST</td>
+        <td style="border-bottom:1pt solid #000000;border-left:1pt solid #000000;border-right:1pt solid #000000;border-top:1pt solid #000000;padding:5pt;vertical-align:top;">
+          <p style="text-align:right;"><strong>5</strong></p>
+        </td>
+        <td style="border-bottom:1pt solid #000000;border-left:1pt solid #000000;border-right:1pt solid #000000;border-top:1pt solid #000000;padding:5pt;vertical-align:top;"><strong>1.90(40*5/105)</strong></td>
+        <td style="border-bottom:1pt solid #000000;border-left:1pt solid #000000;border-right:1pt solid #000000;border-top:1pt solid #000000;padding:5pt;vertical-align:top;"><strong>38.10</strong></td>
+      </tr>
+    </tbody>
+  </table>
+</figure>
+<p><strong>Example 2 : Zara Tshirt and Shirt Products are applied with CGST and SGST Tax , Charge Model can be defined Line Wise.</strong></p>
+<p><strong>Formula for Tax Calculation = Post Discounted Amount * Tax Percentage /Total Tax Amount Applicable.(= 8*5/105&nbsp; and 35*18/118)</strong></p>
+<p><strong>Rounding off Tax will be displayed.</strong></p>
+<p><strong>Tax Inclusive Calculation Inclusive of Discount:-</strong></p>
+<figure class="table" style="float:left;">
+  <table style="border-bottom:none;border-left:none;border-right:none;border-top:none;">
+    <tbody>
+      <tr>
+        <td style="border-bottom:1pt solid #000000;border-left:1pt solid #000000;border-right:1pt solid #000000;border-top:1pt solid #000000;padding:5pt;vertical-align:top;"><strong>Product Name</strong></td>
+        <td style="border-bottom:1pt solid #000000;border-left:1pt solid #000000;border-right:1pt solid #000000;border-top:1pt solid #000000;padding:5pt;vertical-align:top;"><strong>QTY</strong></td>
+        <td style="border-bottom:1pt solid #000000;border-left:1pt solid #000000;border-right:1pt solid #000000;border-top:1pt solid #000000;padding:5pt;vertical-align:top;"><strong>Rate</strong></td>
+        <td style="border-bottom:1pt solid #000000;border-left:1pt solid #000000;border-right:1pt solid #000000;border-top:1pt solid #000000;padding:5pt;vertical-align:top;"><strong>Amount</strong></td>
+        <td style="border-bottom:1pt solid #000000;border-left:1pt solid #000000;border-right:1pt solid #000000;border-top:1pt solid #000000;padding:5pt;vertical-align:top;"><strong>Discount</strong></td>
+        <td style="border-bottom:1pt solid #000000;border-left:1pt solid #000000;border-right:1pt solid #000000;border-top:1pt solid #000000;padding:5pt;vertical-align:top;"><strong>Post Discounted Amount</strong></td>
+        <td style="border-bottom:1pt solid #000000;border-left:1pt solid #000000;border-right:1pt solid #000000;border-top:1pt solid #000000;padding:5pt;vertical-align:top;"><strong>Tax Applicable</strong></td>
+        <td style="border-bottom:1pt solid #000000;border-left:1pt solid #000000;border-right:1pt solid #000000;border-top:1pt solid #000000;padding:5pt;vertical-align:top;"><strong>Tax %</strong></td>
+        <td style="border-bottom:1pt solid #000000;border-left:1pt solid #000000;border-right:1pt solid #000000;border-top:1pt solid #000000;padding:5pt;vertical-align:top;"><strong>Post&nbsp; Amount on Tax Calculation</strong></td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1pt solid #000000;border-left:1pt solid #000000;border-right:1pt solid #000000;border-top:1pt solid #000000;padding:5pt;vertical-align:top;">Zara T-Shirt</td>
+        <td style="border-bottom:1pt solid #000000;border-left:1pt solid #000000;border-right:1pt solid #000000;border-top:1pt solid #000000;padding:5pt;vertical-align:top;">
+          <p style="text-align:right;">1</p>
+        </td>
+        <td style="border-bottom:1pt solid #000000;border-left:1pt solid #000000;border-right:1pt solid #000000;border-top:1pt solid #000000;padding:5pt;vertical-align:top;">
+          <p style="text-align:right;">10</p>
+        </td>
+        <td style="border-bottom:1pt solid #000000;border-left:1pt solid #000000;border-right:1pt solid #000000;border-top:1pt solid #000000;padding:5pt;vertical-align:top;">
+          <p style="text-align:right;">10</p>
+        </td>
+        <td style="border-bottom:1pt solid #000000;border-left:1pt solid #000000;border-right:1pt solid #000000;border-top:1pt solid #000000;padding:5pt;vertical-align:top;">
+          <p style="text-align:right;">2</p>
+        </td>
+        <td style="border-bottom:1pt solid #000000;border-left:1pt solid #000000;border-right:1pt solid #000000;border-top:1pt solid #000000;padding:5pt;vertical-align:top;">
+          <p style="text-align:right;"><strong>8</strong></p>
+        </td>
+        <td style="border-bottom:1pt solid #000000;border-left:1pt solid #000000;border-right:1pt solid #000000;border-top:1pt solid #000000;padding:5pt;vertical-align:top;">CGST</td>
+        <td style="border-bottom:1pt solid #000000;border-left:1pt solid #000000;border-right:1pt solid #000000;border-top:1pt solid #000000;padding:5pt;vertical-align:top;">
+          <p style="text-align:right;"><strong>5</strong></p>
+        </td>
+        <td style="border-bottom:1pt solid #000000;border-left:1pt solid #000000;border-right:1pt solid #000000;border-top:1pt solid #000000;padding:5pt;vertical-align:top;"><strong>0.38</strong></td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1pt solid #000000;border-left:1pt solid #000000;border-right:1pt solid #000000;border-top:1pt solid #000000;padding:5pt;vertical-align:top;">Zara Formal Shirt</td>
+        <td style="border-bottom:1pt solid #000000;border-left:1pt solid #000000;border-right:1pt solid #000000;border-top:1pt solid #000000;padding:5pt;vertical-align:top;">
+          <p style="text-align:right;">2</p>
+        </td>
+        <td style="border-bottom:1pt solid #000000;border-left:1pt solid #000000;border-right:1pt solid #000000;border-top:1pt solid #000000;padding:5pt;vertical-align:top;">
+          <p style="text-align:right;">20</p>
+        </td>
+        <td style="border-bottom:1pt solid #000000;border-left:1pt solid #000000;border-right:1pt solid #000000;border-top:1pt solid #000000;padding:5pt;vertical-align:top;">
+          <p style="text-align:right;">40</p>
+        </td>
+        <td style="border-bottom:1pt solid #000000;border-left:1pt solid #000000;border-right:1pt solid #000000;border-top:1pt solid #000000;padding:5pt;vertical-align:top;">
+          <p style="text-align:right;">5</p>
+        </td>
+        <td style="border-bottom:1pt solid #000000;border-left:1pt solid #000000;border-right:1pt solid #000000;border-top:1pt solid #000000;padding:5pt;vertical-align:top;">
+          <p style="text-align:right;"><strong>35</strong></p>
+        </td>
+        <td style="border-bottom:1pt solid #000000;border-left:1pt solid #000000;border-right:1pt solid #000000;border-top:1pt solid #000000;padding:5pt;vertical-align:top;">SGST</td>
+        <td style="border-bottom:1pt solid #000000;border-left:1pt solid #000000;border-right:1pt solid #000000;border-top:1pt solid #000000;padding:5pt;vertical-align:top;">
+          <p style="text-align:right;"><strong>18</strong></p>
+        </td>
+        <td style="border-bottom:1pt solid #000000;border-left:1pt solid #000000;border-right:1pt solid #000000;border-top:1pt solid #000000;padding:5pt;vertical-align:top;"><strong>5.33</strong></td>
+      </tr>
+    </tbody>
+  </table>
+</figure>
+<p>Charge Model can be defined for Sales,Purchase and Transfer Transactions.</p>
+<p>To access Charge model master: Login into Unify-&gt; click on Pricing and Promotions in main menu-&gt; Charge Model.</p>
+<h1><strong><u>Key Elements For creation of Charge Model:</u></strong></h1>
+<ol>
+  <li>Base Amount&nbsp;</li>
+  <li>Tax Type Applicable</li>
+  <li>Other Charges (if Applicable)</li>
+  <li>Net Amount</li>
+  <li>Discounts (If Applicable)</li>
+</ol>
+<figure class="image image_resized" style="width:100%;"><img src="https://lh4.googleusercontent.com/6_3Eved0S9UWK-usvNUUhjEbGC8hgvaIhxVyJkZZIaC1yoZ-YNHFspCbuuqU-4Y6I7dEYLuBaWGsS_XhM3Xy6Uo2rXRkBvVOMZAcp7jQ4TK9j4B6tXIvdA7wb1YeDJJNspg5HRgv5po26bJxsakCbVA"></figure>
+<p>Charge Model is functional, the system have following options on clicking menu.</p>
+<ul>
+  <li><strong>Add:&nbsp; </strong>System have provision to add new charge Model which will be applicable for respective store billing /Invoice.</li>
+  <li><strong>Edit </strong>– System will allow to edit the existing records and values can be edited with new values..&nbsp;&nbsp;</li>
+  <li><strong>Save</strong>: System allow to save the new or edited records</li>
+  <li><strong>View: </strong>System will display the existing records on click of search option<strong>.</strong></li>
+  <li><strong>Delete </strong>- This option will allow you to delete the Charge Model added.</li>
+</ul>
+<h1><strong><u>Charge Model Creation</u></strong></h1>
+<p>To create a Charge Model click on - Add button- Users have provision to create new charge Model for header level or line level which will attached in the retail configuration template and will be applicable in billing for the stores to which these templates are configured in store configuration group.</p>
+<figure class="image image_resized" style="width:100%;"><img src="https://lh5.googleusercontent.com/78vk1WAu32SoK_dqesLuFwzt_MpJvxtWBY-ykoiBRNdL9iD9tDDxLONW5OyTcT4eVVReVyKFN3kYn_6BoJVNw3cgdz8IIrE4Waoi9KlnFlqB_QU_ETruch9LUVPbTnnUkAI-lqJo0JtUyGMobPjs8NU"></figure>
+<p>Below are the fields where users can define for Charge Model.:</p>
+<ul>
+  <li><strong>Charge Model Code</strong> – Unique Identification Code can be defined.</li>
+  <li><strong>Charge Model Name </strong>- Unique Identification Name can be defined.</li>
+  <li><strong>Charge Model Description – </strong>Description of charge Model to be created.</li>
+  <li><strong>Applied stored</strong> - System allow to Active or deactivate the charge model record.</li>
+  <li><strong>From Date - </strong>System allow to set from date for respective charge model.</li>
+  <li><strong>To Date – </strong>System allow to set to date for respective charge model.</li>
+  <li><strong>Charge Code – </strong>System allow to select charge code from drop down list.</li>
+  <li><strong>Sequence No – </strong>System set the sequence number on selection of charge code.</li>
+  <li><strong>Charge Sign - </strong>System allow to select the charge sign using which the calculation to be considered.</li>
+  <li><strong>Base Charge 1-&nbsp;</strong> System allow to select the base charge (SGST,IGST etc..) from drop down list on which tax calculation can be applied.</li>
+  <li><strong>Formula preview – </strong>System will auto populate the formula on selection of charge code, charge sign and base charges.</li>
+  <li><strong>Reset – </strong>System will reset all fields to blank.</li>
+  <li><strong>Add –</strong> System will add the record and display in list view.</li>
+</ul>
+<h1><strong><u>Charge Model List view</u></strong></h1>
+<p>List of saved Charge models will be displayed.</p>
+<ul>
+  <li><strong>Charge model Name: </strong>This column will display the unique identification Name to which the Charges are assigned.</li>
+  <li><strong>Charge model Code:</strong> This column will display the unique identification Code to which the Charges are assigned.</li>
+  <li><strong>From Date:</strong> This column will display the from date from which the Charges will be applicable.</li>
+  <li><strong>To Date:</strong> This column will display the to date till which the Charges will be applicable.</li>
+</ul>
+<figure class="image image_resized" style="width:100%;"><img src="https://lh3.googleusercontent.com/ZNApup81qJvXbXLy18gBmq64DzXh5njpglIPJHsnaZnWhlUhwIXpfZr1W4zTKGI_zUff4a3w9NkaKN0GZWcaT6P2NCb-cM5SjqycrpriuO_drox_J3NSOH-jbZmMIS-YpjWfE5n49Hr4Czc2wmJk3ug"></figure>
+<h1><strong><u>Charge model Functional Validations</u></strong></h1>
+<ul>
+  <li>System will display validation message on not entering mandatory fields- Following fields are mandatory Charge Code, Seq No, Charge Sign(s) &amp; Base Charge(s)</li>
+  <li>System will display validation if From date and to date overlap with existing charge model.</li>
+  <li>System will display validation if To date is less than from date.</li>
+  <li>System will display validations if From date is less than system current date.</li>
+  <li>System will display validations if store already defined/tagged, system does not allow to edit /delete the record.</li>
+  <li>System will display validation if following are not defined Charge model Name, Charge model Description, Charges For, Charge model Type, From and To dates.</li>
+  <li>System will not display Formula Preview if any of following are not selected Charge code, Sequence No, charge sign, base charge.</li>
+</ul>

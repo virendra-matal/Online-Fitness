@@ -1,0 +1,123 @@
+<!--
+title: Markdown Price List
+description: 
+published: true
+date: 2023-07-27T17:01:20.150Z
+tags: 
+editor: ckeditor
+dateCreated: 2023-07-14T12:55:05.334Z
+-->
+
+<h1><strong>Markdown Price List</strong></h1>
+<p>A price list is used to automatically calculate prices on scanned products in transactions. This master allows defining markdown/markup on existing price lists for products. This price list will be applicable on billing, purchase orders, and transfer orders.</p>
+<p><strong>Markdown</strong>: It is a reduction of the product price, based on the inability to sell it at the initial price or original selling price. In other words, markdown is the <strong>difference between the original retail price and the actual selling price</strong>.</p>
+<p><strong>For example</strong>, a shirt in a clothing shop can initially cost $50. If almost no one wants to buy it at this price, it is common that a markdown (for example of 20%) is introduced. Now the new price of the product will be $40.</p>
+<p><strong>Markup</strong>: It is a raise of the product price, based on the maximum demand to sell it at a new profitable price. In other words, markup is the <strong>premium over the total cost of the good or service that provides the seller with a profit</strong>.</p>
+<p><strong>For example</strong>, a shirt in a clothing shop can initially cost $50. If demand is high for this product then the seller can raise the price and markup (for example 20%) is introduced. Now the new price of the product will be $60.</p>
+<p><strong>List Screen</strong></p>
+<p>Over here, you can view all the existing markdown price lists created.&nbsp;</p>
+<p>You can delete and edit the records and also can add new ones.</p>
+<p>You can sort or use the search bar to <strong>search the existing</strong> price list by the <strong>Price list code</strong> or <strong>Name </strong>on the list screen<strong>.&nbsp;&nbsp;</strong></p>
+<p>Each record in the list screen has three dots against it and they will have below following options</p>
+<figure class="image image_resized" style="width:661px;"><img src="https://lh3.googleusercontent.com/jrbBGk8_hdfaalwgzCCCygmcBuRlvPTCInRQ9w-vhDM6FH82e243mSxyVUf5_pqf96gylbcOjrKSxiaQSE2NHqTvbmgCAtsAFY1FePse5ehoz7UTR3zOxhe5FqIshl4c7Nx1FylRNS8RgwbsQJeudBg"></figure>
+<ul>
+  <li><strong>View - </strong>This option will open up the creation screen with pre-populated data only in view-only mode with all fields disabled.</li>
+  <li><strong>Edit </strong>- This option will open up the creation screen with pre-populated data for users to edit, users can edit price list details in this mode only if price list is not used in billing transactions.</li>
+  <li><strong>Delete </strong>- This option will allow users to delete the inactive price list.</li>
+</ul>
+<p><strong>Markdown / Markup Price List Creation</strong></p>
+<p>You can create a new markdown/markup price list by clicking on the ‘’&nbsp; add button available on the main screen in the bottom right corner.</p>
+<p>On click of the “+” button, a screen will be visible to create a markdown/markup price list.</p>
+<p>Below are the sections required to create a markdown/markup price list:</p>
+<ul>
+  <li><strong><u>Price List Selection :&nbsp;</u></strong></li>
+</ul>
+<p>This section will be used to select the existing price list, markdown slab price &amp; rounding off rule on which markdown/markup price is to be configured.</p>
+<figure class="image image_resized" style="width:679px;"><img src="https://lh6.googleusercontent.com/lG2Qrjm2yhqR0Iw1bo4PoA2pbT0BTtZkmhwx8ZKRiuS13GCY9VAHI00kLW6Ji5ub7Bx3FDKS0EaUv25X9LyPMV-0GCZi-FspbXutjPqQH3dWbJud1x6MOWt5_kI4yzPtiqkkkF7M8v_WlkEWH-27o8w"></figure>
+<p><strong>Price List Name: </strong>This field displays all existing price lists for which markup/markdown is not created and allows you to select the price list for which markup/markdown will be applied.</p>
+<p><strong>Markdown Slab Price: </strong>This field indicates which markdown slab will be used for markdown/markup calculation while transaction processing. If any slab is selected then the slab price will be the revised sales price instead of the Auto calculated direct value (This will be disabled if ‘Rounding Off Rule’ is selected)</p>
+<p><strong>For Example</strong>: If markdown slab price defined ranges are as per below:</p>
+<figure class="table" style="float:left;">
+  <table style="border-bottom:none;border-left:none;border-right:none;border-top:none;">
+    <tbody>
+      <tr>
+        <td style="border-bottom:1pt solid #000000;border-left:1pt solid #000000;border-right:1pt solid #000000;border-top:1pt solid #000000;padding:5pt;vertical-align:top;"><strong>From Value</strong></td>
+        <td style="border-bottom:1pt solid #000000;border-left:1pt solid #000000;border-right:1pt solid #000000;border-top:1pt solid #000000;padding:5pt;vertical-align:top;"><strong>To Value</strong></td>
+        <td style="border-bottom:1pt solid #000000;border-left:1pt solid #000000;border-right:1pt solid #000000;border-top:1pt solid #000000;padding:5pt;vertical-align:top;"><strong>Slab Price</strong></td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1pt solid #000000;border-left:1pt solid #000000;border-right:1pt solid #000000;border-top:1pt solid #000000;padding:5pt;vertical-align:top;">40</td>
+        <td style="border-bottom:1pt solid #000000;border-left:1pt solid #000000;border-right:1pt solid #000000;border-top:1pt solid #000000;padding:5pt;vertical-align:top;">50</td>
+        <td style="border-bottom:1pt solid #000000;border-left:1pt solid #000000;border-right:1pt solid #000000;border-top:1pt solid #000000;padding:5pt;vertical-align:top;">45</td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1pt solid #000000;border-left:1pt solid #000000;border-right:1pt solid #000000;border-top:1pt solid #000000;padding:5pt;vertical-align:top;">50</td>
+        <td style="border-bottom:1pt solid #000000;border-left:1pt solid #000000;border-right:1pt solid #000000;border-top:1pt solid #000000;padding:5pt;vertical-align:top;">60</td>
+        <td style="border-bottom:1pt solid #000000;border-left:1pt solid #000000;border-right:1pt solid #000000;border-top:1pt solid #000000;padding:5pt;vertical-align:top;">55</td>
+      </tr>
+    </tbody>
+  </table>
+</figure>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>For example: If a product ABC is having a sales price of 60$ and now the user wants to create a markdown price with 15% and if the newly calculated markdown price of the product falls in the range of the selected markdown slab price then the slab price will be the new price for the product then the new markdown price is 51$ post calculation, but it falls in the defined range of markdown slab price, therefore, the new markdown price will be 55$.</p>
+<p>I.e. markdown 15% of original price 60$ =&nbsp; 51&nbsp;</p>
+<p>Range 50 to 60 , Slab price = 55</p>
+<p>The new markdown price will be 55</p>
+<ul>
+  <li><strong>Rounding Off Rule : </strong>This field indicates which rounding-off rule will be applicable for the markdown/markup price calculation. (This will be disabled if ‘Markdown Slab Price’ is selected)</li>
+</ul>
+<p>E.g., If the Rounding off rule is selected as ‘Rounding to Currency Default’ and&nbsp; the Calculated Number is 56.578 then the value will be displayed as per the selected rounding off rule i.e. Rounding to Currency Default - 56.6</p>
+<ul>
+  <li><strong>Approve Status: </strong>This indicates the active or inactive status for the price list.</li>
+  <li><strong><u>Sales Price List Maintenance - Search By :</u></strong></li>
+</ul>
+<p>This section will be used to filter the products in the existing price list with attribute type, attribute value, product style or code and Users can also apply markdown / markup to the products in the price list using the upload function.</p>
+<p>Below are the fields used for adding products in price list:</p>
+<ul>
+  <li><strong>Product Attribute1 : </strong>This field will allow selection of the product attribute against&nbsp; which a markdown / markup price is to be created such as product category, department, brand etc.</li>
+  <li><strong>Attribute Value1 : </strong>This field will allow selection of the product attribute value for selected product attribute against which a markdown / markup price is to be created. If the selected product attribute is ‘product category’ (t-shirt, shirt values can be selected).</li>
+  <li><strong>Add Attribute : </strong>This option is used to add one more attribute row for product selection.</li>
+  <li><strong>Search by Product Style or Product code : </strong>This field allows you to filter products from a list with their style or code for which markdown / markup is to be configured.</li>
+  <li><strong>Tags: </strong>This field allows you to filter products from a list based on tags for which markdown/markup is to be configured.</li>
+  <li><strong>DOWNLOAD TEMPLATE: </strong>This button allows you to download a sample template format with pre-populated data for applying markdown/markup price via. upload functionality. On click of this button, a file will be downloaded in the local system with pre-populated products of the existing price list.</li>
+  <li><strong>UPLOAD : </strong>This option allows you to upload the file for products against which the markdown / markup price list is to be created. On click of this button the system will display a popup on screen to browse and select the file for upload, if there are no errors in the file then it will be successfully uploaded and a popup message of successful upload and products will be displayed in the grid. If a file has errors then that can be viewed for each line in the view log function or the same can be viewed using the view upload history option.</li>
+</ul>
+<p>System will also not upload the file if any new products are added in the file apart from pre populated data.</p>
+<ul>
+  <li><strong>Reset : </strong>This option will remove the data from search fields such as product attribute, attribute value, search by &amp; tags.</li>
+  <li><strong>Search : </strong>This option will filter out the product list in the price list based on selected filter criteria such as product attribute, attribute value, search by &amp; tags..</li>
+  <li><strong><u>Markdown / Markup Details :</u></strong>
+    <ul>
+      <li><strong>Price Type : </strong>This field indicates the type of price defined for the product. Example : Markdown1 , Markup 3 etc</li>
+    </ul>
+  </li>
+  <li><strong>Markdown / Markup % : </strong>This field captures the percentage value for markup or markdown price calculation and application in the price list.</li>
+  <li><strong>Valid From Date : </strong>This field captures the start date from when the markdown / markup price list will be applicable for product billing.</li>
+  <li><strong>Valid To Date : </strong>This field captures the end date from when the markdown / markup price list will be applicable for product billing.</li>
+  <li><strong>Apply :</strong> This button allows you to apply the above selected criteria to the product in the grid based on search criteria. If search criteria is not used and details in this section are filled and the apply button is clicked then markup / markdown price will be applied for all the products in the price list. Also on click of this button a new record for the existing product will be inserted with the new price details.</li>
+  <li><u>Price list grid section :</u></li>
+</ul>
+<p>This section will display all products added in the price list with product details (image, product code/dimension, margin%, UOM, tags, Cost, RRP, Markdown / Markup %, Sales price, Qty, Price type, validity, Qty slab, last price, Lot ref, Lot no.). Each record in the grid will have an edit or delete option against it.</p>
+<p>On click of edit button users will get a popup screen for the selected product and they will have the option to edit below fields.</p>
+<ul>
+  <li><u>Price type</u> : This field identifies the type of price like - markdown price 1 for the selected product.</li>
+  <li><u>Markdown / Markup %</u> : This field captures the percentage value for markup or markdown price calculation and application in the price list.</li>
+  <li><u>Sales price</u> - This field identifies the sales price for individual products.</li>
+  <li><u>Qty</u> - This field to identifies the qty of product (for Eg: Price of say polybags is Rs 5 for 100 qty,&nbsp; then Qty = 100 and price = 5)</li>
+  <li><u>UOM </u>: This field identifies the UOM for the selected product, this field will have value only if an alternate UOM or UOM set is defined for the product while creation.</li>
+  <li><u>Tags </u>- This field identifies the tags for the selected product.</li>
+  <li><u>Validity </u>- This field identifies the start and end date for the price list against the selected product.</li>
+  <li><u>Qty Slab</u> - On click of this option system will display a popup on screen, here you can define the qty based pricing for the product using below fields, for example: Let’s say product&nbsp; ABC is having a sales price of 10 Rs for 1qty but, now you want to define the qty based pricing for the product then user can use this UI and define new sales price for product qty 2 to 10 with unit price as 9.5 Rs.</li>
+</ul>
+<p>So now whenever a customer purchases ABC product for 1 qty it will be sold at a price of 10 Rs.</p>
+<p>But if the purchase qty is between 2 to 10 then it will be sold at a price of 9.5 Rs.</p>
+<ul>
+  <li>From Qty</li>
+  <li>To Qty Slab</li>
+  <li>Unit Price - This field identifies the new sales price for a single qty which will be applicable only if the purchase qty is between from and to qty.</li>
+  <li><u>Last price</u> - This is a checkbox that will be used to define if the defined sales price will be the last price or user will be able to give any further discount. If users click on this check box then while billing this product on POS the cashier will not be able to give any further discount for the product.</li>
+  <li><strong>Save : This button will save the price, On click of this button records will be saved and the system will be redirected to the main list screen.</strong></li>
+  <li><strong>Discard : This button does not save the price list, On click of this button records will not be saved and the system will be redirected to the main list screen.</strong></li>
+</ul>

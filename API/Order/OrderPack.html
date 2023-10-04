@@ -1,0 +1,307 @@
+<!--
+title: Order Pack
+description: 
+published: true
+date: 2023-02-14T05:30:20.869Z
+tags: order
+editor: ckeditor
+dateCreated: 2023-02-14T05:20:36.435Z
+-->
+
+<h1 style="text-align:center;">Order Pack</h1>
+<h2><i><strong>Description</strong></i>:&nbsp;</h2>
+<p><strong>This API is for Pack the order in Ordazzle from external system.</strong></p>
+<h2><i><strong>Path</strong>/<strong>Endpoints</strong></i> :&nbsp;</h2>
+<p><a href="https://impl-gw.ordazzle.com/Titan_New_Company_test/PackOrder/1.0"><u>https://impl-gw.ordazzle.com/Titan_New_Company_test/PackOrder/1.0</u></a></p>
+<p><i><strong>Version</strong></i>: V1</p>
+<p><i><strong>Type</strong></i>: POST</p>
+<h1><strong>Request Parameters :</strong></h1>
+<p>&nbsp;</p>
+<figure class="table" style="width:792px;">
+  <table style="background-color:hsl(0, 0%, 100%);border-bottom:groove hsl(0, 0%, 100%);border-left:groove hsl(0, 0%, 100%);border-right:groove hsl(0, 0%, 100%);border-top:groove hsl(0, 0%, 100%);">
+    <thead>
+      <tr>
+        <th style="border-bottom:1px solid #000000;border-left:1px solid #000000;border-right:1px solid #000000;padding:2px 3px;vertical-align:bottom;"><strong>Name</strong></th>
+        <th style="border-bottom:1px solid #000000;border-right:1px solid #000000;padding:2px 3px;vertical-align:bottom;"><strong>Type</strong></th>
+        <th style="border-bottom:1px solid #000000;border-right:1px solid #000000;padding:2px 3px;vertical-align:bottom;"><strong>Mandatory</strong></th>
+        <th style="border-bottom:1px solid #000000;border-right:1px solid #000000;padding:2px 3px;vertical-align:bottom;"><strong>Sample value</strong></th>
+        <th style="border-bottom:1px solid #000000;border-right:1px solid #000000;padding:2px 3px;vertical-align:bottom;"><strong>Description</strong></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="background-color:hsl(0, 0%, 100%);border-bottom:1px groove hsl(0, 0%, 90%);border-left:1px groove hsl(0, 0%, 90%);border-right:1px groove hsl(0, 0%, 90%);border-top:groove hsl(0, 0%, 90%);padding:2px 3px;vertical-align:bottom;">groupId</td>
+        <td style="background-color:hsl(0, 0%, 100%);border-bottom:1px groove hsl(0, 0%, 90%);border-left:groove hsl(0, 0%, 90%);border-right:1px groove hsl(0, 0%, 90%);border-top:groove hsl(0, 0%, 90%);padding:2px 3px;vertical-align:bottom;">int</td>
+        <td style="background-color:hsl(0, 0%, 100%);border-bottom:1px groove hsl(0, 0%, 90%);border-left:groove hsl(0, 0%, 90%);border-right:1px groove hsl(0, 0%, 90%);border-top:groove hsl(0, 0%, 90%);padding:2px 3px;vertical-align:bottom;">Yes</td>
+        <td style="background-color:hsl(0, 0%, 100%);border-bottom:1px groove hsl(0, 0%, 90%);border-left:groove hsl(0, 0%, 90%);border-right:1px groove hsl(0, 0%, 90%);border-top:groove hsl(0, 0%, 90%);padding:2px 3px;vertical-align:bottom;">1201</td>
+        <td style="background-color:hsl(0, 0%, 100%);border-bottom:1px groove hsl(0, 0%, 90%);border-left:groove hsl(0, 0%, 90%);border-right:1px groove hsl(0, 0%, 90%);border-top:groove hsl(0, 0%, 90%);padding:2px 3px;vertical-align:bottom;">
+          <p>GroupId of the Ordazzle instance<br>Will be provided by Ordazzle team for your setup</p>
+        </td>
+      </tr>
+      <tr>
+        <td style="background-color:hsl(0, 0%, 100%);border-bottom:1px groove hsl(0, 0%, 90%);border-left:1px groove hsl(0, 0%, 90%);border-right:1px groove hsl(0, 0%, 90%);border-top:groove hsl(0, 0%, 90%);padding:2px 3px;vertical-align:bottom;">companyId</td>
+        <td style="background-color:hsl(0, 0%, 100%);border-bottom:1px groove hsl(0, 0%, 90%);border-left:groove hsl(0, 0%, 90%);border-right:1px groove hsl(0, 0%, 90%);border-top:groove hsl(0, 0%, 90%);padding:2px 3px;vertical-align:bottom;">int</td>
+        <td style="background-color:hsl(0, 0%, 100%);border-bottom:1px groove hsl(0, 0%, 90%);border-left:groove hsl(0, 0%, 90%);border-right:1px groove hsl(0, 0%, 90%);border-top:groove hsl(0, 0%, 90%);padding:2px 3px;vertical-align:bottom;">Yes</td>
+        <td style="background-color:hsl(0, 0%, 100%);border-bottom:1px groove hsl(0, 0%, 90%);border-left:groove hsl(0, 0%, 90%);border-right:1px groove hsl(0, 0%, 90%);border-top:groove hsl(0, 0%, 90%);padding:2px 3px;vertical-align:bottom;">999</td>
+        <td style="background-color:hsl(0, 0%, 100%);border-bottom:1px groove hsl(0, 0%, 90%);border-left:groove hsl(0, 0%, 90%);border-right:1px groove hsl(0, 0%, 90%);border-top:groove hsl(0, 0%, 90%);padding:2px 3px;vertical-align:bottom;">
+          <p>CompanyId of the Ordazzle instance<br>Will be provided by Ordazzle team for your setup</p>
+        </td>
+      </tr>
+      <tr>
+        <td style="background-color:hsl(0, 0%, 100%);border-bottom:1px groove hsl(0, 0%, 90%);border-left:1px groove hsl(0, 0%, 90%);border-right:1px groove hsl(0, 0%, 90%);border-top:groove hsl(0, 0%, 90%);padding:2px 3px;vertical-align:bottom;">userEmailId</td>
+        <td style="background-color:hsl(0, 0%, 100%);border-bottom:1px groove hsl(0, 0%, 90%);border-left:groove hsl(0, 0%, 90%);border-right:1px groove hsl(0, 0%, 90%);border-top:groove hsl(0, 0%, 90%);padding:2px 3px;vertical-align:bottom;">string</td>
+        <td style="background-color:hsl(0, 0%, 100%);border-bottom:1px groove hsl(0, 0%, 90%);border-left:groove hsl(0, 0%, 90%);border-right:1px groove hsl(0, 0%, 90%);border-top:groove hsl(0, 0%, 90%);padding:2px 3px;vertical-align:bottom;">Yes</td>
+        <td style="background-color:hsl(0, 0%, 100%);border-bottom:1px groove hsl(0, 0%, 90%);border-left:groove hsl(0, 0%, 90%);border-right:1px groove hsl(0, 0%, 90%);border-top:groove hsl(0, 0%, 90%);padding:2px 3px;vertical-align:bottom;">sample@gmail.com</td>
+        <td style="background-color:hsl(0, 0%, 100%);border-bottom:1px groove hsl(0, 0%, 90%);border-left:groove hsl(0, 0%, 90%);border-right:1px groove hsl(0, 0%, 90%);border-top:groove hsl(0, 0%, 90%);padding:2px 3px;vertical-align:bottom;">EmailId of the user from Ordazzle which is to be used for this API communication.This will be provided by Ordazzl team</td>
+      </tr>
+      <tr>
+        <td style="background-color:hsl(0, 0%, 100%);border-bottom:1px groove hsl(0, 0%, 90%);border-left:1px groove hsl(0, 0%, 90%);border-right:1px groove hsl(0, 0%, 90%);border-top:groove hsl(0, 0%, 90%);padding:2px 3px;vertical-align:bottom;">reasonID</td>
+        <td style="background-color:hsl(0, 0%, 100%);border-bottom:1px groove hsl(0, 0%, 90%);border-left:groove hsl(0, 0%, 90%);border-right:1px groove hsl(0, 0%, 90%);border-top:groove hsl(0, 0%, 90%);padding:2px 3px;vertical-align:bottom;">Int</td>
+        <td style="background-color:hsl(0, 0%, 100%);border-bottom:1px groove hsl(0, 0%, 90%);border-left:groove hsl(0, 0%, 90%);border-right:1px groove hsl(0, 0%, 90%);border-top:groove hsl(0, 0%, 90%);padding:2px 3px;vertical-align:bottom;">No</td>
+        <td style="background-color:hsl(0, 0%, 100%);border-bottom:1px groove hsl(0, 0%, 90%);border-left:groove hsl(0, 0%, 90%);border-right:1px groove hsl(0, 0%, 90%);border-top:groove hsl(0, 0%, 90%);padding:2px 3px;vertical-align:bottom;">10</td>
+        <td style="background-color:hsl(0, 0%, 100%);border-bottom:1px groove hsl(0, 0%, 90%);border-left:groove hsl(0, 0%, 90%);border-right:1px groove hsl(0, 0%, 90%);border-top:groove hsl(0, 0%, 90%);padding:2px 3px;vertical-align:bottom;">&nbsp;</td>
+      </tr>
+      <tr>
+        <td style="background-color:hsl(0, 0%, 100%);border-bottom:1px groove hsl(0, 0%, 90%);border-left:1px groove hsl(0, 0%, 90%);border-right:1px groove hsl(0, 0%, 90%);border-top:groove hsl(0, 0%, 90%);padding:2px 3px;vertical-align:bottom;">
+          <p>sellerChannelName</p>
+        </td>
+        <td style="background-color:hsl(0, 0%, 100%);border-bottom:1px groove hsl(0, 0%, 90%);border-left:groove hsl(0, 0%, 90%);border-right:1px groove hsl(0, 0%, 90%);border-top:groove hsl(0, 0%, 90%);padding:2px 3px;vertical-align:bottom;">&nbsp;</td>
+        <td style="background-color:hsl(0, 0%, 100%);border-bottom:1px groove hsl(0, 0%, 90%);border-left:groove hsl(0, 0%, 90%);border-right:1px groove hsl(0, 0%, 90%);border-top:groove hsl(0, 0%, 90%);padding:2px 3px;vertical-align:bottom;">Yes</td>
+        <td style="background-color:hsl(0, 0%, 100%);border-bottom:1px groove hsl(0, 0%, 90%);border-left:groove hsl(0, 0%, 90%);border-right:1px groove hsl(0, 0%, 90%);border-top:groove hsl(0, 0%, 90%);padding:2px 3px;vertical-align:bottom;">
+          <p>shopifyInvSyncStore</p>
+        </td>
+        <td style="background-color:hsl(0, 0%, 100%);border-bottom:1px groove hsl(0, 0%, 90%);border-left:groove hsl(0, 0%, 90%);border-right:1px groove hsl(0, 0%, 90%);border-top:groove hsl(0, 0%, 90%);padding:2px 3px;vertical-align:bottom;">&nbsp;</td>
+      </tr>
+      <tr>
+        <td style="background-color:hsl(0, 0%, 100%);border-bottom:1px groove hsl(0, 0%, 90%);border-left:1px groove hsl(0, 0%, 90%);border-right:1px groove hsl(0, 0%, 90%);border-top:groove hsl(0, 0%, 90%);padding:2px 3px;vertical-align:bottom;">orderNumber</td>
+        <td style="background-color:hsl(0, 0%, 100%);border-bottom:1px groove hsl(0, 0%, 90%);border-left:groove hsl(0, 0%, 90%);border-right:1px groove hsl(0, 0%, 90%);border-top:groove hsl(0, 0%, 90%);padding:2px 3px;vertical-align:bottom;">String</td>
+        <td style="background-color:hsl(0, 0%, 100%);border-bottom:1px groove hsl(0, 0%, 90%);border-left:groove hsl(0, 0%, 90%);border-right:1px groove hsl(0, 0%, 90%);border-top:groove hsl(0, 0%, 90%);padding:2px 3px;vertical-align:bottom;">Yes</td>
+        <td style="background-color:hsl(0, 0%, 100%);border-bottom:1px groove hsl(0, 0%, 90%);border-left:groove hsl(0, 0%, 90%);border-right:1px groove hsl(0, 0%, 90%);border-top:groove hsl(0, 0%, 90%);padding:2px 3px;vertical-align:bottom;">2496</td>
+        <td style="background-color:hsl(0, 0%, 100%);border-bottom:1px groove hsl(0, 0%, 90%);border-left:groove hsl(0, 0%, 90%);border-right:1px groove hsl(0, 0%, 90%);border-top:groove hsl(0, 0%, 90%);padding:2px 3px;vertical-align:bottom;">&nbsp;</td>
+      </tr>
+      <tr>
+        <td style="background-color:hsl(0, 0%, 100%);border-bottom:1px groove hsl(0, 0%, 90%);border-left:1px groove hsl(0, 0%, 90%);border-right:1px groove hsl(0, 0%, 90%);border-top:groove hsl(0, 0%, 90%);padding:2px 3px;vertical-align:bottom;">products</td>
+        <td style="background-color:hsl(0, 0%, 100%);border-bottom:1px groove hsl(0, 0%, 90%);border-left:groove hsl(0, 0%, 90%);border-right:1px groove hsl(0, 0%, 90%);border-top:groove hsl(0, 0%, 90%);padding:2px 3px;vertical-align:bottom;">String</td>
+        <td style="background-color:hsl(0, 0%, 100%);border-bottom:1px groove hsl(0, 0%, 90%);border-left:groove hsl(0, 0%, 90%);border-right:1px groove hsl(0, 0%, 90%);border-top:groove hsl(0, 0%, 90%);padding:2px 3px;vertical-align:bottom;">No</td>
+        <td style="background-color:hsl(0, 0%, 100%);border-bottom:1px groove hsl(0, 0%, 90%);border-left:groove hsl(0, 0%, 90%);border-right:1px groove hsl(0, 0%, 90%);border-top:groove hsl(0, 0%, 90%);padding:2px 3px;vertical-align:bottom;">Shoe83849</td>
+        <td style="background-color:hsl(0, 0%, 100%);border-bottom:1px groove hsl(0, 0%, 90%);border-left:groove hsl(0, 0%, 90%);border-right:1px groove hsl(0, 0%, 90%);border-top:groove hsl(0, 0%, 90%);padding:2px 3px;vertical-align:bottom;">&nbsp;</td>
+      </tr>
+      <tr>
+        <td style="background-color:hsl(0, 0%, 100%);border-bottom:1px groove hsl(0, 0%, 90%);border-left:1px groove hsl(0, 0%, 90%);border-right:1px groove hsl(0, 0%, 90%);border-top:groove hsl(0, 0%, 90%);padding:2px 3px;vertical-align:bottom;"><strong>totalItems</strong></td>
+        <td style="background-color:hsl(0, 0%, 100%);border-bottom:1px groove hsl(0, 0%, 90%);border-left:groove hsl(0, 0%, 90%);border-right:1px groove hsl(0, 0%, 90%);border-top:groove hsl(0, 0%, 90%);padding:2px 3px;vertical-align:bottom;">Int</td>
+        <td style="background-color:hsl(0, 0%, 100%);border-bottom:1px groove hsl(0, 0%, 90%);border-left:groove hsl(0, 0%, 90%);border-right:1px groove hsl(0, 0%, 90%);border-top:groove hsl(0, 0%, 90%);padding:2px 3px;vertical-align:bottom;">No</td>
+        <td style="background-color:hsl(0, 0%, 100%);border-bottom:1px groove hsl(0, 0%, 90%);border-left:groove hsl(0, 0%, 90%);border-right:1px groove hsl(0, 0%, 90%);border-top:groove hsl(0, 0%, 90%);padding:2px 3px;vertical-align:bottom;">1</td>
+        <td style="background-color:hsl(0, 0%, 100%);border-bottom:1px groove hsl(0, 0%, 90%);border-left:groove hsl(0, 0%, 90%);border-right:1px groove hsl(0, 0%, 90%);border-top:groove hsl(0, 0%, 90%);padding:2px 3px;vertical-align:bottom;">&nbsp;</td>
+      </tr>
+      <tr>
+        <td style="background-color:hsl(0, 0%, 100%);border-bottom:1px groove hsl(0, 0%, 90%);border-left:1px groove hsl(0, 0%, 90%);border-right:1px groove hsl(0, 0%, 90%);border-top:groove hsl(0, 0%, 90%);padding:2px 3px;vertical-align:bottom;"><strong>totalWeight</strong></td>
+        <td style="background-color:hsl(0, 0%, 100%);border-bottom:1px groove hsl(0, 0%, 90%);border-left:groove hsl(0, 0%, 90%);border-right:1px groove hsl(0, 0%, 90%);border-top:groove hsl(0, 0%, 90%);padding:2px 3px;vertical-align:bottom;">Int</td>
+        <td style="background-color:hsl(0, 0%, 100%);border-bottom:1px groove hsl(0, 0%, 90%);border-left:groove hsl(0, 0%, 90%);border-right:1px groove hsl(0, 0%, 90%);border-top:groove hsl(0, 0%, 90%);padding:2px 3px;vertical-align:bottom;">No</td>
+        <td style="background-color:hsl(0, 0%, 100%);border-bottom:1px groove hsl(0, 0%, 90%);border-left:groove hsl(0, 0%, 90%);border-right:1px groove hsl(0, 0%, 90%);border-top:groove hsl(0, 0%, 90%);padding:2px 3px;vertical-align:bottom;">500</td>
+        <td style="background-color:hsl(0, 0%, 100%);border-bottom:1px groove hsl(0, 0%, 90%);border-left:groove hsl(0, 0%, 90%);border-right:1px groove hsl(0, 0%, 90%);border-top:groove hsl(0, 0%, 90%);padding:2px 3px;vertical-align:bottom;">&nbsp;</td>
+      </tr>
+      <tr>
+        <td style="background-color:hsl(0, 0%, 100%);border-bottom:1px groove hsl(0, 0%, 90%);border-left:1px groove hsl(0, 0%, 90%);border-right:1px groove hsl(0, 0%, 90%);border-top:groove hsl(0, 0%, 90%);padding:2px 3px;vertical-align:bottom;"><strong>height</strong></td>
+        <td style="background-color:hsl(0, 0%, 100%);border-bottom:1px groove hsl(0, 0%, 90%);border-left:groove hsl(0, 0%, 90%);border-right:1px groove hsl(0, 0%, 90%);border-top:groove hsl(0, 0%, 90%);padding:2px 3px;vertical-align:bottom;">Int</td>
+        <td style="background-color:hsl(0, 0%, 100%);border-bottom:1px groove hsl(0, 0%, 90%);border-left:groove hsl(0, 0%, 90%);border-right:1px groove hsl(0, 0%, 90%);border-top:groove hsl(0, 0%, 90%);padding:2px 3px;vertical-align:bottom;">No</td>
+        <td style="background-color:hsl(0, 0%, 100%);border-bottom:1px groove hsl(0, 0%, 90%);border-left:groove hsl(0, 0%, 90%);border-right:1px groove hsl(0, 0%, 90%);border-top:groove hsl(0, 0%, 90%);padding:2px 3px;vertical-align:bottom;">40</td>
+        <td style="background-color:hsl(0, 0%, 100%);border-bottom:1px groove hsl(0, 0%, 90%);border-left:groove hsl(0, 0%, 90%);border-right:1px groove hsl(0, 0%, 90%);border-top:groove hsl(0, 0%, 90%);padding:2px 3px;vertical-align:bottom;">&nbsp;</td>
+      </tr>
+      <tr>
+        <td style="background-color:hsl(0, 0%, 100%);border-bottom:1px groove hsl(0, 0%, 90%);border-left:1px groove hsl(0, 0%, 90%);border-right:1px groove hsl(0, 0%, 90%);border-top:groove hsl(0, 0%, 90%);padding:2px 3px;vertical-align:bottom;"><strong>length</strong></td>
+        <td style="background-color:hsl(0, 0%, 100%);border-bottom:1px groove hsl(0, 0%, 90%);border-left:groove hsl(0, 0%, 90%);border-right:1px groove hsl(0, 0%, 90%);border-top:groove hsl(0, 0%, 90%);padding:2px 3px;vertical-align:bottom;">Int</td>
+        <td style="background-color:hsl(0, 0%, 100%);border-bottom:1px groove hsl(0, 0%, 90%);border-left:groove hsl(0, 0%, 90%);border-right:1px groove hsl(0, 0%, 90%);border-top:groove hsl(0, 0%, 90%);padding:2px 3px;vertical-align:bottom;">No</td>
+        <td style="background-color:hsl(0, 0%, 100%);border-bottom:1px groove hsl(0, 0%, 90%);border-left:groove hsl(0, 0%, 90%);border-right:1px groove hsl(0, 0%, 90%);border-top:groove hsl(0, 0%, 90%);padding:2px 3px;vertical-align:bottom;">50</td>
+        <td style="background-color:hsl(0, 0%, 100%);border-bottom:1px groove hsl(0, 0%, 90%);border-left:groove hsl(0, 0%, 90%);border-right:1px groove hsl(0, 0%, 90%);border-top:groove hsl(0, 0%, 90%);padding:2px 3px;vertical-align:bottom;">&nbsp;</td>
+      </tr>
+      <tr>
+        <td style="background-color:hsl(0, 0%, 100%);border-bottom:1px groove hsl(0, 0%, 90%);border-left:1px groove hsl(0, 0%, 90%);border-right:1px groove hsl(0, 0%, 90%);border-top:groove hsl(0, 0%, 90%);padding:2px 3px;vertical-align:bottom;"><strong>width</strong></td>
+        <td style="background-color:hsl(0, 0%, 100%);border-bottom:1px groove hsl(0, 0%, 90%);border-left:groove hsl(0, 0%, 90%);border-right:1px groove hsl(0, 0%, 90%);border-top:groove hsl(0, 0%, 90%);padding:2px 3px;vertical-align:bottom;">Int</td>
+        <td style="background-color:hsl(0, 0%, 100%);border-bottom:1px groove hsl(0, 0%, 90%);border-left:groove hsl(0, 0%, 90%);border-right:1px groove hsl(0, 0%, 90%);border-top:groove hsl(0, 0%, 90%);padding:2px 3px;vertical-align:bottom;">No</td>
+        <td style="background-color:hsl(0, 0%, 100%);border-bottom:1px groove hsl(0, 0%, 90%);border-left:groove hsl(0, 0%, 90%);border-right:1px groove hsl(0, 0%, 90%);border-top:groove hsl(0, 0%, 90%);padding:2px 3px;vertical-align:bottom;">30</td>
+        <td style="background-color:hsl(0, 0%, 100%);border-bottom:1px groove hsl(0, 0%, 90%);border-left:groove hsl(0, 0%, 90%);border-right:1px groove hsl(0, 0%, 90%);border-top:groove hsl(0, 0%, 90%);padding:2px 3px;vertical-align:bottom;">&nbsp;</td>
+      </tr>
+      <tr>
+        <td style="background-color:hsl(0, 0%, 100%);border-bottom:1px groove hsl(0, 0%, 90%);border-left:1px groove hsl(0, 0%, 90%);border-right:1px groove hsl(0, 0%, 90%);border-top:groove hsl(0, 0%, 90%);padding:2px 3px;vertical-align:bottom;"><strong>packageID</strong></td>
+        <td style="background-color:hsl(0, 0%, 100%);border-bottom:1px groove hsl(0, 0%, 90%);border-left:groove hsl(0, 0%, 90%);border-right:1px groove hsl(0, 0%, 90%);border-top:groove hsl(0, 0%, 90%);padding:2px 3px;vertical-align:bottom;">Int</td>
+        <td style="background-color:hsl(0, 0%, 100%);border-bottom:1px groove hsl(0, 0%, 90%);border-left:groove hsl(0, 0%, 90%);border-right:1px groove hsl(0, 0%, 90%);border-top:groove hsl(0, 0%, 90%);padding:2px 3px;vertical-align:bottom;">No</td>
+        <td style="background-color:hsl(0, 0%, 100%);border-bottom:1px groove hsl(0, 0%, 90%);border-left:groove hsl(0, 0%, 90%);border-right:1px groove hsl(0, 0%, 90%);border-top:groove hsl(0, 0%, 90%);padding:2px 3px;vertical-align:bottom;">3425</td>
+        <td style="background-color:hsl(0, 0%, 100%);border-bottom:1px groove hsl(0, 0%, 90%);border-left:groove hsl(0, 0%, 90%);border-right:1px groove hsl(0, 0%, 90%);border-top:groove hsl(0, 0%, 90%);padding:2px 3px;vertical-align:bottom;">&nbsp;</td>
+      </tr>
+      <tr>
+        <td style="background-color:hsl(0, 0%, 100%);border-bottom:1px groove hsl(0, 0%, 90%);border-left:1px groove hsl(0, 0%, 90%);border-right:1px groove hsl(0, 0%, 90%);border-top:groove hsl(0, 0%, 90%);padding:2px 3px;vertical-align:bottom;"><strong>labelSize</strong></td>
+        <td style="background-color:hsl(0, 0%, 100%);border-bottom:1px groove hsl(0, 0%, 90%);border-left:groove hsl(0, 0%, 90%);border-right:1px groove hsl(0, 0%, 90%);border-top:groove hsl(0, 0%, 90%);padding:2px 3px;vertical-align:bottom;">Int</td>
+        <td style="background-color:hsl(0, 0%, 100%);border-bottom:1px groove hsl(0, 0%, 90%);border-left:groove hsl(0, 0%, 90%);border-right:1px groove hsl(0, 0%, 90%);border-top:groove hsl(0, 0%, 90%);padding:2px 3px;vertical-align:bottom;">No</td>
+        <td style="background-color:hsl(0, 0%, 100%);border-bottom:1px groove hsl(0, 0%, 90%);border-left:groove hsl(0, 0%, 90%);border-right:1px groove hsl(0, 0%, 90%);border-top:groove hsl(0, 0%, 90%);padding:2px 3px;vertical-align:bottom;">45</td>
+        <td style="background-color:hsl(0, 0%, 100%);border-bottom:1px groove hsl(0, 0%, 90%);border-left:groove hsl(0, 0%, 90%);border-right:1px groove hsl(0, 0%, 90%);border-top:groove hsl(0, 0%, 90%);padding:2px 3px;vertical-align:bottom;">&nbsp;</td>
+      </tr>
+      <tr>
+        <td style="background-color:hsl(0, 0%, 100%);border-bottom:1px groove hsl(0, 0%, 90%);border-left:1px groove hsl(0, 0%, 90%);border-right:1px groove hsl(0, 0%, 90%);border-top:groove hsl(0, 0%, 90%);padding:2px 3px;vertical-align:bottom;"><strong>planPickupDate</strong></td>
+        <td style="background-color:hsl(0, 0%, 100%);border-bottom:1px groove hsl(0, 0%, 90%);border-left:groove hsl(0, 0%, 90%);border-right:1px groove hsl(0, 0%, 90%);border-top:groove hsl(0, 0%, 90%);padding:2px 3px;vertical-align:bottom;">String</td>
+        <td style="background-color:hsl(0, 0%, 100%);border-bottom:1px groove hsl(0, 0%, 90%);border-left:groove hsl(0, 0%, 90%);border-right:1px groove hsl(0, 0%, 90%);border-top:groove hsl(0, 0%, 90%);padding:2px 3px;vertical-align:bottom;">No</td>
+        <td style="background-color:hsl(0, 0%, 100%);border-bottom:1px groove hsl(0, 0%, 90%);border-left:groove hsl(0, 0%, 90%);border-right:1px groove hsl(0, 0%, 90%);border-top:groove hsl(0, 0%, 90%);padding:2px 3px;vertical-align:bottom;"><strong>2022-09-07</strong></td>
+        <td style="background-color:hsl(0, 0%, 100%);border-bottom:1px groove hsl(0, 0%, 90%);border-left:groove hsl(0, 0%, 90%);border-right:1px groove hsl(0, 0%, 90%);border-top:groove hsl(0, 0%, 90%);padding:2px 3px;vertical-align:bottom;">&nbsp;</td>
+      </tr>
+      <tr>
+        <td style="background-color:hsl(0, 0%, 100%);border-bottom:1px groove hsl(0, 0%, 90%);border-left:1px groove hsl(0, 0%, 90%);border-right:1px groove hsl(0, 0%, 90%);border-top:groove hsl(0, 0%, 90%);padding:2px 3px;vertical-align:bottom;"><strong>planPickupTime</strong></td>
+        <td style="background-color:hsl(0, 0%, 100%);border-bottom:1px groove hsl(0, 0%, 90%);border-left:groove hsl(0, 0%, 90%);border-right:1px groove hsl(0, 0%, 90%);border-top:groove hsl(0, 0%, 90%);padding:2px 3px;vertical-align:bottom;">String</td>
+        <td style="background-color:hsl(0, 0%, 100%);border-bottom:1px groove hsl(0, 0%, 90%);border-left:groove hsl(0, 0%, 90%);border-right:1px groove hsl(0, 0%, 90%);border-top:groove hsl(0, 0%, 90%);padding:2px 3px;vertical-align:bottom;">No</td>
+        <td style="background-color:hsl(0, 0%, 100%);border-bottom:1px groove hsl(0, 0%, 90%);border-left:groove hsl(0, 0%, 90%);border-right:1px groove hsl(0, 0%, 90%);border-top:groove hsl(0, 0%, 90%);padding:2px 3px;vertical-align:bottom;"><strong>6:30:00</strong></td>
+        <td style="background-color:hsl(0, 0%, 100%);border-bottom:1px groove hsl(0, 0%, 90%);border-left:groove hsl(0, 0%, 90%);border-right:1px groove hsl(0, 0%, 90%);border-top:groove hsl(0, 0%, 90%);padding:2px 3px;vertical-align:bottom;">&nbsp;</td>
+      </tr>
+      <tr>
+        <td style="background-color:hsl(0, 0%, 100%);border-bottom:1px groove hsl(0, 0%, 90%);border-left:1px groove hsl(0, 0%, 90%);border-right:1px groove hsl(0, 0%, 90%);border-top:groove hsl(0, 0%, 90%);padding:2px 3px;vertical-align:bottom;"><strong>remark</strong></td>
+        <td style="background-color:hsl(0, 0%, 100%);border-bottom:1px groove hsl(0, 0%, 90%);border-left:groove hsl(0, 0%, 90%);border-right:1px groove hsl(0, 0%, 90%);border-top:groove hsl(0, 0%, 90%);padding:2px 3px;">Nvarchar</td>
+        <td style="background-color:hsl(0, 0%, 100%);border-bottom:1px groove hsl(0, 0%, 90%);border-left:groove hsl(0, 0%, 90%);border-right:1px groove hsl(0, 0%, 90%);border-top:groove hsl(0, 0%, 90%);padding:2px 3px;vertical-align:bottom;">No</td>
+        <td style="background-color:hsl(0, 0%, 100%);border-bottom:1px groove hsl(0, 0%, 90%);border-left:groove hsl(0, 0%, 90%);border-right:1px groove hsl(0, 0%, 90%);border-top:groove hsl(0, 0%, 90%);padding:2px 3px;vertical-align:bottom;">Test</td>
+        <td style="background-color:hsl(0, 0%, 100%);border-bottom:1px groove hsl(0, 0%, 90%);border-left:groove hsl(0, 0%, 90%);border-right:1px groove hsl(0, 0%, 90%);border-top:groove hsl(0, 0%, 90%);padding:2px 3px;vertical-align:bottom;">&nbsp;</td>
+      </tr>
+      <tr>
+        <td style="background-color:hsl(0, 0%, 100%);border-bottom:1px groove hsl(0, 0%, 90%);border-left:1px groove hsl(0, 0%, 90%);border-right:1px groove hsl(0, 0%, 90%);border-top:groove hsl(0, 0%, 90%);padding:2px 3px;vertical-align:bottom;"><strong>downloadShpLbl</strong></td>
+        <td style="background-color:hsl(0, 0%, 100%);border-bottom:1px groove hsl(0, 0%, 90%);border-left:groove hsl(0, 0%, 90%);border-right:1px groove hsl(0, 0%, 90%);border-top:groove hsl(0, 0%, 90%);padding:2px 3px;vertical-align:bottom;">Int</td>
+        <td style="background-color:hsl(0, 0%, 100%);border-bottom:1px groove hsl(0, 0%, 90%);border-left:groove hsl(0, 0%, 90%);border-right:1px groove hsl(0, 0%, 90%);border-top:groove hsl(0, 0%, 90%);padding:2px 3px;vertical-align:bottom;">No</td>
+        <td style="background-color:hsl(0, 0%, 100%);border-bottom:1px groove hsl(0, 0%, 90%);border-left:groove hsl(0, 0%, 90%);border-right:1px groove hsl(0, 0%, 90%);border-top:groove hsl(0, 0%, 90%);padding:2px 3px;vertical-align:bottom;">o</td>
+        <td style="background-color:hsl(0, 0%, 100%);border-bottom:1px groove hsl(0, 0%, 90%);border-left:groove hsl(0, 0%, 90%);border-right:1px groove hsl(0, 0%, 90%);border-top:groove hsl(0, 0%, 90%);padding:2px 3px;vertical-align:bottom;">&nbsp;</td>
+      </tr>
+    </tbody>
+  </table>
+</figure>
+<h1><strong>Request JSON:</strong></h1>
+<p>&nbsp;</p>
+<pre><code class="language-plaintext">{
+    "actionInfo": {
+        "actionId": "PACKORDER"
+    },
+    "sessionData": {
+        "userDetails": {
+            "groupId": 1001,
+            "companyId": 100,
+            "userEmailId": "shubham.lohar@etpgroup.com"
+        }
+    },
+    "formData": {
+        "orderDetails": [
+            {
+                "sellerChannelName": "ShopifyIMPLTEST",
+                "orderNumber": "2495",
+                "products": ["Shoe83849"]
+            }
+        ],
+        "orderPackagingDetails": {
+            "groupID": 1001,
+            "companyID": 100,
+            "totalItems": "1",
+            "totalWeight": "70",
+            "height": "1",
+            "length": "40",
+            "width": "10",
+            "packageID": "",
+            "labelSize": "4"
+        },
+        "planPickupDate": "2022-09-07",
+        "planPickupTime": "06:30:00",
+        "remark": "Test",
+        "downloadShpLbl": 0
+    },
+    "logID": "LG453333D337224345264512345"
+}
+</code></pre>
+<h1>Response JSON:</h1>
+<p>&nbsp;</p>
+<pre><code class="language-plaintext">{ 
+       type: "S",        
+       respCode: "0000",        
+       respMsg: "SUCCESS Or Error Message",        
+       respHdr: null,        
+       logID: "LG001"        
+       data:      
+}</code></pre>
+<p>&nbsp;</p>
+<h1><strong>Response JSON Fields:&nbsp;</strong></h1>
+<p>&nbsp;</p>
+<figure class="table" style="width:792px;">
+  <table style="border-bottom:groove;border-left:groove;border-right:groove;border-top:groove;">
+    <thead>
+      <tr>
+        <th style="border-bottom:1px solid #000000;border-left:1px solid #000000;border-right:1px solid #000000;border-top:1px solid #000000;padding:10px;vertical-align:bottom;"><strong>Name</strong></th>
+        <th style="border-bottom:1px solid #000000;border-right:1px solid #000000;border-top:1px solid #000000;padding:10px;vertical-align:bottom;"><strong>Type</strong></th>
+        <th style="border-bottom:1px solid #000000;border-right:1px solid #000000;border-top:1px solid #000000;padding:10px;vertical-align:bottom;"><strong>Sample value</strong></th>
+        <th style="border-bottom:1px solid #000000;border-right:1px solid #000000;border-top:1px solid #000000;padding:10px;vertical-align:bottom;"><strong>Description</strong></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="border-bottom:1px solid #000000;border-left:1px solid #000000;border-right:1px solid #000000;padding:2px 3px;vertical-align:bottom;">type</td>
+        <td style="border-bottom:1px solid #000000;border-right:1px solid #000000;padding:2px 3px;vertical-align:bottom;">String</td>
+        <td style="background-color:#ffffff;border-bottom:1px solid #000000;border-right:1px solid #000000;padding:2px 3px;vertical-align:bottom;">S</td>
+        <td style="border-bottom:1px solid #000000;border-right:1px solid #000000;padding:2px 3px;vertical-align:bottom;">&nbsp;</td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1px solid #000000;border-left:1px solid #000000;border-right:1px solid #000000;padding:2px 3px;vertical-align:bottom;">respCode</td>
+        <td style="border-bottom:1px solid #000000;border-right:1px solid #000000;padding:2px 3px;vertical-align:bottom;">Int</td>
+        <td style="background-color:#ffffff;border-bottom:1px solid #000000;border-right:1px solid #000000;padding:2px 3px;vertical-align:bottom;">0</td>
+        <td style="border-bottom:1px solid #000000;border-right:1px solid #000000;padding:2px 3px;vertical-align:bottom;">&nbsp;</td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1px solid #000000;border-left:1px solid #000000;border-right:1px solid #000000;padding:2px 3px;vertical-align:bottom;">respMsg</td>
+        <td style="border-bottom:1px solid #000000;border-right:1px solid #000000;padding:2px 3px;vertical-align:bottom;">String</td>
+        <td style="background-color:#ffffff;border-bottom:1px solid #000000;border-right:1px solid #000000;padding:2px 3px;vertical-align:bottom;">SUCCESS Or Error Message</td>
+        <td style="border-bottom:1px solid #000000;border-right:1px solid #000000;padding:2px 3px;vertical-align:bottom;">&nbsp;</td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1px solid #000000;border-left:1px solid #000000;border-right:1px solid #000000;padding:2px 3px;vertical-align:bottom;">respHdr</td>
+        <td style="border-bottom:1px solid #000000;border-right:1px solid #000000;padding:2px 3px;vertical-align:bottom;">&nbsp;</td>
+        <td style="border-bottom:1px solid #000000;border-right:1px solid #000000;padding:2px 3px;vertical-align:bottom;">&nbsp;</td>
+        <td style="border-bottom:1px solid #000000;border-right:1px solid #000000;padding:2px 3px;vertical-align:bottom;">&nbsp;</td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1px solid #000000;border-left:1px solid #000000;border-right:1px solid #000000;padding:2px 3px;vertical-align:bottom;">logID</td>
+        <td style="border-bottom:1px solid #000000;border-right:1px solid #000000;padding:2px 3px;vertical-align:bottom;">String</td>
+        <td style="background-color:#ffffff;border-bottom:1px solid #000000;border-right:1px solid #000000;padding:2px 3px;vertical-align:bottom;">LG001</td>
+        <td style="border-bottom:1px solid #000000;border-right:1px solid #000000;padding:2px 3px;vertical-align:bottom;">&nbsp;</td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1px solid #000000;border-left:1px solid #000000;border-right:1px solid #000000;padding:2px 3px;vertical-align:bottom;">data</td>
+        <td style="border-bottom:1px solid #000000;border-right:1px solid #000000;padding:2px 3px;vertical-align:bottom;">&nbsp;</td>
+        <td style="border-bottom:1px solid #000000;border-right:1px solid #000000;padding:2px 3px;vertical-align:bottom;">&nbsp;</td>
+        <td style="border-bottom:1px solid #000000;border-right:1px solid #000000;padding:2px 3px;vertical-align:bottom;">&nbsp;</td>
+      </tr>
+    </tbody>
+  </table>
+</figure>
+<h1>Error Codes:</h1>
+<p>&nbsp;</p>
+<figure class="table" style="width:792px;">
+  <table style="border-bottom:groove;border-left:groove;border-right:groove;border-top:groove;">
+    <thead>
+      <tr>
+        <th style="border-bottom:1px solid #000000;border-left:1px solid #000000;border-right:1px solid #000000;border-top:1px solid #000000;padding:10px;vertical-align:bottom;"><strong>Error Code</strong></th>
+        <th style="border-bottom:1px solid #000000;border-right:1px solid #000000;border-top:1px solid #000000;padding:10px;vertical-align:bottom;"><strong>Error Description</strong></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="border-bottom:1px solid #000000;border-left:1px solid #000000;border-right:1px solid #000000;padding:2px 3px;text-align:right;vertical-align:bottom;">&nbsp;</td>
+        <td style="border-bottom:1px solid #000000;border-right:1px solid #000000;padding:2px 3px;vertical-align:bottom;">&nbsp;</td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1px solid #000000;border-left:1px solid #000000;border-right:1px solid #000000;padding:2px 3px;text-align:right;vertical-align:bottom;">&nbsp;</td>
+        <td style="border-bottom:1px solid #000000;border-right:1px solid #000000;padding:2px 3px;vertical-align:bottom;">&nbsp;</td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1px solid #000000;border-left:1px solid #000000;border-right:1px solid #000000;padding:2px 3px;text-align:right;vertical-align:bottom;">&nbsp;</td>
+        <td style="border-bottom:1px solid #000000;border-right:1px solid #000000;padding:2px 3px;vertical-align:bottom;">&nbsp;</td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1px solid #000000;border-left:1px solid #000000;border-right:1px solid #000000;padding:2px 3px;text-align:right;vertical-align:bottom;">&nbsp;</td>
+        <td style="border-bottom:1px solid #000000;border-right:1px solid #000000;padding:2px 3px;vertical-align:bottom;">&nbsp;</td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1px solid #000000;border-left:1px solid #000000;border-right:1px solid #000000;padding:2px 3px;text-align:right;vertical-align:bottom;">&nbsp;</td>
+        <td style="border-bottom:1px solid #000000;border-right:1px solid #000000;padding:2px 3px;vertical-align:bottom;">&nbsp;</td>
+      </tr>
+    </tbody>
+  </table>
+</figure>
+<h1>Notes:</h1>
+<p>&nbsp;</p>

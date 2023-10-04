@@ -1,0 +1,56 @@
+<!--
+title: Counter Registration
+description: 
+published: true
+date: 2023-09-27T11:51:19.993Z
+tags: 
+editor: ckeditor
+dateCreated: 2023-07-17T07:34:56.012Z
+-->
+
+<p><strong>Counter Registration</strong></p>
+<ul>
+  <li>The main purpose of this feature is to have a provision to register counters in a particular store or stores within the company by providing counter registration details, EDC configurations at the counter level, and overriding counter-specific properties (if required) to facilitate the process of retail billing operations in Unify.</li>
+  <li>This feature will also help users to configure EDC devices at each counter level by providing/modifying the specifications like merchant ID, IP address, and port number of each EDC device.</li>
+  <li>This feature will also help users to override the POS properties at a counter level in the counter properties section if required. The POS configuration templates assigned to the store or stores belonging to store attributes will be applicable to all the counters within the store. If any counter specifically requires a change in any property, the users can use this feature to override the properties for a particular counter.</li>
+</ul>
+<p><strong>Counter Registration Card View Screen:</strong></p>
+<ul>
+  <li>On accessing the Counter Registration from the ‘Store Administration’ menu, a Card View screen will be shown with the ability to select the store from the drop-down which will populate all the counters available for the selected store.</li>
+  <li>If the user has access to multiple companies within the group, the user can change the company using the breadcrumb on the left-hand side and on changing the company, stores related to the selected company will be displayed.</li>
+  <li>On the top right of the card view screen, users can search the existing counters created using the search box by entering the counter code or counter name.</li>
+  <li>Users can also filter the counters by countertypes using the filter dropdown available. There is also an option to filter active or inactive counters.</li>
+  <li>In the card view screen, for each counter, there is a 3 dots button that has two options - EDIT and EDC Config. Given the user has access to these options - they can edit an existing counter and modify the properties for a specific counter as per the requirement.&nbsp;</li>
+</ul>
+<figure class="image image_resized" style="width:624px;"><img src="https://lh5.googleusercontent.com/hnA2q0NsblfQb5Nt63Fe_80vQvwi5M8cw8BFsV-hYnrg7jBwWdja9zWvb1tEEsFujDfY1rk8Qag3-EojKEi2bmteYs_1yX7E-j9wbg0eKO-yH7Thg0aLbUfDj7ACD-7BJrpu_-rYlmL4HLh41YHupHA"></figure>
+<p><strong><u>Counter Creation Page:</u></strong></p>
+<ul>
+  <li>Users can create new counters using the plus (+) button, which will open up the creation page where users can enter the counter code, counter name, and type of the counter and status (by default in active state).</li>
+  <li><strong>Counter Code</strong>: In this field, users can enter up to 5 alphanumeric characters. This is a mandatory field.</li>
+  <li><strong>Retail Configuration Template&nbsp; Name:</strong> This is an alphanumeric field to enter the name of the counter to be created Users can enter up to 30 characters. This is a mandatory field.</li>
+  <li><strong>Counter Type:</strong> Users have the ability to select the type of counter they want to create. This selection can be made from a dropdown menu, where users can choose from three options: POS, Mobile, or Display.</li>
+  <li><strong>Status:</strong> The current status of the counter to be created can be defined using the status toggle.</li>
+</ul>
+<figure class="image image_resized" style="width:624px;"><img src="https://lh5.googleusercontent.com/3vjwRzwatxrF3273GluH1V8XFg06NsUeR0tA9d6GZ1wdaSgPAyonOHl6AYO4luAiD24ym9uRm3I30CckxUGdhu33c49pBlZQxneJktazeypFKiFgoFBJ1m01ReiVDeKSfru74LVhzQAi2b9ZgdViXZw"></figure>
+<ul>
+  <li>On saving a new counter, a popup message will be displayed indicating that the new counter is created and if the user requires to override the counter level properties for the newly created counter.&nbsp;<br><br>&nbsp;</li>
+  <li>Users can also configure EDC specifically for the newly created counter by clicking on the <strong>‘EDC config’ </strong>button on the top right which will be redirected to the Store EDC configuration menu where users can activate EDC specifically for the created counters.</li>
+  <li>On activating Store EDCs for the counters, activated EDCs will be shown on each card of the counter on the list screen page to indicate the EDCs connected to each counter.</li>
+</ul>
+<figure class="image image_resized" style="width:624px;"><img src="https://lh4.googleusercontent.com/ELyTMZ-A6kwqSPdiHo-IOao6y3j80VOV-YeBIcE8RkltADVaaMCX3p0flP54RUuO3LmvdpNrdvlSOcEtv1GITDbTKnMHk8iOWv44zIGByc0-AHcHmHCUN6jAvHU751PqrjqA476K9MIFkPZPRfdU-80"></figure>
+<p><strong>Counter Specific Properties - Overriding properties</strong><br><br>&nbsp;</p>
+<ul>
+  <li>After creating counters, users can override the counter configuration properties by clicking on the counter-specific properties button which will display the template name and template code of the counter configuration template which was attached to the store/store attribute in the store configuration group.<br><br>&nbsp;</li>
+  <li>On overriding properties, the ‘modified’ text will be shown below the property name as an indication that the property was overridden specifically for that particular counter.</li>
+</ul>
+<figure class="image image_resized" style="width:662px;"><img src="https://lh5.googleusercontent.com/xtz544Dc-9quIqJfAeBaM9BrkL4hmo6GYtO_nxLByHrEzikJUWW9kR8-Hmz7Qrqj1_e_MM2fupm1Psy572UIYXyF7YagGTFsjCLLn7_2rzMWnI30a8w0GyHCEs0b1bau6zHUMOz8G1nezNw8B9Ze6_4"></figure>
+<figure class="image image_resized" style="width:660px;"><img src="https://lh4.googleusercontent.com/-241a_vhv5IRMO3E-PhKV_VB9YPQM2OykIinYXpVPQbHimHK5VjDaW3hTegE0YGK7PXhKKD0ziri4st9m0MphXKrcDw_NM8Ll5xT4kapsoUAbsEw0Rt03Bxtsz1uP0zZBGkwv1aZXVY3G_kciZBiioI"></figure>
+<p><strong><u>Counter Editing:</u></strong></p>
+<ul>
+  <li>Considering the user has access to edit rights for the counter registration menu, In 3 dots edit option will be available for each card. On clicking on the edit button of a particular counter, the edit page will open up where the user can modify the counter code, counter name, and type of counter required and click on the update button.</li>
+  <li>On clicking update, a popup message will be displayed indicating if the user is required to override the properties specifically for this counter - <strong>Counter Updated Successfully, Do You Want To Override Configuration Properties Specifically For This Counter?</strong></li>
+  <li>On clicking Yes, the Counter configuration template which was configured in the store configuration group for the selected store, will be shown along with the properties in the ‘Configuration-Counter’ section.</li>
+  <li>Users can navigate through the available configuration subtypes like General Settings, Peripheral Settings, Mobility Settings, Payment Modes, Dual Screen Media Upload, and override the required properties specifically for the edited counter.</li>
+</ul>
+<figure class="image image_resized" style="width:665px;"><img src="https://lh6.googleusercontent.com/7QGrSrOGpuYb6zAB3NqnmzIhwRuPTdaNkuYpZFC0tizwPT7TLNcr0WJPtJbn7K8EYnsPX57XCMiUkOVizTucxTMcUxe3h7Mo90N6dEyVms70SgJ-bClRaOo1LLrOJoCeQl83wVS655rsydjbq_F7YI0"></figure>
+<figure class="image image_resized" style="width:665px;"><img src="https://lh3.googleusercontent.com/9boG2PJGiJB8Fu2vFGcqCEluAEfTbabpHxUVh1F0PE_DIsU-sVAXqvcPhtS0F4fZv-iLCHd40AHGPs4I0FXud542IY3m_2-5yfMWuTBh86IsbUiF3uc2PJ7vRD6jnfZ6F9y85eB4QLnNKlp1_BmZQDc"></figure>

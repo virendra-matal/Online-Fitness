@@ -1,0 +1,720 @@
+<!--
+title: Walk-In
+description: 
+published: true
+date: 2023-06-22T06:49:28.377Z
+tags: walk_in
+editor: ckeditor
+dateCreated: 2023-06-19T11:37:24.784Z
+-->
+
+<p><i><strong>Description</strong></i><strong>:&nbsp;</strong></p>
+<p>This API is for creating Walk In Entries in Unified from an external system. Walk In Entries &nbsp;will be created in Unified by this API.&nbsp;</p>
+<p><i><strong>Path/Endpoints</strong></i><strong>&nbsp;:&nbsp;</strong></p>
+<p>The API endpoint will be given by Unified Team for the the App.&nbsp;</p>
+<p><i><strong>Version</strong></i><strong>:&nbsp;</strong></p>
+<p>Unified</p>
+<p><i><strong>Type</strong></i><strong>:&nbsp;</strong></p>
+<p>POST</p>
+<p><strong>Request Parameters :</strong></p>
+<p>&nbsp;</p>
+<figure class="table" style="float:left;">
+  <table style="border-bottom:none;border-left:none;border-right:none;border-top:none;">
+    <tbody>
+      <tr>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:1.0pt solid windowtext;border-right:1.0pt solid windowtext;border-top:1.0pt solid windowtext;height:49.15pt;padding:0in 5.4pt;vertical-align:top;width:96.7pt;">
+          <p style="text-align:center;">Name</p>
+        </td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:1.0pt none windowtext;border-right:1.0pt solid windowtext;border-top:1.0pt solid windowtext;height:49.15pt;padding:0in 5.4pt;vertical-align:top;width:76.95pt;">
+          <p style="text-align:center;">Type</p>
+        </td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:1.0pt none windowtext;border-right:1.0pt solid windowtext;border-top:1.0pt solid windowtext;height:49.15pt;padding:0in 5.4pt;vertical-align:top;width:88.25pt;">
+          <p style="text-align:center;">Mandatory</p>
+        </td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:1.0pt none windowtext;border-right:1.0pt solid windowtext;border-top:1.0pt solid windowtext;height:49.15pt;padding:0in 5.4pt;vertical-align:top;width:100.1pt;">
+          <p style="text-align:center;">Sample Value</p>
+        </td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:1.0pt none windowtext;border-right:1.0pt solid windowtext;border-top:1.0pt solid windowtext;height:49.15pt;padding:0in 5.4pt;vertical-align:top;width:88.8pt;">
+          <p style="text-align:center;">Description</p>
+        </td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:1.0pt solid windowtext;border-right:1.0pt solid windowtext;border-top:1.0pt none windowtext;padding:0in 5.4pt;vertical-align:top;width:96.7pt;">
+          <p>groupID</p>
+          <p>&nbsp;</p>
+        </td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0in 5.4pt;vertical-align:top;width:76.95pt;">int</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0in 5.4pt;vertical-align:top;width:88.25pt;">Yes</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0in 5.4pt;vertical-align:top;width:100.1pt;">1001</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0in 5.4pt;vertical-align:top;width:88.8pt;">GroupId of the Unified instance<br>Will be provided by the Unified team for your setup</td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:1.0pt solid windowtext;border-right:1.0pt solid windowtext;border-top:1.0pt none windowtext;padding:0in 5.4pt;vertical-align:top;width:96.7pt;">
+          <p>companyID</p>
+          <p>&nbsp;</p>
+        </td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0in 5.4pt;vertical-align:top;width:76.95pt;">int</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0in 5.4pt;vertical-align:top;width:88.25pt;">Yes</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0in 5.4pt;vertical-align:top;width:100.1pt;">100</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0in 5.4pt;vertical-align:top;width:88.8pt;">CompanyId of the&nbsp; Unified instance<br>Will be provided by the&nbsp; Unified team for your setup</td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:1.0pt solid windowtext;border-right:1.0pt solid windowtext;border-top:1.0pt none windowtext;padding:0in 5.4pt;vertical-align:top;width:96.7pt;">
+          <p>storeCode</p>
+          <p>&nbsp;</p>
+        </td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0in 5.4pt;vertical-align:top;width:76.95pt;">String</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0in 5.4pt;vertical-align:top;width:88.25pt;">Yes</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0in 5.4pt;vertical-align:top;width:100.1pt;">
+          <p>“Tanisq”</p>
+          <p>&nbsp;</p>
+        </td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0in 5.4pt;vertical-align:top;width:88.8pt;">
+          <p>StoreCode</p>
+          <p>of the&nbsp; Unified instance<br>Will be provided by the&nbsp; Unified team for your setup</p>
+        </td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:1.0pt solid windowtext;border-right:1.0pt solid windowtext;border-top:1.0pt none windowtext;padding:0in 5.4pt;vertical-align:top;width:96.7pt;">
+          <p>storeName</p>
+          <p>&nbsp;</p>
+        </td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0in 5.4pt;vertical-align:top;width:76.95pt;">String</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0in 5.4pt;vertical-align:top;width:88.25pt;">Yes</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0in 5.4pt;vertical-align:top;width:100.1pt;">
+          <p>“Tanisq”</p>
+          <p>&nbsp;</p>
+        </td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0in 5.4pt;vertical-align:top;width:88.8pt;">
+          <p>StoreName</p>
+          <p>of the&nbsp; Unified instance<br>Will be provided by the&nbsp; Unified team for your setup</p>
+        </td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:1.0pt solid windowtext;border-right:1.0pt solid windowtext;border-top:1.0pt none windowtext;padding:0in 5.4pt;vertical-align:top;width:96.7pt;">
+          <p>noOfGates</p>
+          <p>&nbsp;</p>
+        </td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0in 5.4pt;vertical-align:top;width:76.95pt;">int</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0in 5.4pt;vertical-align:top;width:88.25pt;">Yes</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0in 5.4pt;vertical-align:top;width:100.1pt;">2</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0in 5.4pt;vertical-align:top;width:88.8pt;">
+          <p>NoOfGates</p>
+          <p>of the&nbsp; Unified instance<br>Will be provided by the&nbsp; Unified team for your setup. You can enter maximum 4 gates according to Unified setup</p>
+        </td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:1.0pt solid windowtext;border-right:1.0pt solid windowtext;border-top:1.0pt none windowtext;padding:0in 5.4pt;vertical-align:top;width:96.7pt;">
+          <p>timeZone1</p>
+          <p>&nbsp;</p>
+        </td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0in 5.4pt;vertical-align:top;width:76.95pt;">String</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0in 5.4pt;vertical-align:top;width:88.25pt;">Yes</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0in 5.4pt;vertical-align:top;width:100.1pt;">“+5:30”</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0in 5.4pt;vertical-align:top;width:88.8pt;">
+          <p>TimeZone1</p>
+          <p>of the&nbsp; &nbsp;Unified instance<br>Will be provided by the&nbsp; Unified team for your setup.You can enter either timeZone1 or timeZone</p>
+        </td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:1.0pt solid windowtext;border-right:1.0pt solid windowtext;border-top:1.0pt none windowtext;padding:0in 5.4pt;vertical-align:top;width:96.7pt;">
+          <p>timeZone</p>
+          <p>&nbsp;</p>
+        </td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0in 5.4pt;vertical-align:top;width:76.95pt;">String</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0in 5.4pt;vertical-align:top;width:88.25pt;">Yes</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0in 5.4pt;vertical-align:top;width:100.1pt;">
+          <p>“Africa/Mogadishu”</p>
+          <p>&nbsp;</p>
+        </td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0in 5.4pt;vertical-align:top;width:88.8pt;">
+          <p>TimeZone</p>
+          <p>of the&nbsp; Unified instance<br>Will be provided by the&nbsp; Unified team for your setup. You can enter either timeZone1 or timeZone.</p>
+        </td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:1.0pt solid windowtext;border-right:1.0pt solid windowtext;border-top:1.0pt none windowtext;padding:0in 5.4pt;vertical-align:top;width:96.7pt;">
+          <p>entryGateNo</p>
+          <p>&nbsp;</p>
+        </td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0in 5.4pt;vertical-align:top;width:76.95pt;">int</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0in 5.4pt;vertical-align:top;width:88.25pt;">Yes</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0in 5.4pt;vertical-align:top;width:100.1pt;">1</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0in 5.4pt;vertical-align:top;width:88.8pt;">You can give gate no .</td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:1.0pt solid windowtext;border-right:1.0pt solid windowtext;border-top:1.0pt none windowtext;padding:0in 5.4pt;vertical-align:top;width:96.7pt;">
+          <p>walkInDate</p>
+          <p>&nbsp;</p>
+        </td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0in 5.4pt;vertical-align:top;width:76.95pt;">String</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0in 5.4pt;vertical-align:top;width:88.25pt;">Yes</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0in 5.4pt;vertical-align:top;width:100.1pt;">
+          <p>“2023-06-21”</p>
+          <p>&nbsp;</p>
+        </td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0in 5.4pt;vertical-align:top;width:88.8pt;">You can Enter date&nbsp;</td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:1.0pt solid windowtext;border-right:1.0pt solid windowtext;border-top:1.0pt none windowtext;padding:0in 5.4pt;vertical-align:top;width:96.7pt;">
+          <p>Remarks</p>
+          <p>&nbsp;</p>
+        </td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0in 5.4pt;vertical-align:top;width:76.95pt;">String</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0in 5.4pt;vertical-align:top;width:88.25pt;">No</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0in 5.4pt;vertical-align:top;width:100.1pt;">“Low Walk In”</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0in 5.4pt;vertical-align:top;width:88.8pt;">You can Enter remark.</td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:1.0pt solid windowtext;border-right:1.0pt solid windowtext;border-top:1.0pt none windowtext;padding:0in 5.4pt;vertical-align:top;width:96.7pt;">
+          <p>Status</p>
+          <p>&nbsp;</p>
+        </td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0in 5.4pt;vertical-align:top;width:76.95pt;">int</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0in 5.4pt;vertical-align:top;width:88.25pt;">Yes</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0in 5.4pt;vertical-align:top;width:100.1pt;">1</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0in 5.4pt;vertical-align:top;width:88.8pt;">
+          <p>Status</p>
+          <p>of the&nbsp; Unified instance<br>Will be provided by the&nbsp; Unified team for your setup..</p>
+        </td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:1.0pt solid windowtext;border-right:1.0pt solid windowtext;border-top:1.0pt none windowtext;padding:0in 5.4pt;vertical-align:top;width:96.7pt;">
+          <p>approverID</p>
+          <p>&nbsp;</p>
+        </td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0in 5.4pt;vertical-align:top;width:76.95pt;">int</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0in 5.4pt;vertical-align:top;width:88.25pt;">No</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0in 5.4pt;vertical-align:top;width:100.1pt;">2</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0in 5.4pt;vertical-align:top;width:88.8pt;">This is not mandatory</td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:1.0pt solid windowtext;border-right:1.0pt solid windowtext;border-top:1.0pt none windowtext;height:6.6pt;padding:0in 5.4pt;vertical-align:top;width:96.7pt;">
+          <p>startTime</p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+        </td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;height:6.6pt;padding:0in 5.4pt;vertical-align:top;width:76.95pt;">int</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;height:6.6pt;padding:0in 5.4pt;vertical-align:top;width:88.25pt;">Yes</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;height:6.6pt;padding:0in 5.4pt;vertical-align:top;width:100.1pt;">09:00 AM</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;height:6.6pt;padding:0in 5.4pt;vertical-align:top;width:88.8pt;">You can Enter start time</td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:1.0pt solid windowtext;border-right:1.0pt solid windowtext;border-top:1.0pt none windowtext;padding:0in 5.4pt;vertical-align:top;width:96.7pt;">
+          <p>endTime</p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+        </td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0in 5.4pt;vertical-align:top;width:76.95pt;">int</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0in 5.4pt;vertical-align:top;width:88.25pt;">Yes</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0in 5.4pt;vertical-align:top;width:100.1pt;">10:00 AM</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0in 5.4pt;vertical-align:top;width:88.8pt;">You can Enter end time</td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:1.0pt solid windowtext;border-right:1.0pt solid windowtext;border-top:1.0pt none windowtext;padding:0in 5.4pt;vertical-align:top;width:96.7pt;">
+          <p>walkinGroup1</p>
+          <p>&nbsp;</p>
+        </td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0in 5.4pt;vertical-align:top;width:76.95pt;">int</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0in 5.4pt;vertical-align:top;width:88.25pt;">Yes</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0in 5.4pt;vertical-align:top;width:100.1pt;">344</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0in 5.4pt;vertical-align:top;width:88.8pt;">You can Enter walk in group count . You can fill all walk in group or which group you want to fill.</td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:1.0pt solid windowtext;border-right:1.0pt solid windowtext;border-top:1.0pt none windowtext;padding:0in 5.4pt;vertical-align:top;width:96.7pt;">
+          <p>walkinGroup2</p>
+          <p>&nbsp;</p>
+        </td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0in 5.4pt;vertical-align:top;width:76.95pt;">int</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0in 5.4pt;vertical-align:top;width:88.25pt;">Yes</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0in 5.4pt;vertical-align:top;width:100.1pt;">5</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0in 5.4pt;vertical-align:top;width:88.8pt;">You can Enter walk in group count . You can fill all walk in group or which group you want to fill.</td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:1.0pt solid windowtext;border-right:1.0pt solid windowtext;border-top:1.0pt none windowtext;padding:0in 5.4pt;vertical-align:top;width:96.7pt;">
+          <p>walkinGroup3</p>
+          <p>&nbsp;</p>
+        </td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0in 5.4pt;vertical-align:top;width:76.95pt;">int</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0in 5.4pt;vertical-align:top;width:88.25pt;">Yes</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0in 5.4pt;vertical-align:top;width:100.1pt;">45</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0in 5.4pt;vertical-align:top;width:88.8pt;">You can Enter walk in group count . You can fill all walk in group or which group you want to fill.</td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:1.0pt solid windowtext;border-right:1.0pt solid windowtext;border-top:1.0pt none windowtext;padding:0in 5.4pt;vertical-align:top;width:96.7pt;">
+          <p>walkinGroup4</p>
+          <p>&nbsp;</p>
+        </td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0in 5.4pt;vertical-align:top;width:76.95pt;">int</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0in 5.4pt;vertical-align:top;width:88.25pt;">Yes</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0in 5.4pt;vertical-align:top;width:100.1pt;">45</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0in 5.4pt;vertical-align:top;width:88.8pt;">You can Enter walk in group count . You can fill all walk in group or which group you want to fill.</td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:1.0pt solid windowtext;border-right:1.0pt solid windowtext;border-top:1.0pt none windowtext;padding:0in 5.4pt;vertical-align:top;width:96.7pt;">
+          <p>walkinGroup5</p>
+          <p>&nbsp;</p>
+        </td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0in 5.4pt;vertical-align:top;width:76.95pt;">int</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0in 5.4pt;vertical-align:top;width:88.25pt;">Yes</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0in 5.4pt;vertical-align:top;width:100.1pt;">45</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0in 5.4pt;vertical-align:top;width:88.8pt;">You can Enter walk in group count . You can fill all walk in group or which group you want to fill.</td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:1.0pt solid windowtext;border-right:1.0pt solid windowtext;border-top:1.0pt none windowtext;padding:0in 5.4pt;vertical-align:top;width:96.7pt;">
+          <p>walkinGroup6</p>
+          <p>&nbsp;</p>
+        </td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0in 5.4pt;vertical-align:top;width:76.95pt;">int</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0in 5.4pt;vertical-align:top;width:88.25pt;">Yes</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0in 5.4pt;vertical-align:top;width:100.1pt;">56</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0in 5.4pt;vertical-align:top;width:88.8pt;">You can Enter walk in group count . You can fill all walk in group or which group you want to fill.</td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:1.0pt solid windowtext;border-right:1.0pt solid windowtext;border-top:1.0pt none windowtext;padding:0in 5.4pt;vertical-align:top;width:96.7pt;">
+          <p>walkinGroup7</p>
+          <p>&nbsp;</p>
+        </td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0in 5.4pt;vertical-align:top;width:76.95pt;">int</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0in 5.4pt;vertical-align:top;width:88.25pt;">Yes</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0in 5.4pt;vertical-align:top;width:100.1pt;">45</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0in 5.4pt;vertical-align:top;width:88.8pt;">You can Enter walk in group count . You can fill all walk in group or which group you want to fill.</td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:1.0pt solid windowtext;border-right:1.0pt solid windowtext;border-top:1.0pt none windowtext;padding:0in 5.4pt;vertical-align:top;width:96.7pt;">
+          <p>walkinGroup8</p>
+          <p>&nbsp;</p>
+        </td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0in 5.4pt;vertical-align:top;width:76.95pt;">int</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0in 5.4pt;vertical-align:top;width:88.25pt;">Yes</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0in 5.4pt;vertical-align:top;width:100.1pt;">45</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0in 5.4pt;vertical-align:top;width:88.8pt;">You can Enter walk in group count . You can fill all walk in group or which group you want to fill.</td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:1.0pt solid windowtext;border-right:1.0pt solid windowtext;border-top:1.0pt none windowtext;padding:0in 5.4pt;vertical-align:top;width:96.7pt;">
+          <p>walkinGroup9</p>
+          <p>&nbsp;</p>
+        </td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0in 5.4pt;vertical-align:top;width:76.95pt;">int</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0in 5.4pt;vertical-align:top;width:88.25pt;">Yes</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0in 5.4pt;vertical-align:top;width:100.1pt;">23</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0in 5.4pt;vertical-align:top;width:88.8pt;">You can Enter walk in group count . You can fill all walk in group or which group you want to fill.</td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:1.0pt solid windowtext;border-right:1.0pt solid windowtext;border-top:1.0pt none windowtext;padding:0in 5.4pt;vertical-align:top;width:96.7pt;">
+          <p>walkinGroup10</p>
+          <p>&nbsp;</p>
+        </td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0in 5.4pt;vertical-align:top;width:76.95pt;">int</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0in 5.4pt;vertical-align:top;width:88.25pt;">Yes</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0in 5.4pt;vertical-align:top;width:100.1pt;">23</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0in 5.4pt;vertical-align:top;width:88.8pt;">You can Enter walk in group count . You can fill all walk in group or which group you want to fill.</td>
+      </tr>
+    </tbody>
+  </table>
+</figure>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><strong>Request JSON:</strong></p>
+<p>&nbsp;</p>
+<p>{</p>
+<p>&nbsp; &nbsp; "actionInfo": {</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; "actionId": "ADDWLKIN"</p>
+<p>&nbsp; &nbsp; },</p>
+<p>&nbsp; &nbsp; "formData": {</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; "groupID": "1001",</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; "companyID": "100",</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; "storeCode": "",</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; "storeName": "application1 app8",</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; "noOfGates": 2,</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; "timeZone1": "",</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; "timeZone": "Africa/Mogadishu",</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; "entryGates": [</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "entryGateNo": "1",</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;"walkInEntryContents": [</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "head": {</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;"walkInDate": "2023-06-20",</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;"remarks": "Low Walk In",</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "status": "1",</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;"approverID": "5"</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; },</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "line": [</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;"walkInHeadID": "",</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "startTime": "10:00 AM",</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;"endTime": "11:00 am",</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;"walkinGroup1": "2",</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;"walkinGroup2": "2",</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;"walkinGroup3": "",</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "walkinGroup4": "",</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;"walkinGroup5": "",</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;"walkinGroup6": "",</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;"walkinGroup7": "",</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;"walkinGroup8": "",</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "walkinGroup9": "",</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;"walkinGroup10": ""</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; },</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;"walkInHeadID": "",</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;"startTime": "11:00 am",</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;"endTime": "12:00 pm",</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;"walkinGroup1": "6",</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "walkinGroup2": "6",</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;"walkinGroup3": "6",</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;"walkinGroup4": "6",</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;"walkinGroup5": "6",</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;"walkinGroup6": "",</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;"walkinGroup7": "",</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;"walkinGroup8": "",</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;"walkinGroup9": "",</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;"walkinGroup10": ""</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ]</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ]</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; },</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "entryGateNo": "2",</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;"walkInEntryContents": [</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "head": {</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;"walkInDate": "2023-06-20",</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;"remarks": "",</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "status": "1",</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;"approverID": "5"</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; },</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "line": [</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;{</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;"walkInHeadID": "",</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;"startTime": "10:00 am",</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;"endTime": "11:00 am",</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;"walkinGroup1": "9",</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "walkinGroup2": "9",</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;"walkinGroup3": "9",</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;"walkinGroup4": "9",</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;"walkinGroup5": "",</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;"walkinGroup6": "",</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;"walkinGroup7": "",</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;"walkinGroup8": "",</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;"walkinGroup9": "",</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;"walkinGroup10": "",</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; },</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;"walkInHeadID": "",</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;"startTime": "11:00 am",</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;"endTime": "12:00 pm",</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;"walkinGroup1": "2",</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;"walkinGroup2": "",</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;"walkinGroup3": "4",</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;"walkinGroup4": "4",</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;"walkinGroup5": "",</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;"walkinGroup6": "",</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;"walkinGroup7": "",</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;"walkinGroup8": "",</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "walkinGroup9": "",</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;"walkinGroup10</p>
+<p>": "",</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ]</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ]</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; ]</p>
+<p>&nbsp; &nbsp; }</p>
+<p>}</p>
+<p>&nbsp;</p>
+<p>"response": {</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; "type": "S",</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; "respCode": "0000",</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; "respMsg": "Walk In Details Added Successfully",</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; "respHdr": "Walk In Details",</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; "logID": "LG202306200523048440055:"</p>
+<p>&nbsp; &nbsp; },</p>
+<p>Copy</p>
+<p><strong>Response JSON Fields:&nbsp;</strong></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<figure class="table">
+  <table style="background-color:white;border-bottom:none;border-left:none;border-right:none;border-top:none;">
+    <thead>
+      <tr>
+        <th style="background-color:#EFF1F3;border-bottom:1.0pt solid black;border-left:1.0pt solid black;border-right:1.0pt solid black;border-top:1.0pt solid black;padding:1.5pt 2.25pt;vertical-align:bottom;">
+          <p style="text-align:center;"><strong>Name</strong></p>
+        </th>
+        <th style="background-color:#EFF1F3;border-bottom:1.0pt solid black;border-left:1.0pt none black;border-right:1.0pt solid black;border-top:1.0pt solid black;padding:1.5pt 2.25pt;vertical-align:bottom;">
+          <p style="text-align:center;"><strong>Type</strong></p>
+        </th>
+        <th style="background-color:#EFF1F3;border-bottom:1.0pt solid black;border-left:1.0pt none black;border-right:1.0pt solid black;border-top:1.0pt solid black;padding:1.5pt 2.25pt;vertical-align:bottom;">
+          <p style="text-align:center;"><strong>Sample value</strong></p>
+        </th>
+        <th style="background-color:#EFF1F3;border-bottom:1.0pt solid black;border-left:1.0pt none black;border-right:1.0pt solid black;border-top:1.0pt solid black;padding:1.5pt 2.25pt;vertical-align:bottom;">
+          <p style="text-align:center;"><strong>Description</strong></p>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="border-bottom:2.25pt groove #E6E6E6;border-left:2.25pt groove #E6E6E6;border-right:2.25pt groove #E6E6E6;border-top:2.25pt none #E6E6E6;padding:1.5pt 2.25pt;vertical-align:bottom;">type</td>
+        <td style="border-bottom:2.25pt groove #E6E6E6;border-left:none;border-right:2.25pt groove #E6E6E6;border-top:none;padding:1.5pt 2.25pt;vertical-align:bottom;">String</td>
+        <td style="border-bottom:2.25pt groove #E6E6E6;border-left:none;border-right:2.25pt groove #E6E6E6;border-top:none;padding:1.5pt 2.25pt;vertical-align:bottom;">S</td>
+        <td style="border-bottom:2.25pt groove #E6E6E6;border-left:none;border-right:2.25pt groove #E6E6E6;border-top:none;padding:1.5pt 2.25pt;vertical-align:bottom;">&nbsp;</td>
+      </tr>
+      <tr>
+        <td style="border-bottom:2.25pt groove #E6E6E6;border-left:2.25pt groove #E6E6E6;border-right:2.25pt groove #E6E6E6;border-top:2.25pt none #E6E6E6;padding:1.5pt 2.25pt;vertical-align:bottom;">respCode</td>
+        <td style="border-bottom:2.25pt groove #E6E6E6;border-left:none;border-right:2.25pt groove #E6E6E6;border-top:none;padding:1.5pt 2.25pt;vertical-align:bottom;">Int</td>
+        <td style="border-bottom:2.25pt groove #E6E6E6;border-left:none;border-right:2.25pt groove #E6E6E6;border-top:none;padding:1.5pt 2.25pt;vertical-align:bottom;">0000</td>
+        <td style="border-bottom:2.25pt groove #E6E6E6;border-left:none;border-right:2.25pt groove #E6E6E6;border-top:none;padding:1.5pt 2.25pt;vertical-align:bottom;">&nbsp;</td>
+      </tr>
+      <tr>
+        <td style="border-bottom:2.25pt groove #E6E6E6;border-left:2.25pt groove #E6E6E6;border-right:2.25pt groove #E6E6E6;border-top:2.25pt none #E6E6E6;padding:1.5pt 2.25pt;vertical-align:bottom;">respMsg</td>
+        <td style="border-bottom:2.25pt groove #E6E6E6;border-left:none;border-right:2.25pt groove #E6E6E6;border-top:none;padding:1.5pt 2.25pt;vertical-align:bottom;">String</td>
+        <td style="border-bottom:2.25pt groove #E6E6E6;border-left:none;border-right:2.25pt groove #E6E6E6;border-top:none;padding:1.5pt 2.25pt;vertical-align:bottom;">Success Or Error Message</td>
+        <td style="border-bottom:2.25pt groove #E6E6E6;border-left:none;border-right:2.25pt groove #E6E6E6;border-top:none;padding:1.5pt 2.25pt;vertical-align:bottom;">&nbsp;</td>
+      </tr>
+      <tr>
+        <td style="border-bottom:2.25pt groove #E6E6E6;border-left:2.25pt groove #E6E6E6;border-right:2.25pt groove #E6E6E6;border-top:2.25pt none #E6E6E6;padding:1.5pt 2.25pt;vertical-align:bottom;">respHdr</td>
+        <td style="border-bottom:2.25pt groove #E6E6E6;border-left:none;border-right:2.25pt groove #E6E6E6;border-top:none;padding:1.5pt 2.25pt;vertical-align:bottom;">&nbsp;String</td>
+        <td style="border-bottom:2.25pt groove #E6E6E6;border-left:none;border-right:2.25pt groove #E6E6E6;border-top:none;padding:1.5pt 2.25pt;vertical-align:bottom;">&nbsp;Walk In Details</td>
+        <td style="border-bottom:2.25pt groove #E6E6E6;border-left:none;border-right:2.25pt groove #E6E6E6;border-top:none;padding:1.5pt 2.25pt;vertical-align:bottom;">&nbsp;</td>
+      </tr>
+      <tr>
+        <td style="border-bottom:2.25pt groove #E6E6E6;border-left:2.25pt groove #E6E6E6;border-right:2.25pt groove #E6E6E6;border-top:2.25pt none #E6E6E6;padding:1.5pt 2.25pt;vertical-align:bottom;">logID</td>
+        <td style="border-bottom:2.25pt groove #E6E6E6;border-left:none;border-right:2.25pt groove #E6E6E6;border-top:none;padding:1.5pt 2.25pt;vertical-align:bottom;">String</td>
+        <td style="border-bottom:2.25pt groove #E6E6E6;border-left:none;border-right:2.25pt groove #E6E6E6;border-top:none;padding:1.5pt 2.25pt;vertical-align:bottom;">LG202306200523048440055</td>
+        <td style="border-bottom:2.25pt groove #E6E6E6;border-left:none;border-right:2.25pt groove #E6E6E6;border-top:none;padding:1.5pt 2.25pt;vertical-align:bottom;">&nbsp;</td>
+      </tr>
+      <tr>
+        <td style="border-bottom:2.25pt groove #E6E6E6;border-left:2.25pt groove #E6E6E6;border-right:2.25pt groove #E6E6E6;border-top:2.25pt none #E6E6E6;padding:1.5pt 2.25pt;vertical-align:bottom;">data</td>
+        <td style="border-bottom:2.25pt groove #E6E6E6;border-left:none;border-right:2.25pt groove #E6E6E6;border-top:none;padding:1.5pt 2.25pt;vertical-align:bottom;">&nbsp;</td>
+        <td style="border-bottom:2.25pt groove #E6E6E6;border-left:none;border-right:2.25pt groove #E6E6E6;border-top:none;padding:1.5pt 2.25pt;vertical-align:bottom;">&nbsp;</td>
+        <td style="border-bottom:2.25pt groove #E6E6E6;border-left:none;border-right:2.25pt groove #E6E6E6;border-top:none;padding:1.5pt 2.25pt;vertical-align:bottom;">&nbsp;</td>
+      </tr>
+    </tbody>
+  </table>
+</figure>
+<p>&nbsp;</p>
+<p><strong>Error message:</strong></p>
+<p><strong>&nbsp;&nbsp;</strong></p>
+<figure class="table">
+  <table style="border-bottom:none;border-left:none;border-right:none;border-top:none;">
+    <tbody>
+      <tr>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:1.0pt solid windowtext;border-right:1.0pt solid windowtext;border-top:1.0pt solid windowtext;height:41.9pt;padding:0in 5.4pt;vertical-align:top;width:225.4pt;">
+          <p style="text-align:center;"><strong>Error Code</strong></p>
+        </td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:1.0pt none windowtext;border-right:1.0pt solid windowtext;border-top:1.0pt solid windowtext;height:41.9pt;padding:0in 5.4pt;vertical-align:top;width:225.4pt;">
+          <p style="text-align:center;"><strong>Error Message</strong></p>
+        </td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:1.0pt solid windowtext;border-right:1.0pt solid windowtext;border-top:1.0pt none windowtext;padding:0in 5.4pt;vertical-align:top;width:225.4pt;">1</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0in 5.4pt;vertical-align:top;width:225.4pt;">
+          <p>Group Id Does Not Exists</p>
+          <p>&nbsp;</p>
+        </td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:1.0pt solid windowtext;border-right:1.0pt solid windowtext;border-top:1.0pt none windowtext;padding:0in 5.4pt;vertical-align:top;width:225.4pt;">2</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0in 5.4pt;vertical-align:top;width:225.4pt;">
+          <p>Company Id Does Not Exists</p>
+          <p>&nbsp;</p>
+        </td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:1.0pt solid windowtext;border-right:1.0pt solid windowtext;border-top:1.0pt none windowtext;padding:0in 5.4pt;vertical-align:top;width:225.4pt;">3</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0in 5.4pt;vertical-align:top;width:225.4pt;">
+          <p>Store Code Or Name Does Not Exits</p>
+          <p>&nbsp;</p>
+        </td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:1.0pt solid windowtext;border-right:1.0pt solid windowtext;border-top:1.0pt none windowtext;padding:0in 5.4pt;vertical-align:top;width:225.4pt;">4</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0in 5.4pt;vertical-align:top;width:225.4pt;">
+          <p>Invalid Number of Gates</p>
+          <p>&nbsp;</p>
+        </td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:1.0pt solid windowtext;border-right:1.0pt solid windowtext;border-top:1.0pt none windowtext;padding:0in 5.4pt;vertical-align:top;width:225.4pt;">5</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0in 5.4pt;vertical-align:top;width:225.4pt;">
+          <p>Invalid Entry Gate No</p>
+          <p>&nbsp;</p>
+        </td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:1.0pt solid windowtext;border-right:1.0pt solid windowtext;border-top:1.0pt none windowtext;padding:0in 5.4pt;vertical-align:top;width:225.4pt;">6</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0in 5.4pt;vertical-align:top;width:225.4pt;">
+          <p>Invalid Approval Status</p>
+          <p>&nbsp;</p>
+        </td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:1.0pt solid windowtext;border-right:1.0pt solid windowtext;border-top:1.0pt none windowtext;padding:0in 5.4pt;vertical-align:top;width:225.4pt;">7</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0in 5.4pt;vertical-align:top;width:225.4pt;">
+          <p>Invalid Date Format</p>
+          <p>&nbsp;</p>
+        </td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:1.0pt solid windowtext;border-right:1.0pt solid windowtext;border-top:1.0pt none windowtext;padding:0in 5.4pt;vertical-align:top;width:225.4pt;">8</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0in 5.4pt;vertical-align:top;width:225.4pt;">
+          <p>Invalid Start Time Format</p>
+          <p>&nbsp;</p>
+        </td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:1.0pt solid windowtext;border-right:1.0pt solid windowtext;border-top:1.0pt none windowtext;padding:0in 5.4pt;vertical-align:top;width:225.4pt;">9</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0in 5.4pt;vertical-align:top;width:225.4pt;">
+          <p>Invalid End Time Format</p>
+          <p>&nbsp;</p>
+        </td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:1.0pt solid windowtext;border-right:1.0pt solid windowtext;border-top:1.0pt none windowtext;padding:0in 5.4pt;vertical-align:top;width:225.4pt;">10</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0in 5.4pt;vertical-align:top;width:225.4pt;">
+          <p>Walk In Head Id Is Null</p>
+          <p>&nbsp;</p>
+        </td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:1.0pt solid windowtext;border-right:1.0pt solid windowtext;border-top:1.0pt none windowtext;padding:0in 5.4pt;vertical-align:top;width:225.4pt;">11</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0in 5.4pt;vertical-align:top;width:225.4pt;">
+          <p>Walk In Details Added Fail</p>
+          <p>&nbsp;</p>
+        </td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:1.0pt solid windowtext;border-right:1.0pt solid windowtext;border-top:1.0pt none windowtext;padding:0in 5.4pt;vertical-align:top;width:225.4pt;">12</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0in 5.4pt;vertical-align:top;width:225.4pt;">&nbsp;</td>
+      </tr>
+    </tbody>
+  </table>
+</figure>
+<p>&nbsp;</p>
+<p><strong>DOWNLOADS:</strong></p>
+<p><a href="http://unifieddocs.ordazzle.com:8080/postman/stock_in_out.postman_collection.json">/postman/ Walk In Expose API.postman_collection.json&nbsp;</a></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>

@@ -1,0 +1,125 @@
+<!--
+title: Untitled Page
+description: 
+published: true
+date: 2023-10-03T07:05:10.174Z
+tags: 
+editor: ckeditor
+dateCreated: 2023-07-14T12:58:05.489Z
+-->
+
+<h1>Target Master</h1>
+<p style="text-align:justify;"><strong><u>Target Master Use Case and Capabilities:</u></strong></p>
+<p style="text-align:justify;">This functionality helps users in assigning targets. Users can use this functionality to assign, view/edit targets not only for employees but also for stores.This functionality will also allow users to assign product wise Target. Using this functionality users must be able to assign targets on a recurring basis.User can assign targets that can have options like Net value, Gross Value (Inclusive of Tax, Inclusive of Discount,))Quantity nos. Etc.</p>
+<p style="text-align:justify;"><u>Target Master Screen:-</u></p>
+<figure class="image image_resized" style="width:624px;"><img src="https://lh6.googleusercontent.com/-4p9rQU5VNngIbiK5lrkeIg8sygKq47X0Mg42SF5k7EgWp5u66kFLuMfX79TQX2jYTMo6WIsu9ABd3rqWL-sn2rcQ2y_lkz7Xq7C9jvxIoX0UdEsjzHCRJMS4Wl3TzGot70hK6l557kBeLlXwFkLktw"></figure>
+<ul>
+  <li>It will be a single screen functionality. At the top right side of the Target Master list screen there will be two filter icons. One is to segregate <strong>store and Employee</strong> targets with options Store, Employee &amp; All (default) and another is to segregate active &amp; inactive targets with options Active, Inactive &amp; All (default).</li>
+  <li>This screen will showcase existing Active target records created by the user. (Active selected by default in the active/Inactive/All filter). Users can switch to All / inactive using the filter drop-down options.</li>
+  <li>This screen will also consist of a search bar which will allow users to search previously created data;Target code, Store Code, Store Name, Employee Code, Employee Name, From Date, To Date, Target Value&nbsp; accordingly.</li>
+  <li>View: On click of View, the creation screen will be displayed but all fields will be shown in disable mode except the Discard button.</li>
+  <li><strong>Copy function</strong>: The Copy function is available on the three dots where Edit, view is placed. On the click of “Copy” , the selected target will be copied as a new target, but the Employee Code/Name section will be kept blank and the rest of the fields will remain as is. Hence, the User will be able to edit the details already pre populated from the original Target Master.</li>
+  <li>In case of Store target master, the Store, Store Attribute value&nbsp; should be kept blank, and the rest of the fields will remain as is. Hence, the User will be able to edit the details already pre populated from the original Target Master.</li>
+  <li>If user tries to delete Active target,then user should get a pop up stating that “Active targets cannot be deleted”</li>
+  <li>&nbsp;User can click on” + “ add button and can select any one of the options for which he wishes to create TargetMaster. After selecting the store or employee, the respective creation form will appear.</li>
+</ul>
+<p style="text-align:justify;"><strong><u>Target Master Details Entry Screen:</u></strong></p>
+<p style="text-align:justify;">For Employee:-</p>
+<p style="text-align:justify;">If the Employee is selected, the fields to create Employee Target for Employees will appear on the screen and are given in the table below along with its description.</p>
+<figure class="image image_resized" style="width:624px;"><img src="https://lh4.googleusercontent.com/XseiO0Uco_BePWAeQswyXQazD1K4uWF039oU9y9eOf6ncXShOMOMCQkQDszV-H9S9sMnYzmalS9_sU10niUxrQ40SG3BIKk3BQk2mqKDPUi6YJx64yklPfFhob2bGIZVNlsD0OHLsrn61I5_O8BTB-Y"></figure>
+<p style="text-align:justify;"><strong>Store:-</strong>&nbsp;</p>
+<p style="text-align:justify;">User can select the store name here to filter the Employee Code/Name. Multiple stores can be selected at a time and default value will be stores.</p>
+<p style="text-align:justify;">When a store is selected, only employees of that store will be enlisted in the next field.</p>
+<p style="text-align:justify;">The field should be of lookup type where user can search &amp; select the store based on Store Code or Store Name.&nbsp;</p>
+<p style="text-align:justify;">The result in the list will be concatenated store code &amp; store name.</p>
+<p style="text-align:justify;"><i>Store Code - Store Name</i></p>
+<p style="text-align:justify;">(same store display format should be followed in the store attribute value field of store target screen if store attribute selected as STORE)</p>
+<figure class="image image_resized" style="width:624px;"><img src="https://lh3.googleusercontent.com/c-hMXDQgCUsfcU9gUKLJVmEe2aZNCifxtj5Qd7RZmox4MeSFwK1q-1JOIg43HPFQ4ZZWIVl0fJPsT1tkPSYYU6XGaCFvbi1TblVSeDR_6pp3RuZiJe9czdIvaA7hl4Abph9Q-5dwsgI2cZRMWRK8wJw"></figure>
+<p style="text-align:justify;"><strong>Employee Code/Name:</strong></p>
+<p style="text-align:justify;">User can start typing employee code or name of the employee and the name will appear as a dropdown. User can only select single value from the list.</p>
+<p style="text-align:justify;">Those employees will be displayed here whose "Assigned target" field is selected yes in Employee Master</p>
+<p style="text-align:justify;"><strong>Product Attribute:</strong></p>
+<p style="text-align:justify;"><u>Navigation: Store administration-Retail Configuration Template:</u></p>
+<p style="text-align:justify;"><u>Screenshot:</u></p>
+<figure class="image image_resized" style="width:624px;"><img src="https://lh6.googleusercontent.com/vBy2bnHkpVCTSBgknFYi7dBgfNRB2b5EJbY7DNmapCDoCyc36vDSqfLs_ASl1yktbw_ZSBiXgJymygIlxekS5V1N7V6j0fLmpfSet_DDlJ4a20oNDtpAcTsAObGCgN4rznVD-DLbUXTM2zu_ujSjhMY"></figure>
+<p style="text-align:justify;">Here user need to click on edit module once user clicks on edit module the screen will get navigated as shown below to select Target Product Attribute for ( Store and Employee).</p>
+<figure class="image image_resized" style="width:624px;"><img src="https://lh5.googleusercontent.com/5hQtDipI_pA6S-Ede3FcD-6LF5GIPQn3xsbteYlmpciRZFzmv1aRpXEzV4WaMNzXK6qbc743YYQHbuGYLGlNP3zK1UN6GoIYuxxH5Pdbf15ga5Z7T0XO7LGTXMQk-CWOxSKZNsrDy40b9M5g92HZeMs"></figure>
+<p style="text-align:justify;">Now user need to go to Configuration-Enterprise and need to go through <strong>General settings</strong> where user can see the 2 Sub modules such as <strong>Target Product Attribute 1</strong> and <strong>Target Product attribute 2 .</strong></p>
+<p style="text-align:justify;">Now user need to select the <strong>Target store attribute 1</strong> and <strong>Target Store attribute 2</strong> from the drop down.</p>
+<p style="text-align:justify;">&nbsp;The Target product Attribute filter which are available In Drop down:</p>
+<ol>
+  <li>Brand</li>
+  <li>ProductSegment</li>
+  <li>ProductCategory</li>
+  <li>ProductSubCategory</li>
+  <li>ProductClass</li>
+  <li>Product Subclass</li>
+  <li>ProcurementGroup</li>
+  <li>Season</li>
+  <li>Pricepoint</li>
+  <li>Department</li>
+</ol>
+<p style="text-align:justify;">User can select only 1 attribute from the available attributes as Target product Attribute 1 and 2nd attribute as Target Product attribute 2 .</p>
+<p style="text-align:justify;">Note: Target Product attribute 1 and Target Product attribute 2 should not be same it should have a unique attributes.</p>
+<p style="text-align:justify;"><strong>Product Attribute Value</strong></p>
+<p style="text-align:justify;">User can select multiple product attribute value here and assign a target to them. It will be saved; separated by commas&nbsp; ( these values will generated from common master).</p>
+<p style="text-align:justify;"><strong>Target Level</strong></p>
+<p style="text-align:justify;">The options will be-Period three dot Recurring While assigning target User can use these methods to assign target.</p>
+<p style="text-align:justify;"><strong>From Date</strong></p>
+<p style="text-align:justify;">Beginning Date of the target. Employees' targets would be counted from this date.</p>
+<p style="text-align:justify;"><strong>To Date</strong></p>
+<p style="text-align:justify;">End Date of the target. Employees have to achieve their target by the end of this date.</p>
+<p style="text-align:justify;"><strong>Target Type</strong></p>
+<p style="text-align:justify;">This field is a dropdown functionality which will fetch list from set up table&nbsp;</p>
+<ol>
+  <li>Net Values</li>
+  <li>Gross Value</li>
+  <li>Net Quantity</li>
+</ol>
+<p style="text-align:justify;"><strong>Target Value</strong></p>
+<p style="text-align:justify;">This field will accept numeric values and will describe targets to be accomplished. This field will be hidden if the user is selecting the Recurring option in the Target Level field.</p>
+<p style="text-align:justify;">Note: The value should be greater than 0</p>
+<p style="text-align:justify;"><strong>Status</strong></p>
+<p style="text-align:justify;">1 - Active</p>
+<p style="text-align:justify;">0- Inactive</p>
+<p style="text-align:justify;"><strong>For Store:</strong></p>
+<p style="text-align:justify;"><strong>Store Attribute</strong></p>
+<p style="text-align:justify;">It's one of the Store group selection fields, the attribute of store will be selected here whose particular values will be selected for filtration. The options will be -</p>
+<p style="text-align:justify;">a. Store</p>
+<p style="text-align:justify;">b. Store Category</p>
+<p style="text-align:justify;">c. Store Subgroup</p>
+<p style="text-align:justify;">d. Store Group</p>
+<p style="text-align:justify;">e. Store Subtype</p>
+<p style="text-align:justify;">f. Store Type</p>
+<p style="text-align:justify;"><strong>Store Attribute Value</strong></p>
+<p style="text-align:justify;">Users can start typing StoreId&nbsp; or the name of the store and the name will appear as a dropdown (i.e. Lookup should be available). Users can select multiple values in the field.</p>
+<p style="text-align:justify;">The purpose of these two fields is to define targets for multiple stores at a time.</p>
+<p style="text-align:justify;"><strong>Stores Selected</strong></p>
+<p style="text-align:justify;">When selecting a store attribute other than ‘Store’, and selecting its values in the store attribute values field (single/multiple), the label should appear below the store attribute value field displaying the count of store coming under selected store attributes.</p>
+<p style="text-align:justify;">Hence if Store category is selected &amp; value selected as ‘Jewellery Store’ which is having 14 store under it(as per store master) then the label should appear as Stores</p>
+<p style="text-align:justify;">In the Case of Store attribute selected as Company, as there will be no store attribute value selection allowed here, the count will be directly displayed as all the stores coming under the company.</p>
+<p style="text-align:justify;"><strong>Target Level</strong></p>
+<p style="text-align:justify;">The options will be-</p>
+<p style="text-align:justify;">Period Recurring While assigning target User can use these methods to assign target.</p>
+<p style="text-align:justify;"><strong>From Date</strong></p>
+<p style="text-align:justify;">Beginning Date of the target. Employees' targets would be counted from this date.</p>
+<p style="text-align:justify;"><strong>To Date</strong></p>
+<p style="text-align:justify;">End Date of the target. Employees have to achieve their target by the end of this date</p>
+<p style="text-align:justify;"><strong>Target Type</strong></p>
+<p style="text-align:justify;">This field is a dropdown functionality which will fetch list from set up table&nbsp;</p>
+<ol>
+  <li>Net Values (Considering Discounts&nbsp; &amp; Charges)</li>
+  <li>Gross Values (without Discounts&nbsp; &amp; Charges)</li>
+  <li>Net Quantity</li>
+</ol>
+<p style="text-align:justify;"><strong>Target Value</strong></p>
+<p style="text-align:justify;">This field will accept numeric values and will describe targets to be accomplished. This field will be hidden if the user is selecting the Recurring option in the Target Level field.</p>
+<p style="text-align:justify;">Note: The value should be greater than 0.</p>
+<p style="text-align:justify;"><strong>Status</strong></p>
+<p style="text-align:justify;">1 - Active</p>
+<p style="text-align:justify;">0 - Inactive</p>
+<h4 style="text-align:justify;"><strong>Edit Option</strong></h4>
+<p style="text-align:justify;">Users can select the Edit option by selecting it from three dots available on the list screen. When user selects an edit option it will allow user to edit every fields except Employee Code/ Name from employee target master and Store Attribute/ Store Attribute Value in Store Target master. System will not delete any previous records while editing.</p>
+<h2 style="text-align:justify;"><strong>Validations</strong></h2>
+<p style="text-align:justify;">Validations applicable in the two sub-functionalities are discussed separately here</p>
+<figure class="image image_resized" style="width:380px;"><img src="https://lh4.googleusercontent.com/DK8iTfiD86UyknC4ENmACzEQ0uM_P0u0XKCRKoKqCnJO-9g51oUBlN5g036fTGG8VMrYvqivolJys1X-Hnn-0XqtwKp7RG17e6zBz2w_WFmlWZlWD9o9gkUYku87OHaOKfCRFUV1x-L7FY3XbXwhfIc"></figure>

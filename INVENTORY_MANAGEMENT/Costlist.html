@@ -1,0 +1,85 @@
+<!--
+title: Cost List
+description: 
+published: true
+date: 2023-10-03T09:40:20.204Z
+tags: 
+editor: ckeditor
+dateCreated: 2023-07-14T12:15:23.679Z
+-->
+
+<h1>Cost-List -Wiki- ETP Unify</h1>
+<h3>CostList Use Cases:</h3>
+<p><strong>Profit Margin Analysis</strong>: Costing records allow retailers to calculate the profit margins for each product. By comparing the cost price with the selling price, retailers can determine which products are generating the highest profits and which may need price adjustments.</p>
+<p><strong>Inventory Valuation</strong>: Costing records are crucial for accurate inventory valuation. Retailers need to know the total value of their inventory on hand, which includes the cost of goods. This is essential for financial reporting, tax purposes, and assessing the overall health of the business.</p>
+<p><strong>Pricing Strategies</strong>: Retailers can use cost information to implement various pricing strategies. For example, they can set prices based on cost-plus pricing (adding a markup to the cost price) or target a specific profit margin. Costing records help in making informed decisions regarding pricing adjustments.</p>
+<p><strong>Loss Prevention</strong>: Costing records can be used to detect inventory shrinkage or losses. By comparing the expected cost of goods on hand with the actual inventory levels, retailers can identify discrepancies and potential theft or damage issues.</p>
+<p><strong>Sales and Profit Analysis</strong>: Retailers can analyze sales data alongside costing information to assess which products are top performers in terms of revenue and profit. This information can inform decisions about product assortment and marketing strategies.</p>
+<p><strong>Seasonal Adjustments</strong>: Costing records can help retailers adjust prices for seasonal or promotional periods. By understanding the cost implications, they can offer discounts or special deals while still ensuring profitability.</p>
+<p><strong>Product Lifecycle Management</strong>: Costing records can track changes in the cost of goods over time. This is particularly useful for products with varying production costs or those that go through multiple iterations during their lifecycle.</p>
+<p><strong>Financial Reporting</strong>: Accurate costing records are vital for financial statements, including income statements and balance sheets. They provide a clear picture of the cost of goods sold (COGS), which is a key component of calculating gross profit.</p>
+<h3><strong>Cost List User Manual</strong></h3>
+<p>This module is available under ETP Unify →Inventory Management → CostList.</p>
+<p>This Module will showcase all product’s Cost available under the Company based on the Cost allocated to the specific Product.<br>The Module will have only one showcase screen (similar to List screen).<br>No addition of data will be through this module.<br>This module can be used for analytical purposes all across the Company.</p>
+<p><strong>List Screen:</strong></p>
+<figure class="image image_resized" style="width:100%;"><img src="/cost-list_image-1.png" alt="cost-list_image-1.png"></figure>
+<p>The below will be the columns available as a filtering process to view the details in the below List screen.</p>
+<p>Filtering Criterion as per below.</p>
+<p>Brands This is a multiselect drop down, where the User can select a specific Brand/s and view the cost of all the products listed under the specific Brand or Brands.</p>
+<p>Product Catalogs This is a multiselect drop down, where the User can select a specific catalog/s and view the cost of all the products listed under the specific Catalogs.</p>
+<p>Common Tags This is a multiselect drop down, where the User can select a specific common tags and view the cost of all the products attached under the tags.<br>My Tags This is a multiselect drop down, where the User can select a specific My tags and view the cost of all the products attached under the tags.<br>Nodes This is a multiselect drop down, where the User can select a specific Nodes and view the cost of all the products listed under the specific Node.<br>Product No./Names This is a multiselect drop down, where the User can select a specific Products and view the cost of all the products and the costing details.<br>Costing Method This is a multiselect drop down, where the User can select a Costing Methods and view the cost of all the products listed under the Costing Methods.<br>There are 5 Costing Methods<br>Standard Costing Method<br>Weighted Average Method<br>LotWise Method<br>Last Purchase Method<br>Zero Costing<br>The List Content columns as per below.</p>
+<p>Product Details In this column the Product Name and Product Code will be shown pertaining to the specific CostList Record.</p>
+<p>Document Details Here the User will be able to view if any document is available for the specific product.</p>
+<p>LotNumber If any Lot Number is available for the specific record the LOT number details will be shown in this column. This details will be only available if the Product is under Lot Control.</p>
+<p>Date and Time The date and time of the product Costing done will be shown in this column.</p>
+<p>Node and Costing Method Here the User will be able to view the details based on the Node and Costing Method of the specific Line entry.</p>
+<p>Opening Details Here the Opening Cost and Quantity of the Product will be shown here in the List. The details before the specific Transaction are shown.</p>
+<p>Transaction Details Here the Transaction Cost and Quantity of the Product will be shown here in the List. The details during the specific Transaction are shown.</p>
+<p>New Details Here the New Cost and Quantity of the Product will be shown here in the List. The details Post the specific Transaction are shown.</p>
+<p>Total Cost Here the Total Cost of the specific Product post the Transaction for the specific Node will be shown here.<br>Note: The Standard Cost will not be shown here since the Costing will be as per Market conditions for the said Product.</p>
+<p>Working of Costing as per Costing Methods</p>
+<p>Note: There are 2 levels Of Costing which are Company level and Node Level, which may not be suitable for all Costing methods.</p>
+<p>The change in Cost and Qty will be based on any inward or outward Transaction done for the specific Product.</p>
+<p>Standard Costing</p>
+<p>The Standard Cost will always be at the Company Level.</p>
+<p>The Standard Costing’s “Total Cost”will not be shown in the List as mentioned above since the Prices will be as per the Market conditions.</p>
+<p>Calculation Scenario</p>
+<p>Product Creation Every time a standard Product is created in the product Master with Standard Cost as the Costing Method, a record will be created in the CostList UI with the inserted details from the Product Master.</p>
+<p>Product Update Whenever a Products Cost is edited, then a new record will be created in the CostList based on the cost inserted in the Product master for the specific Product.</p>
+<p>There will be no other Change to the Cost on any other transaction for Standard Costing method.</p>
+<p>Weighted Average Method</p>
+<p>Here the idea is to Calculate the cost based on the weighted average method. After every transaction, the weighted average of the product is calculated based on the transaction performed.</p>
+<p>Calculation Scenario</p>
+<p>There are different levels which are Company Level and Store level to calculate the Weighted average. The different levels can be calculated based on the Transactions aswell.</p>
+<p>Store Level Inward Transactions</p>
+<p>The CostLlist will be added with one data as per the Transaction performed with the Average method calculation and the same details will be shown in the List.</p>
+<p>Store Level Outwards Transactions</p>
+<p>No Changes done to the CostList.</p>
+<p>Company Level Inward Transactions</p>
+<p>Below will be the transactions that will affect.<br>Purchase receiving<br>Franchise receiving<br>Sales Return<br>Bill Cancellation<br>Stock in<br>If the above transactions are performed, the Cost list will be updated as per the transaction cost with weighted average cost and Stock Ledger cost as per the new cost from cost list. In case of Sales return - cost to pick up from the respective sales, With no reference current cost to pick up.</p>
+<p>Company Level Outward Transactions</p>
+<p>The Transactions that will affect below actions are<br>Any outward Transaction<br>Dispatch receiving</p>
+<p>There will be no changes to the CostList.</p>
+<p>Lot Wise Costing Method</p>
+<p>Here the idea is to Calculate the cost based on the Lot wise Costing method. After every transaction, the Lot value of the product is calculated based on the transaction performed.</p>
+<p>Calculation Scenario</p>
+<p>There are different levels which are Company Level and Store level to calculate the Weighted average. The different levels can be calculated based on the Transactions aswell.</p>
+<p>Store Level Inward Transactions</p>
+<p>The CostLlist will be added with one data as per the Transaction performed with the Average method calculation and the same details will be shown in the List.</p>
+<p>Store Level Outwards Transactions</p>
+<p>No Changes done to the CostList.</p>
+<p>Company Level Inward Transactions</p>
+<p>Below will be the transactions that will affect.<br>Purchase receiving<br>Franchise receiving<br>Sales Return<br>Bill Cancellation<br>Stock in</p>
+<p>If the above transactions are performed, the Cost list will be updated as per the transaction cost with Lot wise cost and Stock Ledger cost as per the new cost from cost list. In case of Sales return - cost to pick up from the respective sales, With no reference current cost to pick up.</p>
+<p>Company Level Outward Transactions</p>
+<p>The Transactions that will affect below actions are<br>Any outward Transaction<br>Dispatch receiving</p>
+<p>There will be no changes to the CostList.</p>
+<p>Last purchase Price Costing Method</p>
+<p>The Cost will be established based on the last purchased price of the specific product by the specific Store/Company.</p>
+<p>Calculation Scenario</p>
+<p>Below Transactions will make the below mentioned changes and additions to the CostList for this Costing Method.</p>
+<p>Purchase Order Receiving<br>Franchise Purchase receiving<br>If the above Transactions are performed for a product with this Costing method either company or Store level,Cost list will be updated as per the transaction cost.</p>
+<p>Below Transactions will make the below mentioned changes and additions to the CostList for this Costing Method.<br>Stock Out<br>Stock In<br>Dispatch Receiving<br>Transfer Order Receiving<br>Purchase Order Returns<br>Franchise Purchase Returns<br>Sales Returns</p>
+<p>Based on the above transactions, there will be no Impact on CostList.</p>
+<p>Zero Costing Method</p>
+<p>For Zero Costing Method, no Costing will be done for the Product, the line entry will shown with no costing Values in the UI.</p>

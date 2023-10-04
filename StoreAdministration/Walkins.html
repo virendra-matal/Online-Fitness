@@ -1,0 +1,698 @@
+<!--
+title: Walkins
+description: 
+published: true
+date: 2023-10-03T05:09:26.026Z
+tags: 
+editor: ckeditor
+dateCreated: 2023-07-17T07:29:45.840Z
+-->
+
+<p><strong>WalkIns</strong></p>
+<p>In the context of retail, "walk-ins" refer to customers who visit a retail store without any prior appointments or reservations. They simply walk into the store, browse the merchandise, and make purchases if they find something they like. Walk-ins are an important part of retail business, as they can contribute to the store's foot traffic and sales. Retailers often try to attract walk-in customers through various marketing and advertising strategies to increase their chances of making sales.</p>
+<h1 style="text-align:justify;">The objective of the Walk-ins is to Gather the number of footfalls that have come across the node on a particular day either Hourly wise or for the complete day. The walk-ins or footfalls will also be gathered at the Entry gate ( Maximum 4 ) wise if the node has more than one entry node and if the user has selected the option of creating multiple Entry gates from the POS - configuration Menu. The user can also create Multiple walk-in groups ( Maximum 10 ).</h1>
+<p>Creating Template - The ETP Unify user can create the template as per the business requirement. The user needs to go to the Retail configuration template,&nbsp; &nbsp;&nbsp;&nbsp;</p>
+<figure class="image image_resized" style="width:624px;"><img src="https://lh5.googleusercontent.com/z3FaniTToc-i9wbyGUlkw-roh7E9EM-HprbCe1SgHALP5Vq8BI9tTm7wvLlp0qXGLrPQR6ikov9oY33giaFo23bgWLbqOEBR26CIz74nA0s1XfrGG911l22YLM9GQiVa0Gb2JUAh0sXiAVTsbNKSOHE"></figure>
+<p>The user needs to configure the below details to create walk-ins template -</p>
+<p>&nbsp;</p>
+<p><strong>Walkins to Enable -</strong> After Clicking on Enable only All the below fields will be functional and entered and checkboxes to be clicked.</p>
+<p><strong>No of Days to allow past Walkins to be updated -</strong> It's a Numeric Field with + and - options to click. The Maximum numeric Value that can be entered is 365 and the minimum numeric value that can be neutered is 1.</p>
+<p><strong>Beginning of the Day Validation -</strong> If the user has ticked the checkbox then at the beginning of the day at all the POS for the node, there will be a display of entry mentioning the no of entries missing and the no of days left to fill in the missing entries.</p>
+<p><strong>End of the Day of Validation -</strong> If the user has ticked the checkbox then at the End of the day at all the POS for the node, there will be a display of entry mentioning the no of entries missing and the no of days left to fill in the missing entries.</p>
+<p><strong>Walkins Approval Required -</strong> The Walkins entered for the node by the user whether have to be validated for the Approval will be defined by this check box. If the check box is not ticked then at the walk-ins log table it will show the status as Completed.</p>
+<p>Walkins entry at hour level - The walk-ins template will provide an entry option at the hourly level if its check box is ticked. The hourly break up of the node will be decided by the node timings which are derived from the fulfillment node setup.</p>
+<p>&nbsp;<strong>No Walkin group to be considered to Create Walkins group name -</strong> It's a dropdown that will ensure how many walk-ins group names to be considered for the template. It will show a dropdown from 1 to 10. Selecting the no that's selected from the dropdown it will ensure that only those no of walk-in group names are displayed in the template. A minimum of 1 needs to be selected for the walk-ins group template to be active.</p>
+<p><strong>Walkin Group Name 1 to Walkins Group Name 10 -&nbsp;</strong> &nbsp;The no of walk-ins that are selected from the dropdown ( no of walk-ins to be considered ) Accordingly those names that have been entered will be visible in the walk-ins template.&nbsp;</p>
+<p><strong>No Entry gates Number to be considered - </strong>It's a drop-down field where the user would enter nos from 1 to 4. As per this selection, the number of entry gates selected would determine the no of entry gates to be displayed in the Windows template.</p>
+<p>&nbsp;<strong>Entry gate name -</strong> The number of entry gates selected would be considered to show the number of entry gate names. Minimum 1 entry gate to maximum 4 entry gates.</p>
+<p><strong>User management -</strong> The admin user can assign the below functional rights for the walk-ins module to a particular user.</p>
+<p><strong>Create Walkins -</strong> The User will be able to create a walk-in entry for a particular node under which create action is assigned to him.&nbsp;</p>
+<p><strong>Edit - </strong>The user can edit a walk-in entry before the authorization status.</p>
+<p><strong>Upload - </strong>The user has the right to upload a walk-in file.<strong>&nbsp;&nbsp;&nbsp;</strong></p>
+<p><strong>Download - </strong>The user has the right to download a walk-ins template CSV file.</p>
+<p><strong>Export - </strong>The user has the right to export the walk-in data for a Node ( Store ).</p>
+<p><strong>Authorize -</strong> The user will be able to authorize a walk-in entry under the node to which the function has been assigned.</p>
+<figure class="image image_resized" style="width:624px;"><img src="https://lh4.googleusercontent.com/lffusdLiZopH4wXj5iyJB6nbz6nJID1zCIixSKVIkX1TvHSurK129oYEMoD4vV5sBjb5sQqBHw5u0H-Dry9P6tXn7IookMtSYmfcVtIA3h2Lq-AXaCTopRM-26IXnsuwVfzsSy8tMv5P-4cFBrQU02s"></figure>
+<p>The user has to go to Store Administration and then click on walk-ins. After clicking on Walk-ins the user will be directed to the Walk-ins list screen. The user can filter records in the list screen by -&nbsp;</p>
+<p><strong>Nodes(Stores) -</strong> The ETP Unify user can filter records by selecting the Node ( Store ) from the options.&nbsp; As the user selects the Store, all the past records of the particular node will be displayed in the grid view.</p>
+<p><strong>From Date to Date -</strong> The user can filter out records within a particular range of dates.</p>
+<p><strong>Statuses - </strong>The user can select records having particular statuses like -&nbsp;</p>
+<p>Entry pending&nbsp;</p>
+<p>Approval pending</p>
+<p>Completed</p>
+<p>Approval</p>
+<p><strong>Number of Walk-ins count - </strong>The user can enter the walk-in count with a Greater than, lesser than, and equal sign which will filter the records as per the count.</p>
+<figure class="image image_resized" style="width:624px;"><img src="https://lh5.googleusercontent.com/2rkpV-zf6XhJ9ZySSCBtNwj5fI9G7Ysw5CHR8hmPvhfZ7nP82j9h_KOhMZiCPo0zG8NXciqbvIzF_6fsk3NqGYCl8RwDnYQWPT-94QvInw02TOV8XXCAN2Dh5BBy7QJVMNG3H03WJNdb_bXzc-75klw"></figure>
+<p><strong>3 Dots -</strong> The user can click on 3 dots against a record and then view, edit, enter remarks, and approve a record.</p>
+<figure class="image image_resized" style="width:624px;"><img src="https://lh4.googleusercontent.com/NzxexUOI53iOLvWeMrEFEV4Ce_ZL8laWioUWEzQSFjlLiJBCv9b_Kc76ZkePdjUL7SmspR84lmP7SqyxbluUxdhmuxMySA9Lb4aC-juz3-9NHG_iM5gQ7e6h-d9f7Ls-0hBz9_uR3jGNfYcvyV9ZHyU"></figure>
+<p>The user can click on + icon or 3 dots and enter details to update walkins count.</p>
+<p>As the user will click on enter details then the user will be directed to a new screen -&nbsp;</p>
+<figure class="image image_resized" style="width:624px;"><img src="https://lh3.googleusercontent.com/A8vmxFZee-L-xvLOKRUz1TKMY34KWQRMU-3SygCi81iNqAjsMUfXF-cGji6Ao_0yEHFwWCALtVEVDbPeU6p1gP69VOYpVtdf0ql1-xHlRspvz1BIK_KUZsMNwJ1_j6dOALTO1DIsvDsHpcO_ERuWXzQ"></figure>
+<p>The user needs to enter walk-ins count as per walkins group and hourly wise.The user can also enter remarks for the day and also enter count gate wise.</p>
+<p>Once the walkins are entered the user needs to save the record by clicking on the save button. When the user clicks on save tab , the user will be directed to the walk-ins list screen with the ecord updated to either Approval pending status or completed status as per the template created.</p>
+<figure class="table" style="float:left;">
+  <table style="border-bottom:none;border-left:none;border-right:none;border-top:none;">
+    <tbody>
+      <tr>
+        <td style="background-color:#9fc5e8;border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:5pt;vertical-align:top;">Template Condition</td>
+        <td style="background-color:#9fc5e8;border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:5pt;vertical-align:top;">Status</td>
+        <td style="background-color:#9fc5e8;border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:5pt;vertical-align:top;">Creator</td>
+        <td style="background-color:#9fc5e8;border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:5pt;vertical-align:top;">Authoriser</td>
+      </tr>
+      <tr>
+        <td style="background-color:#9fc5e8;border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:5pt;vertical-align:top;" rowspan="2">Approval Not Required</td>
+        <td style="background-color:#9fc5e8;border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:5pt;vertical-align:top;">Completed Stage&nbsp;</td>
+        <td style="background-color:#9fc5e8;border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:5pt;vertical-align:top;">View / Edit</td>
+        <td style="background-color:#9fc5e8;border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:5pt;vertical-align:top;">View&nbsp;</td>
+      </tr>
+      <tr>
+        <td style="background-color:#9fc5e8;border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:5pt;vertical-align:top;">Entry pending</td>
+        <td style="background-color:#9fc5e8;border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:5pt;vertical-align:top;">Enter Details</td>
+        <td style="background-color:#9fc5e8;border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:5pt;vertical-align:top;">&nbsp;</td>
+      </tr>
+      <tr>
+        <td style="background-color:#9fc5e8;border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:5pt;vertical-align:top;" rowspan="3">Approval Required</td>
+        <td style="background-color:#9fc5e8;border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:5pt;vertical-align:top;">Entry pending</td>
+        <td style="background-color:#9fc5e8;border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:5pt;vertical-align:top;">Enter Details</td>
+        <td style="background-color:#9fc5e8;border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:5pt;vertical-align:top;">&nbsp;</td>
+      </tr>
+      <tr>
+        <td style="background-color:#9fc5e8;border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:5pt;vertical-align:top;">Authorization Pending</td>
+        <td style="background-color:#9fc5e8;border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:5pt;vertical-align:top;">View / Edit</td>
+        <td style="background-color:#9fc5e8;border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:5pt;vertical-align:top;">View /Authorize</td>
+      </tr>
+      <tr>
+        <td style="background-color:#9fc5e8;border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:5pt;vertical-align:top;">Authorized</td>
+        <td style="background-color:#9fc5e8;border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:5pt;vertical-align:top;">View</td>
+        <td style="background-color:#9fc5e8;border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:5pt;vertical-align:top;">View</td>
+      </tr>
+    </tbody>
+  </table>
+</figure>
+<p>The user can also create walk-ins record by download and upload process. The user needs to click on 3 dots and click enter details and then click on download. As the user will click on download then a CSV file will be downloaded on the user's system. After that, the user needs to enter the walk-in count, and remarks, and save the file.</p>
+<p>After that, the user has to upload this file and click on the save tab. Once the user clicks on save the user will be directed to the walk-ins list screen and the record will be saved.</p>
+<p><strong>WALKINS EXPOSE API -&nbsp;</strong></p>
+<p><i><strong>Description</strong></i><strong>:&nbsp;</strong></p>
+<p><strong>This API is for creating Walk In Entries in Unified from an external system. Walk In Entries&nbsp; will be created in Unified by this API.</strong></p>
+<p><i><strong>Path/Endpoints</strong></i><strong> :&nbsp;</strong></p>
+<p><strong>The API endpoint will be given by Unified Team for the the App.&nbsp;</strong></p>
+<p><i><strong>Version</strong></i><strong>:&nbsp;</strong></p>
+<p><strong>Unified</strong></p>
+<p><i><strong>Type</strong></i><strong>:&nbsp;</strong></p>
+<p><strong>POST</strong></p>
+<p><strong>Request Parameters :</strong></p>
+<figure class="table" style="float:left;">
+  <table style="border-bottom:none;border-left:none;border-right:none;border-top:none;">
+    <tbody>
+      <tr>
+        <td style="border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:5pt;vertical-align:top;">
+          <p style="text-align:center;"><strong>Name</strong></p>
+        </td>
+        <td style="border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:5pt;vertical-align:top;">
+          <p style="text-align:center;"><strong>Type</strong></p>
+        </td>
+        <td style="border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:5pt;vertical-align:top;">
+          <p style="text-align:center;"><strong>Mandatory</strong></p>
+        </td>
+        <td style="border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:5pt;vertical-align:top;">
+          <p style="text-align:center;"><strong>Sample Value</strong></p>
+        </td>
+        <td style="border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:5pt;vertical-align:top;">
+          <p style="text-align:center;"><strong>Description</strong></p>
+        </td>
+      </tr>
+      <tr>
+        <td style="border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:5pt;vertical-align:top;">
+          <p><strong>groupID</strong></p>
+          <p><strong>&nbsp;</strong></p>
+        </td>
+        <td style="border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:5pt;vertical-align:top;"><strong>int</strong></td>
+        <td style="border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:5pt;vertical-align:top;"><strong>Yes</strong></td>
+        <td style="border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:5pt;vertical-align:top;"><strong>1001</strong></td>
+        <td style="border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:5pt;vertical-align:top;"><strong>GroupId of the Unified instance</strong><br><strong>Will be provided by the Unified team for your setup</strong></td>
+      </tr>
+      <tr>
+        <td style="border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:5pt;vertical-align:top;">
+          <p><strong>companyID</strong></p>
+          <p><strong>&nbsp;</strong></p>
+        </td>
+        <td style="border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:5pt;vertical-align:top;"><strong>int</strong></td>
+        <td style="border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:5pt;vertical-align:top;"><strong>Yes</strong></td>
+        <td style="border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:5pt;vertical-align:top;"><strong>100</strong></td>
+        <td style="border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:5pt;vertical-align:top;"><strong>CompanyId of the&nbsp; Unified instance</strong><br><strong>Will be provided by the&nbsp; Unified team for your setup</strong></td>
+      </tr>
+      <tr>
+        <td style="border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:5pt;vertical-align:top;">
+          <p><strong>storeCode</strong></p>
+          <p><strong>&nbsp;</strong></p>
+        </td>
+        <td style="border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:5pt;vertical-align:top;"><strong>String</strong></td>
+        <td style="border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:5pt;vertical-align:top;"><strong>Yes</strong></td>
+        <td style="border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:5pt;vertical-align:top;">
+          <p><strong>“Tanisq”</strong></p>
+          <p><strong>&nbsp;</strong></p>
+        </td>
+        <td style="border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:5pt;vertical-align:top;">
+          <p><strong>StoreCode</strong></p>
+          <p><strong>of the&nbsp; Unified instance</strong><br><strong>Will be provided by the&nbsp; Unified team for your setup</strong></p>
+        </td>
+      </tr>
+      <tr>
+        <td style="border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:5pt;vertical-align:top;">
+          <p><strong>storeName</strong></p>
+          <p><strong>&nbsp;</strong></p>
+        </td>
+        <td style="border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:5pt;vertical-align:top;"><strong>String</strong></td>
+        <td style="border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:5pt;vertical-align:top;"><strong>Yes</strong></td>
+        <td style="border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:5pt;vertical-align:top;">
+          <p><strong>“Tanisq”</strong></p>
+          <p><strong>&nbsp;</strong></p>
+        </td>
+        <td style="border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:5pt;vertical-align:top;">
+          <p><strong>StoreName</strong></p>
+          <p><strong>of the&nbsp; Unified instance</strong><br><strong>Will be provided by the&nbsp; Unified team for your setup</strong></p>
+        </td>
+      </tr>
+      <tr>
+        <td style="border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:5pt;vertical-align:top;">
+          <p><strong>noOfGates</strong></p>
+          <p><strong>&nbsp;</strong></p>
+        </td>
+        <td style="border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:5pt;vertical-align:top;"><strong>int</strong></td>
+        <td style="border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:5pt;vertical-align:top;"><strong>Yes</strong></td>
+        <td style="border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:5pt;vertical-align:top;"><strong>2</strong></td>
+        <td style="border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:5pt;vertical-align:top;">
+          <p><strong>NoOfGates</strong></p>
+          <p><strong>of the&nbsp; Unified instance</strong><br><strong>Will be provided by the&nbsp; Unified team for your setup. You can enter maximum 4 gates according to Unified setup</strong></p>
+        </td>
+      </tr>
+      <tr>
+        <td style="border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:5pt;vertical-align:top;">
+          <p><strong>timeZone1</strong></p>
+          <p><strong>&nbsp;</strong></p>
+        </td>
+        <td style="border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:5pt;vertical-align:top;"><strong>String</strong></td>
+        <td style="border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:5pt;vertical-align:top;"><strong>Yes</strong></td>
+        <td style="border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:5pt;vertical-align:top;"><strong>“+5:30”</strong></td>
+        <td style="border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:5pt;vertical-align:top;">
+          <p><strong>TimeZone1</strong></p>
+          <p><strong>of the&nbsp; Unified instance</strong><br><strong>Will be provided by the&nbsp; Unified team for your setup.You can enter either timeZone1 or timeZone</strong></p>
+        </td>
+      </tr>
+      <tr>
+        <td style="border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:5pt;vertical-align:top;">
+          <p><strong>timeZone</strong></p>
+          <p><strong>&nbsp;</strong></p>
+        </td>
+        <td style="border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:5pt;vertical-align:top;"><strong>String</strong></td>
+        <td style="border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:5pt;vertical-align:top;"><strong>Yes</strong></td>
+        <td style="border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:5pt;vertical-align:top;">
+          <p><strong>“Africa/Mogadishu”</strong></p>
+          <p><strong>&nbsp;</strong></p>
+        </td>
+        <td style="border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:5pt;vertical-align:top;">
+          <p><strong>TimeZone</strong></p>
+          <p><strong>of the&nbsp; Unified instance</strong><br><strong>Will be provided by the&nbsp; Unified team for your setup. You can enter either timeZone1 or timeZone.</strong></p>
+        </td>
+      </tr>
+      <tr>
+        <td style="border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:5pt;vertical-align:top;">
+          <p><strong>entryGateNo</strong></p>
+          <p><strong>&nbsp;</strong></p>
+        </td>
+        <td style="border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:5pt;vertical-align:top;"><strong>int</strong></td>
+        <td style="border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:5pt;vertical-align:top;"><strong>Yes</strong></td>
+        <td style="border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:5pt;vertical-align:top;"><strong>1</strong></td>
+        <td style="border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:5pt;vertical-align:top;"><strong>You can give gate no .</strong></td>
+      </tr>
+      <tr>
+        <td style="border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:5pt;vertical-align:top;">
+          <p><strong>walkInDate</strong></p>
+          <p><strong>&nbsp;</strong></p>
+        </td>
+        <td style="border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:5pt;vertical-align:top;"><strong>String</strong></td>
+        <td style="border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:5pt;vertical-align:top;"><strong>Yes</strong></td>
+        <td style="border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:5pt;vertical-align:top;">
+          <p><strong>“2023-06-21”</strong></p>
+          <p><strong>&nbsp;</strong></p>
+        </td>
+        <td style="border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:5pt;vertical-align:top;"><strong>You can Enter date</strong></td>
+      </tr>
+      <tr>
+        <td style="border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:5pt;vertical-align:top;">
+          <p><strong>Remarks</strong></p>
+          <p><strong>&nbsp;</strong></p>
+        </td>
+        <td style="border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:5pt;vertical-align:top;"><strong>String</strong></td>
+        <td style="border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:5pt;vertical-align:top;"><strong>No</strong></td>
+        <td style="border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:5pt;vertical-align:top;"><strong>“Low Walk In”</strong></td>
+        <td style="border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:5pt;vertical-align:top;"><strong>You can Enter remark.</strong></td>
+      </tr>
+      <tr>
+        <td style="border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:5pt;vertical-align:top;">
+          <p><strong>Status</strong></p>
+          <p><strong>&nbsp;</strong></p>
+        </td>
+        <td style="border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:5pt;vertical-align:top;"><strong>int</strong></td>
+        <td style="border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:5pt;vertical-align:top;"><strong>Yes</strong></td>
+        <td style="border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:5pt;vertical-align:top;"><strong>1</strong></td>
+        <td style="border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:5pt;vertical-align:top;">
+          <p><strong>Status</strong></p>
+          <p><strong>of the&nbsp; Unified instance</strong><br><strong>Will be provided by the&nbsp; Unified team for your setup..</strong></p>
+        </td>
+      </tr>
+      <tr>
+        <td style="border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:5pt;vertical-align:top;">
+          <p><strong>approverID</strong></p>
+          <p><strong>&nbsp;</strong></p>
+        </td>
+        <td style="border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:5pt;vertical-align:top;"><strong>int</strong></td>
+        <td style="border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:5pt;vertical-align:top;"><strong>No</strong></td>
+        <td style="border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:5pt;vertical-align:top;"><strong>2</strong></td>
+        <td style="border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:5pt;vertical-align:top;"><strong>This is not mandatory</strong></td>
+      </tr>
+      <tr>
+        <td style="border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:5pt;vertical-align:top;">
+          <p><strong>startTime</strong></p>
+          <p><strong>&nbsp;</strong></p>
+          <p><strong>&nbsp;</strong></p>
+        </td>
+        <td style="border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:5pt;vertical-align:top;"><strong>int</strong></td>
+        <td style="border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:5pt;vertical-align:top;"><strong>Yes</strong></td>
+        <td style="border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:5pt;vertical-align:top;"><strong>09:00 AM</strong></td>
+        <td style="border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:5pt;vertical-align:top;"><strong>You can Enter start time</strong></td>
+      </tr>
+      <tr>
+        <td style="border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:5pt;vertical-align:top;">
+          <p><strong>endTime</strong></p>
+          <p><strong>&nbsp;</strong></p>
+          <p><strong>&nbsp;</strong></p>
+          <p><strong>&nbsp;</strong></p>
+        </td>
+        <td style="border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:5pt;vertical-align:top;"><strong>int</strong></td>
+        <td style="border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:5pt;vertical-align:top;"><strong>Yes</strong></td>
+        <td style="border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:5pt;vertical-align:top;"><strong>10:00 AM</strong></td>
+        <td style="border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:5pt;vertical-align:top;"><strong>You can Enter end time</strong></td>
+      </tr>
+      <tr>
+        <td style="border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:5pt;vertical-align:top;">
+          <p><strong>walkinGroup1</strong></p>
+          <p><strong>&nbsp;</strong></p>
+        </td>
+        <td style="border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:5pt;vertical-align:top;"><strong>int</strong></td>
+        <td style="border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:5pt;vertical-align:top;"><strong>Yes</strong></td>
+        <td style="border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:5pt;vertical-align:top;"><strong>344</strong></td>
+        <td style="border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:5pt;vertical-align:top;"><strong>You can Enter walk in group count . You can fill all walk in group or which group you want to fill.</strong></td>
+      </tr>
+      <tr>
+        <td style="border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:5pt;vertical-align:top;">
+          <p><strong>walkinGroup2</strong></p>
+          <p><strong>&nbsp;</strong></p>
+        </td>
+        <td style="border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:5pt;vertical-align:top;"><strong>int</strong></td>
+        <td style="border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:5pt;vertical-align:top;"><strong>Yes</strong></td>
+        <td style="border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:5pt;vertical-align:top;"><strong>5</strong></td>
+        <td style="border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:5pt;vertical-align:top;"><strong>You can Enter walk in group count . You can fill all walk in group or which group you want to fill.</strong></td>
+      </tr>
+      <tr>
+        <td style="border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:5pt;vertical-align:top;">
+          <p><strong>walkinGroup3</strong></p>
+          <p><strong>&nbsp;</strong></p>
+        </td>
+        <td style="border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:5pt;vertical-align:top;"><strong>int</strong></td>
+        <td style="border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:5pt;vertical-align:top;"><strong>Yes</strong></td>
+        <td style="border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:5pt;vertical-align:top;"><strong>45</strong></td>
+        <td style="border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:5pt;vertical-align:top;"><strong>You can Enter walk in group count . You can fill all walk in group or which group you want to fill.</strong></td>
+      </tr>
+      <tr>
+        <td style="border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:5pt;vertical-align:top;">
+          <p><strong>walkinGroup4</strong></p>
+          <p><strong>&nbsp;</strong></p>
+        </td>
+        <td style="border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:5pt;vertical-align:top;"><strong>int</strong></td>
+        <td style="border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:5pt;vertical-align:top;"><strong>Yes</strong></td>
+        <td style="border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:5pt;vertical-align:top;"><strong>45</strong></td>
+        <td style="border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:5pt;vertical-align:top;"><strong>You can Enter walk in group count . You can fill all walk in group or which group you want to fill.</strong></td>
+      </tr>
+      <tr>
+        <td style="border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:5pt;vertical-align:top;">
+          <p><strong>walkinGroup5</strong></p>
+          <p><strong>&nbsp;</strong></p>
+        </td>
+        <td style="border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:5pt;vertical-align:top;"><strong>int</strong></td>
+        <td style="border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:5pt;vertical-align:top;"><strong>Yes</strong></td>
+        <td style="border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:5pt;vertical-align:top;"><strong>45</strong></td>
+        <td style="border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:5pt;vertical-align:top;"><strong>You can Enter walk in group count . You can fill all walk in group or which group you want to fill.</strong></td>
+      </tr>
+      <tr>
+        <td style="border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:5pt;vertical-align:top;">
+          <p><strong>walkinGroup6</strong></p>
+          <p><strong>&nbsp;</strong></p>
+        </td>
+        <td style="border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:5pt;vertical-align:top;"><strong>int</strong></td>
+        <td style="border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:5pt;vertical-align:top;"><strong>Yes</strong></td>
+        <td style="border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:5pt;vertical-align:top;"><strong>56</strong></td>
+        <td style="border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:5pt;vertical-align:top;"><strong>You can Enter walk in group count . You can fill all walk in group or which group you want to fill.</strong></td>
+      </tr>
+      <tr>
+        <td style="border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:5pt;vertical-align:top;">
+          <p><strong>walkinGroup7</strong></p>
+          <p><strong>&nbsp;</strong></p>
+        </td>
+        <td style="border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:5pt;vertical-align:top;"><strong>int</strong></td>
+        <td style="border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:5pt;vertical-align:top;"><strong>Yes</strong></td>
+        <td style="border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:5pt;vertical-align:top;"><strong>45</strong></td>
+        <td style="border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:5pt;vertical-align:top;"><strong>You can Enter walk in group count . You can fill all walk in group or which group you want to fill.</strong></td>
+      </tr>
+      <tr>
+        <td style="border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:5pt;vertical-align:top;">
+          <p><strong>walkinGroup8</strong></p>
+          <p><strong>&nbsp;</strong></p>
+        </td>
+        <td style="border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:5pt;vertical-align:top;"><strong>int</strong></td>
+        <td style="border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:5pt;vertical-align:top;"><strong>Yes</strong></td>
+        <td style="border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:5pt;vertical-align:top;"><strong>45</strong></td>
+        <td style="border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:5pt;vertical-align:top;"><strong>You can Enter walk in group count . You can fill all walk in group or which group you want to fill.</strong></td>
+      </tr>
+      <tr>
+        <td style="border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:5pt;vertical-align:top;">
+          <p><strong>walkinGroup9</strong></p>
+          <p><strong>&nbsp;</strong></p>
+        </td>
+        <td style="border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:5pt;vertical-align:top;"><strong>int</strong></td>
+        <td style="border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:5pt;vertical-align:top;"><strong>Yes</strong></td>
+        <td style="border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:5pt;vertical-align:top;"><strong>23</strong></td>
+        <td style="border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:5pt;vertical-align:top;"><strong>You can Enter walk in group count . You can fill all walk in group or which group you want to fill.</strong></td>
+      </tr>
+      <tr>
+        <td style="border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:5pt;vertical-align:top;">
+          <p><strong>walkinGroup10</strong></p>
+          <p><strong>&nbsp;</strong></p>
+        </td>
+        <td style="border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:5pt;vertical-align:top;"><strong>int</strong></td>
+        <td style="border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:5pt;vertical-align:top;"><strong>Yes</strong></td>
+        <td style="border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:5pt;vertical-align:top;"><strong>23</strong></td>
+        <td style="border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:5pt;vertical-align:top;"><strong>You can Enter walk in group count . You can fill all walk in group or which group you want to fill.</strong></td>
+      </tr>
+    </tbody>
+  </table>
+</figure>
+<p><strong>&nbsp;</strong></p>
+<p><strong>&nbsp;</strong></p>
+<p><strong>&nbsp;</strong></p>
+<p><strong>&nbsp;</strong></p>
+<p><strong>&nbsp;</strong></p>
+<p><strong>&nbsp;</strong></p>
+<p><strong>&nbsp;</strong></p>
+<p><strong>&nbsp;</strong></p>
+<p><strong>&nbsp;</strong></p>
+<p><strong>Request JSON:</strong></p>
+<p><strong>&nbsp;</strong></p>
+<p><strong>{</strong></p>
+<p><strong>"actionInfo": {</strong></p>
+<p><strong>&nbsp;&nbsp;&nbsp; &nbsp;"actionId": "ADDWLKIN"</strong></p>
+<p><strong>},</strong></p>
+<p><strong>"formData": {</strong></p>
+<p><strong>&nbsp;&nbsp;&nbsp; &nbsp;"groupID": "1001",</strong></p>
+<p><strong>&nbsp;&nbsp;&nbsp; &nbsp;"companyID": "100",</strong></p>
+<p><strong>&nbsp;&nbsp;&nbsp; &nbsp;"storeCode": "",</strong></p>
+<p><strong>&nbsp;&nbsp;&nbsp; &nbsp;"storeName": "application1 app8",</strong></p>
+<p><strong>&nbsp;&nbsp;&nbsp; &nbsp;"noOfGates": 2,</strong></p>
+<p><strong>&nbsp;&nbsp;&nbsp; &nbsp;"timeZone1": "",</strong></p>
+<p><strong>&nbsp;&nbsp;&nbsp; &nbsp;"timeZone": "Africa/Mogadishu",</strong></p>
+<p><strong>&nbsp;&nbsp;&nbsp; &nbsp;"entryGates": [</strong></p>
+<p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;{</strong></p>
+<p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;"entryGateNo": "1",</strong></p>
+<p><strong>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;"walkInEntryContents": [</strong></p>
+<p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;{</strong></p>
+<p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;"head": {</strong></p>
+<p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"walkInDate": "2023-06-20",</strong></p>
+<p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"remarks": "Low Walk In",</strong></p>
+<p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;"status": "1",</strong></p>
+<p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"approverID": "5"</strong></p>
+<p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;},</strong></p>
+<p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;"line": [</strong></p>
+<p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;{</strong></p>
+<p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"walkInHeadID": "",</strong></p>
+<p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;"startTime": "10:00 AM",</strong></p>
+<p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"endTime": "11:00 am",</strong></p>
+<p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"walkinGroup1": "2",</strong></p>
+<p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"walkinGroup2": "2",</strong></p>
+<p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"walkinGroup3": "",</strong></p>
+<p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;"walkinGroup4": "",</strong></p>
+<p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"walkinGroup5": "",</strong></p>
+<p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"walkinGroup6": "",</strong></p>
+<p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"walkinGroup7": "",</strong></p>
+<p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"walkinGroup8": "",</strong></p>
+<p><strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;"walkinGroup9": "",</strong></p>
+<p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"walkinGroup10": ""</strong></p>
+<p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong></p>
+<p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;},</strong></p>
+<p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;{</strong></p>
+<p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"walkInHeadID": "",</strong></p>
+<p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"startTime": "11:00 am",</strong></p>
+<p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"endTime": "12:00 pm",</strong></p>
+<p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"walkinGroup1": "6",</strong></p>
+<p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;"walkinGroup2": "6",</strong></p>
+<p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"walkinGroup3": "6",</strong></p>
+<p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"walkinGroup4": "6",</strong></p>
+<p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"walkinGroup5": "6",</strong></p>
+<p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"walkinGroup6": "",</strong></p>
+<p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;"walkinGroup7": "",</strong></p>
+<p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"walkinGroup8": "",</strong></p>
+<p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"walkinGroup9": "",</strong></p>
+<p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"walkinGroup10": ""</strong></p>
+<p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong></p>
+<p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;}</strong></p>
+<p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;]</strong></p>
+<p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;}</strong></p>
+<p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;]</strong></p>
+<p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;},</strong></p>
+<p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;{</strong></p>
+<p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;"entryGateNo": "2",</strong></p>
+<p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"walkInEntryContents": [</strong></p>
+<p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;{</strong></p>
+<p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;"head": {</strong></p>
+<p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"walkInDate": "2023-06-20",</strong></p>
+<p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"remarks": "",</strong></p>
+<p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;"status": "1",</strong></p>
+<p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"approverID": "5"</strong></p>
+<p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;},</strong></p>
+<p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;"line": [</strong></p>
+<p><strong>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;{</strong></p>
+<p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"walkInHeadID": "",</strong></p>
+<p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"startTime": "10:00 am",</strong></p>
+<p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"endTime": "11:00 am",</strong></p>
+<p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"walkinGroup1": "9",</strong></p>
+<p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;"walkinGroup2": "9",</strong></p>
+<p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"walkinGroup3": "9",</strong></p>
+<p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"walkinGroup4": "9",</strong></p>
+<p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"walkinGroup5": "",</strong></p>
+<p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"walkinGroup6": "",</strong></p>
+<p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"walkinGroup7": "",</strong></p>
+<p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"walkinGroup8": "",</strong></p>
+<p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"walkinGroup9": "",</strong></p>
+<p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"walkinGroup10": "",</strong></p>
+<p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong></p>
+<p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;},</strong></p>
+<p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;{</strong></p>
+<p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"walkInHeadID": "",</strong></p>
+<p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"startTime": "11:00 am",</strong></p>
+<p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"endTime": "12:00 pm",</strong></p>
+<p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"walkinGroup1": "2",</strong></p>
+<p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"walkinGroup2": "",</strong></p>
+<p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"walkinGroup3": "4",</strong></p>
+<p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"walkinGroup4": "4",</strong></p>
+<p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"walkinGroup5": "",</strong></p>
+<p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"walkinGroup6": "",</strong></p>
+<p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"walkinGroup7": "",</strong></p>
+<p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"walkinGroup8": "",</strong></p>
+<p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;"walkinGroup9": "",</strong></p>
+<p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"walkinGroup10</strong></p>
+<p><strong>": "",</strong></p>
+<p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong></p>
+<p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;}</strong></p>
+<p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;]</strong></p>
+<p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;}</strong></p>
+<p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;]</strong></p>
+<p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;}</strong></p>
+<p><strong>&nbsp;&nbsp;&nbsp; &nbsp;]</strong></p>
+<p><strong>}</strong></p>
+<p><strong>}</strong></p>
+<p><strong>&nbsp;</strong></p>
+<p><strong>"response": {</strong></p>
+<p><strong>&nbsp;&nbsp;&nbsp; &nbsp;"type": "S",</strong></p>
+<p><strong>&nbsp;&nbsp;&nbsp; &nbsp;"respCode": "0000",</strong></p>
+<p><strong>&nbsp;&nbsp;&nbsp; &nbsp;"respMsg": "Walk In Details Added Successfully",</strong></p>
+<p><strong>&nbsp;&nbsp;&nbsp; &nbsp;"respHdr": "Walk In Details",</strong></p>
+<p><strong>&nbsp;&nbsp;&nbsp; &nbsp;"logID": "LG202306200523048440055:"</strong></p>
+<p><strong>},</strong></p>
+<p><strong>&nbsp;</strong></p>
+<p><strong>&nbsp;</strong></p>
+<p><strong>Copy</strong></p>
+<p><strong>Response JSON Fields:&nbsp;</strong></p>
+<p><strong>&nbsp;</strong></p>
+<figure class="table" style="float:left;">
+  <table style="border-bottom:none;border-left:none;border-right:none;border-top:none;">
+    <tbody>
+      <tr>
+        <td style="background-color:#eff1f3;border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:2pt;vertical-align:bottom;">
+          <p style="text-align:center;"><strong>Name</strong></p>
+        </td>
+        <td style="background-color:#eff1f3;border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:2pt;vertical-align:bottom;">
+          <p style="text-align:center;"><strong>Type</strong></p>
+        </td>
+        <td style="background-color:#eff1f3;border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:2pt;vertical-align:bottom;">
+          <p style="text-align:center;"><strong>Sample value</strong></p>
+        </td>
+        <td style="background-color:#eff1f3;border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:2pt;vertical-align:bottom;">
+          <p style="text-align:center;"><strong>Description</strong></p>
+        </td>
+      </tr>
+      <tr>
+        <td style="background-color:#ffffff;border-bottom:2.25pt solid #e6e6e6;border-left:2.25pt solid #e6e6e6;border-right:2.25pt solid #e6e6e6;border-top:0.75pt solid #000000;padding:2pt;vertical-align:bottom;"><strong>type</strong></td>
+        <td style="background-color:#ffffff;border-bottom:2.25pt solid #e6e6e6;border-left:2.25pt solid #e6e6e6;border-right:2.25pt solid #e6e6e6;border-top:0.75pt solid #000000;padding:2pt;vertical-align:bottom;"><strong>String</strong></td>
+        <td style="background-color:#ffffff;border-bottom:2.25pt solid #e6e6e6;border-left:2.25pt solid #e6e6e6;border-right:2.25pt solid #e6e6e6;border-top:0.75pt solid #000000;padding:2pt;vertical-align:bottom;"><strong>S</strong></td>
+        <td style="background-color:#ffffff;border-bottom:2.25pt solid #e6e6e6;border-left:2.25pt solid #e6e6e6;border-right:2.25pt solid #e6e6e6;border-top:0.75pt solid #000000;padding:2pt;vertical-align:bottom;"><strong>&nbsp;</strong></td>
+      </tr>
+      <tr>
+        <td style="background-color:#ffffff;border-bottom:2.25pt solid #e6e6e6;border-left:2.25pt solid #e6e6e6;border-right:2.25pt solid #e6e6e6;border-top:2.25pt solid #e6e6e6;padding:2pt;vertical-align:bottom;"><strong>respCode</strong></td>
+        <td style="background-color:#ffffff;border-bottom:2.25pt solid #e6e6e6;border-left:2.25pt solid #e6e6e6;border-right:2.25pt solid #e6e6e6;border-top:2.25pt solid #e6e6e6;padding:2pt;vertical-align:bottom;"><strong>Int</strong></td>
+        <td style="background-color:#ffffff;border-bottom:2.25pt solid #e6e6e6;border-left:2.25pt solid #e6e6e6;border-right:2.25pt solid #e6e6e6;border-top:2.25pt solid #e6e6e6;padding:2pt;vertical-align:bottom;"><strong>0000</strong></td>
+        <td style="background-color:#ffffff;border-bottom:2.25pt solid #e6e6e6;border-left:2.25pt solid #e6e6e6;border-right:2.25pt solid #e6e6e6;border-top:2.25pt solid #e6e6e6;padding:2pt;vertical-align:bottom;"><strong>&nbsp;</strong></td>
+      </tr>
+      <tr>
+        <td style="background-color:#ffffff;border-bottom:2.25pt solid #e6e6e6;border-left:2.25pt solid #e6e6e6;border-right:2.25pt solid #e6e6e6;border-top:2.25pt solid #e6e6e6;padding:2pt;vertical-align:bottom;"><strong>respMsg</strong></td>
+        <td style="background-color:#ffffff;border-bottom:2.25pt solid #e6e6e6;border-left:2.25pt solid #e6e6e6;border-right:2.25pt solid #e6e6e6;border-top:2.25pt solid #e6e6e6;padding:2pt;vertical-align:bottom;"><strong>String</strong></td>
+        <td style="background-color:#ffffff;border-bottom:2.25pt solid #e6e6e6;border-left:2.25pt solid #e6e6e6;border-right:2.25pt solid #e6e6e6;border-top:2.25pt solid #e6e6e6;padding:2pt;vertical-align:bottom;"><strong>Success Or Error Message</strong></td>
+        <td style="background-color:#ffffff;border-bottom:2.25pt solid #e6e6e6;border-left:2.25pt solid #e6e6e6;border-right:2.25pt solid #e6e6e6;border-top:2.25pt solid #e6e6e6;padding:2pt;vertical-align:bottom;"><strong>&nbsp;</strong></td>
+      </tr>
+      <tr>
+        <td style="background-color:#ffffff;border-bottom:2.25pt solid #e6e6e6;border-left:2.25pt solid #e6e6e6;border-right:2.25pt solid #e6e6e6;border-top:2.25pt solid #e6e6e6;padding:2pt;vertical-align:bottom;"><strong>respHdr</strong></td>
+        <td style="background-color:#ffffff;border-bottom:2.25pt solid #e6e6e6;border-left:2.25pt solid #e6e6e6;border-right:2.25pt solid #e6e6e6;border-top:2.25pt solid #e6e6e6;padding:2pt;vertical-align:bottom;"><strong>String</strong></td>
+        <td style="background-color:#ffffff;border-bottom:2.25pt solid #e6e6e6;border-left:2.25pt solid #e6e6e6;border-right:2.25pt solid #e6e6e6;border-top:2.25pt solid #e6e6e6;padding:2pt;vertical-align:bottom;"><strong>Walk In Details</strong></td>
+        <td style="background-color:#ffffff;border-bottom:2.25pt solid #e6e6e6;border-left:2.25pt solid #e6e6e6;border-right:2.25pt solid #e6e6e6;border-top:2.25pt solid #e6e6e6;padding:2pt;vertical-align:bottom;"><strong>&nbsp;</strong></td>
+      </tr>
+      <tr>
+        <td style="background-color:#ffffff;border-bottom:2.25pt solid #e6e6e6;border-left:2.25pt solid #e6e6e6;border-right:2.25pt solid #e6e6e6;border-top:2.25pt solid #e6e6e6;padding:2pt;vertical-align:bottom;"><strong>logID</strong></td>
+        <td style="background-color:#ffffff;border-bottom:2.25pt solid #e6e6e6;border-left:2.25pt solid #e6e6e6;border-right:2.25pt solid #e6e6e6;border-top:2.25pt solid #e6e6e6;padding:2pt;vertical-align:bottom;"><strong>String</strong></td>
+        <td style="background-color:#ffffff;border-bottom:2.25pt solid #e6e6e6;border-left:2.25pt solid #e6e6e6;border-right:2.25pt solid #e6e6e6;border-top:2.25pt solid #e6e6e6;padding:2pt;vertical-align:bottom;"><strong>LG202306200523048440055</strong></td>
+        <td style="background-color:#ffffff;border-bottom:2.25pt solid #e6e6e6;border-left:2.25pt solid #e6e6e6;border-right:2.25pt solid #e6e6e6;border-top:2.25pt solid #e6e6e6;padding:2pt;vertical-align:bottom;"><strong>&nbsp;</strong></td>
+      </tr>
+      <tr>
+        <td style="background-color:#ffffff;border-bottom:2.25pt solid #e6e6e6;border-left:2.25pt solid #e6e6e6;border-right:2.25pt solid #e6e6e6;border-top:2.25pt solid #e6e6e6;padding:2pt;vertical-align:bottom;"><strong>data</strong></td>
+        <td style="background-color:#ffffff;border-bottom:2.25pt solid #e6e6e6;border-left:2.25pt solid #e6e6e6;border-right:2.25pt solid #e6e6e6;border-top:2.25pt solid #e6e6e6;padding:2pt;vertical-align:bottom;"><strong>&nbsp;</strong></td>
+        <td style="background-color:#ffffff;border-bottom:2.25pt solid #e6e6e6;border-left:2.25pt solid #e6e6e6;border-right:2.25pt solid #e6e6e6;border-top:2.25pt solid #e6e6e6;padding:2pt;vertical-align:bottom;"><strong>&nbsp;</strong></td>
+        <td style="background-color:#ffffff;border-bottom:2.25pt solid #e6e6e6;border-left:2.25pt solid #e6e6e6;border-right:2.25pt solid #e6e6e6;border-top:2.25pt solid #e6e6e6;padding:2pt;vertical-align:bottom;"><strong>&nbsp;</strong></td>
+      </tr>
+    </tbody>
+  </table>
+</figure>
+<p><strong>&nbsp;</strong></p>
+<p><strong>&nbsp;</strong></p>
+<p><strong>&nbsp;</strong></p>
+<p><strong>&nbsp;</strong></p>
+<p><strong>Error message:&nbsp;&nbsp;</strong></p>
+<figure class="table" style="float:left;">
+  <table style="border-bottom:none;border-left:none;border-right:none;border-top:none;">
+    <tbody>
+      <tr>
+        <td style="border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:5pt;vertical-align:top;">
+          <p style="text-align:center;"><strong>Error Code</strong></p>
+        </td>
+        <td style="border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:5pt;vertical-align:top;">
+          <p style="text-align:center;"><strong>Error Message</strong></p>
+        </td>
+      </tr>
+      <tr>
+        <td style="border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:5pt;vertical-align:top;"><strong>1</strong></td>
+        <td style="border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:5pt;vertical-align:top;">
+          <p><strong>Group Id Does Not Exists</strong></p>
+          <p><strong>&nbsp;</strong></p>
+        </td>
+      </tr>
+      <tr>
+        <td style="border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:5pt;vertical-align:top;"><strong>2</strong></td>
+        <td style="border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:5pt;vertical-align:top;">
+          <p><strong>Company Id Does Not Exists</strong></p>
+          <p><strong>&nbsp;</strong></p>
+        </td>
+      </tr>
+      <tr>
+        <td style="border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:5pt;vertical-align:top;"><strong>3</strong></td>
+        <td style="border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:5pt;vertical-align:top;">
+          <p><strong>Store Code Or Name Does Not Exits</strong></p>
+          <p><strong>&nbsp;</strong></p>
+        </td>
+      </tr>
+      <tr>
+        <td style="border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:5pt;vertical-align:top;"><strong>4</strong></td>
+        <td style="border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:5pt;vertical-align:top;">
+          <p><strong>Invalid Number of Gates</strong></p>
+          <p><strong>&nbsp;</strong></p>
+        </td>
+      </tr>
+      <tr>
+        <td style="border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:5pt;vertical-align:top;"><strong>5</strong></td>
+        <td style="border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:5pt;vertical-align:top;">
+          <p><strong>Invalid Entry Gate No</strong></p>
+          <p><strong>&nbsp;</strong></p>
+        </td>
+      </tr>
+      <tr>
+        <td style="border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:5pt;vertical-align:top;"><strong>6</strong></td>
+        <td style="border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:5pt;vertical-align:top;">
+          <p><strong>Invalid Approval Status</strong></p>
+          <p><strong>&nbsp;</strong></p>
+        </td>
+      </tr>
+      <tr>
+        <td style="border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:5pt;vertical-align:top;"><strong>7</strong></td>
+        <td style="border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:5pt;vertical-align:top;">
+          <p><strong>Invalid Date Format</strong></p>
+          <p><strong>&nbsp;</strong></p>
+        </td>
+      </tr>
+      <tr>
+        <td style="border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:5pt;vertical-align:top;"><strong>8</strong></td>
+        <td style="border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:5pt;vertical-align:top;">
+          <p><strong>Invalid Start Time Format</strong></p>
+          <p><strong>&nbsp;</strong></p>
+        </td>
+      </tr>
+      <tr>
+        <td style="border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:5pt;vertical-align:top;"><strong>9</strong></td>
+        <td style="border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:5pt;vertical-align:top;">
+          <p><strong>Invalid End Time Format</strong></p>
+          <p><strong>&nbsp;</strong></p>
+        </td>
+      </tr>
+      <tr>
+        <td style="border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:5pt;vertical-align:top;"><strong>10</strong></td>
+        <td style="border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:5pt;vertical-align:top;">
+          <p><strong>Walk In Head Id Is Null</strong></p>
+          <p><strong>&nbsp;</strong></p>
+        </td>
+      </tr>
+      <tr>
+        <td style="border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:5pt;vertical-align:top;"><strong>11</strong></td>
+        <td style="border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:5pt;vertical-align:top;">
+          <p><strong>Walk In Details Added Fail</strong></p>
+          <p><strong>&nbsp;</strong></p>
+        </td>
+      </tr>
+      <tr>
+        <td style="border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:5pt;vertical-align:top;"><strong>12</strong></td>
+        <td style="border-bottom:0.75pt solid #000000;border-left:0.75pt solid #000000;border-right:0.75pt solid #000000;border-top:0.75pt solid #000000;padding:5pt;vertical-align:top;"><strong>&nbsp;</strong></td>
+      </tr>
+    </tbody>
+  </table>
+</figure>
+<p><strong>&nbsp;</strong></p>
+<p><strong>&nbsp;</strong></p>
+<p><strong>&nbsp;</strong></p>
+<p><strong>&nbsp;</strong></p>
+<p><strong>&nbsp;</strong></p>
+<p><strong>DOWNLOADS:</strong></p>
+<p><a href="http://unifieddocs.ordazzle.com:8080/postman/stock_in_out.postman_collection.json"><strong><u>/postman/</u> Walk In Expose API.postman_collection.json</strong></a></p>
+<p><strong>&nbsp;</strong></p>

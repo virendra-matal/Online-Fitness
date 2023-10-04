@@ -1,0 +1,784 @@
+<!--
+title: Purchase Order Receving Api
+description: 
+published: true
+date: 2023-07-11T09:35:15.637Z
+tags: purchase
+editor: ckeditor
+dateCreated: 2023-06-19T11:44:10.157Z
+-->
+
+<p><i><strong>Description</strong></i><strong>:&nbsp;</strong></p>
+<p>This API is for&nbsp;saving purchase order receiving Header and Line values&nbsp;in Unified from an external system.&nbsp;Purchase Order receiving records is created in Unified by this API.&nbsp;</p>
+<p><i><strong>Path/Endpoints</strong></i><strong>&nbsp;:&nbsp;</strong></p>
+<p>The API endpoint will be given by Unified Team for the the App.&nbsp;</p>
+<p><i><strong>Version</strong></i><strong>:&nbsp;</strong></p>
+<p>Unified</p>
+<p><i><strong>Type</strong></i><strong>:&nbsp;</strong></p>
+<p>POST</p>
+<p><strong>Request Parameters :</strong></p>
+<p>Purchase Order Header Fields<strong> :</strong></p>
+<figure class="table">
+  <table style="border-bottom:none;border-left:none;border-right:none;border-top:none;">
+    <tbody>
+      <tr>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:1.0pt solid windowtext;border-right:1.0pt solid windowtext;border-top:1.0pt solid windowtext;height:49.15pt;padding:0cm 5.4pt;vertical-align:top;width:149.45pt;">
+          <p style="text-align:center;">Name</p>
+        </td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:1.0pt none windowtext;border-right:1.0pt solid windowtext;border-top:1.0pt solid windowtext;height:49.15pt;padding:0cm 5.4pt;vertical-align:top;width:61.05pt;">
+          <p style="text-align:center;">Type</p>
+        </td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:1.0pt none windowtext;border-right:1.0pt solid windowtext;border-top:1.0pt solid windowtext;height:49.15pt;padding:0cm 5.4pt;vertical-align:top;width:83.3pt;">
+          <p style="text-align:center;">Mandatory</p>
+        </td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:1.0pt none windowtext;border-right:1.0pt solid windowtext;border-top:1.0pt solid windowtext;height:49.15pt;padding:0cm 5.4pt;vertical-align:top;width:59.25pt;">
+          <p style="text-align:center;">Sample Value</p>
+        </td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:1.0pt none windowtext;border-right:1.0pt solid windowtext;border-top:1.0pt solid windowtext;height:49.15pt;padding:0cm 5.4pt;vertical-align:top;width:109.05pt;">
+          <p style="text-align:center;">Description</p>
+        </td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:1.0pt solid windowtext;border-right:1.0pt solid windowtext;border-top:1.0pt none windowtext;padding:0cm 5.4pt;vertical-align:top;width:149.45pt;">id</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:61.05pt;">int</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:83.3pt;">Yes</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:59.25pt;">1001</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:109.05pt;">Id of purchase order head to be entered if you are updating purchase order head</td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:1.0pt solid windowtext;border-right:1.0pt solid windowtext;border-top:1.0pt none windowtext;padding:0cm 5.4pt;vertical-align:top;width:149.45pt;">
+          <p>poDate</p>
+          <p>&nbsp;</p>
+        </td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:61.05pt;">Timestamp</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:83.3pt;">Yes</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:59.25pt;">100</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:109.05pt;">poDate should be date when purchase order is done</td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:1.0pt solid windowtext;border-right:1.0pt solid windowtext;border-top:1.0pt none windowtext;padding:0cm 5.4pt;vertical-align:top;width:149.45pt;">
+          <p>purchaseOrderNo</p>
+          <p>&nbsp;</p>
+        </td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:61.05pt;">String</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:83.3pt;">Yes</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:59.25pt;">
+          <p>“POR464”</p>
+          <p>&nbsp;</p>
+        </td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:109.05pt;">
+          <p>purchaseOrderNo</p>
+          <p>Is unique number to identify purchase order</p>
+        </td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:1.0pt solid windowtext;border-right:1.0pt solid windowtext;border-top:1.0pt none windowtext;padding:0cm 5.4pt;vertical-align:top;width:149.45pt;">
+          <p>purchaseOrderYear</p>
+          <p>&nbsp;</p>
+        </td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:61.05pt;">Integer</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:83.3pt;">Yes</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:59.25pt;">2013</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:109.05pt;">purchaseOrderYear is year in which purchase order receiving is done</td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:1.0pt solid windowtext;border-right:1.0pt solid windowtext;border-top:1.0pt none windowtext;padding:0cm 5.4pt;vertical-align:top;width:149.45pt;">
+          <p>vendorID</p>
+          <p>&nbsp;</p>
+        </td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:61.05pt;">int</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:83.3pt;">Yes</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:59.25pt;">2644</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:109.05pt;">
+          <p>vendorID</p>
+          <p>It is of vendor which user is partner with</p>
+        </td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:1.0pt solid windowtext;border-right:1.0pt solid windowtext;border-top:1.0pt none windowtext;padding:0cm 5.4pt;vertical-align:top;width:149.45pt;">
+          <p>purchaseOrderTypeID</p>
+          <p>&nbsp;</p>
+        </td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:61.05pt;">int</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:83.3pt;">Yes</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:59.25pt;">21</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:109.05pt;">
+          <p>purchaseOrderTypeID</p>
+          <p>Is Stock Order Type ID</p>
+        </td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:1.0pt solid windowtext;border-right:1.0pt solid windowtext;border-top:1.0pt none windowtext;padding:0cm 5.4pt;vertical-align:top;width:149.45pt;">
+          <p>docStatus</p>
+          <p>&nbsp;</p>
+        </td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:61.05pt;">int</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:83.3pt;">Yes</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:59.25pt;">1</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:109.05pt;">
+          <p>docStatus</p>
+          <p>There is different docstatus such as COMPLETED:1,&nbsp; &nbsp; PRELIMINARY:2,&nbsp; &nbsp; &nbsp;CONFIRMED:3,&nbsp; &nbsp; &nbsp;REJECTED:4,&nbsp; SHIPPED:5, PARTIAL:6.</p>
+        </td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:1.0pt solid windowtext;border-right:1.0pt solid windowtext;border-top:1.0pt none windowtext;padding:0cm 5.4pt;vertical-align:top;width:149.45pt;">
+          <p>vendorOrderNo</p>
+          <p>&nbsp;</p>
+        </td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:61.05pt;">int</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:83.3pt;">Yes</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:59.25pt;">17384</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:109.05pt;">vendorOrderNo is number of order given by vendor .</td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:1.0pt solid windowtext;border-right:1.0pt solid windowtext;border-top:1.0pt none windowtext;padding:0cm 5.4pt;vertical-align:top;width:149.45pt;">
+          <p>poHighStatus</p>
+          <p>&nbsp;</p>
+        </td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:61.05pt;">int</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:83.3pt;">Yes</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:59.25pt;">1</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:109.05pt;">poHighStatus hign status of purchase order</td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:1.0pt solid windowtext;border-right:1.0pt solid windowtext;border-top:1.0pt none windowtext;padding:0cm 5.4pt;vertical-align:top;width:149.45pt;">
+          <p>poLowStatus</p>
+          <p>&nbsp;</p>
+        </td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:61.05pt;">int</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:83.3pt;">No</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:59.25pt;">1</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:109.05pt;">Purchase order low status.</td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:1.0pt solid windowtext;border-right:1.0pt solid windowtext;border-top:1.0pt none windowtext;padding:0cm 5.4pt;vertical-align:top;width:149.45pt;">
+          <p>poCurrency</p>
+          <p>&nbsp;</p>
+        </td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:61.05pt;">String</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:83.3pt;">Yes</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:59.25pt;">“INR”</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:109.05pt;">currency of purchase order.</td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:1.0pt solid windowtext;border-right:1.0pt solid windowtext;border-top:1.0pt none windowtext;padding:0cm 5.4pt;vertical-align:top;width:149.45pt;">
+          <p>headerChargeModelCode</p>
+          <p>&nbsp;</p>
+        </td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:61.05pt;">int</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:83.3pt;">No</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:59.25pt;">21321</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:109.05pt;">Code of header charge model</td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:1.0pt solid windowtext;border-right:1.0pt solid windowtext;border-top:1.0pt none windowtext;height:6.6pt;padding:0cm 5.4pt;vertical-align:top;width:149.45pt;">
+          <p>paymentTerms</p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+        </td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;height:6.6pt;padding:0cm 5.4pt;vertical-align:top;width:61.05pt;">String</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;height:6.6pt;padding:0cm 5.4pt;vertical-align:top;width:83.3pt;">Yes</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;height:6.6pt;padding:0cm 5.4pt;vertical-align:top;width:59.25pt;">“early”</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;height:6.6pt;padding:0cm 5.4pt;vertical-align:top;width:109.05pt;">Tearms and condition for payment</td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:1.0pt solid windowtext;border-right:1.0pt solid windowtext;border-top:1.0pt none windowtext;padding:0cm 5.4pt;vertical-align:top;width:149.45pt;">
+          <p>totalQty</p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+        </td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:61.05pt;">double</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:83.3pt;">Yes</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:59.25pt;">155.1</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:109.05pt;">Total amount of product received</td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:1.0pt solid windowtext;border-right:1.0pt solid windowtext;border-top:1.0pt none windowtext;padding:0cm 5.4pt;vertical-align:top;width:149.45pt;">
+          <p>exchangeRate</p>
+          <p>&nbsp;</p>
+        </td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:61.05pt;">double</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:83.3pt;">Yes</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:59.25pt;">34.4</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:109.05pt;">Rate of exchange&nbsp;</td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:1.0pt solid windowtext;border-right:1.0pt solid windowtext;border-top:1.0pt none windowtext;padding:0cm 5.4pt;vertical-align:top;width:149.45pt;">
+          <p>totalDiscountAmount</p>
+          <p>&nbsp;</p>
+        </td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:61.05pt;">double</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:83.3pt;">Yes</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:59.25pt;">53.1</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:109.05pt;">Enter the total discount amount of product</td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:1.0pt solid windowtext;border-right:1.0pt solid windowtext;border-top:1.0pt none windowtext;padding:0cm 5.4pt;vertical-align:top;width:149.45pt;">
+          <p>totalChargeAmount</p>
+          <p>&nbsp;</p>
+        </td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:61.05pt;">double</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:83.3pt;">Yes</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:59.25pt;">234.2</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:109.05pt;">Total charge amount on product.</td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:1.0pt solid windowtext;border-right:1.0pt solid windowtext;border-top:1.0pt none windowtext;padding:0cm 5.4pt;vertical-align:top;width:149.45pt;">
+          <p>isConsignment</p>
+          <p>&nbsp;</p>
+        </td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:61.05pt;">int</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:83.3pt;">Yes</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:59.25pt;">1</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:109.05pt;">isConsignment is a flag it should be 1 or 0.</td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:1.0pt solid windowtext;border-right:1.0pt solid windowtext;border-top:1.0pt none windowtext;padding:0cm 5.4pt;vertical-align:top;width:149.45pt;">
+          <p>poGross</p>
+          <p>&nbsp;</p>
+        </td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:61.05pt;">double</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:83.3pt;">Yes</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:59.25pt;">45.234</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:109.05pt;">It is gross amount of POl.</td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:1.0pt solid windowtext;border-right:1.0pt solid windowtext;border-top:1.0pt none windowtext;padding:0cm 5.4pt;vertical-align:top;width:149.45pt;">
+          <p>grossWeight</p>
+          <p>&nbsp;</p>
+        </td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:61.05pt;">double</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:83.3pt;">Yes</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:59.25pt;">56.3</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:109.05pt;">It is gross weight of PO.</td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:1.0pt solid windowtext;border-right:1.0pt solid windowtext;border-top:1.0pt none windowtext;padding:0cm 5.4pt;vertical-align:top;width:149.45pt;">
+          <p>volume</p>
+          <p>&nbsp;</p>
+        </td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:61.05pt;">double</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:83.3pt;">Yes</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:59.25pt;">45.1</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:109.05pt;">Volume of purchase order.</td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:1.0pt solid windowtext;border-right:1.0pt solid windowtext;border-top:1.0pt none windowtext;padding:0cm 5.4pt;vertical-align:top;width:149.45pt;">
+          <p>poBasic</p>
+          <p>&nbsp;</p>
+        </td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:61.05pt;">double</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:83.3pt;">Yes</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:59.25pt;">45.43</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:109.05pt;">Purchae order basic amount.</td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:1.0pt solid windowtext;border-right:1.0pt solid windowtext;border-top:1.0pt none windowtext;padding:0cm 5.4pt;vertical-align:top;width:149.45pt;">
+          <p>poNet</p>
+          <p>&nbsp;</p>
+        </td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:61.05pt;">double</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:83.3pt;">Yes</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:59.25pt;">23.23</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:109.05pt;">&nbsp;Purchase order net amount.</td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:1.0pt solid windowtext;border-right:1.0pt solid windowtext;border-top:1.0pt none windowtext;padding:0cm 5.4pt;vertical-align:top;width:149.45pt;">storeID</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:61.05pt;">int</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:83.3pt;">Yes</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:59.25pt;">2</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:109.05pt;">
+          <p>storeID</p>
+          <p>of the&nbsp; &nbsp;Unified instance<br>Will be provided by the&nbsp; Unified team for your setup</p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</figure>
+<p>Purchase Order Line Fields:</p>
+<figure class="table">
+  <table style="border-bottom:none;border-left:none;border-right:none;border-top:none;">
+    <tbody>
+      <tr>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:1.0pt solid windowtext;border-right:1.0pt solid windowtext;border-top:1.0pt solid windowtext;height:49.15pt;padding:0cm 5.4pt;vertical-align:top;width:114.5pt;">
+          <p style="text-align:center;">Name</p>
+        </td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:1.0pt none windowtext;border-right:1.0pt solid windowtext;border-top:1.0pt solid windowtext;height:49.15pt;padding:0cm 5.4pt;vertical-align:top;width:73.9pt;">
+          <p style="text-align:center;">Type</p>
+        </td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:1.0pt none windowtext;border-right:1.0pt solid windowtext;border-top:1.0pt solid windowtext;height:49.15pt;padding:0cm 5.4pt;vertical-align:top;width:87.8pt;">
+          <p style="text-align:center;">Mandatory</p>
+        </td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:1.0pt none windowtext;border-right:1.0pt solid windowtext;border-top:1.0pt solid windowtext;height:49.15pt;padding:0cm 5.4pt;vertical-align:top;width:97.4pt;">Sample Value</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:1.0pt none windowtext;border-right:1.0pt solid windowtext;border-top:1.0pt solid windowtext;height:49.15pt;padding:0cm 5.4pt;vertical-align:top;width:88.5pt;">
+          <p style="text-align:center;">Description</p>
+        </td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:1.0pt solid windowtext;border-right:1.0pt solid windowtext;border-top:1.0pt none windowtext;padding:0cm 5.4pt;vertical-align:top;width:114.5pt;">id</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:73.9pt;">int</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:87.8pt;">Yes</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:97.4pt;">1</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:88.5pt;">Id of line provided if you want to update record</td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:1.0pt solid windowtext;border-right:1.0pt solid windowtext;border-top:1.0pt none windowtext;padding:0cm 5.4pt;vertical-align:top;width:114.5pt;">
+          <p>storeID</p>
+          <p>&nbsp;</p>
+        </td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:73.9pt;">int</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:87.8pt;">Yes</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:97.4pt;">2</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:88.5pt;">
+          <p>storeID</p>
+          <p>of the&nbsp; &nbsp;Unified instance<br>Will be provided by the&nbsp; Unified team for your setup</p>
+        </td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:1.0pt solid windowtext;border-right:1.0pt solid windowtext;border-top:1.0pt none windowtext;padding:0cm 5.4pt;vertical-align:top;width:114.5pt;">
+          <p>subLineNo</p>
+          <p>&nbsp;</p>
+        </td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:73.9pt;">int</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:87.8pt;">Yes</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:97.4pt;">
+          <p>4</p>
+          <p>&nbsp;</p>
+        </td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:88.5pt;">Sub line number of purchase order line</td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:1.0pt solid windowtext;border-right:1.0pt solid windowtext;border-top:1.0pt none windowtext;padding:0cm 5.4pt;vertical-align:top;width:114.5pt;">
+          <p>productID</p>
+          <p>&nbsp;</p>
+        </td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:73.9pt;">Int</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:87.8pt;">Yes</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:97.4pt;">
+          <p>42393</p>
+          <p>&nbsp;</p>
+        </td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:88.5pt;">Id of purchase order product&nbsp;</td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:1.0pt solid windowtext;border-right:1.0pt solid windowtext;border-top:1.0pt none windowtext;padding:0cm 5.4pt;vertical-align:top;width:114.5pt;">
+          <p>pOQty</p>
+          <p>&nbsp;</p>
+        </td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:73.9pt;">int</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:87.8pt;">Yes</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:97.4pt;">2</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:88.5pt;">Purchase order quantity of product</td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:1.0pt solid windowtext;border-right:1.0pt solid windowtext;border-top:1.0pt none windowtext;padding:0cm 5.4pt;vertical-align:top;width:114.5pt;">
+          <p>uOM</p>
+          <p>&nbsp;</p>
+        </td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:73.9pt;">int</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:87.8pt;">Yes</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:97.4pt;">12321</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:88.5pt;">Unit of measurement of product</td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:1.0pt solid windowtext;border-right:1.0pt solid windowtext;border-top:1.0pt none windowtext;padding:0cm 5.4pt;vertical-align:top;width:114.5pt;">aUOM</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:73.9pt;">int</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:87.8pt;">Yes</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:97.4pt;">12341</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:88.5pt;">Alternate UOM of product</td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:1.0pt solid windowtext;border-right:1.0pt solid windowtext;border-top:1.0pt none windowtext;padding:0cm 5.4pt;vertical-align:top;width:114.5pt;">priceInBaseCurrency</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:73.9pt;">double</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:87.8pt;">Yes</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:97.4pt;">22.32</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:88.5pt;">Price of product in base currency</td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:1.0pt solid windowtext;border-right:1.0pt solid windowtext;border-top:1.0pt none windowtext;padding:0cm 5.4pt;vertical-align:top;width:114.5pt;">priceInOrderCurrency</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:73.9pt;">double</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:87.8pt;">Yes</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:97.4pt;">54.32</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:88.5pt;">Price of product in order currency</td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:1.0pt solid windowtext;border-right:1.0pt solid windowtext;border-top:1.0pt none windowtext;padding:0cm 5.4pt;vertical-align:top;width:114.5pt;">recQty</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:73.9pt;">double</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:87.8pt;">Yes</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:97.4pt;">20.00</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:88.5pt;">Received quantity of ordered product</td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:1.0pt solid windowtext;border-right:1.0pt solid windowtext;border-top:1.0pt none windowtext;padding:0cm 5.4pt;vertical-align:top;width:114.5pt;">balQty</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:73.9pt;">double</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:87.8pt;">Yes</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:97.4pt;">10.00</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:88.5pt;">Balance quantity of ordered product</td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:1.0pt solid windowtext;border-right:1.0pt solid windowtext;border-top:1.0pt none windowtext;padding:0cm 5.4pt;vertical-align:top;width:114.5pt;">lotNoID</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:73.9pt;">int</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:87.8pt;">Yes</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:97.4pt;">2321</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:88.5pt;">Lot number id of ordered product</td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:1.0pt solid windowtext;border-right:1.0pt solid windowtext;border-top:1.0pt none windowtext;padding:0cm 5.4pt;vertical-align:top;width:114.5pt;">supplierProductCode</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:73.9pt;">String</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:87.8pt;">Yes</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:97.4pt;">“SUP5634”</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:88.5pt;">Supplier product code of ordered product</td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:1.0pt solid windowtext;border-right:1.0pt solid windowtext;border-top:1.0pt none windowtext;padding:0cm 5.4pt;vertical-align:top;width:114.5pt;">supplierProductName</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:73.9pt;">String</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:87.8pt;">Yes</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:97.4pt;">“titan”</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:88.5pt;">Supplier product name of ordered product</td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:1.0pt solid windowtext;border-right:1.0pt solid windowtext;border-top:1.0pt none windowtext;padding:0cm 5.4pt;vertical-align:top;width:114.5pt;">supplierBarCode</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:73.9pt;">String</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:87.8pt;">Yes</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:97.4pt;">“BR74374”</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:88.5pt;">Supplier bar code for ordered product</td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:1.0pt solid windowtext;border-right:1.0pt solid windowtext;border-top:1.0pt none windowtext;padding:0cm 5.4pt;vertical-align:top;width:114.5pt;">lineStatus</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:73.9pt;">int</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:87.8pt;">Yes</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:97.4pt;">1</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:88.5pt;">Status of line I.e active or inactive</td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:1.0pt solid windowtext;border-right:1.0pt solid windowtext;border-top:1.0pt none windowtext;padding:0cm 5.4pt;vertical-align:top;width:114.5pt;">rRP</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:73.9pt;">double</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:87.8pt;">Yes</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:97.4pt;">23.1</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:88.5pt;">Rrp price of ordered product</td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:1.0pt solid windowtext;border-right:1.0pt solid windowtext;border-top:1.0pt none windowtext;padding:0cm 5.4pt;vertical-align:top;width:114.5pt;">margin</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:73.9pt;">double</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:87.8pt;">Yes</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:97.4pt;">344.32</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:88.5pt;">Margin of purchase order line</td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:1.0pt solid windowtext;border-right:1.0pt solid windowtext;border-top:1.0pt none windowtext;padding:0cm 5.4pt;vertical-align:top;width:114.5pt;">lineChargesModalCode</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:73.9pt;">int</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:87.8pt;">Yes</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:97.4pt;">1</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:88.5pt;">Code of charge model</td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:1.0pt solid windowtext;border-right:1.0pt solid windowtext;border-top:1.0pt none windowtext;padding:0cm 5.4pt;vertical-align:top;width:114.5pt;">lineBasicAmount</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:73.9pt;">double</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:87.8pt;">Yes</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:97.4pt;">34.423</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:88.5pt;">Basic amount of purchase order line</td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:1.0pt solid windowtext;border-right:1.0pt solid windowtext;border-top:1.0pt none windowtext;padding:0cm 5.4pt;vertical-align:top;width:114.5pt;">lineNetAmount</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:73.9pt;">double</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:87.8pt;">Yes</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:97.4pt;">4324.324</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:88.5pt;">Net amount of purchase order line</td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:1.0pt solid windowtext;border-right:1.0pt solid windowtext;border-top:1.0pt none windowtext;padding:0cm 5.4pt;vertical-align:top;width:114.5pt;">lineTaxAmount</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:73.9pt;">double</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:87.8pt;">Yes</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:97.4pt;">4324.324</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:88.5pt;">Tax amount of purchase order line</td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:1.0pt solid windowtext;border-right:1.0pt solid windowtext;border-top:1.0pt none windowtext;padding:0cm 5.4pt;vertical-align:top;width:114.5pt;">lineDiscountAmount</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:73.9pt;">double</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:87.8pt;">Yes</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:97.4pt;">3454.343</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:88.5pt;">Discount amount of purchase order line</td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:1.0pt solid windowtext;border-right:1.0pt solid windowtext;border-top:1.0pt none windowtext;padding:0cm 5.4pt;vertical-align:top;width:114.5pt;">lineGrossAmount</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:73.9pt;">double</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:87.8pt;">Yes</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:97.4pt;">434.34</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:88.5pt;">Gross amount of purchase order line</td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:1.0pt solid windowtext;border-right:1.0pt solid windowtext;border-top:1.0pt none windowtext;padding:0cm 5.4pt;vertical-align:top;width:114.5pt;">isConsignment</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:73.9pt;">int</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:87.8pt;">Yes</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:97.4pt;">1</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:88.5pt;">isConsignment is flag it should be 1 or 0</td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:1.0pt solid windowtext;border-right:1.0pt solid windowtext;border-top:1.0pt none windowtext;padding:0cm 5.4pt;vertical-align:top;width:114.5pt;">priceListCode</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:73.9pt;">int</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:87.8pt;">Yes</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:97.4pt;">1</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:88.5pt;">Code of price list for line</td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:1.0pt solid windowtext;border-right:1.0pt solid windowtext;border-top:1.0pt none windowtext;padding:0cm 5.4pt;vertical-align:top;width:114.5pt;">remarks</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:73.9pt;">String</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:87.8pt;">Yes</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:97.4pt;">“good”</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:88.5pt;">Remark of purchase order line</td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:1.0pt solid windowtext;border-right:1.0pt solid windowtext;border-top:1.0pt none windowtext;padding:0cm 5.4pt;vertical-align:top;width:114.5pt;">costCenter</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:73.9pt;">String</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:87.8pt;">Yes</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:97.4pt;">&nbsp;"cost line"</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:88.5pt;">Cost center name of line</td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:1.0pt solid windowtext;border-right:1.0pt solid windowtext;border-top:1.0pt none windowtext;padding:0cm 5.4pt;vertical-align:top;width:114.5pt;">purchaseDepartment</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:73.9pt;">String</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:87.8pt;">Yes</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:97.4pt;">“department last purchase”</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:88.5pt;">Purchase department of line</td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:1.0pt solid windowtext;border-right:1.0pt solid windowtext;border-top:1.0pt none windowtext;padding:0cm 5.4pt;vertical-align:top;width:114.5pt;">ordRefNo</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:73.9pt;">String</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:87.8pt;">Yes</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:97.4pt;">“ORD2343”</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:88.5pt;">Order reference number&nbsp; &nbsp;reference of order head</td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:1.0pt solid windowtext;border-right:1.0pt solid windowtext;border-top:1.0pt none windowtext;padding:0cm 5.4pt;vertical-align:top;width:114.5pt;">ordRefLineNo</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:73.9pt;">String</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:87.8pt;">Yes</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:97.4pt;">“ORDL839”</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:88.5pt;">Order line number reference of order line</td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:1.0pt solid windowtext;border-right:1.0pt solid windowtext;border-top:1.0pt none windowtext;padding:0cm 5.4pt;vertical-align:top;width:114.5pt;">ordRefCategory</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:73.9pt;">String</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:87.8pt;">Yes</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:97.4pt;">“MEN”</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:88.5pt;">Category of order&nbsp;</td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:1.0pt solid windowtext;border-right:1.0pt solid windowtext;border-top:1.0pt none windowtext;padding:0cm 5.4pt;vertical-align:top;width:114.5pt;">hSNCode</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:73.9pt;">int</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:87.8pt;">Yes</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:97.4pt;">8273</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:88.5pt;">HSN code provided for purchase order line</td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:1.0pt solid windowtext;border-right:1.0pt solid windowtext;border-top:1.0pt none windowtext;padding:0cm 5.4pt;vertical-align:top;width:114.5pt;">seasonCode</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:73.9pt;">int</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:87.8pt;">Yes</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:97.4pt;">12</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:88.5pt;">Season code it should be bring from common master&nbsp;</td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:1.0pt solid windowtext;border-right:1.0pt solid windowtext;border-top:1.0pt none windowtext;padding:0cm 5.4pt;vertical-align:top;width:114.5pt;">progressPercentage</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:73.9pt;">double</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:87.8pt;">Yes</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:97.4pt;">80.50</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:88.5pt;">Progress percentage of line based on total product received</td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:1.0pt solid windowtext;border-right:1.0pt solid windowtext;border-top:1.0pt none windowtext;padding:0cm 5.4pt;vertical-align:top;width:114.5pt;">purchasePrice</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:73.9pt;">double</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:87.8pt;">Yes</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:97.4pt;">654.32</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:88.5pt;">Purchase price of purchase order line</td>
+      </tr>
+    </tbody>
+  </table>
+</figure>
+<p><strong>Request JSON:</strong></p>
+<p>&nbsp;</p>
+<p>{</p>
+<p>&nbsp;"actionInfo": {</p>
+<p>&nbsp; &nbsp; "actionId": "SAVEUPPO"</p>
+<p>&nbsp;},</p>
+<p>&nbsp;"formData": {</p>
+<p>&nbsp; &nbsp; &nbsp; "id": null,</p>
+<p>&nbsp; &nbsp; &nbsp; "storeID": 110,</p>
+<p>&nbsp; &nbsp; &nbsp; "poDate": "2023-05-24 14:51:58.162",</p>
+<p>&nbsp; &nbsp; &nbsp; "purchaseOrderNo": "PO/2023-24/9056",</p>
+<p>&nbsp; &nbsp; &nbsp; "purchaseOrderYear": 2023,</p>
+<p>&nbsp; &nbsp; &nbsp; "vendorID": 205,</p>
+<p>&nbsp; &nbsp; &nbsp; "purchaseOrderTypeID": 1,</p>
+<p>&nbsp; &nbsp; &nbsp; "vendorOrderNo": "V123",</p>
+<p>&nbsp; &nbsp; &nbsp; "docStatus": 1,</p>
+<p>&nbsp; &nbsp; &nbsp; "poHighStatus": 1,</p>
+<p>&nbsp; &nbsp; &nbsp; "poLowStatus": 0,</p>
+<p>&nbsp; &nbsp; &nbsp; "poCurrency": "743",</p>
+<p>&nbsp; &nbsp; &nbsp; "headerChargeModelCode": 5,</p>
+<p>&nbsp; &nbsp; &nbsp; "paymentTerms": "Hu6374",</p>
+<p>&nbsp; &nbsp; &nbsp; "totalQty": 5000.00,</p>
+<p>&nbsp; &nbsp; &nbsp; "exchangeRate": 234.4,</p>
+<p>&nbsp; &nbsp; &nbsp; "totalDiscountAmount": 254.7,</p>
+<p>&nbsp; &nbsp; &nbsp; "totalChargeAmount": 134.50,</p>
+<p>&nbsp; &nbsp; &nbsp; "isConsignment":1,</p>
+<p>&nbsp; &nbsp; &nbsp; "poGross": 234.4,</p>
+<p>&nbsp; &nbsp; &nbsp; "grossWeight": 487.34,</p>
+<p>&nbsp; &nbsp; &nbsp; "volume": 7.34,</p>
+<p>&nbsp; &nbsp; &nbsp; "poBasic": 823.22,</p>
+<p>&nbsp; &nbsp; &nbsp; "poNet": 233.45,</p>
+<p>&nbsp; &nbsp; "poLine": [</p>
+<p>&nbsp; &nbsp; &nbsp; {</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; "id": null,</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; "storeID": 110,</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; "subLineNo": 6,</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; "productID": 43807,</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; "pOQty": 2000,</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; "uOM": 44849,</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; "aUOM": 12305,</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; "priceInBaseCurrency": 750.00,</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; "priceInOrderCurrency": 750.00,</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; "recQty": 0,</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; "balQty": 0,</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; "lotNoID": null,</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; "supplierProductCode": "hjdh484",</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; "supplierProductName": "JFH4848",</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; "supplierBarCode": "",</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; "lineStatus": 1,</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; "rRP": 34.0,</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; "margin": 52.1,</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; "lineChargesModalCode": 1,</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; "lineBasicAmount": 330.45,</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; "lineNetAmount": 554.34,</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; "lineTaxAmount": 466.55,</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; "lineDiscountAmount": 321.56,</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; "lineGrossAmount": 412.33,</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; "isConsignment": 1,</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; "priceListCode": "PRICE8459",</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; "remarks": "purchase order for sylphy",</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; "costCenter": "cost line",</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; "purchaseDepartment": "dept last purchase",</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; "ordRefNo": "ORD2542",</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; "ordRefLineNo": "10285",</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; "ordRefCategory": "",</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; "hSNCode": 17332,</p>
+<p>&nbsp;&nbsp; &nbsp; &nbsp; "seasonCode": 4,</p>
+<p>"progressPercentage":0,</p>
+<p>"purchasePrice" : 750.00</p>
+<p>&nbsp; &nbsp; &nbsp; }</p>
+<p>&nbsp; &nbsp; ]</p>
+<p>&nbsp;},</p>
+<p>&nbsp;"sessionData": {</p>
+<p>&nbsp; &nbsp; "userDetails": {</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp;"companyId": 100,</p>
+<p>&nbsp; &nbsp; &nbsp; "compName": "Sylphy ",</p>
+<p>&nbsp; &nbsp; &nbsp; "prodMaintenance": 2,</p>
+<p>&nbsp; &nbsp; &nbsp; "isAllChnlSel": 1,</p>
+<p>&nbsp; &nbsp; &nbsp; "isAllNodesSel": 1,</p>
+<p>&nbsp; &nbsp; &nbsp; "gatewayName": "DevOrdazzleGateway",</p>
+<p>&nbsp; &nbsp; &nbsp; "gatewayURL": "https://dev-gw.ordazzle.com/Sylphy_new_cmp",</p>
+<p>&nbsp; &nbsp; &nbsp; "userId": 5,</p>
+<p>&nbsp; &nbsp; &nbsp; "groupId": 1001,</p>
+<p>&nbsp; &nbsp; &nbsp; "userEmailId": "dhananjay.gundewar@etpgroup.com",</p>
+<p>&nbsp; &nbsp; &nbsp; "isAdmin": 1,</p>
+<p>&nbsp; &nbsp; &nbsp; "isAllAccess": 1,</p>
+<p>&nbsp; &nbsp; &nbsp; "userName": "Dhananjay Gundewar",</p>
+<p>&nbsp; &nbsp; &nbsp; "userGrpId": 165,</p>
+<p>&nbsp; &nbsp; &nbsp;"userType": 1,</p>
+<p>&nbsp; &nbsp; "langCode": "EN"</p>
+<p>&nbsp; &nbsp; },</p>
+<p>&nbsp; &nbsp; "timezone": "Asia/Calcutta",</p>
+<p>&nbsp; &nbsp; "clientInfo": {</p>
+<p>&nbsp; &nbsp; &nbsp; "clientId": 1,</p>
+<p>&nbsp; &nbsp; &nbsp; "appFlag": 3</p>
+<p>&nbsp; &nbsp; },</p>
+<p>&nbsp; &nbsp; "auditLogsDtls": {</p>
+<p>&nbsp; &nbsp; &nbsp; "shiftNo": -1,</p>
+<p>&nbsp; &nbsp; &nbsp; "counterId": -1,</p>
+<p>&nbsp; &nbsp; &nbsp; "storeId": -1,</p>
+<p>&nbsp; &nbsp; &nbsp; "transactionId": -1</p>
+<p>&nbsp; &nbsp; }</p>
+<p>&nbsp;}</p>
+<p>}</p>
+<p>&nbsp;</p>
+<p>{</p>
+<p>&nbsp; &nbsp; "data": null,</p>
+<p>&nbsp; &nbsp; "response": {</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; "type": null,</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; "respCode": "111",</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; "respMsg": "data save successfully",</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; "respHdr": "savePurchaseOrder",</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; "logID": null</p>
+<p>&nbsp; &nbsp; },</p>
+<p>&nbsp; &nbsp; "errors": {</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; "userMessage": null,</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; "internalMessage": null,</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; "code": null</p>
+<p>&nbsp; &nbsp; },</p>
+<p>&nbsp; &nbsp; "logID": "LG202307101152042682161:",</p>
+<p>&nbsp; &nbsp; "serviceName": "savePOReceive/saveupdatePO"</p>
+<p>}</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>Copy</p>
+<p><strong>Response JSON Fields:&nbsp;</strong></p>
+<p>&nbsp;</p>
+<figure class="table">
+  <table style="background-color:white;border-bottom:none;border-left:none;border-right:none;border-top:none;">
+    <thead>
+      <tr>
+        <th style="background-color:#EFF1F3;border-bottom:1.0pt solid black;border-left:1.0pt solid black;border-right:1.0pt solid black;border-top:1.0pt solid black;padding:1.5pt 2.25pt;vertical-align:bottom;">
+          <p style="text-align:center;"><strong>Name</strong></p>
+        </th>
+        <th style="background-color:#EFF1F3;border-bottom:1.0pt solid black;border-left:1.0pt none black;border-right:1.0pt solid black;border-top:1.0pt solid black;padding:1.5pt 2.25pt;vertical-align:bottom;">
+          <p style="text-align:center;"><strong>Type</strong></p>
+        </th>
+        <th style="background-color:#EFF1F3;border-bottom:1.0pt solid black;border-left:1.0pt none black;border-right:1.0pt solid black;border-top:1.0pt solid black;padding:1.5pt 2.25pt;vertical-align:bottom;">
+          <p style="text-align:center;"><strong>Sample value</strong></p>
+        </th>
+        <th style="background-color:#EFF1F3;border-bottom:1.0pt solid black;border-left:1.0pt none black;border-right:1.0pt solid black;border-top:1.0pt solid black;padding:1.5pt 2.25pt;vertical-align:bottom;">
+          <p style="text-align:center;"><strong>Description</strong></p>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="border-bottom:2.25pt groove #E6E6E6;border-left:2.25pt groove #E6E6E6;border-right:2.25pt groove #E6E6E6;border-top:2.25pt none #E6E6E6;padding:1.5pt 2.25pt;vertical-align:bottom;">type</td>
+        <td style="border-bottom:2.25pt groove #E6E6E6;border-left:none;border-right:2.25pt groove #E6E6E6;border-top:none;padding:1.5pt 2.25pt;vertical-align:bottom;">String</td>
+        <td style="border-bottom:2.25pt groove #E6E6E6;border-left:none;border-right:2.25pt groove #E6E6E6;border-top:none;padding:1.5pt 2.25pt;vertical-align:bottom;">S</td>
+        <td style="border-bottom:2.25pt groove #E6E6E6;border-left:none;border-right:2.25pt groove #E6E6E6;border-top:none;padding:1.5pt 2.25pt;vertical-align:bottom;">&nbsp;</td>
+      </tr>
+      <tr>
+        <td style="border-bottom:2.25pt groove #E6E6E6;border-left:2.25pt groove #E6E6E6;border-right:2.25pt groove #E6E6E6;border-top:2.25pt none #E6E6E6;padding:1.5pt 2.25pt;vertical-align:bottom;">respCode</td>
+        <td style="border-bottom:2.25pt groove #E6E6E6;border-left:none;border-right:2.25pt groove #E6E6E6;border-top:none;padding:1.5pt 2.25pt;vertical-align:bottom;">Int</td>
+        <td style="border-bottom:2.25pt groove #E6E6E6;border-left:none;border-right:2.25pt groove #E6E6E6;border-top:none;padding:1.5pt 2.25pt;vertical-align:bottom;">0000</td>
+        <td style="border-bottom:2.25pt groove #E6E6E6;border-left:none;border-right:2.25pt groove #E6E6E6;border-top:none;padding:1.5pt 2.25pt;vertical-align:bottom;">&nbsp;</td>
+      </tr>
+      <tr>
+        <td style="border-bottom:2.25pt groove #E6E6E6;border-left:2.25pt groove #E6E6E6;border-right:2.25pt groove #E6E6E6;border-top:2.25pt none #E6E6E6;padding:1.5pt 2.25pt;vertical-align:bottom;">respMsg</td>
+        <td style="border-bottom:2.25pt groove #E6E6E6;border-left:none;border-right:2.25pt groove #E6E6E6;border-top:none;padding:1.5pt 2.25pt;vertical-align:bottom;">String</td>
+        <td style="border-bottom:2.25pt groove #E6E6E6;border-left:none;border-right:2.25pt groove #E6E6E6;border-top:none;padding:1.5pt 2.25pt;vertical-align:bottom;">Success Or Error Message</td>
+        <td style="border-bottom:2.25pt groove #E6E6E6;border-left:none;border-right:2.25pt groove #E6E6E6;border-top:none;padding:1.5pt 2.25pt;vertical-align:bottom;">&nbsp;</td>
+      </tr>
+      <tr>
+        <td style="border-bottom:2.25pt groove #E6E6E6;border-left:2.25pt groove #E6E6E6;border-right:2.25pt groove #E6E6E6;border-top:2.25pt none #E6E6E6;padding:1.5pt 2.25pt;vertical-align:bottom;">respHdr</td>
+        <td style="border-bottom:2.25pt groove #E6E6E6;border-left:none;border-right:2.25pt groove #E6E6E6;border-top:none;padding:1.5pt 2.25pt;vertical-align:bottom;">&nbsp;String</td>
+        <td style="border-bottom:2.25pt groove #E6E6E6;border-left:none;border-right:2.25pt groove #E6E6E6;border-top:none;padding:1.5pt 2.25pt;vertical-align:bottom;">&nbsp;savePurchaseOrder</td>
+        <td style="border-bottom:2.25pt groove #E6E6E6;border-left:none;border-right:2.25pt groove #E6E6E6;border-top:none;padding:1.5pt 2.25pt;vertical-align:bottom;">&nbsp;</td>
+      </tr>
+      <tr>
+        <td style="border-bottom:2.25pt groove #E6E6E6;border-left:2.25pt groove #E6E6E6;border-right:2.25pt groove #E6E6E6;border-top:2.25pt none #E6E6E6;padding:1.5pt 2.25pt;vertical-align:bottom;">logID</td>
+        <td style="border-bottom:2.25pt groove #E6E6E6;border-left:none;border-right:2.25pt groove #E6E6E6;border-top:none;padding:1.5pt 2.25pt;vertical-align:bottom;">String</td>
+        <td style="border-bottom:2.25pt groove #E6E6E6;border-left:none;border-right:2.25pt groove #E6E6E6;border-top:none;padding:1.5pt 2.25pt;vertical-align:bottom;">LG202307101152042682161</td>
+        <td style="border-bottom:2.25pt groove #E6E6E6;border-left:none;border-right:2.25pt groove #E6E6E6;border-top:none;padding:1.5pt 2.25pt;vertical-align:bottom;">&nbsp;</td>
+      </tr>
+      <tr>
+        <td style="border-bottom:2.25pt groove #E6E6E6;border-left:2.25pt groove #E6E6E6;border-right:2.25pt groove #E6E6E6;border-top:2.25pt none #E6E6E6;padding:1.5pt 2.25pt;vertical-align:bottom;">data</td>
+        <td style="border-bottom:2.25pt groove #E6E6E6;border-left:none;border-right:2.25pt groove #E6E6E6;border-top:none;padding:1.5pt 2.25pt;vertical-align:bottom;">&nbsp;</td>
+        <td style="border-bottom:2.25pt groove #E6E6E6;border-left:none;border-right:2.25pt groove #E6E6E6;border-top:none;padding:1.5pt 2.25pt;vertical-align:bottom;">&nbsp;</td>
+        <td style="border-bottom:2.25pt groove #E6E6E6;border-left:none;border-right:2.25pt groove #E6E6E6;border-top:none;padding:1.5pt 2.25pt;vertical-align:bottom;">&nbsp;</td>
+      </tr>
+    </tbody>
+  </table>
+</figure>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>

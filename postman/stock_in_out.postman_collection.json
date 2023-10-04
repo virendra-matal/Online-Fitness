@@ -1,0 +1,42 @@
+{
+	"info": {
+		"_postman_id": "ed28136f-8b4d-467c-88af-7371936ad3d0",
+		"name": "Stock in Out",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22986272"
+	},
+	"item": [
+		{
+			"name": "https://impl-gw.ordazzle.com/default/blitzfire/1.0/processRequest",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"actionInfo\": {\r\n    \"actionId\": \"SAVESTKINOUT\"\r\n  },\r\n  \"formData\": {\r\n    \"type\": 1,\r\n    \"stockInOutHeaderBean\": {\r\n      \"storeID\": 191,\r\n      \"employeeID\": 0,\r\n      \"reasonID\": 6054,\r\n      \"remarks\": \"\",\r\n      \"extRefDocNo\": \"456\",\r\n      \"docStatus\": 1,\r\n      \"totalQty\": 3,\r\n      \"invoiceYear\": 0,\r\n      \"recordStatus\": 1\r\n    },\r\n    \"stockInOutLineBean\": [\r\n      {\r\n        \"invoiceYear\": 0,\r\n        \"lineNo\": 0,\r\n        \"subLineNo\": 0,\r\n        \"bundleFlag\": 0,\r\n        \"bundleInvFlag\": 0,\r\n        \"aUOM\": 0,\r\n        \"recordStatus\": 1,\r\n        \"storeID\": 191,\r\n        \"productImageName\": \"\",\r\n       \r\n\r\n\r\n\r\n\"productImagePath\": \"https://assets.ajio.com/medias/sys_master/root/h1c/hca/15485282156574/-473Wx593H-460571478-black-MODEL3.jpg\",\r\n        \"productCode\": \"675467834567\",\r\n        \"recQty\": \"3\",\r\n        \"locationName\": \"L1-Approved\",\r\n        \"locationID\": 31584,\r\n        \"lotNoDisp\": \"\",\r\n        \"selectedProduct\": null,\r\n        \"cost\": 0,\r\n        \"uOM\": 22463,\r\n        \"salesPrice\": 0,\r\n        \"lotNumber\": 0,\r\n        \"lotNoID\": 0\r\n      }\r\n    ]\r\n  },\r\n  \"sessionData\": {\r\n    \"userDetails\": {\r\n      \"companyId\": 100,\r\n      \"compName\": \"Sylphy \",\r\n      \"prodMaintenance\": 2,\r\n      \"gatewayName\": \"DevOrdazzleGateway\",\r\n      \"gatewayURL\": \"https://dev-gw.ordazzle.com/\",\r\n      \"userId\": 18751,\r\n      \"groupId\": 1001,\r\n      \"userEmailId\": \"praveshnarayan.tiwari@etpgroup.com\",\r\n      \"isAdmin\": 0,\r\n      \"isAllAccess\": 1,\r\n      \"userName\": \"praveshnarayan.tiwari@etpgroup.com\",\r\n      \"langCode\": \"EN\"\r\n    },\r\n    \"timezone\": \"Asia/Calcutta\"\r\n  }\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://impl-gw.ordazzle.com/default/blitzfire/1.0/processRequest",
+					"protocol": "https",
+					"host": [
+						"impl-gw",
+						"ordazzle",
+						"com"
+					],
+					"path": [
+						"default",
+						"blitzfire",
+						"1.0",
+						"processRequest"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

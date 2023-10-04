@@ -1,0 +1,59 @@
+<!--
+title: Smart Order Routing
+description: 
+published: true
+date: 2023-02-17T04:35:06.494Z
+tags: order
+editor: ckeditor
+dateCreated: 2023-02-07T09:04:52.314Z
+-->
+
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Smart Order Routing is a function in Ordazzle which allows users to define rules that will analyse and allocate new incoming orders to the most appropriate node or nodes. Based on the conditions and priorities defined, the incoming order will either be allocated to the most suitable serviceable node, or be put on hold for further action if no suitable node or nodes are available.</p>
+<figure class="image image_resized" style="width:100%;"><img src="https://lh5.googleusercontent.com/TicES51oKKuFQHNFvZwoy04c87T24UeLM8veYhue77qOIYsE-i5vxOKvwi95v412__LmtsYUSLBmhYoa_JsZMOmx8CBmwFYuI9zE_OAvN9vTIIujqdZYwCZ0HD0ZacrFgQSOgqgFnbUqaiCHLorXDg"></figure>
+<p>On the Smart Order Routing screen, the user can take a few actions.&nbsp;</p>
+<p>The user can search for any existing rule by the rule name or the channel shop. They can also filter the view based on the status of the rule.</p>
+<p>The user can choose to edit a particular rule, by clicking the three dot option and selecting edit.</p>
+<p>Users can click the ‘plus’ icon to create a new rule, either from scratch or by using a pre-built template offered by Ordazzle</p>
+<p>Create New - This will open a fresh screen of Smart Routing Rule creation to define a new Rule.</p>
+<p>Use Template - This will open the template selection screen. Templates are predefined rules that can be selected to create rules using the predefined conditions.</p>
+<h2>Smart Routing Rule Creation or Edit</h2>
+<figure class="image image_resized" style="width:100%;"><img src="https://lh5.googleusercontent.com/riDg4Bbn9Mv5U7jm_P9dAOjEdbyg9c8XPSeZoPR4o8jesRYI5_Cj9xGJNypj3P3j95Pm8yRC4DD8OXOsCJBusLcPg-aFOjHlIMqupWyyv5AHe_ReCI5WR_qzBJyng0FmpZ6y5M-gdnaDoEIJZX2dXw"></figure>
+<h3>Basic Details&nbsp;</h3>
+<p>Over here, the user can define the channel and shop for which the Order Rules will apply. There can only be one set of active rules per channel shop. Additionally, the user can give the set of rules a name, and set its status as either active or inactive.</p>
+<h2>Rule for Finding Best Node</h2>
+<p>This section is where the user will define all the conditions of the Smart Routing Rules. There are a total of 5 conditions, which can be made active or inactive based on the user’s choice. These can also be dragged and dropped to change the position of the condition, accordingly increasing or decreasing it’s priority.</p>
+<p>The five conditions available in this section are explained below:</p>
+<p>Distance - This condition will check the Distance of the customers (or Warehouse Delivery address if it is marketplace fulfilled) shipping address from the serviceable nodes address.&nbsp;</p>
+<p>Distance from Delivery Location - The maximum allowed distance between the fulfillment node and the shipping address. This can be either KM or Miles, based on the user’s selection</p>
+<p>Allowance Distance for Additional Nodes - The user can define an allowance range from the nearest node to shortlist additional nodes for subsequent evaluation. For example, After a maximum distance is decided of 100km, this section can be used to define intervals that will be checked. If the allowance distance is set at 10km, then the Smart Order Routing will check all stores that are within 10km of the closest node and shortlist them.</p>
+<p>Use Pre-set Serviceable Postal-codes - Selecting this option will use only the node wise Pre-set Serviceable Postal-codes set in Ordazzle. Using this setting will not use the ‘distance’ and ‘allowance distance’ parameters, but will consider all nodes that can service the delivery postal code</p>
+<p>Stock - This condition checks the inventory of products in the order at all the applicable fulfillment nodes. The criteria for this is:</p>
+<p>Highest stock for the highest priced item - If the user selects this option, then the node which has the highest available stock for the most expensive item will be selected.</p>
+<p>Highest stock for most products in that order -&nbsp; If the user selects this option, then the node which has the highest available stock for most of the products in that order will be selected.</p>
+<p>By Quantity - If the Quantity option is selected then only the highest available in-stock quantity of all products will be considered for node allocation.&nbsp;</p>
+<p>By Value - The sales value of each product is considered, along with the quantity of that product, in order to select which node can best fulfill the order</p>
+<p>Node Priority - Selecting this option will check node priority for allocation. Nodes with lower priority value assigned in Fulfillment Node Setup will be preferred over the nodes with higher priority value.</p>
+<p>Node Revenue Share - Selecting this option will check node Revenue share for allocation. Nodes with revenue share ‘No’ will be preferred over the nodes with revenue share ‘Yes’. This applies in the case the node is in a Mall or 3rd party warehouse where there is a revenue sharing arrangement.</p>
+<p>Node Ownership - Selecting this option will check node ownership for allocation. Nodes with ownership as ‘Company’ will be preferred over the nodes with ownership ‘Franchise’.</p>
+<h2>Advanced Settings</h2>
+<p>In the next section, Advanced Settings, the user can configure some advanced functionality that the Smart Routing rule should perform.</p>
+<p>Order Reallocation - When selecting this option, if an order is rejected by a particular fulfillment node, it will be rerouted by the Smart Routing Rule to be allocated to another suitable node amongst the remaining channel fulfillment nodes.&nbsp;</p>
+<p>Multi Node Allocation - When selecting this option, this will allow the smart routing rule to split the order if no node is able to fulfill all the products in the order .</p>
+<p>Fulfill from the least amount of nodes possible - This will split the order in such a way that order should be fulfilled by the least number of nodes to minimise logistics costs.</p>
+<p>Notification - Selecting this option will send the notification email to admin users of the channel on every successful allocation of order through the smart routing rule.</p>
+<p>Orders on Hold - Automatically Allocate Hold Orders once Stock is Available. This will check if any stock is available after a stock-in, order cancellation, order rejection, order return to origin or order return receiving. This available stock will then be allocated to any hold orders from this channel.</p>
+<figure class="image image_resized" style="width:100%;"><img src="https://lh3.googleusercontent.com/JRbdX-Mh2ZKQf6xRRVAWyjrk6W9i5Ypss4nucG2rbPaATJxyprmOJVYQK34etxbYm_1Al2gobnG5dGvHBJ1iHJ3PwgUVtvypbX6_Nv8tkeIPK801ZokNv5--Oc7_5DX58mPcRL1D73KdPOBvG1xdwg"></figure>
+<h3>How to make changes in the existing Smart Routing Rule conditions&nbsp;</h3>
+<p>Users can drag and drop any rule condition to change its execution priority.</p>
+<p>Users can also activate &amp; deactivate any condition by clicking on the toggle switch for every condition.</p>
+<p>Advanced settings can be activated or deactivated any time in the edit screen for any smart routing rule.</p>
+<h2>Create Rule using Templates&nbsp;</h2>
+<p>Users can select the option of ‘USE TEMPLATE’ to create a Smart Routing rule using pre-defined templates.</p>
+<p>There are 11 pre-defined templates available to select from in the template list. All templates have a predefined rule that fulfills different use cases of smart order routing.</p>
+<p>On selecting any template the Order rule creation window will open. Over here, the user needs to select the Seller Channel &amp; Rule Name and the remaining conditions &amp; advanced setting will be predefined as per the template.</p>
+<figure class="image image_resized" style="width:100%;"><img src="https://lh3.googleusercontent.com/v5C_BWMJ2IFLAUgLuTChHYWtM2Zu4aqMxcLCyO4NYk3tF5YsoBRqzIvE2Hn5oRZ9tnFem_x3zD63xInPSkpMwbUpkejXtl0AUDxzh7KchoFs1vlhwOqJ5J6II5eElz914heinfUTo7Cxfgf2dHjMgw"></figure>
+<h2>How the Smart Routing Rule will be executed</h2>
+<p>When any Smart Routing rule is being executed on an incoming order, it will start by checking the Distance condition if defined in the routing rule.</p>
+<p>If the distance is defined, then it will filter out the channel’s fulfillment nodes based on the distance condition.</p>
+<p>After that it will check the conditions according to its priorities. It will check the priority conditions to sort the nodes. If the most preferable condition values are the same for multiple nodes then, those nodes will be considered for next condition evaluation as per priority.</p>
+<p>This will keep on checking for further conditions until the most preferable nodes are found.</p>

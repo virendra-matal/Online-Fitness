@@ -1,0 +1,100 @@
+<!--
+title: Communication Provider
+description: 
+published: true
+date: 2023-09-28T09:18:26.770Z
+tags: 
+editor: ckeditor
+dateCreated: 2023-07-17T05:15:15.190Z
+-->
+
+<h1>Communication-Provider-Wiki-ETP-Unify</h1>
+<h3>Communication Provider Wiki and Capabilities</h3>
+<p>Automated Billing and Invoicing:<br>Generate invoices and bills automatically based on communication usage data, such as phone calls, text messages, or data usage.<br>Send bills and invoices to customers via email or SMS through the communication provider's services.<br>Payment Processing:<br>Facilitate secure and convenient payment processing by integrating with payment gateways through the communication provider.<br>Allow customers to pay their bills directly through the billing software.<br>Notifications and Alerts:<br>Send automated notifications and alerts to customers regarding upcoming bill due dates, payment confirmations, or changes in their communication plans.<br>Notify customers about unusual or high-usage patterns to help them make informed decisions.<br>Plan Customization and Upgrades:<br>Allow customers to customize their communication plans or upgrade/downgrade services directly through the billing software.<br>Provide recommendations based on usage patterns to encourage customers to choose the most cost-effective plans.<br>Multi-Channel Billing:<br>Support billing for various communication channels, including SMS, WA,Emails data usage, and more, all through a single integrated platform.<br>Ensure accuracy and consistency in billing across different communication services.<br>ETP Unify Communication Provider Capabilities</p>
+<p>The User can configure the communication provider that they are comfortable with based on the service,features and plans provided by the provider.</p>
+<p>The Provider will be made personalized based on the set up configurations available in this module.</p>
+<h5>User Manual of Communication provider</h5>
+<p>The Communication provider module is available under ETP Unify→ Administration→Communication Provider. The User can navigate to through above and find the module.</p>
+<h5>Card view List screen</h5>
+<figure class="image image_resized" style="width:100%;"><img src="/commuication_provider-1.png" alt="commuication_provider-1.png"></figure>
+<p><br>When the User click on Communication Provider, the User will land on the Card view list screen of all the providers available for the company. If no records created,then the view will be displayed empty.</p>
+<p>Search Box The List screen will have a search Bar where the User can search the details based on the Provider name.The List screen will contain all the details across all media namely Sms, Whatsapp and Email.</p>
+<p>Status Drop down With this drop down, the User can view the details in the List based on the status the user selects on the drop down- Either Active or Inactive or All Status.</p>
+<p>Media Drop down Based on this drop down selection User will be able to view the lost screen values based on the selected Media either SMS or WA or Email or All Medias.</p>
+<p>Card View Contents</p>
+<p>The Card view contents will differ from each media as per below.<br>SMS Card View</p>
+<p>The sms card will have the below details<br>The Name of the provider<br>The Logo of the Provider<br>If Company level is YES or NO<br>If company level is NO, then what are the Channels that are available for the saved sms configuration.<br>Active Status<br>WA Card View<br>The Name of the provider<br>The Logo of the Provider<br>If Company level is YES or NO<br>If company level is NO, then what are the Channels that are available for the saved sms configuration.<br>Active Status</p>
+<p>Email Card View<br>Server<br>Port number<br>Auto Reply email id<br>If company level is NO, then what are the Channels that are available for the saved sms configuration.<br>Active Status</p>
+<h5>Create Screen of Communication Provider</h5>
+<p>The User can Click on the Plus Button available in the bottom right of the list screen, then the screen will open the create screen.<br>The screen is set to default to show the SMS Providers when we open create screen.<br>&nbsp;</p>
+<figure class="image image_resized" style="width:100%;"><img src="/communication_provider-2.png" alt="communication_provider-2.png"></figure>
+<p><br>SMS Providers List</p>
+<p>Enablex - Only Accessible For Indian Region<br>Zenziva- Only For Indonesia Region<br>TextLocal- Only Accessible For Indian Region</p>
+<p>Below are the fields that are required for each SMS Provider, few details will be provided by the SMS Provider itself.</p>
+<p>Provider Media* This is a drop down where drop down values will have values as SMS,WA and Email. Here the User will be able to select the needed media they want to configure the provider for. The below columns change based on the media and provider name changed</p>
+<p>Communication Provider* Here the User can use the drop down to change the provider and when the provider is changed the below configure columns will be dynamic based on the provider</p>
+<p>Below will be the dynamic columns based on the Media and Provider</p>
+<p>At Company level(Checkbox)* This will be a check box that can be checked if the same provider can be used for the whole of the same company. If this is checked then the upcoming column will be blank/disabled.</p>
+<p>Channel Name* Multi select channels should be shown here.SMS provider configuration will be handled at Company level or Channel shop code level (webstore).<br>The Dropdown of Channel shop code will be populated from the seller channel master which will be User specific. (List of channel shop to be shown to User for which he/she has access for). This is a mandatory field.<br>If the above “At company Level ” is clicked then this field will be disabled.</p>
+<p>Country Code* This will be the ISO code of the country for which the test number is from eg +91 for India and +62 for Indonesia for now. This will be a drop down. The code numbers can be added if required in future. This will be a mandatory drop down.</p>
+<p>Test Number* This will be a free numerical field that can comprise the mobile number with which the user can have an initial check if the message is received.</p>
+<p>Status This will be a toggle button with which the user can notify if the provider is active or inactive for the said company or channel.<br>1-Active<br>2-Inactive<br>While deactivating the status system should display the validation message -”If status is deactivated then the system will stop sending the SMS notification.”</p>
+<p>Send Test SMS/Email/WA The user can click this button to execute the sending of an sms for the initial test. After clicking on this button the system will validate all the above details and execute the message.</p>
+<p>Test Text* Here the User needs to enter the test text that they wish to test with, the text should be approved by the sms providers and DLT and for WA messages by the Meta group through the providers such as zenziva/Textlocal and Gupshup which is possible from the respective Provider logins.</p>
+<p>Note: For any message content to be tested through the communication provider module and Media sms, the content should be approved by the BSNL DLT and by the respective sms provider in INDIA.</p>
+<p>Below columns are essential to set up a SMS provider with Enablex(only for India Region)<br>&nbsp;</p>
+<figure class="image image_resized" style="width:100%;"><img src="/communication_provider-3.png" alt="communication_provider-3.png"></figure>
+<p>From This is a Header that can be approved with enablex and each customer will have a separate header. This can be performed from the Enablex Login. The User needs to have an account with Enablex on behalf of the company he represents and can login through above link to sent up this detail.</p>
+<p>Campaign ID When an account is created with enalex, the User can request a campaign ID from the provider and the same can be used to set up here.</p>
+<p>Type This field will always be mentioned as sms, so that the sms is being sent through this configuration.</p>
+<p>User Key This is a Key provided to individual customer which is used to send the message.</p>
+<p>TemplateID This is a Template ID when that needs to be acquired from the Provider after a template has been created in the above mentioned link. The SMS content should be approved by a central content governed body BSNL DLT. The template content should be approved by them and then sent to the concern provider for approval again so that the sms will be sent(BSNL DLT Registration run through provided in Communication template Wiki)</p>
+<p>Below columns are essential to set up a SMS provider with Zenziva(only for Indonesia region)<br>&nbsp;</p>
+<figure class="image image_resized" style="width:100%;"><img src="/communication_provider-4.png" alt="communication_provider-4.png"></figure>
+<p><br>User Key* and Passkey* - Will be provided by the provider after registration.</p>
+<p>All the other columns will be as per above mentioned general columns for use.</p>
+<p>Zenziva Registration link</p>
+<p>Below columns are essential to set up a SMS provider with TextLocal(only for India Region)<br>&nbsp;</p>
+<figure class="image image_resized" style="width:100%;"><img src="/communication_provider-5.png" alt="communication_provider-5.png"></figure>
+<p><br>API Key* This is an Unique key given to the user after Registration with the Provider</p>
+<p>Sender* This is a Header that can be approved with Textlocal and each customer will have a separate header. This can be performed from the Textlocal Login. The User needs to have an account with TextLocal on behalf of the company he represents and can login through the above link to sent up this detail.</p>
+<p>Below columns are essential to set up a WA provider with Textlocal WA<br>&nbsp;</p>
+<figure class="image image_resized" style="width:100%;"><img src="/communication_provider-6.png" alt="communication_provider-6.png"></figure>
+<p><br>Along with above mentioned general columns the User will be able to view below columns for setting up a TextLocal WA provider.</p>
+<p>TextType This is a Drop down where the User can mention the type of message he wants to send via this provider config. The Media and Text will be the 2 options for this drop down.<br>Text Template Text messages can be sent through this set up.<br>Media Template If media is selected, then the User will be able to add sample media to send with the test mail, the User can either attached a file through upload or through link and the same will be sent when the set up is correct and without any mistakes on entry.</p>
+<p>From WA Number* This will be the registered WA number from which the message to be sent to the Customers.</p>
+<p>Authorization Key* This key will be provided by the WA provider when the Onboard registration and an active plan is taken.</p>
+<p>Template ID for Test Message Here the User can enter the Template ID thats been registered through the Provider to WA.</p>
+<p>Below columns are essential to set up a WA provider with Gupshup WA<br>&nbsp;</p>
+<figure class="image"><img src="/communication_provider-7.png" alt="communication_provider-7.png"></figure>
+<p><br>Text Type* This is a Drop down where the User can mention the type of message he wants to send via this provider config. The Media and Text will be the 2 options for this drop down.<br>Text Template Text messages can be sent through this set up.<br>Media Template If media is selected, then the User will be able to add sample media to send with the test mail, the User can either attached a file through upload or through link and the same will be sent when the set up is correct and without any mistakes on entry.</p>
+<p>User ID and Password* This key will be provided by the WA provider when the Onboard registration and an active plan is taken.</p>
+<p>Template ID for Test Message Here the User can enter the Template ID thats been registered through the Provider to WA.</p>
+<p>Below columns are essential to set up a Email provider with Gmail</p>
+<p>Except for the other above mentioned general columns below columns will be available for the Email Provider.<br>&nbsp;</p>
+<figure class="image image_resized" style="width:100%;"><img src="/communication_provider-8.png" alt="communication_provider-8.png"></figure>
+<p>Transport Protocol* The User can the type of transport Protocol based on the use of the provider configuration from the drop down.</p>
+<p>Content Encoding* The User can select Content Encoding based on the use of the provider configuration from the drop down.</p>
+<p>Check Server Alive This is a check box, the user can click the same based on the necessity of the provider configuration.</p>
+<p>Proxy Enabled This is a check box, the user can click the same based on the necessity of the provider configuration.</p>
+<p>Email Server* This is a free field where the User needs to enter the detail to set up the provider configuration which is given by the Email Provider</p>
+<p>Email Port* This is a free field where the User needs to enter the detail to set up the provider configuration which is given by the Email Provider.</p>
+<p>Auto Reply Email ID* The User needs to enter the Auto Reply email id for the mails getting triggered through this configuration set up.</p>
+<p>Auto Reply Email Name The User needs to enter the Auto Reply email name for the mails getting triggered through this configuration set up.</p>
+<p>Bounce Back Email ID* The User needs to enter the Auto Reply email id for the mails getting triggered through this configuration set up.</p>
+<p>Bounce Back Email Name The User needs to enter the Auto Reply email name for the mails getting triggered through this configuration set up.</p>
+<p>User Name* This is the free field to enter the User to which the Test Email will be sent from.</p>
+<p>Password* Here the User can enter the 2FA password provided by the provider for the email ID from which the email will be sent.</p>
+<p>From Email ID Here the User needs to enter the email from which the triggered email to be sent through the module.</p>
+<p>From Email Name The User needs to enter the Auto Reply email name for the mails getting triggered through this configuration set up.</p>
+<p>To Email ID Here the User needs to enter the email to which the triggered email to be sent through the module.</p>
+<p>To Email Name The User needs to enter the email name for the mails getting triggered through this configuration set up.</p>
+<p>Text Type This is a Drop down where the User can mention the type of message he wants to send via this provider config. The Media and Text will be the 2 options for this drop down.<br>Text Template Text messages can be sent through this set up.<br>Media Template If media is selected, then the User will be able to add sample media to send with the test mail, the User can either attached a file through upload or through link and the same will be sent when the set up is correct and without any mistakes on entry.</p>
+<p>Subject* Here the User can enter the subject of the test mail to be sent.</p>
+<p>Scenarios to be considered while saving/sending a test message/Email through the set up configuration.</p>
+<p>The User needs to make sure that all the mandatory columns be filled while trying to save or execute a communication send.</p>
+<p>If any of the details are missing, then the communication provider set up can only be saved in inactive format.</p>
+<p>A communication test send should be passed so that the communication provider set up to be saved in active status.</p>
+<p>Each communication set up should be saved separately.</p>
+<p>Inactivated communication cannot be used to send any form of communication.</p>
+<p>When the same is set up, the User can make use of the set up communication to send communication on any events based on the executions like bill save, promotion execution and Orders placed etc.</p>

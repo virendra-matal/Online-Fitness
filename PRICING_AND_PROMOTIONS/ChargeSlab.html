@@ -1,0 +1,70 @@
+<!--
+title: Charge Slab
+description: 
+published: true
+date: 2023-09-27T12:36:43.969Z
+tags: 
+editor: ckeditor
+dateCreated: 2023-07-14T03:43:57.141Z
+-->
+
+<h1><strong>Charge Slab</strong></h1>
+<p>The charge slab allows users to define charge slabs with different ranges &amp; calculation methods for a particular charge amount so that the charge will be applicable on the invoice line/header value if it falls in the defined range.</p>
+<p><strong><u>For Example:</u></strong> If Slabs ABC is selected in the charge model and it has below defined values</p>
+<p>0 - 99 = Slab Value 10</p>
+<p>100 - 199 = Slab Value 20</p>
+<p>Consider that this charge model is applicable on Header level only</p>
+<p>So now during the billing if the Billing Amount is 99 USD then the Charge Amount of 10 USD will be applied directly on the bill.</p>
+<p><strong><u>Impacted Area:</u></strong> This master will have its impact on charge definition, POS billing and purchase orders.</p>
+<figure class="image image_resized" style="width:100%;"><img src="https://lh6.googleusercontent.com/_Kdj4p5F9JyV0_WW_rhfXXrn8eAij9E3WhNmYhTIyYSIyZduur7ohTswBguaYCPaTix4Bz5SwE1DfG3aA9JwHUL90vF9mY7FaTMsnjtbXlhmcPF5g-19x3G90sPG7fG4ki7L2kiAlLD8Pk6P-4quhBc"></figure>
+<p><strong>List Screen</strong></p>
+<p>Over here, users can view all the existing Charge Slabs created.&nbsp;</p>
+<p>Users can delete and edit the records, and also can add new ones.</p>
+<p>The users can sort or use the search bar to <strong>search </strong>existing slabs by the <strong>Slab code</strong> or <strong>Name </strong>on the list screen<strong>.&nbsp;&nbsp;</strong></p>
+<figure class="image image_resized" style="width:100%;"><img src="https://lh3.googleusercontent.com/7H1GIxm_qEKEai2szhNlL8vXKqEbWoXRk-9XTJgf3KP9KY245bjbFMfvdHdTWrCdJFhRB1_Eux0IHpXR55OboojhGKmU-mlY714IpNg-Ew7pcpUjbH_hac4ZLd_zAf-8HK4mBSHE-o9IPTc4_9ielQw"></figure>
+<p>Each record in list screen has three dots ‘</p>
+<figure class="image image_resized" style="width:6.68%;"><img src="https://lh5.googleusercontent.com/Qi8Gq3xqAcb4B9dZv_cZ8pQtF8KUjG9cnTGeOhY9XP6pxMA9Y8fTpMDmfC3OhBBdrMb5n8TXT2RcSG4qtsZL_9m8yJLTpvFGAhbP9Av4X6VLfwJt--3sxR1A98lC_UmCEgVZnVl0AL7f8dFVwN7u3g"></figure>
+<p>’,&nbsp; against it and they will have below following options</p>
+<ul>
+  <li><strong>View - </strong>This option will open up the creation screen with pre-populated data for users to view, in read only mode.</li>
+  <li><strong>Edit </strong>- This option will open up the creation screen with pre-populated data for users to edit, users can edit names and slab range details in this mode.</li>
+  <li><strong>Delete </strong>- This option will allow users to delete the slab record only if it is not used in charge definition.</li>
+</ul>
+<p><strong>Charge slab creation</strong></p>
+<p>You can create new slab by clicking on the ‘</p>
+<figure class="image image_resized" style="width:25px;"><img src="https://lh3.googleusercontent.com/gFixNXtW75DllhOghr1ZzMxQwqimalX6FYtxaC_2m0yPdt2qfOlxINqsZ2mSs6_PhEHy__kRwKBgIlwm9uyfrV87YOVfj400MujIqKPxOcfpTDIlBiLAV9LM6LofTAio0nZJteoZk7_vPXkJe0k41w" alt="threedots image"></figure>
+<p>’&nbsp; add button available in the main screen on the bottom right corner.</p>
+<p>On click of the “+” button , a screen will be visible to create a new charge slab.</p>
+<figure class="image image_resized" style="width:100%;"><img src="https://lh3.googleusercontent.com/sgDdQR1PQxOYyrtg3ZInyQ_e1eOAiEVxzH5dTIE1irX1NrkmePC_z0q7TWlledpmqJL4rmW5Hk-j18__2T-NSF-tkP1NGuE_31E_wmHpiSUgor-jEPJ8F1XOFWiZGRy8uDyi-EZhXkUPTOWFAAotWvU"></figure>
+<p>Below are Fields where you will be able to define data:</p>
+<p><strong>Charge Slab - Header Details</strong></p>
+<p>This section allows users to define basic details for a charge slab creation such as code, name, status and calculation method.</p>
+<ul>
+  <li><strong>Charge Slab Code:</strong> Users will be able to define the unique code for the charge slab.</li>
+  <li><strong>Charge Slab Name:</strong> Users will be able to define the name for the charge slab using this field.</li>
+  <li><strong>Value Calculation : </strong>Users can select the calculation method which will be used for further charge calculation.</li>
+  <li><strong>Status : This will be a toggle button to make the charge slab active or inactive.</strong></li>
+</ul>
+<figure class="image image_resized" style="width:100%;"><img src="https://lh4.googleusercontent.com/VEDFXa_DbEBi-nY2psGnEaoaqKHbtBeOr_YhsXj7yYME9JoR7mcNDXqfMd-t_2mzUhZx-fGAjMrxlalH_5zy5YZvv7-T2N53MY8kc0nGceoPMcTbm-TWkhBM458jU5dYTLubRljpiWfXd4ztLQplfy4"></figure>
+<ul>
+  <li><strong>Charge slabs - Range Definition</strong></li>
+</ul>
+<p>This section will allow users to create multiple charge slab ranges which can be applied on total bill value or line value. If it is applicable on total bill value then below example can be considered for defining the charge slab.</p>
+<p>Example: Users may say that if the total bill value is in the range from 0 to 99 USD will have the charge slab value is 10 USD.</p>
+<ul>
+  <li><strong>From Value - This field will be used to define the From value for the slab range.(example: 0 USD)</strong></li>
+  <li><strong>To Value - This field will be used to define the To value for the slab range. (example: 99 USD)</strong></li>
+  <li><strong>From Date - This field will define the start date from when the charge slab will be active.</strong></li>
+  <li><strong>To Date - This field will define the end date for the charge slab.</strong></li>
+  <li><strong>Slab Charge Value - This field will be used to define the slab charge value for the slab range. (example: 10 USD)</strong></li>
+  <li><strong>Currency - User can select the currency for which he/she is defining the charge slab range.(example USD)</strong></li>
+  <li><strong>Exchange Rate Type - Users can select the exchange rate type for the defined charge slab. (example: Fixed exchange rate)</strong></li>
+  <li><strong>Discard button - On click of this button users will be able to remove the captured data in above fields, and it will be reset to default view.</strong></li>
+  <li><strong>Add button - This button allows the user to add the defined range under SLAB.</strong></li>
+</ul>
+<p>&nbsp;</p>
+<p>Once a user clicks on add button records will get displayed in the grid and it will have an edit and delete option against it if the user wishes to change the existing value then the same can be done using the edit option.</p>
+<ul>
+  <li><strong>Discard button : This button on the creation and edit screen will allow users to redirect to the list screen without saving the changes.</strong></li>
+  <li><strong>Save button : This button on the creation and edit screen will allow users to redirect to the list screen post saving the changes.</strong></li>
+</ul>

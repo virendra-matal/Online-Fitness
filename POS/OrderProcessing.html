@@ -1,0 +1,244 @@
+<!--
+title: Order Processing
+description: 
+published: true
+date: 2023-08-21T12:13:55.913Z
+tags: 
+editor: ckeditor
+dateCreated: 2023-07-17T06:31:13.836Z
+-->
+
+<h1 style="text-align:center;"><strong>Order Processing</strong></h1>
+<p>The Order Processing functionality allows users to see and manage all orders received into Unify from the configured channels. Users can process orders on this screen, and take actions specific to the order’s status.</p>
+<figure class="image image_resized" style="width:624px;"><img src="https://lh3.googleusercontent.com/9EFjQHJVqC7ieIFOoIrWVqFXGuLgYvmCS9gBocF2fWBoHpo-hPNPCUd7CdLyOtmyffpSGSziSyS-7kv3aU_XxiI5Rp3RPsQRzHsmCDXP5QF3BlB1WHpk2BTnxid0nC20v3pl8K69rCyBrWhOot2G6uI"></figure>
+<h2><strong><u>Order Processing screen elements-&nbsp;</u></strong></h2>
+<p>The order processing screen consists of 3 sections.&nbsp;</p>
+<h3><strong>Order Ticker&nbsp;&nbsp;</strong></h3>
+<figure class="image image_resized" style="width:624px;"><img src="https://lh4.googleusercontent.com/oN-HAkYLvm3sKm36GUUG6m-UQxDPxeqqwF0OFwfUaDFWBgV67H503SA28v3VxfqtRVdxqQevHzFULNmO6hpwP_eMRSs8MAcU3W9MD1xu7jQZLTL5Gm2DEPrGZ_5ahVKPmQIurdVwqsp9XdQDz20CEvI"></figure>
+<p>The Order Tickers are tabs available in the list screen to display the orders in the logical groups based on their status. The List consists of 8 tickers - All, Allocation, Ready To Pick, Picked, Packed, Ready to Ship, Shipped, Exceptions, Error.&nbsp;</p>
+<p>The READY TO SHIP ticker displays orders of ‘Ready to Ship’ &amp; ‘Shipment Ready’.</p>
+<p>The “SHIPPED” ticker displays orders of ‘Shipped’ and ‘Ship &amp; Invoice’.</p>
+<p>The ‘EXCEPTION’ ticker displays orders of status Hold by Rule, Hold by Routing, Rejected, and all In-cancel statuses (as Receive InCancel, RTS InCancel, etc)</p>
+<p>On clicking any ticker, the respective order list will populate.</p>
+<p>Every ticker also has a count in it. This denotes the no. of orders available in the ticker.</p>
+<p>The ‘ERROR’ ticker consists of Error orders that need correction before processing. Further details of Error order processing are given in its section.</p>
+<h3><strong>Order Actions&nbsp;&nbsp;</strong></h3>
+<p>This section consists of action buttons that are required to process the order in Unify.&nbsp;</p>
+<p>Users need to select the order that they need to process using the checkbox available on the left side of order. After selecting an order, action buttons will appear underneath the order tickers, which the user can then accordingly select.</p>
+<p>Each button performs a different action on the order. Users can select multiple orders and click the action button to perform actions in bulk. The actions available for bulk processing will depend on the statuses of the selected orders.&nbsp;</p>
+<p>Users can also select individual or partial order lines to process the order partially.</p>
+<p>Not all action buttons will be available on the screen. Action buttons will appear based on the status of the selected order, and the level of order selection i.e. single order, multiple orders, or line-level selection</p>
+<p>A detailed understanding of Order Processing is provided in this section. The list of order actions is as below -</p>
+<ul>
+  <li>Order Allocation</li>
+  <li>Accept</li>
+  <li>Reject</li>
+  <li>Generate Picking List</li>
+  <li>Pack</li>
+  <li>Get Shipping Label</li>
+  <li>Generate Shipping label</li>
+  <li>Download Shipping Label</li>
+  <li>Download Invoice</li>
+  <li>Get Manifest</li>
+  <li>Open Manifest</li>
+  <li>Download Manifest</li>
+  <li>Ship</li>
+  <li>Mark as Delivered</li>
+  <li>View</li>
+  <li>Download Picking List</li>
+  <li>Order Source</li>
+  <li>Cancel Shipping Labels</li>
+  <li>Upload Invoice</li>
+  <li>Upload Shipping label</li>
+  <li>Release</li>
+  <li>Cancel Order</li>
+  <li>Delivery Failed</li>
+  <li>RTO Recd</li>
+  <li>LIT</li>
+  <li>Accept Cancellation</li>
+  <li>Reject Cancellation</li>
+  <li>Reprocess</li>
+  <li>Payment</li>
+</ul>
+<h3><strong>Order List</strong></h3>
+<figure class="image image_resized" style="width:624px;"><img src="https://lh5.googleusercontent.com/CpiCVqNN9ZESYdmRGzbktSa2_ZbagOMNJGfL-07V90hFHqS2SqNSeAzh8qf2FMV9NpUpgo8auQZC9VOWbKEtZgFvIkx948f2u61n_4_w0x56bbsgbkvMgIIgtY1Y92LJ5BiunhfDidIU_xMDv4vb7Ao"></figure>
+<p>The order list is where you can find all the orders received from different Seller channels.&nbsp;</p>
+<p>The columns available in the order list are -</p>
+<ul>
+  <li>ORDER# - This is the order number received from the channel. This is always a unique value for a seller channel. Users can also click on this number to open the Summary screen of the order.</li>
+  <li>CHANNEL/SHOP - This is the name of the seller channel defined in Unify from where the order is received.</li>
+  <li>ORDER DATE - This is the date and time at which an order was placed on the marketplace or webstore. The value will be shown in the user's browser timezone.</li>
+  <li>TO SHIP ON - This is the date and time provided by the marketplace before which the order should be shipped in Unify. For Lazada seller logistics, the order needs to be delivered before the TO SHIP ON time to meet the SLA.</li>
+  <li>TIME LEFT - This shows the time left in hours before the TO SHIP ON time. The values do not appear for the orders in the shipped ticker.</li>
+  <li>QTY - This shows the number of products available in the order. Each product can have multiple units ordered in it.</li>
+  <li>AMOUNT - This shows the net total amount of the order. This is the order total without any header charges. This could be different from the total invoice amount. The amount is displayed in the respective channel’s currency format &amp; with the currency symbol.</li>
+  <li>Fulfillment Node - This shows the Node name to which the order is allocated for fulfillment. The values will not be available for non-allocated orders. (Statuses below ‘Allocated’).</li>
+  <li>STATUS - This displays the status of the order. In case there are orders with multiple products &amp; partial processing, then the lowest status of all order lines is displayed here. The different statuses are -</li>
+</ul>
+<p>Received - When an order is received in Unify but not allocated to any fulfillment node.</p>
+<p>Allocated - When the order is allocated to a fulfillment node where it can be fulfilled.</p>
+<p>Ready to Pick (Accepted) - When an allocated order has been accepted by a node.</p>
+<p>Rejected - When an allocated order has been rejected by a node. The order will need to be allocated to another node for fulfillment.</p>
+<p>Picked - Once a picklist is generated for an order.&nbsp;</p>
+<p>Packed - When the order items are packed at the node</p>
+<p>Ready to Ship - When the 3PL is arranged for the order, and the shipping label (Airway Bill) is retrieved from the Logistics partner and printed to attach to the package. An invoice can also be downloaded and attached to the package at this stage.</p>
+<p>Manifest Ready - When a manifest is generated and printed for one or multiple orders.</p>
+<p>Canceled by Seller - When the seller doesn't want to fulfill the order and decides to cancel the order (at Marketplace or Webstore as well).&nbsp;</p>
+<p>Canceled by Buyer - When the online buyer cancels the order. This can only happen before the order has been shipped.</p>
+<p>Delivered - When order status is updated as Delivered from the 3PL in Unify.</p>
+<p>Delivery Failed - When the order status is updated as Delivery Failed from the 3PL in Unify</p>
+<p>Lost In Transit - When order status is updated as Lost in Transit from the 3PL in Unify</p>
+<p>Return To Origin - When the order status is updated from the 3PL in Unify as the delivery was unsuccessful and the package has been returned back to the seller</p>
+<p>RTO Received - When the Return to Origin product is received at the seller's node.</p>
+<p>Shipped &amp; Invoiced- When order item or order is shipped and invoiced for the order in Unify.</p>
+<p>Each order row also has a checkbox on the left side by which the order can be selected for processing.</p>
+<p>The right side of the row has the down arrow using which the user can expand the order to see the expanded order view.</p>
+<h2><strong><u>Order Expanded View&nbsp;</u></strong></h2>
+<p>When the user clicks on the down arrow in the order list, the order opens in an expanded view.</p>
+<p>The expanded view has some header-level information, as well as additional information in 3 tabs once expanded.</p>
+<figure class="image image_resized" style="width:624px;"><img src="https://lh6.googleusercontent.com/vezIzbXGRaZV0iyMaIHPjOZjguAldCc4HmiJBJ7b87OCjQZefkDTQcgEqcwqnL-DyaG3qwaEOaZSOYgf9ZFvqrYVUW_0EBcNBON6TuDK3lmE2XPV-oJHNh7LHAef2EX6vU2buRPv8Dd-yudY3rXp0Vk"></figure>
+<h3><strong>Header Level Information -</strong></h3>
+<p>Tags - The user can see the existing applied Tags to the order. Users can also add or remove any tag using the edit button.</p>
+<p>Fulfillment By - This shows if the order will be fulfilled by the Marketplace or Seller</p>
+<p>Payment Method - This shows if the order is Prepaid or Cash on Delivery.</p>
+<p>Order Rule Check - This shows the status of the Order Rule for this order, if it failed, then it also shows the reason for failure in the ‘i’ icon near it.</p>
+<p>Order Allocation Status - This shows the status of Smart Routing for this order, if it failed, then it also shows the reason for failure in the ‘i’ icon near it.</p>
+<p>In case the respective rule is not available for the Seller channel then both Order Rule Check and Order Allocation Status will be blank.</p>
+<h3><strong>Product details -</strong></h3>
+<p>This section displays line-level information on the order. Users can also select the checkbox provided at every line to process orders partially. The line-level details are -</p>
+<p>Product Image - This shows the default image of the product from Unify. If separate images are available for variants, they will be displayed here.</p>
+<p>Product Name - The name of the product will be displayed here.</p>
+<p>SKU Code - SKU code of the product is displayed here.</p>
+<p>Unit - This displays the line quantity of the ordered item.</p>
+<p>Stock Info - This displays the total stock available at the node (On Hand Stock) and the remaining stock after excluding the already allocated stock (Net Available Stock).</p>
+<p>Pre-allocation: This displays the Transfer Order&nbsp; (Doc. Number) and Estimated Time of Arrival (ETA).</p>
+<p>Picklist No - This shows the number of the picklist if an order is a part of any picklist.&nbsp;</p>
+<p>Priority - Standard / Express priority is displayed here.</p>
+<p>Logistic By-Seller / Marketplace logistics is displayed here. Order processing flow changes based on this value.</p>
+<p>Delivery Method - BOPIS (Buy Online &amp; Pickup in Store) / Delivery is displayed here.&nbsp;</p>
+<p>Shipping Type - The carrier’s shipping type is Pickup / Dropoff displayed here.&nbsp;</p>
+<p>Unit Price - Base price of the product received in order.</p>
+<p>Discount - Total line discount applied on the product. The details are displayed in the ‘i’ icon to show multiple promotions if applied.</p>
+<p>Tax &amp; Charges - Total line charges &amp; taxes applied on the product line. The details are displayed in the ‘i’ icon to show multiple charges &amp; taxes if applied.</p>
+<p>Net Amount - Displays the net amount of the order line. (amount total for all the line quantities, excluding the line charges). All amounts are in channel currency.</p>
+<p>Order Quantity - This shows the total product quantity at the line level.</p>
+<p>Shipped: It shows the total quantity shipped for the specific product at the line level.</p>
+<p>Balance: This denotes how much quantity of product or order are not shipped.</p>
+<p>To Ship/Handover: It Shows the quantity available to ship in-store.</p>
+<p>Carrier &amp; Tracking No - This shows the name of the carrier received from the marketplace (for MP logistics order) or selected by the seller (for seller logistics order). Additionally, it displays the tracking number of the order line. It also has an edit icon using which the seller can select or edit the carrier for the order line.</p>
+<p>Invoice - This displays the invoice no. of the order or order line</p>
+<p>Manifest No - This displays the number of the manifest that the order is part of.</p>
+<h3><strong>Customer Details -</strong></h3>
+<figure class="image image_resized" style="width:624px;"><img src="https://lh6.googleusercontent.com/_cqD26HyzJhBq9_yreiBXk6ASbNJQeEfw_GJz4RQuEHBK-rX4QzMeItI9JH2NYIDkf51eup0TtnRz00PoF7-RT1bgLP8kk8__nWgZ7yfAeds-8LjqwICgS0VQba1cF7E5Y3Fvz9KoigjD1vkEDhvKLE"></figure>
+<p>Customer name, Contact Number, Email ID - Customer’s details as received in order will be displayed in this section</p>
+<p>Shipping Address - Shipping address details as provided in the order will be displayed here. The same address will be used to book the shipment for a ‘seller fulfilled’ order. Users can edit this address as per the customer’s request (up to Pack status) using the pencil icon near it.</p>
+<p>Billing Address - The customer’s billing address is provided here, if no address has been given, this field will be blank.</p>
+<p>After shipping the order, Unify will also display the anonymization date after which customer data will be removed (if anonymization is ON)</p>
+<h3><strong>Communication -</strong></h3>
+<figure class="image image_resized" style="width:624px;"><img src="https://lh3.googleusercontent.com/afm7a4IFlVMAl9j-hTMSWww9Ux3_x1xSUEHDNpUzTx_8CAkbBx8Qvo-EzYZfTTLExV7L2x41s98Gywu4vj1RpLtdMJrmjI03w9iPCvCcuN_Fo5Z1OUUSY44Cezwqlx5o5VfhMFKo8eGjqayND9fK-9Q"></figure>
+<p>Comment box - In this section users can enter comments for the order. Users can also tag other users in the comment so that a notification will be sent to the commented user. They can enter ‘@’ to see the list of users to select in the comment.</p>
+<p>Comments List - Users can see the previous comments entered by other users in this section. Only the last 5 comments will be displayed here. Other comments can be seen in the summary screen.</p>
+<h3><strong>Status Progression Bar -</strong></h3>
+<p>This displays the progression of the order line status. All the past statuses of the order line are displayed here in the sequence.</p>
+<p>Along with status it also shows the date and time at which the status was updated for the line.</p>
+<p>The statuses of the nodes that had rejected the order are not displayed here.</p>
+<p><u>Order Summary View -</u></p>
+<p>The summary view can be opened by clicking on the Order#, or by clicking the ‘View’ button. This screen consists of 4 sections.</p>
+<p>(updated image to add)</p>
+<h2><strong>Order Summary&nbsp;</strong></h2>
+<p>This section contains all header-level information of the order. Along with this, there are some additional details the user can can find in this section.</p>
+<p>Acceptance deadline - This shows the date and time provided by the marketplace before which order should be accepted as a user. This is currently applicable for Tokopedia only.</p>
+<p>Remarks from MP - Any external remark received from the marketplace during order insertion are displayed here.</p>
+<p>Order amount Details - This is the entire section at the top right side of the Summary screen. This shows all the line totals as well as different header amounts of the order. The details are as follows -</p>
+<ul>
+  <li>Order items - This is the count of order lines in the order.</li>
+  <li>Product Name, SKU Code &amp; Line Total - This shows total line amounts of every line in the order. (Inclusive of line charges)</li>
+  <li>Taxes &amp; Charges - This part shows the total charges &amp; exclusive taxes applied at the header level. This is followed by the distribution of those header charges, and charge discounts as Charge Name &amp; Amount.</li>
+  <li>Discount - This part shows the total of the discount amount applied at the header. This is again displayed below with the distribution of every promotion name &amp; discount amount.</li>
+  <li>Total Wt - Total weight of order products in grams</li>
+  <li>Total Vol - Total volume of order products in cubic cm</li>
+  <li>Total - This is the total amount of the order (Invoice amount)</li>
+  <li>Payment &amp; Balance Due - This shows paid amount &amp; pending amount of the Order Total</li>
+</ul>
+<h2><strong>Order Details&nbsp;</strong></h2>
+<p>This section displays all the line-level details of the order. Apart from some common details that are available in the product details section, the user can find the following additional details in this section.</p>
+<p>Is Gift - Shows if the product is a gift to the receiver.</p>
+<p>Gift Message - Any message put in by the customer for the gift product.</p>
+<p>Order Package Ref - If the order line has a package ref number (saved during the pack action) then that is displayed here.</p>
+<p>Plan Pickup Date &amp; Time - Shows the planned Pickup Date &amp; Time added by the user during the ‘pack’ or ‘carrier selection’ stage. Users can also edit the date &amp; time using a pencil icon.</p>
+<p>Dimensions - This displays the Length X, Width X, and Height (in cm) of the product as available in Unify.</p>
+<p>Weight - This displays the Weight (in grams) of the product as available in Unify.</p>
+<p>NMV - This shows the Net Merchandise Value of the order line as calculated by Unify.</p>
+<h2><strong>Order Activity Log&nbsp;</strong></h2>
+<p>This section displays the list of activities happening in the order. The activities are displayed in order line-wise.&nbsp;</p>
+<p>Every activity record displays the activity message, time &amp; any reason/remark added by the user during the activity.</p>
+<h2><strong>Communication -</strong></h2>
+<p>This shows the same section of order communication as in the expanded view of order. But all the previous communication related to this order can be seen here.</p>
+<h2><strong><u>Other Functions in </u>the <u>Order List&nbsp;</u></strong></h2>
+<h3><strong>Order Filter&nbsp;</strong></h3>
+<figure class="image image_resized" style="width:624px;"><img src="https://lh4.googleusercontent.com/MdhID_hTy6KuqCAXxYOWDBQLWPrsfpy5ptqI9z-QkF0unEVcuxg11kEv5XV9Q5VaZWUY6SdLcOjVvXNyN5loAm0z6DTiw87P8fP0qWuoLy5YLjwHoWQh4f4xt2U_7dOGJV3Yic8ZDY0sb7_kIoNzkJg"></figure>
+<p>Users can filter the list of orders using the Filter icon available on screen. On clicking the button, it opens the filter panel that has different criteria to apply order filters.</p>
+<p>Users can select one or more filters at a time &amp; apply it. Applied filters can be seen in the order list &amp; users can remove any criteria from there as well.</p>
+<p>Users can also save a particular set of filter criteria using the ‘Save Filter’ option. This will create a filter view that can be used for personal view or can also be shared with others using the button of ‘Share with others’.</p>
+<h3><strong>Order Export&nbsp;</strong></h3>
+<p>Users can export&nbsp;</p>
+<figure class="image image_resized" style="width:35px;"><img src="https://lh3.googleusercontent.com/qFDhvx-aIdRxvzzD691VgvSfSt4BNT8paQ6K24rxCXx_Am1mUhq5tOduibMw9h3f4CfsqE_5hpwjAahRzOuz3HDaY6HDrPUbEHc5uIsh8wdJYljyA4kUT97Yfe_cFf3ZDSJ4TlMg1hE8nUg-dL7OJxI"></figure>
+<p>selected orders in the pdf document to get all the order data in tabular format.</p>
+<p>If the user wants to export orders of a particular ticker, they can click on Export without selecting any order. The all orders of the current ticker will be considered for export.</p>
+<p>Alternatively, the user can also manually select multiple orders and export them</p>
+<h3><strong>Order Search &amp; Sort&nbsp;</strong></h3>
+<p>Orders can be searched using different order fields like Order Number, Tracking No, Order Date, Seller Channel, etc.</p>
+<p>Orders can also be sorted based on different criteria like High Net Amount, Low Net Amount, High Qty, Low, Qty, etc.</p>
+<h3><strong>Refresh&nbsp;</strong></h3>
+<p>Users can click on the refresh button</p>
+<figure class="image image_resized" style="width:36px;"><img src="https://lh6.googleusercontent.com/T4kDh44Y7C2NcLbVdA-Gq2jxt2aN4ei9ClrX0cT06CcwMwDhP0v-vrz5qlJWvUsHGQmAO5Jvpbi7YhO_nJkFy_jtS4tPgMJH8gbQ72HexubQzGKqbyNdhGR4IQ0mdyuovLAEspBAvwX5Ry7cCuoWggg"></figure>
+<p>&nbsp;provided on the screen to get updated records of orders on the list screen</p>
+<h2><strong><u>Processing Order in Unify&nbsp;</u></strong></h2>
+<p>In most cases, users can start processing orders from Allocated or Ready to Pick Ticker.</p>
+<ul>
+  <li>In the Allocated Ticker, users can process orders by accepting them -</li>
+</ul>
+<p>Select Allocated order, and click on Accept button. The status will be changed to Ready To Pick.</p>
+<p>This will accept the order &amp; allocate the stock to the order from the Node inventory.</p>
+<p>The order which having Delivery Method as Delivery for that order only needs to select the shipping carrier(Selection of carrier in allocated, and Ready to pick ticker only).</p>
+<ul>
+  <li>In the Ready To Pick Ticker users can process orders by generating picking lists if required, or by packing the order -</li>
+</ul>
+<p>Select 1 or more Ready to Pick orders, and click on Generate Picking list button. The status will be changed to</p>
+<p>Packed.</p>
+<p>This will generate a pick list document for the order which can be downloaded by clicking on Download Picking List Users should also select the carrier for seller-fulfilled logistics before packing it.</p>
+<ul>
+  <li>Select Ready to Pick or Picked order, and click on the Pack button. Users can add required details &amp; save. The status will be changed to Packed.</li>
+  <li>In the Packed Ticker, users can process orders to Get or Generate shipping labels for the order. Details of this process are explained in MP Logistics &amp; Seller Logistics Order Processing.</li>
+</ul>
+<p>Select Packed Order &amp; click Get Shipping Label or Generate Shipping Label or Upload Shipping Label</p>
+<p>The status will be changed to Ready to Ship.</p>
+<ul>
+  <li>In the Ready To Ship Ticker users can process the order to Get Manifest &amp; Ship. Select Ready to Ship order, and click on Get Manifest. This is an optional step.</li>
+</ul>
+<p>Select Ready To Ship order, and click on Ship. On adding data &amp; saving, the status will be changed to Shipped. and while clicking on Ship &amp; Invoice button, the Invoice will generate when payment is completed for the product or order.</p>
+<p>It is same for the partial order or product processing.</p>
+<p>Additionally, payment can be completed with all payments for pending transactions by navigating to the Payment screen.</p>
+<figure class="image image_resized" style="width:624px;"><img src="https://lh5.googleusercontent.com/VEs6Q8hxbn7vmsR7AAed9gj8Xk1NIZcMBVenHljCwKcXhE5wRiMaTfya7IGuNshHXwwXwIZHfJosm5c4iTLNNFzRT1Pct0t4FaVGhh_cb9hnzUkCOF9bplLXWw9tcGm_6CpgHdLEpy8zGP6RsCy34w0"></figure>
+<p>The invoice is generated and printed for the same.</p>
+<p>In the Shipped Ticker, users can process orders for manual status updates of Delivered, Delivery Failed, Return To Origin &amp; RTO Received (Only for orders with custom carriers in seller logistics order processing).</p>
+<p>Select Shippedorder, and click on Mark Delivered. On adding data &amp; saving the status will be changed to Delivered.</p>
+<p>Select Shipped order, and click on Mark Delivery Failed. On adding data &amp; saving with the Reattempt option the status will be changed to Delivery Fail.</p>
+<p>On saving with the RTO option, the status will be changed to Return to Origin.</p>
+<p>Select Shipped or</p>
+<p>Delivery fail order, click on Lost in Transit. On adding data &amp; saving the status will be changed to Lost in Transit.</p>
+<p>Select Return to Origin order, click on RTO Received. On adding data &amp; saving the status will be changed to RTO Received.</p>
+<p>From the time an order is placed up to the "Ship &amp; Invoice", there is the option to make both partial and full payments for the order in the&nbsp;</p>
+<p>Payment action button for above all tickers.</p>
+<ul>
+  <li>The second ticker from the right is the Exception ticker. This consists of orders that need special action before standard processing. It has orders held by Order Receiving Rule(Hold By Routing) and Smart Routing Rule(Hold By Rule), All InCancel status orders for which a buyer’s cancellation request has been received &amp; orders rejected by the fulfillment nodes.</li>
+</ul>
+<p>The details about the processing of exception orders are provided here - Link(ORDER EXCEPTION+error)</p>
+<ul>
+  <li>The last ticker in the screen is the Error ticker, this consists of orders that are not yet inserted into Unify because of API or web service mapping exceptions. These orders need to be corrected &amp; then reprocessed.</li>
+</ul>
+<p>The details about error order processing are given here Link(ORDER EXCEPTION+error)</p>
+<ul>
+  <li>A Cancel action is available for orders or products within orders prior to reaching the "Shipped" status. This action enables the cancellation of orders and products, along with the possibility of generating refunds in cases where advance payments have been made. This is accomplished through the Tender screen.</li>
+  <li>The status is marked as Seller cancelled.</li>
+</ul>

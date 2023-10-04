@@ -1,0 +1,60 @@
+<!--
+title: Marketplace Integration
+description: 
+published: true
+date: 2023-02-17T04:51:19.995Z
+tags: integration
+editor: ckeditor
+dateCreated: 2023-02-07T09:57:47.633Z
+-->
+
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; This module allows the user to integrate with marketplaces based on region, such as Lazada, Shopee, Zalora, Blibli, Tokopedia, etc., as well as integrations with web-stores such as Magento and Shopify. The user simply needs to provide their login details for the pre-integrated marketplaces, and can then manage all future transactions from these marketplaces on Ordazzle.</p>
+<p style="text-align:justify;">The user can get to the Channel Integration screen by going to ‘Connections’ in the menu, and selecting ‘Marketplace Integration’ or ‘e-Commerce Integration’.</p>
+<figure class="image image_resized" style="width:100%;"><img src="https://lh4.googleusercontent.com/gw1ZsJaumTMBa8LGgIX-KchzIYHMijm4nJWQGQBA5BfoEpaaRi2XaM0-XF24ZejaHyjJnqN73p17S8ZhbgYv0XXdLTE_zXFCWnWysi1UQasSbTF64-q1zpHbONUU7pE6U7eKMX3e-87NcmaLtNtqQA"></figure>
+<figure class="image image_resized" style="width:100%;"><img src="https://lh3.googleusercontent.com/Z_mVJLSkugsLmJGnqVJ0PrPNDRzhKzVnndzhTMYaSEQh6yaPty_OmiIQPr7KgOp-h_uqpqSySdaaHsP42RCqS8KYjaY4Im97VSM5iF3JHfEYlU0gsR_OATXwtI8Y60zOMZ5sAfMyPXP21br8n-y4rQ"></figure>
+<h2 style="text-align:justify;">Channel Integration List Screen</h2>
+<p>On this screen, users can view the pre-integrated channels. They can search for channels by their name using the search bar. Users can also see the list of integrated channels country-wise by selecting a country on the left side of the screen.</p>
+<figure class="image image_resized" style="width:100%;"><img src="https://lh5.googleusercontent.com/dFmQLAArArcIzXvKPMtQ2wSKA-ecdKO34BQkgX7ejoFK518p8czxbuGs-tHroD02QC9zEug4BFd38w1MYpS0FWNvIzGHWsqsuRlcYIUZFuM3M23NO_7lUl97e_xpCEnnX8FalAgrMSpsdtGTe-_mWA"></figure>
+<h2>Channel Creation</h2>
+<p style="text-align:justify;">Once the user reaches the Channel Integration screen, they will see a list of countries on the left hand side. The user can click on one of these countries where they can either set up a new channel account, or manage an existing one. In order to create a new channel, the user needs to click on the ‘+’ icon.</p>
+<figure class="image image_resized" style="width:100%;"><img src="https://lh3.googleusercontent.com/MkGacLDeFGlKCQEFz0TFOKr9UnLRWMF4qQ5y4Fg9z7jEhV2j0G3nZOroa9xK9OL8IQx4gi5skHZcQbJuZCx0Wolr7wIr_3vTrBzO128dTa5hRjHgUxdkzDAgeYgzEJIBQadBWLtJyTtei41sI5CM_A"></figure>
+<p>Over here, a list of pre-integrated channels will appear based on the country selected on the left hand side. Users must drag the channel they want into the ‘drag &amp; drop’ section at the bottom of the screen. From here, the user simply needs to click on the channel and fill in the information accordingly.</p>
+<figure class="image image_resized" style="width:100%;"><img src="https://lh4.googleusercontent.com/lPVy-vlSFmShd84bx80SsGIh1TUpOMBZ7scMEL4cMM8kohH9bVXNm0wYvvDcYWdB-LbdaV5CClT3_iDIIHH9yfFtpJcUpxWbYFaxs5sULuyyIvOu99-c80beVbuf_Bs4F07sQUtQFMokuef_kIMAnA"></figure>
+<figure class="image image_resized" style="width:100%;"><img src="https://lh3.googleusercontent.com/RKsROvcWAdj2xkWkEkh2Kpc7gZHrmgtxBGBwlkwrQk86tzKAWcX4_xGS8GGBUnwOlyKJyRpe9rnFfegkOi1bPVJoj6hM_qvPguXlm73kI_-RVhiON9g_haU-rKkBS_2JRmg67B38_apU-XFrCNSMuA"></figure>
+<p>Store Name: Users can assign a name for the channel.</p>
+<p>Fulfillment Node: Users select fulfillment nodes from which their orders from this channel can be fulfilled. Stock allocation will take place at these nodes when an order is placed on this channel. The user can select a default node that all orders will be routed to, and also decide whether stock should be shared across nodes, or be node specific, by checking or unchecking ‘Send Aggregate Stock Across the Nodes’</p>
+<p>For “Shopee”- Users need to input AddressID as the channel warehouse code on the Fulfillment Node selection window.</p>
+<p>And to get the Address ID, a user need to go to shopee seller center and in setting user should click on edit address with F12 tab, here the user can see the address ID.</p>
+<p>Shop Applicable Product Category: Users can select respective product categories applicable for the respective channel shop. Users will be allowed to select multiple categories for the respective channel shop.&nbsp;</p>
+<p>Shop Applicable Brand: Users can select Brands applicable for the respective channel shop. Users will be allowed to select multiple brands for the respective channel shop.</p>
+<p>Based on the selected brands these channel shops will be displayed while listing the Product on Marketplace</p>
+<p>MP Seller Types: Here MP seller type can be selected from the options available in the dropdown. MP Seller Type will vary from one channel to another. Users need to select the same ‘Seller Type’ he has selected while creating an account on the Marketplace. Capturing MP Seller Type will help for calculating MP commission.</p>
+<p>Auto Allocate Order to Default Node: Users can mark this field as ‘Yes’ or ‘No’. This can be selected as ‘Yes’ to allocate Order to default Node if the Smart routing has not been set up.</p>
+<p>Default Jobs &amp; Email Templates Setup: Users can mark this field as ‘Yes’ or ‘No’. Users can select ‘Yes’ if they want a system to Auto-create Default Jobs (background jobs related to syncing order, product and inventory information to marketplace and webstores) as well as Default Email Templates.</p>
+<p>Auto Stock Approval: Users can mark this field as ‘Yes’ or ‘No’. The order status will be directly updated as RTP (Ready to Pick) if this option is selected as ‘Yes’. This option will also have an impact in Stock allocation.</p>
+<p>Start Date: Users can select the Start Date from the Date picker.</p>
+<p>After the user has filled in the above information, they can click on the ‘Connect’ button. For every channel there will be different steps and fields for integration. The user needs to input channel specific fields such as Username, Password, API Key etc to establish the connection between the Channel and Ordazzle.</p>
+<h2>My Marketplaces&nbsp;</h2>
+<p style="text-align:justify;">After creating a channel, the user can see all created channels on the ‘My Marketplace’ screen. Basic information like Shop Applicable Brands, MP Seller Type, Default Jobs &amp; Email Template Auto Stock Approval status and Channel Activation Date will be displayed here.&nbsp;</p>
+<p style="text-align:justify;">The user can also choose to edit, disconnect, Import Product/Orders from MP, Product Mapping, or adjust job schedules of these channels by clicking the three dot option.</p>
+<p style="text-align:justify;">Edit: The user can edit any fields for a channel.</p>
+<p style="text-align:justify;">Disconnect: The user can disconnect a channel account, this will stop all synchronization with the channel; no new orders will be received and no new products will sync from the channel to Ordazzle.</p>
+<p style="text-align:justify;">Job Schedule: The user can see background jobs running for the channel in order for channel integration to work successfully.</p>
+<p style="text-align:justify;">Product Import from MP: The user can sync products from the channel to Ordazzle in case there are any products created on the channel before connecting itl to Ordazzle</p>
+<p style="text-align:justify;">Order Import from MP: The user can sync Order history for selected time span from the channel to Ordazzle</p>
+<p style="text-align:justify;">Product Mapping: The user can map the seller sku with product code if the seller sku and product code is different for the same Product after importing products from the channel to Ordazzle.</p>
+<figure class="image image_resized" style="width:100%;"><img src="https://lh6.googleusercontent.com/U_yqTo5Wh8uyNhHoGleh4DonqldkgSGkVhpyBONNom82gIm35ozC2CanBAZ_7COZSJOFYtNyX7iCatpJT1etbBStvm5uH3vG8rgnFmW-oE9UztVOz0wsqPVrHiy2J_4F1aa6zn1PRufm5ZVN6lmbHA"></figure>
+<h2 style="text-align:justify;">Amazon Subscription:</h2>
+<p style="text-align:justify;">The “Amazon” Subscription process is similar to the above discussed steps, but there are few additional steps that need to be performed.</p>
+<p style="text-align:justify;">Amazon Subscription Screen:</p>
+<figure class="image image_resized" style="width:100%;"><img src="https://lh4.googleusercontent.com/8qTDOuC9vlqIMLDgA_tlKtnwtPeAi7V8hvfdFErKURoTMLE-riSTHCev08LbdRT3tE_wWmfIU--C9Lk7hg04KeLJrcBKWIpq817oBW9TrspyzKP-awhk4e3W0aJLqXgkt0OpMnwREdU17QLhC9HgmA"></figure>
+<p style="text-align:justify;">&nbsp;A new field “<strong>Seller Partner ID</strong>” is on the subscription page</p>
+<p>Rest of the fields are as it is which we have in the subscription page.</p>
+<p>Step 1: On selecting Amazon Channel User needs to enter all the required fields and click on Connect.</p>
+<p>Seller Partner ID user will get from Amazon Seller Center&nbsp;</p>
+<p>(To get Seller Partner ID &gt;&gt; Login to Amazon Seller Center &gt;&gt; Account info &gt;&gt; Your Merchant Token)</p>
+<p>Step 2: On connecting we will receive a message “Your Seller Channel has been created successfully, please authorize our "Ordazzle App" from your Seller Central account (Find APP &gt;&gt; Services ) to activate your channel”</p>
+<p>Here new status will be assigned for the channel as “Unauthorized” Channel shop and it will be denoted by “Auth. Pending”&nbsp; for the field “Activated on” at card view.</p>
+<figure class="image image_resized" style="width:100%;"><img src="https://lh6.googleusercontent.com/3oqZG-OVz7q1uA7xw6kC7RHqo1MsPrKtgO9dvib1l-_O5lBFCWYVreY5tO1u96oXefMyM4e-a9TgxdlobOUF8I-1_a54KR0CL2ugKGgF66wnyUzQorbkc-XYin3xEMhDAu-LZIJT493oMw1goydiiw"></figure>
+<p>Step 3: User will login into Amazon Seller center and then from the menu he needs to select “Partner Network” and then inside it we need to select submenu&nbsp; “Find App and Services” , on this page user will search Ordazzle from search box and he will see&nbsp; Ordazzle app. On selecting Ordazzle app, user will see an “Authorize” functional button at top right corner of page.&nbsp;</p>
+<p>Step 4: User will click the “Authorize” button and then he will be redirected to the Ordazzle login page, on successful login a user seller channel will be activated in Ordazzle.</p>

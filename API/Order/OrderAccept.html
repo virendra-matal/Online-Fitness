@@ -1,0 +1,198 @@
+<!--
+title: Order Accept
+description: 
+published: true
+date: 2023-02-14T06:48:43.431Z
+tags: order
+editor: ckeditor
+dateCreated: 2023-02-13T12:22:57.175Z
+-->
+
+<h1 style="text-align:center;">Order Accept</h1>
+<h2><i><strong>Description</strong></i>:&nbsp;</h2>
+<p>This API is for Accepting the order in Ordazzle from an external system.</p>
+<h2><i><strong>Path</strong>/<strong>Endpoints</strong></i> :&nbsp;</h2>
+<p><a href="https://impl-gw.ordazzle.com/Titan_New_Company_test/OrderAcceptNew/1.0"><strong><u>https://impl-gw.ordazzle.com/Titan_New_Company_test/OrderAcceptNew/1.0</u></strong></a></p>
+<p><i><strong>Version</strong></i>: V1</p>
+<p><i><strong>Type</strong></i>: POST</p>
+<h1><strong>Request Parameters :</strong></h1>
+<p>&nbsp;</p>
+<figure class="table" style="width:792px;">
+  <table style="border-bottom:groove;border-left:groove;border-right:groove;border-top:groove;">
+    <thead>
+      <tr>
+        <th style="border-bottom:1px groove #000000;border-left:1px groove #000000;border-right:1px groove #000000;border-top:1px groove #000000;padding:2px 3px;"><strong>Name</strong></th>
+        <th style="border-bottom:1px groove #000000;border-left:groove;border-right:1px groove #000000;border-top:1px groove #000000;padding:2px 3px;"><strong>Type</strong></th>
+        <th style="border-bottom:1px groove #000000;border-left:groove;border-right:1px groove #000000;border-top:1px groove #000000;padding:2px 3px;"><strong>Mandatory</strong></th>
+        <th style="border-bottom:1px groove #000000;border-left:groove;border-right:1px groove #000000;border-top:1px groove #000000;padding:2px 3px;"><strong>Sample value</strong></th>
+        <th style="border-bottom:1px groove #000000;border-left:groove;border-right:1px groove #000000;border-top:1px groove #000000;padding:2px 3px;"><strong>Description</strong></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="background-color:hsl(0, 0%, 100%);border-bottom:1px groove hsl(0, 0%, 90%);border-left:1px groove hsl(0, 0%, 90%);border-right:1px groove hsl(0, 0%, 90%);border-top:groove hsl(0, 0%, 90%);padding:2px 3px;">groupId</td>
+        <td style="background-color:hsl(0, 0%, 100%);border-bottom:1px groove hsl(0, 0%, 90%);border-left:groove hsl(0, 0%, 90%);border-right:1px groove hsl(0, 0%, 90%);border-top:groove hsl(0, 0%, 90%);padding:2px 3px;">int</td>
+        <td style="background-color:hsl(0, 0%, 100%);border-bottom:1px groove hsl(0, 0%, 90%);border-left:groove hsl(0, 0%, 90%);border-right:1px groove hsl(0, 0%, 90%);border-top:groove hsl(0, 0%, 90%);padding:2px 3px;">Yes</td>
+        <td style="background-color:hsl(0, 0%, 100%);border-bottom:1px groove hsl(0, 0%, 90%);border-left:groove hsl(0, 0%, 90%);border-right:1px groove hsl(0, 0%, 90%);border-top:groove hsl(0, 0%, 90%);padding:2px 3px;text-align:right;">1201</td>
+        <td style="background-color:hsl(0, 0%, 100%);border-bottom:1px groove hsl(0, 0%, 90%);border-left:groove hsl(0, 0%, 90%);border-right:1px groove hsl(0, 0%, 90%);border-top:groove hsl(0, 0%, 90%);padding:2px 3px;">GroupId of the Ordazzle instance<br>Will be provided by Ordazzle team for your setup</td>
+      </tr>
+      <tr>
+        <td style="background-color:hsl(0, 0%, 100%);border-bottom:1px groove hsl(0, 0%, 90%);border-left:1px groove hsl(0, 0%, 90%);border-right:1px groove hsl(0, 0%, 90%);border-top:groove hsl(0, 0%, 90%);padding:2px 3px;">companyId</td>
+        <td style="background-color:hsl(0, 0%, 100%);border-bottom:1px groove hsl(0, 0%, 90%);border-left:groove hsl(0, 0%, 90%);border-right:1px groove hsl(0, 0%, 90%);border-top:groove hsl(0, 0%, 90%);padding:2px 3px;">int</td>
+        <td style="background-color:hsl(0, 0%, 100%);border-bottom:1px groove hsl(0, 0%, 90%);border-left:groove hsl(0, 0%, 90%);border-right:1px groove hsl(0, 0%, 90%);border-top:groove hsl(0, 0%, 90%);padding:2px 3px;">Yes</td>
+        <td style="background-color:hsl(0, 0%, 100%);border-bottom:1px groove hsl(0, 0%, 90%);border-left:groove hsl(0, 0%, 90%);border-right:1px groove hsl(0, 0%, 90%);border-top:groove hsl(0, 0%, 90%);padding:2px 3px;text-align:right;">999</td>
+        <td style="background-color:hsl(0, 0%, 100%);border-bottom:1px groove hsl(0, 0%, 90%);border-left:groove hsl(0, 0%, 90%);border-right:1px groove hsl(0, 0%, 90%);border-top:groove hsl(0, 0%, 90%);padding:2px 3px;">CompanyId of the Ordazzle instance<br>Will be provided by Ordazzle team for your setup</td>
+      </tr>
+      <tr>
+        <td style="background-color:hsl(0, 0%, 100%);border-bottom:1px groove hsl(0, 0%, 90%);border-left:1px groove hsl(0, 0%, 90%);border-right:1px groove hsl(0, 0%, 90%);border-top:groove hsl(0, 0%, 90%);padding:2px 3px;">userEmailId</td>
+        <td style="background-color:hsl(0, 0%, 100%);border-bottom:1px groove hsl(0, 0%, 90%);border-left:groove hsl(0, 0%, 90%);border-right:1px groove hsl(0, 0%, 90%);border-top:groove hsl(0, 0%, 90%);padding:2px 3px;">string</td>
+        <td style="background-color:hsl(0, 0%, 100%);border-bottom:1px groove hsl(0, 0%, 90%);border-left:groove hsl(0, 0%, 90%);border-right:1px groove hsl(0, 0%, 90%);border-top:groove hsl(0, 0%, 90%);padding:2px 3px;">Yes</td>
+        <td style="background-color:hsl(0, 0%, 100%);border-bottom:1px groove hsl(0, 0%, 90%);border-left:groove hsl(0, 0%, 90%);border-right:1px groove hsl(0, 0%, 90%);border-top:groove hsl(0, 0%, 90%);padding:2px 3px;">sample@gmail.com</td>
+        <td style="background-color:hsl(0, 0%, 100%);border-bottom:1px groove hsl(0, 0%, 90%);border-left:groove hsl(0, 0%, 90%);border-right:1px groove hsl(0, 0%, 90%);border-top:groove hsl(0, 0%, 90%);padding:2px 3px;">EmailId of the user from Ordazzle which is to be used for this API communication.This will be provided by Ordazzl team</td>
+      </tr>
+      <tr>
+        <td style="background-color:hsl(0, 0%, 100%);border-bottom:1px groove hsl(0, 0%, 90%);border-left:1px groove hsl(0, 0%, 90%);border-right:1px groove hsl(0, 0%, 90%);border-top:groove hsl(0, 0%, 90%);padding:2px 3px;">sellerChannelName</td>
+        <td style="background-color:hsl(0, 0%, 100%);border-bottom:1px groove hsl(0, 0%, 90%);border-left:groove hsl(0, 0%, 90%);border-right:1px groove hsl(0, 0%, 90%);border-top:groove hsl(0, 0%, 90%);padding:2px 3px;">&nbsp;</td>
+        <td style="background-color:hsl(0, 0%, 100%);border-bottom:1px groove hsl(0, 0%, 90%);border-left:groove hsl(0, 0%, 90%);border-right:1px groove hsl(0, 0%, 90%);border-top:groove hsl(0, 0%, 90%);padding:2px 3px;">Yes</td>
+        <td style="background-color:hsl(0, 0%, 100%);border-bottom:1px groove hsl(0, 0%, 90%);border-left:groove hsl(0, 0%, 90%);border-right:1px groove hsl(0, 0%, 90%);border-top:groove hsl(0, 0%, 90%);padding:2px 3px;">shopifyInvSyncStore</td>
+        <td style="background-color:hsl(0, 0%, 100%);border-bottom:1px groove hsl(0, 0%, 90%);border-left:groove hsl(0, 0%, 90%);border-right:1px groove hsl(0, 0%, 90%);border-top:groove hsl(0, 0%, 90%);padding:2px 3px;">&nbsp;</td>
+      </tr>
+      <tr>
+        <td style="background-color:hsl(0, 0%, 100%);border-bottom:1px groove hsl(0, 0%, 90%);border-left:1px groove hsl(0, 0%, 90%);border-right:1px groove hsl(0, 0%, 90%);border-top:groove hsl(0, 0%, 90%);padding:2px 3px;">orderNumber</td>
+        <td style="background-color:hsl(0, 0%, 100%);border-bottom:1px groove hsl(0, 0%, 90%);border-left:groove hsl(0, 0%, 90%);border-right:1px groove hsl(0, 0%, 90%);border-top:groove hsl(0, 0%, 90%);padding:2px 3px;">String</td>
+        <td style="background-color:hsl(0, 0%, 100%);border-bottom:1px groove hsl(0, 0%, 90%);border-left:groove hsl(0, 0%, 90%);border-right:1px groove hsl(0, 0%, 90%);border-top:groove hsl(0, 0%, 90%);padding:2px 3px;">Yes</td>
+        <td style="background-color:hsl(0, 0%, 100%);border-bottom:1px groove hsl(0, 0%, 90%);border-left:groove hsl(0, 0%, 90%);border-right:1px groove hsl(0, 0%, 90%);border-top:groove hsl(0, 0%, 90%);padding:2px 3px;text-align:right;">2496</td>
+        <td style="background-color:hsl(0, 0%, 100%);border-bottom:1px groove hsl(0, 0%, 90%);border-left:groove hsl(0, 0%, 90%);border-right:1px groove hsl(0, 0%, 90%);border-top:groove hsl(0, 0%, 90%);padding:2px 3px;">To be received from External System</td>
+      </tr>
+      <tr>
+        <td style="background-color:hsl(0, 0%, 100%);border-bottom:1px groove hsl(0, 0%, 90%);border-left:1px groove hsl(0, 0%, 90%);border-right:1px groove hsl(0, 0%, 90%);border-top:groove hsl(0, 0%, 90%);padding:2px 3px;">products</td>
+        <td style="background-color:hsl(0, 0%, 100%);border-bottom:1px groove hsl(0, 0%, 90%);border-left:groove hsl(0, 0%, 90%);border-right:1px groove hsl(0, 0%, 90%);border-top:groove hsl(0, 0%, 90%);padding:2px 3px;">String</td>
+        <td style="background-color:hsl(0, 0%, 100%);border-bottom:1px groove hsl(0, 0%, 90%);border-left:groove hsl(0, 0%, 90%);border-right:1px groove hsl(0, 0%, 90%);border-top:groove hsl(0, 0%, 90%);padding:2px 3px;">No</td>
+        <td style="background-color:hsl(0, 0%, 100%);border-bottom:1px groove hsl(0, 0%, 90%);border-left:groove hsl(0, 0%, 90%);border-right:1px groove hsl(0, 0%, 90%);border-top:groove hsl(0, 0%, 90%);padding:2px 3px;">Shoe83849</td>
+        <td style="background-color:hsl(0, 0%, 100%);border-bottom:1px groove hsl(0, 0%, 90%);border-left:groove hsl(0, 0%, 90%);border-right:1px groove hsl(0, 0%, 90%);border-top:groove hsl(0, 0%, 90%);padding:2px 3px;">&nbsp;</td>
+      </tr>
+    </tbody>
+  </table>
+</figure>
+<h1><strong>Request JSON:</strong></h1>
+<p>&nbsp;</p>
+<pre><code class="language-plaintext">{
+        "actionInfo": {
+                "actionId": "ACCEPTORDER"
+        },
+        "sessionData": {
+                "userDetails": {
+                        "groupId": 1001,
+                        "companyId": 100,
+                        "userEmailId": "shubham.lohar@etpgroup.com"
+                }
+        },
+        "formData": {
+                "orderDetails": [{
+                        "sellerChannelName": "shopifyInvSyncStore",
+                        "orderNumber": "2496",
+                        "products": [
+                                "Shoe83849"
+                        ]
+                }]
+        },
+        "logID": "LG_rTYDER126484676454512345"
+}		</code></pre>
+<h1>Response JSON:</h1>
+<p>&nbsp;</p>
+<pre><code class="language-plaintext">{ 
+       type: "S",        
+       respCode: "0000",        
+       respMsg: "SUCCESS Or Error Message",        
+       respHdr: null,        
+       logID: "LG001"        
+       data:      
+}</code></pre>
+<p>&nbsp;</p>
+<h1><strong>Response JSON Fields:&nbsp;</strong></h1>
+<p>&nbsp;</p>
+<figure class="table" style="width:792px;">
+  <table style="border-bottom:groove;border-left:groove;border-right:groove;border-top:groove;">
+    <thead>
+      <tr>
+        <th style="border-bottom:1px solid #000000;border-left:1px solid #000000;border-right:1px solid #000000;border-top:1px solid #000000;padding:10px;vertical-align:bottom;"><strong>Name</strong></th>
+        <th style="border-bottom:1px solid #000000;border-right:1px solid #000000;border-top:1px solid #000000;padding:10px;vertical-align:bottom;"><strong>Type</strong></th>
+        <th style="border-bottom:1px solid #000000;border-right:1px solid #000000;border-top:1px solid #000000;padding:10px;vertical-align:bottom;"><strong>Sample value</strong></th>
+        <th style="border-bottom:1px solid #000000;border-right:1px solid #000000;border-top:1px solid #000000;padding:10px;vertical-align:bottom;"><strong>Description</strong></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="border-bottom:1px solid #000000;border-left:1px solid #000000;border-right:1px solid #000000;padding:2px 3px;vertical-align:bottom;">type</td>
+        <td style="border-bottom:1px solid #000000;border-right:1px solid #000000;padding:2px 3px;vertical-align:bottom;">String</td>
+        <td style="background-color:#ffffff;border-bottom:1px solid #000000;border-right:1px solid #000000;padding:2px 3px;vertical-align:bottom;">S</td>
+        <td style="border-bottom:1px solid #000000;border-right:1px solid #000000;padding:2px 3px;vertical-align:bottom;">&nbsp;</td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1px solid #000000;border-left:1px solid #000000;border-right:1px solid #000000;padding:2px 3px;vertical-align:bottom;">respCode</td>
+        <td style="border-bottom:1px solid #000000;border-right:1px solid #000000;padding:2px 3px;vertical-align:bottom;">Int</td>
+        <td style="background-color:#ffffff;border-bottom:1px solid #000000;border-right:1px solid #000000;padding:2px 3px;vertical-align:bottom;">0</td>
+        <td style="border-bottom:1px solid #000000;border-right:1px solid #000000;padding:2px 3px;vertical-align:bottom;">&nbsp;</td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1px solid #000000;border-left:1px solid #000000;border-right:1px solid #000000;padding:2px 3px;vertical-align:bottom;">respMsg</td>
+        <td style="border-bottom:1px solid #000000;border-right:1px solid #000000;padding:2px 3px;vertical-align:bottom;">String</td>
+        <td style="background-color:#ffffff;border-bottom:1px solid #000000;border-right:1px solid #000000;padding:2px 3px;vertical-align:bottom;">SUCCESS Or Error Message</td>
+        <td style="border-bottom:1px solid #000000;border-right:1px solid #000000;padding:2px 3px;vertical-align:bottom;">&nbsp;</td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1px solid #000000;border-left:1px solid #000000;border-right:1px solid #000000;padding:2px 3px;vertical-align:bottom;">respHdr</td>
+        <td style="border-bottom:1px solid #000000;border-right:1px solid #000000;padding:2px 3px;vertical-align:bottom;">&nbsp;</td>
+        <td style="border-bottom:1px solid #000000;border-right:1px solid #000000;padding:2px 3px;vertical-align:bottom;">&nbsp;</td>
+        <td style="border-bottom:1px solid #000000;border-right:1px solid #000000;padding:2px 3px;vertical-align:bottom;">&nbsp;</td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1px solid #000000;border-left:1px solid #000000;border-right:1px solid #000000;padding:2px 3px;vertical-align:bottom;">logID</td>
+        <td style="border-bottom:1px solid #000000;border-right:1px solid #000000;padding:2px 3px;vertical-align:bottom;">String</td>
+        <td style="background-color:#ffffff;border-bottom:1px solid #000000;border-right:1px solid #000000;padding:2px 3px;vertical-align:bottom;">LG001</td>
+        <td style="border-bottom:1px solid #000000;border-right:1px solid #000000;padding:2px 3px;vertical-align:bottom;">&nbsp;</td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1px solid #000000;border-left:1px solid #000000;border-right:1px solid #000000;padding:2px 3px;vertical-align:bottom;">data</td>
+        <td style="border-bottom:1px solid #000000;border-right:1px solid #000000;padding:2px 3px;vertical-align:bottom;">&nbsp;</td>
+        <td style="border-bottom:1px solid #000000;border-right:1px solid #000000;padding:2px 3px;vertical-align:bottom;">&nbsp;</td>
+        <td style="border-bottom:1px solid #000000;border-right:1px solid #000000;padding:2px 3px;vertical-align:bottom;">&nbsp;</td>
+      </tr>
+    </tbody>
+  </table>
+</figure>
+<h1>Error Codes:</h1>
+<p>&nbsp;</p>
+<figure class="table" style="width:792px;">
+  <table style="border-bottom:groove;border-left:groove;border-right:groove;border-top:groove;">
+    <thead>
+      <tr>
+        <th style="border-bottom:1px solid #000000;border-left:1px solid #000000;border-right:1px solid #000000;border-top:1px solid #000000;padding:10px;vertical-align:bottom;"><strong>Error Code</strong></th>
+        <th style="border-bottom:1px solid #000000;border-right:1px solid #000000;border-top:1px solid #000000;padding:10px;vertical-align:bottom;"><strong>Error Description</strong></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="border-bottom:1px solid #000000;border-left:1px solid #000000;border-right:1px solid #000000;padding:2px 3px;text-align:right;vertical-align:bottom;">601</td>
+        <td style="border-bottom:1px solid #000000;border-right:1px solid #000000;padding:2px 3px;vertical-align:bottom;">Given Order number not found in Ordazzle</td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1px solid #000000;border-left:1px solid #000000;border-right:1px solid #000000;padding:2px 3px;text-align:right;vertical-align:bottom;">602</td>
+        <td style="border-bottom:1px solid #000000;border-right:1px solid #000000;padding:2px 3px;vertical-align:bottom;">Order not in Allocated status</td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1px solid #000000;border-left:1px solid #000000;border-right:1px solid #000000;padding:2px 3px;text-align:right;vertical-align:bottom;">603</td>
+        <td style="border-bottom:1px solid #000000;border-right:1px solid #000000;padding:2px 3px;vertical-align:bottom;">User not authorized not for the order's channel</td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1px solid #000000;border-left:1px solid #000000;border-right:1px solid #000000;padding:2px 3px;text-align:right;vertical-align:bottom;">604</td>
+        <td style="border-bottom:1px solid #000000;border-right:1px solid #000000;padding:2px 3px;vertical-align:bottom;">Stock Not available</td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1px solid #000000;border-left:1px solid #000000;border-right:1px solid #000000;padding:2px 3px;text-align:right;vertical-align:bottom;">605</td>
+        <td style="border-bottom:1px solid #000000;border-right:1px solid #000000;padding:2px 3px;vertical-align:bottom;">Partial allocation yes/no</td>
+      </tr>
+    </tbody>
+  </table>
+</figure>
+<h1>NOTES:</h1>

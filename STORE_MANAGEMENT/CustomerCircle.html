@@ -1,0 +1,80 @@
+<!--
+title: Customer Circle
+description: 
+published: true
+date: 2023-10-03T05:03:24.706Z
+tags: 
+editor: ckeditor
+dateCreated: 2023-07-17T05:30:01.746Z
+-->
+
+<p><strong>Customer Circle</strong></p>
+<p style="text-align:justify;">This functionality is to allow the admin level user at HO to create Customer Circle criteria for different sets of stores. Customers are created at every store of the company. This generally leads to the creation of multiple customer records for the same individual. To avoid this duplicate records creation, a Customer Circle is required. At the time of registering a new customer with its details it searches for the existing customer database &amp; their Email ID and/or phone number based on the defined Customer Circle criteria for the store.</p>
+<p>Customer Circle helps you to define deduplication criteria for customer creation. Defining Customer Circle also helps you to avoid duplicate customer creation.(Unify &gt; CRM &gt; Customer Circle)</p>
+<p style="text-align:justify;">While creating the Customer Circle criteria, the user will select the criteria defining properties, also will select the set of stores based on provided store attribute fields.</p>
+<figure class="image image_resized" style="width:624px;"><img src="https://lh6.googleusercontent.com/DGQs3lkDV5MlT3sawhAnkHdTCk0pTkxC2-b5IVJ7zI4yZUl292mE63mJzbBRHSAWeM5AcLoNTRoxTofTqbtKD_zg--s0ZucNqM-btJ9HE3d6WJD87ITPvXeA9VYD0PlUDyNEi-jsA85XJkUtVI118VM"></figure>
+<p><strong>List Screen</strong></p>
+<p>The User will be able to view the main screen of the functionality which will display the list of Circle criteria/rules already created in the system in card view format. This includes all the active (advance created &amp; running) and inactive records. Every card will <strong>contain Customer Circle Name, Criteria, Valid from &amp; Status&nbsp;</strong> field values from the saved rule records. Each card will also have an option button &amp; status indication at its top &amp; bottom corners.</p>
+<p><strong>Search Option</strong>: The user will be able to search by Customer Circle Name and Valid From (YYYY/MM/DD) from the Search field in the List screen.</p>
+<p><strong>Status</strong>: The User will be able to filter the Customer Circle by changing the status from the status indication as All Statuses, Active, Inactive.</p>
+<p>The user can select any existing customer circle and will have the following options against it:</p>
+<ol>
+  <li>View - This option will take you to the customer template creation screen with pre-populated data defined during creation in read only mode.</li>
+  <li>Edit - This option will open up the customer template for you to edit</li>
+  <li>Deactivate - This option will allow you to deactivate the customer circle only if there are no customers created for that customer circle.&nbsp;&nbsp;</li>
+  <li>Delete - This option will allow you to delete the customer template only if Customer Circle is deactivated.</li>
+</ol>
+<p><strong>Rule Creation Screen</strong></p>
+<figure class="image image_resized" style="width:624px;"><img src="https://lh5.googleusercontent.com/hkWsVl6A48oPWK7Rz179r461M5Q0PFR4oq_olkkFywuMk37Or1ovnslGWvT8uOs2ijqmKhmyibIxiHuGBD4tOPMnuVZegz7ltLFqM06oAjDwM3wWvpYp2IS9sgy92qE7rWgDWqc7ALNU7oNn3QWmXjk"></figure>
+<p><strong>Customer Circle Name: </strong>The user will be able to input the Unique Name of the Customer CIrcle in this field. This will accept only 30 alphanumeric characters. (Example : Adidas, Nike etc)</p>
+<p><strong>Deduplication Criteria: </strong>In this field the user will define that the duplicate customer will be searched on which of the following conditions/criteria of customer details.</p>
+<figure class="image"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAYAAABV7bNHAAAA1ElEQVR4Ae3bMQ4BURSFYY2xBuwQ7BIkTGxFRj9Oo9RdkXn5TvL3L19u+2ZmZmZmZhVbpH26pFcaJ9IrndMudb/CWadHGiden1bll9MIzqd79SUd0thY20qga4NA50qgoUGgoRJo/NL/V/N+QIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIEyFeEZyXQpUGgUyXQrkGgTSVQl/qGcG5pnkq3Sn0jOMv0k3Vpm05pmNjfsGPalFyOmZmZmdkbSS9cKbtzhxMAAAAASUVORK5CYII=" alt="unchecked"></figure>
+<p><strong>Mobile no. Only : </strong>This means customer deduplication will be performed only on mobile no.</p>
+<figure class="image"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAYAAABV7bNHAAAA1ElEQVR4Ae3bMQ4BURSFYY2xBuwQ7BIkTGxFRj9Oo9RdkXn5TvL3L19u+2ZmZmZmZhVbpH26pFcaJ9IrndMudb/CWadHGiden1bll9MIzqd79SUd0thY20qga4NA50qgoUGgoRJo/NL/V/N+QIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIEyFeEZyXQpUGgUyXQrkGgTSVQl/qGcG5pnkq3Sn0jOMv0k3Vpm05pmNjfsGPalFyOmZmZmdkbSS9cKbtzhxMAAAAASUVORK5CYII=" alt="unchecked"></figure>
+<p><strong>Email Only : This means customer deduplication will be performed only on Email id.</strong></p>
+<figure class="image"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAYAAABV7bNHAAAA1ElEQVR4Ae3bMQ4BURSFYY2xBuwQ7BIkTGxFRj9Oo9RdkXn5TvL3L19u+2ZmZmZmZhVbpH26pFcaJ9IrndMudb/CWadHGiden1bll9MIzqd79SUd0thY20qga4NA50qgoUGgoRJo/NL/V/N+QIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIEyFeEZyXQpUGgUyXQrkGgTSVQl/qGcG5pnkq3Sn0jOMv0k3Vpm05pmNjfsGPalFyOmZmZmdkbSS9cKbtzhxMAAAAASUVORK5CYII=" alt="unchecked"></figure>
+<p><strong>&nbsp;Mobile no. and Email : This means customer deduplication will be performed on Email id and mobile no.</strong></p>
+<figure class="image"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAYAAABV7bNHAAAA1ElEQVR4Ae3bMQ4BURSFYY2xBuwQ7BIkTGxFRj9Oo9RdkXn5TvL3L19u+2ZmZmZmZhVbpH26pFcaJ9IrndMudb/CWadHGiden1bll9MIzqd79SUd0thY20qga4NA50qgoUGgoRJo/NL/V/N+QIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIEyFeEZyXQpUGgUyXQrkGgTSVQl/qGcG5pnkq3Sn0jOMv0k3Vpm05pmNjfsGPalFyOmZmZmdkbSS9cKbtzhxMAAAAASUVORK5CYII=" alt="unchecked"></figure>
+<p><strong>Mobile no. or Email : This means customer deduplication will be performed only on Email id or mobile no.</strong></p>
+<p><strong>Company:</strong> The users will be able to select multiple companies for a Customer Circle using this field. This field will only show the List of those companies for which the user is having access.</p>
+<p>This field will also have below two options at bottom of dropdown field:</p>
+<ol>
+  <li>Select All : On clicking this option all companies will get selected in the dropdown list.</li>
+  <li>Clear All : On clicking this option all selected fields will get unselected.</li>
+</ol>
+<p><strong>Valid From:</strong> The User will be able to define the date from which the rule will be applied to the specified stores. Although the status of the rule has to be <strong>Active </strong>in order to apply it on valid from date. (For example: If valid from date is selected as future date X then customer deduplication will not be done on customer creation today.)</p>
+<p><strong>Status:</strong> The user will be able to define if the created Circle rule is to apply to the stores as Active or Inactive.</p>
+<h5><strong>Customer Circle Level :&nbsp;</strong></h5>
+<p>This section allows you to select the different levels for creating a customer circle. For example: you can create customer circle at company level</p>
+<ul>
+  <li><strong>At Company Level : This checkbox allows you to create a customer circle at company level.</strong></li>
+  <li><strong>Channel : This field allows you to select single or multiple channels for the customer circle.</strong></li>
+  <li><strong>Store Brand : This field allows you to select single or multiple store brands for the customer circle.</strong></li>
+  <li><strong>Store Concept : This field allows you to select single or multiple store concepts for the customer circle.</strong></li>
+  <li><strong>Store Group : This field allows you to select single or multiple store groups for the customer circle.</strong></li>
+  <li><strong>Store Category : This field allows you to select single or multiple store categories for the customer circle.</strong></li>
+  <li><strong>Ownership : This field allows you to select single or multiple types of ownerships for the customer circle.</strong></li>
+  <li><strong>Mall : This field allows you to select single or multiple malls for the customer circle.</strong></li>
+</ul>
+<h6><strong><u>Validate button :</u></strong><i><strong><u>&nbsp;</u></strong></i></h6>
+<p>On click of this button you will be able to view the overlapping stores with other customer circles.&nbsp;</p>
+<p><strong><u>For example:</u> </strong>If you are trying to create a customer circle for Brand: Nike and someone else has created the customer circle at company level then on click of the validate button system will display the overlapping stores having other customer circles. Once you verify the data you can click on the “SAVE” button to save the customer circle record.</p>
+<p><strong>Note:</strong>&nbsp;</p>
+<ol>
+  <li>If you want to create a customer circle for a combination of multiple store attributes. (BRAND, Concept, Group, Category, Ownership &amp; Mall)&nbsp;</li>
+</ol>
+<p><strong>For Example</strong>: If you want to create a customer circle for Store brand (Nike) and Ownership (Owned) then on click of the validate system will create a customer circle for stores only for the combination of Brand: Nike &amp; Ownership: Owned.</p>
+<ol>
+  <li>Post displaying records on grid&nbsp; section if you do not wish to add the store in the customer circle which you are creating you can simply uncheck the checkbox and click on save, on click of save system will not update the customer circle for unchecked record.</li>
+  <li>If you are trying to create a customer circle at company level then you will not be able to uncheck the overlapping records on the grid.</li>
+  <li>If you are selecting multiple companies in the basic details section then you will not be able to select the channel or store attributes for the customer circle.</li>
+  <li>If you select the checkbox at company level then you will not be able to select the channel or store attributes for the customer circle.</li>
+</ol>
+<h6><strong>Reset button</strong></h6>
+<p>This button allows you to reset the customer circle level section. On click of this button all data will be cleared from the level selection field.</p>
+<h6><strong>Grid section post clicking on validate button.</strong></h6>
+<ul>
+  <li>On New customer circle creation this section will populate the overlapping data.</li>
+  <li>On View this section will display the existing records of stores/channels in the customer circle.</li>
+</ul>
+<figure class="image image_resized" style="width:624px;"><img src="https://lh6.googleusercontent.com/v4xc0e_srUCqcNCxjTzuz5u-uyEyozVyta-beFavZ4BM7_KPA6EFFa0P9pl1JaAs3pZGC0Q-vCauYP9RpjkMghYo03UZIOY2tW31rZuvuHe-9Pqbfiqqnh-CKba5p6LTIA30ALJoVqf7DyIDzs_kKVQ"></figure>

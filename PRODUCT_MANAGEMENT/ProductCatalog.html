@@ -1,0 +1,85 @@
+<!--
+title: Product Catalog
+description: 
+published: true
+date: 2023-09-27T09:28:15.875Z
+tags: product
+editor: ckeditor
+dateCreated: 2023-02-07T09:37:13.129Z
+-->
+
+<h1>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<strong>Product Catalog Wiki Document:</strong></h1>
+<h3>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<strong> &nbsp; &nbsp; &nbsp;Use Cases and Capabilities of Product Catalog in ETP Unify:</strong></h3>
+<ul>
+  <li>Product Catalog is a function which helps the user set up and organize various types of products with different attribute sets into catalogs.</li>
+  <li>A Product Catalog is a screen where all the options and columns needed to create a product through Product Master is available.</li>
+  <li>The User can select the columns in the Product Catalog based on the product they want to create in the Product Master.</li>
+  <li>The Product Catalog also has options to View, make a column Mandatory and provide edit access for the column.</li>
+  <li>Say, if the Product is soap then, we can configure the columns needed to create a soap through the catalog. This is a module to personalize the product creation screen based on the product being created.</li>
+  <li>The Products Tshirts, pants and trousers which come under clothing do not have an expiration date, so that the user can configure the product catalog without those details like expiry date etc, during the creation of the Product catalogs of Tshirts and Pants etc. This will save a lot of time when a user is creating a specific product so that the User does not have to view the columns appropriate for the product being created.</li>
+  <li>The User can configure upto 3 variant dimensions in case the Product also come in variants. The usual dimensions are colors, sizes and material for clothing products.</li>
+  <li>The User can add the variant attributes in the catalog so that, when a parent Product is created, the variant attributes will fetch attribute values from common master under each attribute based on the values added by the User in Common master.</li>
+  <li>The Product Catalog module has provisions to add additional attributes for the specific catalog created, In case an attribute which is needed for the catalog is not available in the module, the User can add the Column needed , weather its a drop down or a free field or a check box. The user can also label the new additional attribute available, so that the same will appear in the Product create screen. The user can also make it Mandatory or non mandatory based on the business requirement.</li>
+  <li>A provision to add an image to the catalogs created is also available. Now we can look into details on how to configure the Product Catalog the specifications as well.</li>
+</ul>
+<p style="text-align:center;">Product Catalog</p>
+<ul>
+  <li>The Product Catalog module is available under ETP Unify → Product management → Product Catalog.</li>
+  <li>When the User click on the module, the screen will show a card view screen as per below.</li>
+</ul>
+<figure class="image image_resized" style="width:100%;"><img src="https://lh3.googleusercontent.com/nzY_Bh0AP_lSDbzXIrKqQMP-0TGw3ydacV4rK-2jaQknhtFCc-gqkcDy2sOgqriGv9XxxFycv2GyMxUls04uCoFjKx_cAZePdqQ2-yz1Yt715rqodH4tZZemeg2DDr4bE1Rw5-CHBZTO-VYHfoP_nWE"></figure>
+<ul>
+  <li>The screen will have a card view of all the catalogs already available in the Product Catalog module. Here you can view catalogs created within the company if the PDML flag is set to company in the Company set up module. If the PDML flag is set to Group, then all the other Catalogs available under the companies where PDML flag is group will also be displayed in this screen.</li>
+  <li>Each card view of a catalog will have the catalog Image, the catalog name, the status of the catalog if active or inactive, the number of templates available under the Product Catalog.</li>
+  <li>When the User clicks on the 3 dot button, the User will see 3 options - add Product,View Product and edit.</li>
+  <li>When the User clicks on add Product, the screen will redirect to the Product master create screen with the selected catalog already prefilled in the catalog selection option in the top of the Product Master screen.</li>
+  <li>When the User clicks on View product, the screen will redirect to the product master List screen with the specific catalog from which the view Product was selected. The User can now view the Products created with the specific catalog only.</li>
+  <li>When the User clicks on edit, the User will be redirected to the create screen of the catalog where the User can edit the details of the product catalog except Catalog Code.</li>
+  <li>The Template products that are shown, are the count of the products created with this specific catalog as a template in the product master screen.(Product Templates are explained in Product Master wiki)</li>
+</ul>
+<figure class="image image_resized" style="width:223px;"><img src="https://lh6.googleusercontent.com/5bZfbrek9jwv9-OqMOgWse8ZHAdesenWHir_Xq3qOR9mHhOMjkvIbqbcuN5FAx8xMiaCkwIvNYFhZtPwDWwwAHfgryhLPCZoQJnMNfD3QTpetr6RU9Ff_L5DCNwRBUqrE1AQ534Z97dFeJkO-ZxaDUM"></figure>
+<ul>
+  <li>The card view screen also has a search box, where the User can search the catalogs based on the catalog code or name.</li>
+  <li>The status drop down has 3 values namely All Status,Active and inactive, the user can select the specific status to view the product catalogs based on statuses.</li>
+</ul>
+<figure class="image"><img src="/pdg_catalog.png"></figure>
+<ul>
+  <li>The User can also make use of the refresh button in case of the screen refresh after any search or status filters applied to disable the filter used.</li>
+  <li>The (i) button can be used to read the wiki document for any module in that matter.</li>
+  <li>There will be a button in the right bottom of the card view screen, when the user clicks on the same, the create screen opens, where the user can add the details of the catalog and save to use the same in product creation.</li>
+</ul>
+<figure class="image image_resized" style="width:100%;"><img src="https://lh5.googleusercontent.com/Yl6pKQeSjKuuDDnjnmBTmTIWX5YIsxSESfIPRg_ZCghLkyYh0M2R2Reo-7DquHDFcIw5e0ZEY6-ZvDc0DXgNAnlNmNZkEVCqhPOawM8iFVYLmHfG8SlzUD2IyCiHYGJRg86OTkFZaZ6YfWj1TPi8OPU"></figure>
+<figure class="image image_resized" style="width:100%;"><img src="https://lh6.googleusercontent.com/D0uAAeXYujcIg824QCGYgezsLm1AfsoJitCyMPBuKgx8_eLsXzj-VXvX1_eO3jnd9GYWgewC-zOhz-LEh9294M9JC_kKbMVMhJz3oorbHzZ_q19eAuhz7VRj4ANkdI1etG2ozPXM1AUL8PmLYC4hUxY"></figure>
+<figure class="image image_resized" style="width:100%;"><img src="https://lh5.googleusercontent.com/wUKepZVOVcmDUgzpW5Ew8ozIR1GCbL_4yaCnTI-FuQFex5gWOfBPqFFO4R-UT6V8UnaLRYOEU1eRAgo1lzUC6AWIi5lp949hv-4yC2p8M5dkeZyKJ9PYNH-hIOUDc61iXK7jx0aFBmRZXvGf-WnC4xA"></figure>
+<figure class="image image_resized" style="width:99.45%;"><img src="https://lh3.googleusercontent.com/bxk2EZ2mkDIKMVMeKlKM1O_FjNB_mNI-kxSgWomPyoBN1KpeCuXYP9D_7WtNKW1axHOyLFeFci0vcXvJ2P1DDGwsX12Fy-rhaFsWMI8wEvCuKz1yoP58kMSQo9J13RmODfkvSIv9ToYsbuAFB7x7E0E"></figure>
+<figure class="image image_resized" style="width:98.47%;"><img src="https://lh3.googleusercontent.com/46SnCVskhMVNCXbrb3eyJv2hOVzmmgNtR2XPNDrvCw1xsp3iMCMEIPJSEbmhCmM3LC9nQq64OExxd2DdTxtZ41OMd0DRRrQnjpvxI-guNrTAmFbVtyOEnWOl2dwxzuw2BLdEzkyTn2xZPE6yoOszEnU"></figure>
+<figure class="image image_resized" style="width:98.23%;"><img src="https://lh5.googleusercontent.com/5-XBGwQDK8ncMvm--vIHVucVz80UA9lz6D3eKHy9EXKA2Y6gjVgfU7r38o2weUSvC44560oEVcyAHJetWmVCz1BTb-EqPAP43qxzU8qovLgr8zY9OrMbyv9fFUeT63wme5NkLaX3HySfZFYCoNHQF80"></figure>
+<figure class="image image_resized" style="width:96.94%;"><img src="https://lh4.googleusercontent.com/9yCJogc7eoM7t0OoFZZbhbjxTqmukruHU33V1MXpAK9hkI7kgCzQagu6J8Qzk7MU40_ymADCcK5jEghl3TrntA6h0HtivbEvTTZNywwNVTrqL-F_Hv0h4Ck-D9WHFHoG5RlxQhT8juCeehlP0mSnO2w"></figure>
+<ul>
+  <li>The above screenshots shows the representation of the Product Catalog create screen.</li>
+  <li>The first is the image upload place holder where the User can upload the images of the Product Catalog, the image should be no more than 400*400 p in size.</li>
+  <li>The active/inactive toggle button is to notify the active status of the catalog created.</li>
+  <li>The <strong>Catalog Code</strong> is a unique alphanumerical column that can be given to the specific catalog when created. This will be a unique identifier for the catalog in case of search and filter of the catalogs.The same catalog code cannot be saved twice in different catalogs.</li>
+  <li><strong>Catalog name</strong> is a column to insert a name of the catalog being created. This is also an identifier given to the catalog in case of search or filters in product catalog or any other modules like product Master.</li>
+  <li>The <strong>Template Item </strong>is a drop down where the User can attach the product template with the selected catalog through edit option and when the same catalog is opened, the product master will populate the details added to the template product, in this way the user does not have to add the details of the product&nbsp; with similar data every time it is created, through single creation in Product Master.</li>
+  <li><strong>Description&nbsp;</strong> is a column to describe about the product catalog. The user can enter details about the product catalog. The description of the Product Catalog can explain the type of products that can be created through the Catalog.</li>
+  <li><strong>X Feature name,Y feature name and Z feature name</strong> are involved when the User wants to create a variant product . The User can here mention the XY and Z variant attributes here, when a parent product is created, the screen will populate the variant attribute values created in the common master into the Product Master variant create selections.</li>
+  <li><strong>Variant Numbering Rule</strong> is For products with variants, the user will be able to decide the variant numbering rule e.g. Style-Color-Size. The maximum length for SKU code could be 50.</li>
+  <li><strong>Product Catalog Master Field Details In this section of the Product Catalog, the user will be able to set up fields which are relevant to the products within this catalog. Additionally, the user will be able to choose which fields are mandatory, editable, and which will be shown on the screen.&nbsp;</strong></li>
+  <li><strong>Product Catalog Attributes is where the Product Catalog function has a feature that allows the user to add additional custom attributes to products. They can select whether the attribute will be a text field, a checkbox and a multi select checkbox, as well as whether it is mandatory or optional. These attributes will then be available while creating a product through the product master, or by uploading a product.</strong>
+    <ul>
+      <li>Catalog attributes search is where the User can search the created additional attributes of the catalog.</li>
+    </ul>
+  </li>
+  <li><strong>The save/Discard buttons can be used to either save or discard the details added to the catalog create screen.</strong>
+    <ul>
+      <li>When the save is clicked, the same catalog with the added details will be saved as a record and will be shown in the catalog card view screen.</li>
+    </ul>
+  </li>
+</ul>
+<figure class="image image_resized" style="width:99.21%;"><img src="https://lh3.googleusercontent.com/Ba50_OygIZnl5sUVEH4GEHx-AgXITMIBqqjTz6EZ03aRsicHMHF_m2zwlEntRS7TnVHHqjxVg4whjzZ69LUzAst9WwbmbADZtnogU9kZPu6K9M5hRVeXO7H6XIqiR2Xb_lxgt9D7_pOL6ZfnsReZRDk"></figure>
+<ul>
+  <li>In case if the catalog code or name is not entered the screen will show a mandatory sign to update the details since they are mandatory columns that needs to be filled.</li>
+  <li>In case of discard the screen does not save the catalog and returns to the card view screen to show the already available catalogs in a card view as shown in the earlier screenshots.</li>
+</ul>
+<figure class="image image_resized" style="width:43px;"><img src="https://lh3.googleusercontent.com/O6A2HdQRHidzka7xp6LfmQaR_hbBNzUPQN04aEinOLDh3cmWuXhgXhZncaoKybrEMqChphpT0IeVgsrkCjoXKhPfDYPeBnLnk_MMnNz6p-pDoaMLLoSv2Y1o2rm4hxgOAfhljDeA11aAykhQL9wtPvM"></figure>

@@ -1,0 +1,123 @@
+<!--
+title: Price List
+description: 
+published: true
+date: 2023-09-27T12:40:33.240Z
+tags: 
+editor: ckeditor
+dateCreated: 2023-07-14T12:28:13.099Z
+-->
+
+<h1><strong>&nbsp;Price List&nbsp;</strong></h1>
+<p>The price list master allows users to manage and create a price list for sales, purchase &amp; distribution transactions. The Price list can be created against customer, store &amp; channel (webstore) attributes. This created price list is executed based on specific to Generic&nbsp; attributes defined in a price list as price list priorities.&nbsp;</p>
+<p><strong><u>Example:&nbsp;</u></strong></p>
+<p>For a product ABC base price is defined as 100 while product creation.</p>
+<p>Let's say the user defines the new price list P1 for attribute Customer_Type [Employee] with 10% margin on the base price.</p>
+<p>Add a record in the price list with the validity dates 2022-10-01 to 2022-10-31, price 90.00.</p>
+<p>Now while billing the product on POS post scanning the product system will check for the most specific price list i.e. if the customer is an employee then the system will apply price list P1 (90) to the product. If the customer is not an employee then the original price of 100 will be applied to the product for billing.</p>
+<p><strong><u>Impact : </u></strong>This price list will be applicable on POS billing execution at stores &amp; channels (webstores) based on the attribute selection.</p>
+<figure class="image image_resized" style="width:684px;"><img src="https://lh4.googleusercontent.com/Miy-rh15NuRZZBCqcu0CL4d_oOaOtNJiwUKwTRvvEmmOswrO5LpUVcvkcfkYMKZBbIwQs4b_asakdYqr0H5K-gIajCGedid7rXiSgYIIuRKxAu69uZOYdVGUyOPQIBJIkU-HeuA__KCu1osfkXvs77A"></figure>
+<p><strong>List Screen</strong></p>
+<p>Over here, users can view all the existing price lists created.&nbsp;</p>
+<p>Users can delete and edit the records, and also can add new ones.</p>
+<p>The users can sort or use the search bar to <strong>search the existing</strong> price list by the <strong>Price list code</strong> or <strong>Name </strong>on the list screen<strong>.&nbsp;&nbsp;</strong></p>
+<figure class="image image_resized" style="width:624px;"><img src="https://lh5.googleusercontent.com/LhO1uwWBxWaT0esjPK-tZmFIsi1wTqz5N1mEbp7DQPG_wL1gfW9LR8W5fyQoVQDOUbbpQ6JkDoCIThdj3OACDIZ9-BspO_EZHJLNtOHpAxWNxKm3c3NqfnuzlwQDU7v_zXCM_rkavAblv-9K1XQQIBY"></figure>
+<p>Each record in list screen has three dots ‘</p>
+<figure class="image image_resized" style="width:10px;"><img src="https://lh4.googleusercontent.com/E8yPJGeDJljRPh0DwBOlc9R2ogQYsg9d7XWeqGW0Zh-CVivJwuuUtOLHCmvZvz35leYwHbAAi_ns4CVCg8ntDk3F2wYK4JCAa8LkdLYP336QeEtP185lzu9MYnz_snz_V2QRqg0gxBWNSEJojZdbKA"></figure>
+<p>’,&nbsp; against it and they will have below following options</p>
+<ul>
+  <li><strong>View - </strong>This option will open up the creation screen with pre-populated data only in view only mode with all fields disabled.</li>
+  <li><strong>Edit </strong>- This option will open up the creation screen with pre-populated data for users to edit, users can edit price list details in this mode only if price list is not used in billing transactions.</li>
+  <li><strong>Delete </strong>- This option will allow users to delete the inactive price list.</li>
+  <li><strong>Copy </strong>- This option will allow users to create the copy for the existing price list with all product, customer and other attributes except price list code, name and validity.</li>
+</ul>
+<p><strong>Price List creation</strong></p>
+<p>You can create new price list by clicking on the ‘</p>
+<figure class="image image_resized" style="width:25px;"><img src="https://lh6.googleusercontent.com/e-GFLg3xyClUiAadnoEd4p2zuQfFcNeXs80YSiXqND0oDOfX6q3LJplprIxxtkeRhXAD4QAWazjYTI9Dm8aumZCeSG2JviknEElrcXBKxDHYQsgYmVxw04t7eyfrEByEBqfbVCH_zvjjA00Jwli_eA" alt="threedots image"></figure>
+<p>’&nbsp; add button available in the main screen on the bottom right corner.</p>
+<p>On click of the “+” button , a screen will be visible to create a new price list.</p>
+<p>Below are the sections required to create a new price list:</p>
+<figure class="image image_resized" style="width:650px;"><img src="https://lh5.googleusercontent.com/2QdCQMR4KlPiMd4GEMnknNhS7wmRlkGKQIlRgfIYg_NlMiTiqzjVBAkv0Z8ZyhBWPXtdwfsFRT7H_g53bkeUcBTZmUp2iMyLLJap4IVhJ3b6pSbWcV7f2G-I40pwzx5N_q8WxFN5t7wKHmdp5M25mm8"></figure>
+<figure class="image image_resized" style="width:624px;"><img src="https://lh4.googleusercontent.com/xe7ByEQTPUOo46Tolf3p2wM-4lexOSWX-IaXJykd6XPnnp8bnIuMYX4Bdds5qGThPSuYt8DmzNVsfZ9XMdqsowzjy4ZczWD4GXH7u62fm6yAmgZ1vuWWIxUCDbtO4v9V0wVgjHtOU84SH0_e9nKzqNc"></figure>
+<ul>
+  <li><strong><u>Price List Basics :&nbsp;</u></strong></li>
+</ul>
+<p>This section will be used to capture the basic details against the price list such as price list code, name, currency, status, attribute (1,2 &amp; 3)/ values, validity, price list for, promo planning code &amp; rounding off rule.</p>
+<p>For example: Users can create a price list as P1 (<strong>price list code</strong>) Price for Employees (<strong>price list name</strong>) with <strong>currency</strong> USD and Active <strong>status</strong>, against a particular customer type (<strong>attribute 1</strong>) Employee (<strong>attribute value</strong>) and store ownership (<strong>attribute 2</strong>) Own store (<strong>attribute value</strong>) from 01-12-2022 to 31-12-2022 (<strong>validity</strong>) for sales (<strong>price list for</strong>) with rounding of to nearest integer (<strong>rounding rule</strong>).</p>
+<p>This means whenever this price list P1 will be executed it will be applicable only as per above selection made.</p>
+<figure class="image image_resized" style="width:624px;"><img src="https://lh4.googleusercontent.com/H9xS_eCWdrKl-YUbr-KiwXKK3Bg2tqxpdKefZ6OqgZuMdJbsCl53LJVHqRd0FVhad2cwvjRejEzpI1hOeRwfz6x28miyo-ciKjzH5HIa2MGbKm9e26_Vck5J9vNkJw_-p3VuGPDCoxTba9llln1lwIM"></figure>
+<ul>
+  <li><strong><u>Sales Price List Details :</u></strong></li>
+</ul>
+<p>This section will be used to filter and add the products in the price list with margin%, price type, tags and validity. Users can also add the products in the price list using the upload function.</p>
+<p>Below are the fields used for adding products in price list:</p>
+<ul>
+  <li><strong>Product Attribute1 : Users will be able to select the product attribute in this field against which a price list is to be created such as product category, department, brand etc.</strong></li>
+  <li><strong>Attribute Value1 : Users will be able to select the product attribute value in this field against which a price list is to be created such as for attribute category (t-shirt, shirt values can be selected).</strong></li>
+  <li><strong>Add Attribute : Users can click on this option to add one more attribute row for product selection.</strong></li>
+  <li><strong>Select type : These are radio button options to select users can select any one of the options from SKU, Style &amp; Style-Dimension for which product user wants to create the price list.</strong></li>
+  <li><strong>Dimension : This will be a dropdown list for selection with values as X (size), Y (color) &amp; Z(material). Users can select the dimension of the product for which price list has to be created.</strong></li>
+  <li><strong>Margin % : Users can use this field to define the sales price margin% for the above selected product attribute so that price list records will be created using this margin and roduning off rule.&nbsp;</strong></li>
+  <li><strong>Price Type : Users can use this field to define the price type for the above selected product attributes.</strong></li>
+</ul>
+<p>1 - Normal Price</p>
+<p>2 - Promo Price</p>
+<p>3 - Markdown Price1</p>
+<p>4 - Markdown Price2</p>
+<p>5 - Markdown Price3</p>
+<p>6 - Markdown Price4</p>
+<p>7 - Markdown Price5</p>
+<p>8 - Markdown Price</p>
+<p>9 - Markdown Price7</p>
+<p>10 - Markdown Price</p>
+<p>11 - Markdown Price9</p>
+<p>12 - Markdown Price10</p>
+<p>13- Markup Price1</p>
+<p>14- Markup Price2</p>
+<p>15- Markup Price3</p>
+<p>16- Markup Price4</p>
+<p>17- Markup Price5</p>
+<ul>
+  <li><strong>Tags : Users can use this field to define the tags for the above selected product attributes.</strong></li>
+  <li><strong>Valid From Date : Users can use this field to define the start date for sales price against the above selected product attributes.</strong></li>
+  <li><strong>Valid To Date : Users can use this field to define the end date for sales price against the above selected product attributes.</strong></li>
+  <li><strong>Reset : If users do not wish to add the products for above selection made then users can click on this button it will remove the captured data in the fields.</strong></li>
+  <li><strong>Add : To click on this button all above details will be mandatory to fill. If the user wishes to add the products in the price list for above selection made then users can click on this button, on click of this button all products available with the above selection will get added in the price list and the same will be displayed in the grid below.</strong></li>
+  <li><strong>DOWNLOAD TEMPLATE : This button will allow users to download a sample template format for uploading the products in the price list. On click of this button a file will be downloaded in the user's local system.</strong></li>
+  <li><strong>UPLOAD : Using this option users will be able to upload the file for products against which the user wants to create a price list. On click of this button users will get a popup on screen to browse and select the file for upload, if there are no errors in the file then it will be successfully uploaded and the user will get a popup message of successful upload and products will be displayed in the grid. If a file has errors then users will be able to view the errors for each line in the view log function or users can click on view upload history.</strong></li>
+</ul>
+<figure class="image image_resized" style="width:660px;"><img src="https://lh6.googleusercontent.com/DklssJFKAt-idFYLXf2eU2XjqetOKVUiD5RFaAeoq3RQ7iorlYBbsWq4MKih879uhHpMsYZO-Ex4xpTYmipa-fkAhMjisaI67ZzmJPJ9OfQ2a2xMZ9lMrzux4qMr6vLhMQQi9LIqOQdLl_sRXWK422s"></figure>
+<ul>
+  <li><strong><u>Price list grid section :</u></strong></li>
+</ul>
+<p>This section will display all products added in the price list with product details (image, product code / dimension, margin%, UOM, tags, Cost, RRP, Sales price, Qty, Price type, validity, Qty slab, last price, Lot ref, Lot no.). Each record in the grid will have an edit ‘</p>
+<figure class="image image_resized" style="width:22px;"><img src="https://lh4.googleusercontent.com/WggnPheN-R34og05TwtFjW-Y_FCWIJIl3q0BYMWSriGqBekwjP7jT3FzfyvoxDNnLn_5Gep0AO2ptsGJAFa4WkSWJE6gbWg5_BCuOkF4ul0L3NJ9SbqiAs8Lhpt2HOxGLMC6IdnRVhBWkEPmv8lLeg"></figure>
+<p>’or delete ‘</p>
+<figure class="image image_resized" style="width:19px;"><img src="https://lh5.googleusercontent.com/j-o5BO8dQEXAAkT14ISW52OSTcKyZRbNbEdmt-tr6wz56Y4pCICZkSuP26m6wqCjwL5htj4efDIUiG7Woho3uz4uTnJjYTNc7xzHWi0hHGmPAdvPUL0Gplzx5_OznMoOtNjGEntcRgBCvnQibJluOg"></figure>
+<p>’ option against it.</p>
+<figure class="image image_resized" style="width:682px;"><img src="https://lh6.googleusercontent.com/GqiRt1qrV3QIsRYBaZTYgZVT4T51hpyO9FAeJkIAsS5lNy9N3Wnn6_raZaxVfkqpHEr3lOyseAEd_l55BDckhPMw61XtfNcwlq0tEikk-Ua2tR51AN-sges3iLm7kyrensdai2RG2cZCiC6gbTMqSTs"></figure>
+<p>On click of edit button users will get a popup screen for the selected product and they will have the option to edit below fields.</p>
+<ul>
+  <li><u>Sales price</u> - Users can use this field to change the sales price for individual products.</li>
+  <li><u>Qty</u> - Users can user this field to change the qty of product (for Eg: Price of say polybags is Rs 5 for 100 qty,&nbsp; then Qty = 100 and price = 5)</li>
+  <li><u>UOM </u>: Users can use this field to change the UOM for the selected product, this field will have value only if an alternate UOM or UOM set is defined for the product while creation.</li>
+  <li><u>Price type</u> : Users can use this field to change the type of price like - promo price for the selected product.</li>
+  <li><u>Tags </u>- Users can define the tags in this field for the selected product.</li>
+  <li><u>Validity </u>- Users can use these fields to change the start and end date for the price list against the selected product.</li>
+  <li><u>Qty Slab</u> - On click of this option users will get popup on screen, here users can define the qty based pricing for the product using below fields, for example: Let’s say product&nbsp; ABC is having sales price of 10 Rs for 1qty but, now user want to define the qty based pricing for product then user can use this UI and define new sales price for product qty 2 to 10 with unit price as 9.5 Rs.</li>
+</ul>
+<p>So now whenever a customer purchases ABC product for 1 qty it will be sold at a price of 10 Rs.</p>
+<p>But if the purchase qty is between 2 to 10 then it will be sold at a price of 9.5 Rs.</p>
+<ul>
+  <li>From Qty&nbsp;</li>
+  <li>To Qty Slab&nbsp;</li>
+  <li>Unit Price - This field will be used to capture the new sales price for single qty which will be applicable only if the purchase qty is between from and to qty.&nbsp;</li>
+</ul>
+<p>&nbsp;</p>
+<figure class="image image_resized" style="width:673px;"><img src="https://lh5.googleusercontent.com/SoIPuWSD7cujZj71NThVdBlMHtN72qkikVRM7qIerVULNpt4aGsC726u56yEiKQDL4sedAUd7Cn2zeUQbqFVDac13YnG00dllzp5KEhUaow3GdgA1ZNCzSvUtfiaxQHu5ot_Ku893Bj1ioRYD51VbBY"></figure>
+<p>&nbsp;</p>
+<ul>
+  <li><u>Last price</u> - This is a checkbox which will be used to define that if the defined sales price will be the last price or user will be able to give any further discount. If users click on this check box then while billing this product on POS the cashier will not be able to give any further discount for the product and no further discount from Promotion definition will be applicable.</li>
+  <li><strong>Save : Users can click on this button to save the price list if they want. On click of this button records will be saved and users will be redirected to the main list screen.</strong></li>
+  <li><strong>Discard : Users can click on this button if they do not wish to save the price list. On click of this button records will not be saved and users will be redirected to the main list screen.</strong></li>
+</ul>

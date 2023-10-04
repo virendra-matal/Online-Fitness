@@ -1,0 +1,48 @@
+<!--
+title: Retail Configuration Store Specific
+description: 
+published: true
+date: 2023-09-27T11:57:48.966Z
+tags: 
+editor: ckeditor
+dateCreated: 2023-07-17T07:33:55.293Z
+-->
+
+<p><strong>Retail Configuration Store Specific</strong></p>
+<p>The main purpose of this function is to override the properties configuration for a particular store. The business use case of this master is to override the properties at the store level for the templates which were created in the Retail Configuration Template and attached to a particular store or store attributes in the Store Configuration Group. The overriding of properties will only be applicable to the specific store selected for configuration. This master will be available under the menu ‘Store Administration’</p>
+<p><strong>For Example: </strong>If a property ‘Inventory Management Required’ is enabled in the retail configuration template and if the user requires to disable it for a particular store then the user can use this function to override the property for a particular store.</p>
+<p>The properties of the following configuration types can be overridden:<br><br>&nbsp;</p>
+<ul>
+  <li>Retail Configuration Store Operation</li>
+  <li>Retail Configuration Store Front</li>
+  <li>Retail Configuration Invoice</li>
+  <li>Print Configuration Credit Note</li>
+  <li>Lookup</li>
+  <li>Retail Configuration Orders</li>
+  <li>Retail Configuration Order Invoicing</li>
+  <li>Retail Configuration Sales Return</li>
+  <li>Retail Configuration Credit Note</li>
+</ul>
+<p><strong><u>TEMPLATE OVERRIDE SCREEN:</u></strong></p>
+<ul>
+  <li>On accessing the Retail Configuration Store Specific from the ‘Store Administration’ menu, an override screen will be shown with columns - Store, Retail Configuration Type, Retail Configuration Template Code, Retail Configuration Template Name.&nbsp;</li>
+  <li>If the user has access to multiple companies within the group, the user can change the company using the breadcrumb on the left-hand side.</li>
+  <li>On selecting the store and the configuration type - the retail configuration template code and template name of the selected configuration type will populate which were attached to the store/store attribute in the store configuration group.</li>
+  <li>The properties which were configured in the retail configuration template will be displayed in the lower panel where the user can now override the required properties for the selected store.</li>
+  <li><strong>Store: The stores belonging to the company selected in the breadcrumb will be displayed in the dropdown.</strong></li>
+  <li><strong>Retail Configuration Type:</strong> The user can select the type of configuration required to override the properties. On selecting the type relevant properties and subtypes will be displayed where users can start overriding as per the requirement.</li>
+  <li>Retail Configuration Template Code: The code of the template configured for the store will be displayed.</li>
+  <li>Retail Configuration Template Name : The code of the template configured for the store will be displayed.</li>
+</ul>
+<p><strong>Retail</strong> <strong>Configuration Type:</strong> Retail Configuration Store Operations:<br><br>&nbsp;</p>
+<p>This configuration type consists of subtypes - General Settings, Walkins. The properties configured under this configuration type defines the functionality for the functions under Store Management and Store Administration.</p>
+<figure class="image image_resized" style="width:100%;"><img src="https://lh3.googleusercontent.com/SriAFp1ctbFp5318SLAWnA3E7wCYhRGKuJ0lOSHRCUZSh0SIY1sDZ3uvdRC2YMDiVmL-X-wRA5FkElwIbSTgSTqnOlPD3xq-G3fMP6gIVtfv26ewJZagqDQ_YSZ7gaKMai6yi8jdhVqAg2PxunN6raI"></figure>
+<p><strong>Retail</strong> <strong>Configuration Type:</strong> Retail Configuration Store Front:<br><br>&nbsp;</p>
+<p>This configuration type consists of subtypes - General Settings,Centralized Settings, Customer Settings, Loyalty Settings, Payment Settings, SMS, Email, Whatsapp event templates, Product lookup. The properties configured under this configuration type defines the functionality for the functions under POS menu.</p>
+<figure class="image image_resized" style="width:100%;"><img src="https://lh5.googleusercontent.com/sQC98-3sFXW34jlKW8ml-XHMG0pH1m96QncK19rWXowRFVo9Lprt7cK0RMIe1lnTxmRQlSXeaeB9l1XzLRBBrQN8-9_bzGhgz_12enB52ZWIYbkmSuSnlvqZ3FHMVoFAk5rXJiN2rrANDslaUYIDWqk"></figure>
+<p><strong>POS Configuration Type:</strong> POS Configuration Counter:<br><br>&nbsp;</p>
+<p>This configuration type consists of subtypes - General Settings, Peripheral Settings,Mobility Settings, Payment Modes, Dual Screen Media Upload. The properties configured under this configuration type defines the functionality for the counters of the store for which this template is attached.</p>
+<figure class="image image_resized" style="width:100%;"><img src="https://lh3.googleusercontent.com/ZKeTH-ET2LSiVLJLWx-pIvbg9TGvOI9wLz7tnf8QQcEtSdyMx9TBG-n6yv6bJIGenJVhyWQsD3aqpWmtN1OkJ9tJok3DLRa6bF4w1reClvb_ddmZ6wcyyXWJan_IchWQ1WuX0-4s4dx11utApnvlvZM"></figure>
+<p><strong>Retail</strong> <strong>Configuration Type:</strong> Retail Configuration Lookup::<br><br>&nbsp;</p>
+<p>This configuration type can be used to configure fields required in quick product and customer lookup available on the billing screen.</p>
+<figure class="image image_resized" style="width:100%;"><img src="https://lh6.googleusercontent.com/aEFMzZ-duFz7HCmicPURpF45aJ7ABGdgQSC7X_Z-jmxaGioniSx9TDz-v3TD5s3LQYEwno4IFhaGOLK2bnUkK1qdJ1C4fGHoJLWtJ3HgZW8SxIZHdVhLA_fjh7WFPWD9fYBNu4mNKnE2fijLbHbvX_8"></figure>

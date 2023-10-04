@@ -1,0 +1,83 @@
+<!--
+title: Audit Rules
+description: 
+published: true
+date: 2023-09-27T12:02:17.736Z
+tags: 
+editor: ckeditor
+dateCreated: 2023-07-26T20:29:54.320Z
+-->
+
+<h1><strong>Audit Rules</strong></h1>
+<p style="text-align:justify;">The purpose of this functionality is to facilitate users for the creation &amp; edit of audit rules. Audit rules are the configuration to log audit data for a system event for a particular duration. This helps the users at Head Office to audit the transactions going through the ETP system, especially in stores. Audit events are the transactions or actions the user does that could contain any suspicious behaviour.</p>
+<p style="text-align:justify;">The Audit Log captures the data as per the defined audit rules so that the stored data can again be retrieved as per requirement, in the form of audit reports.</p>
+<p style="text-align:justify;">The audit rule function will be available under the administration menu and be assigned to enterprise users. Users can create audit rules under a company, the records of the Audit Rule will be created at the Company level &amp; the created rule is attached to the retail configuration template.</p>
+<figure class="image image_resized" style="width:100%;"><img src="https://lh4.googleusercontent.com/2oXKh-qx01bMsENwQwPWcJH88ALckRdtnKavg9RAVjqKquJTyvGe_vZGvBRuH3D2sTgimttzcoBF1FayZCrXrZZoJzAuVFnOrHku7w1hphvDE4qOM10yWRbwPcGTUZsoBfyaywGS2To4McBBfpoFlww"></figure>
+<p><strong>List Screen</strong></p>
+<ul>
+  <li>On accessing the Audit Rules from the ‘Administration’ menu a list screen will be shown with existing audit rules created.<br><br>&nbsp;</li>
+  <li>Users can also sort or use the search bar to <strong>search the existing</strong> audit rules by the <strong>Audit Rule Name or application</strong> on the list screen<strong>.&nbsp;&nbsp;</strong></li>
+</ul>
+<p>Each record in the list screen has three dots&nbsp;</p>
+<figure class="image image_resized" style="width:10px;"><img src="https://lh4.googleusercontent.com/t4euuHscySvSCL39h7kmpD26hsKTKFhJEhCLtZZQIB5JVWAKwu32CdD0QfFYlRjG8QbOE_1JgQ2QuP25SyP2nJ6xGpb3i-Z2oXKozRzUhEia61cKQbFHfMddPXSWltVIKv2GLoWcba0BbjZdcZpkTh8"></figure>
+<p>’,&nbsp; against it and they will have below following options</p>
+<figure class="image image_resized" style="width:100%;"><img src="https://lh6.googleusercontent.com/FJRSr-KzzQ7kzAIL52ZsdlXfrfFWe6OjjVvBBSCU2fM61YGgQVYY2IGi5UtLs8IuGUbUzFPlhO22OLP7DQJFrZPMJQ54Gi0jDaIoA_rboWqOJ1Hnk3c_XCANUzZT3uwYXZg7euNajxGCJjgwzGdOa00"></figure>
+<ul>
+  <li><strong>View - </strong>This option will open up the creation screen with pre-populated data only in view-only mode with all fields disabled.</li>
+  <li><strong>Edit </strong>- This option will open up the creation screen with pre-populated data for editing, users can edit payment mode details.</li>
+</ul>
+<p><strong>Audit Rule creation</strong></p>
+<p>Users can create a new audit rule by clicking on the ‘</p>
+<figure class="image image_resized" style="width:25px;"><img src="https://lh3.googleusercontent.com/JxnEwDTWcrCtRD_Ru-MJn_ucXe6PwN52xSFlFORbeBw7Ubr5KPEv1kexyELwtbJLeUVm_L390fVZmypZOkiwNJvsWGsKly8LAmvmcLaIDJllXPM0LIJSqe1THoV2wFvGbpVt_MNRLZ5SjmcSb7U1zGc" alt="threedots image"></figure>
+<p>’&nbsp; add button available on the main screen in the bottom right corner, a creation page will open up to create a new audit rule.</p>
+<figure class="image image_resized" style="width:100%;"><img src="https://lh6.googleusercontent.com/IPFB5KfnC9jf82KmQ1SBd5j-cEOgbQkPWTPH3Ff6c9kdeaUldZ5ZAAnqREk4wNTdkKh3RL0P4T0Mfc618TGjb-BU_nbWQjVEYkG1S0QMkGCHbiFBrwZPN7P3teFaH4yWPy5997UCh90TYHdxEDvV-3w"></figure>
+<ul>
+  <li><strong>Audit Rule Name: The name of the audit rule to be created can be entered here. The user can enter any unique Audit Rule name for its identification (The rule name has to be unique only within the company).</strong><br><br>&nbsp;</li>
+  <li><strong>Application: The application field will be used to select the ETP application for which the user wants to create and configure an audit rule. By default, the Storefront application will be selected in this field since the events will be captured related to the Storefront application. The audit events related to the StoreFront application will be available on the panel below.</strong></li>
+  <li><strong>Status: The status of the audit rule can be set to active or inactive while creating a new audit rule. Users can later on activate or deactivate existing audit rules by editing the audit.</strong></li>
+</ul>
+<p><strong>Events Selection For Audit Rule</strong><br><br>&nbsp;</p>
+<ul>
+  <li><strong>Event Group Panel</strong>
+    <ul>
+      <li><strong>A panel containing the event groups of the Storefront application will be available on the left side of the section. The list of event groups will be given in the panel along with the event count of each event group.</strong><br><br>&nbsp;</li>
+    </ul>
+  </li>
+</ul>
+<p>Examples of Event groups for the StoreFront Application are as follows:<br><br>&nbsp;</p>
+<ul>
+  <li><strong>Customer Registration In Store Front</strong></li>
+  <li><strong>Billing</strong></li>
+  <li><strong>Sales Return</strong></li>
+  <li><strong>Order</strong></li>
+  <li><strong>Order Invoicing</strong></li>
+  <li><strong>Audit Event</strong>
+    <ul>
+      <li><strong>Events are the individual user actions identified from an audit perspective to log its action data by all the users of the company performing those actions. On selecting an event group from the available event groups, all the available events will be available for the user where the user can configure the event parameters required for each event.</strong><br><br>&nbsp;</li>
+    </ul>
+  </li>
+</ul>
+<p>Examples of Events can be given as, For the Event Group - <strong>“Customer Registration in SF”</strong>&nbsp; there will be the following events.<br><br>&nbsp;</p>
+<ul>
+  <li><strong>Discard during customer registration</strong></li>
+  <li><strong>Customer Edit</strong></li>
+  <li><strong>Walk-in Customer Data skipped</strong></li>
+  <li><strong>Walk-in Customer Detail Captured</strong></li>
+</ul>
+<figure class="image image_resized" style="width:100%;"><img src="https://lh5.googleusercontent.com/fnKMBoWTB-dwJIAfAWIMPjrabQOMuqKcxxxfmUMtSp-tzio70UiwtQi4cI07G20kc3dY6TJ_lGfi6n5qDp4NWDSG9-LCQkINYk6SQspauuRHcEjyEUuWijhMVdyf3HGKsOt13_rvuR0AqSp203gOvVU"></figure>
+<ul>
+  <li><strong>Event Data Parameters</strong>
+    <ul>
+      <li><strong>After clicking on the Event label or its toggle button, a section of multiple values with checkboxes will expand below it. The section will contain data parameters of the event. These are the event-related data that are recorded to view the event information in its audit report.</strong><br><br>&nbsp;</li>
+      <li><strong>The parameters (event data) will be listed in the expanded area in the section with a check box for every parameter. Users can check the box to capture the parameter details in the event log.</strong><br><br>&nbsp;</li>
+    </ul>
+  </li>
+</ul>
+<figure class="image image_resized" style="width:100%;"><img src="https://lh5.googleusercontent.com/gqzsrrq0Qhocg6B4mm5sXeE8T610HNE7ThFpCYxzIjvEDGQuzf32hkWBTKbEZ9WL7HKnKCKXhMzkdDsbu6xmvU4A-LOYSBOsFfmZMXGO0FqiEk0K2trdtdozG9CSD4jxup1NivBPo4Gu29ECVRcqLF4"></figure>
+<p><strong>Editing Existing Audit Rule</strong></p>
+<p>Audit Rules can be edited by clicking on the Edit option available in the 3 dots of the Audit Rule record on the list screen. When clicking on the Edit option, the edit window will open up where the users can make changes in the audit rule and click on the update button available in the top right corner to apply all the modified changes.</p>
+<p>The users can modify the events and event data parameters by enabling or disabling the checkboxes under each event as required. Users can also modify the name of the audit rule and change deactivate or activate the audit rule as required.</p>
+<figure class="image image_resized" style="width:100%;"><img src="https://lh4.googleusercontent.com/PlfK2A-98ePRFD3NBDUjbZ-M4_a7NYWfbyIubAHngYQYN2k7PnYxt5CH_nZBuum3rucF35AsqYw1ipuxP_96vGjeD03zmPYKOX_W4mFgYC3g1g3PLV-Z4tfi_ZWcBn0Rg1VYFibm9g3ELE1_qCLH-AY"></figure>
+<p><strong>Viewing Existing Audit Rule</strong></p>
+<p>Users can view the events and the event data parameters configured in the audit rule by clicking on the view option available in the 3 dots of the audit rule record on the list screen.</p>
+<p>On clicking on the view button from the 3 dots of an existing audit rule record, the view page will open up displaying the audit rule name and the events and event data parameters configured but the user will not be able to modify any of the data in the audit rule.</p>

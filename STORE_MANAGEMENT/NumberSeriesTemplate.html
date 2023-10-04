@@ -1,0 +1,149 @@
+<!--
+title: Number Series Template
+description: 
+published: true
+date: 2023-10-03T04:57:54.515Z
+tags: 
+editor: ckeditor
+dateCreated: 2023-07-17T05:28:48.225Z
+-->
+
+<h1><strong>Number Series Template</strong></h1>
+<p>Number Series can be defined as a sequence formed out of numbers which is used as unique identification code to identify type and transactions such as general ledger accounts, customer and vendor accounts, invoices, external documents and so on.</p>
+<p>Number Series template is used to configure templates which are further used in the store config group instead of creating individual number series for every store.</p>
+<figure class="image image_resized" style="width:685px;"><img src="https://lh6.googleusercontent.com/LlWwNQkP8AswUIG6fPvo2skZDW5U4XRVCUO__coGiIO1hjXEFTw4RPzBpdqxaB56pNQ2OcRfdCNKAuNugnUmWFlmD3o9qmu87jvmamR23hc89I7zTXd3ASOYwa6whxyvlIbUmcQlR5JPQrba10oYiTk"></figure>
+<p><strong>Example</strong>: Users&nbsp; can set up one code for numbering customers, another code for numbering sales invoices, and another code for numbering documents in general journals.&nbsp;</p>
+<p>After users have set up a code, users must set up at least one number series line.&nbsp;</p>
+<p>The number series line contains information such as the first and last number in the series and the starting date. The series will be used consecutively, starting each series on the respective starting date.</p>
+<p><strong>List Screen</strong></p>
+<p>Over here, users can view all the existing Number series templates created.&nbsp;</p>
+<p>Users can delete and edit the records, and also can add new ones.</p>
+<p>Users can sort or use the search bar to <strong>search </strong>existing records by the <strong>number series template code</strong> or <strong>Name </strong>on the list screen<strong>.&nbsp;</strong></p>
+<figure class="image image_resized" style="width:689px;"><img src="https://lh4.googleusercontent.com/MX1eNZdBj2VaWDjiw5cM6k_QOg9WmBFpVZhlgGzoMZ1d7onccHmKzrKKLxPhm2DezlHv6tBCgczRFsBSy4S0bbaEdd-0B0IKONF5w3sgUthyGc43VfdCrf01UTjIm8hGY4wGvgZOonrqZ-fCDMaR8o0"></figure>
+<p>Each record in list screen has three dots ‘</p>
+<figure class="image image_resized" style="width:10px;"><img src="https://lh5.googleusercontent.com/ReVKm6qi2SRYrN9riQQn96XZSfCRCa6bmQ-PvdbxR1gVlB5JVMTdXeDLJU7elnfaRp_og_1dcyz0musFTIrjjWYQaTAxIICEQGynj30JX-oO1MatAd0fUirWfGshFkH3Rmx8PCty_qqOJnr_j-sDeg"></figure>
+<p>’,&nbsp; against it and they will have below following options</p>
+<ul>
+  <li><strong>View - </strong>This option will open up the creation screen with pre-populated data for users to view, in read only mode.</li>
+  <li><strong>Edit </strong>- This option will open up the creation screen with pre-populated data for users to edit, users can details in this mode.</li>
+  <li><strong>Delete </strong>- This option will allow users to delete the record only if it is not used in billing transactions.</li>
+</ul>
+<p><strong>Number Series Template creation</strong></p>
+<p>Users can define a new charge by clicking on the ‘</p>
+<figure class="image image_resized" style="width:25px;"><img src="https://lh5.googleusercontent.com/C_jepMs7lCywCrznp4jM3XBp1eFpUILzi46PHW6MswKMwgIvaWN20NG0qPVVg37mfCtH_XC9W-rTwNkdEwYHbUsrUk5jElHlYVJ6-wNY_j6d6Q1wCiSss7qlCShqnTAQozmGzO0b8j7qf4UlKtMjMQ" alt="threedots image"></figure>
+<p>’&nbsp; add button available in the main screen on the bottom right corner.</p>
+<p>On click of the “+” button , a screen will be visible to create a new number series template.</p>
+<figure class="image image_resized" style="width:686px;"><img src="https://lh5.googleusercontent.com/fqTQFFe7GcR5ntcxOvlTYWc0dySTnnvIV1iAmCXlKyI8RYronskJ9sO3oYBrqvLvRmJcHmqBCdXcbZ5AIsVtqi7cdcFy7s0vlWD6fQRhofHEIw2cppmIMe9WAyKDCE3x6V4ZJdhbKW0Aph5s8-GAg-M"></figure>
+<p>Below are Fields where users will be able to define data:</p>
+<ul>
+  <li><strong>Number Series Template Code : The unique code for number series template.&nbsp;</strong></li>
+  <li><strong>Number Series Template Name : The name of a number series template.&nbsp;</strong></li>
+  <li><strong>Usability Mode : It identifies the mode against which a number series template is created. There are two modes (Production / Training )</strong></li>
+  <li><strong>Number series creation for transaction :</strong></li>
+</ul>
+<p>Below are the fields required for number series configuration for different type of transactions:</p>
+<ul>
+  <li><strong>Prefix 1 : This indicates the part of the series to be present at starting place of Number Series</strong></li>
+  <li><strong>Prefix 2 : This indicates the part of the series to be present at second place of Number Series. This field has predefined options as Store, Year &amp; NA</strong></li>
+  <li><strong>Prefix 3 : This indicates the part of the series to be present at third place of Number Series. This field has predefined options as Store, Year &amp; NA</strong></li>
+  <li><strong>Start No : This indicates the starting number of the variable part of the number series.</strong></li>
+  <li><strong>End No : This indicates the last number of the variable part of the number series.</strong></li>
+  <li><strong>Last Number Used : This indicates the last performed transaction number for the series. So the series will use the next number of upcoming transactions.</strong></li>
+  <li><strong>Display : This represents the sample number (largest possible) based on selected/entered parameters for the number series type.&nbsp;</strong></li>
+</ul>
+<p>(i.e. If user has defined below -&nbsp;</p>
+<ul>
+  <li>CN (Prefix 1)</li>
+  <li>STORE (Prefix 2)</li>
+  <li>2022 (Prefix 3)</li>
+  <li>1 (Start no)&nbsp;</li>
+  <li>99999999 (End no)</li>
+  <li>98 (Last number used)&nbsp;</li>
+  <li>Then the value will be displayed as <strong>CNMBO202200000098 </strong>in display columns.</li>
+</ul>
+<p><strong>Number Series Store creation</strong></p>
+<p>&nbsp;&nbsp;Here the users can create number series for a particular store for each transaction/event available under store operations, store front, and enterprise sections</p>
+<figure class="image image_resized" style="width:652px;"><img src="https://lh4.googleusercontent.com/4yE32XJQa5WJqIj6Ncj7SRhH_lJGXa5LcrTyFswIQaPh55-sG5OaYLmYINL7KCR5nHfIk3GabiV4QyLvugZtzt5gRO2yqHRQXFsDRG4zkm6EXxHidJliBZ59JWdfFyZi5H5diUGabxv61FH4rug0-Hs"></figure>
+<ul>
+  <li><strong>Sections </strong>: The section for which the number series template is created, below table states transaction types for sections.</li>
+</ul>
+<figure class="table" style="float:left;">
+  <table style="border-bottom:none;border-left:none;border-right:none;border-top:none;">
+    <tbody>
+      <tr>
+        <td style="background-color:#a4c2f4;border-bottom:1pt solid #000000;border-left:1pt solid #000000;border-right:1pt solid #000000;border-top:1pt solid #000000;padding:5pt;vertical-align:top;"><strong>Sr. No.</strong></td>
+        <td style="background-color:#a4c2f4;border-bottom:1pt solid #000000;border-left:1pt solid #000000;border-right:1pt solid #000000;border-top:1pt solid #000000;padding:5pt;vertical-align:top;"><strong>Store Operation</strong></td>
+        <td style="background-color:#a4c2f4;border-bottom:1pt solid #000000;border-left:1pt solid #000000;border-right:1pt solid #000000;border-top:1pt solid #000000;padding:5pt;vertical-align:top;"><strong>Store Front</strong></td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1pt solid #000000;border-left:1pt solid #000000;border-right:1pt solid #000000;border-top:1pt solid #000000;padding:5pt;vertical-align:top;">1.</td>
+        <td style="border-bottom:1pt solid #000000;border-left:1pt solid #000000;border-right:1pt solid #000000;border-top:1pt solid #000000;padding:5pt;vertical-align:top;">Customer Creation</td>
+        <td style="border-bottom:1pt solid #000000;border-left:1pt solid #000000;border-right:1pt solid #000000;border-top:1pt solid #000000;padding:5pt;vertical-align:top;">Bill</td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1pt solid #000000;border-left:1pt solid #000000;border-right:1pt solid #000000;border-top:1pt solid #000000;padding:5pt;vertical-align:top;">2.</td>
+        <td style="border-bottom:1pt solid #000000;border-left:1pt solid #000000;border-right:1pt solid #000000;border-top:1pt solid #000000;padding:5pt;vertical-align:top;">Credit Note</td>
+        <td style="border-bottom:1pt solid #000000;border-left:1pt solid #000000;border-right:1pt solid #000000;border-top:1pt solid #000000;padding:5pt;vertical-align:top;">Lost sale</td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1pt solid #000000;border-left:1pt solid #000000;border-right:1pt solid #000000;border-top:1pt solid #000000;padding:5pt;vertical-align:top;">3.</td>
+        <td style="border-bottom:1pt solid #000000;border-left:1pt solid #000000;border-right:1pt solid #000000;border-top:1pt solid #000000;padding:5pt;vertical-align:top;">Dispatch Order</td>
+        <td style="border-bottom:1pt solid #000000;border-left:1pt solid #000000;border-right:1pt solid #000000;border-top:1pt solid #000000;padding:5pt;vertical-align:top;">Sales Return</td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1pt solid #000000;border-left:1pt solid #000000;border-right:1pt solid #000000;border-top:1pt solid #000000;padding:5pt;vertical-align:top;">4.</td>
+        <td style="border-bottom:1pt solid #000000;border-left:1pt solid #000000;border-right:1pt solid #000000;border-top:1pt solid #000000;padding:5pt;vertical-align:top;">Receive Order</td>
+        <td style="border-bottom:1pt solid #000000;border-left:1pt solid #000000;border-right:1pt solid #000000;border-top:1pt solid #000000;padding:5pt;vertical-align:top;">Bill cancellation</td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1pt solid #000000;border-left:1pt solid #000000;border-right:1pt solid #000000;border-top:1pt solid #000000;padding:5pt;vertical-align:top;">5.</td>
+        <td style="border-bottom:1pt solid #000000;border-left:1pt solid #000000;border-right:1pt solid #000000;border-top:1pt solid #000000;padding:5pt;vertical-align:top;">Purchase Order Receiving</td>
+        <td style="border-bottom:1pt solid #000000;border-left:1pt solid #000000;border-right:1pt solid #000000;border-top:1pt solid #000000;padding:5pt;vertical-align:top;">Cash Refund</td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1pt solid #000000;border-left:1pt solid #000000;border-right:1pt solid #000000;border-top:1pt solid #000000;padding:5pt;vertical-align:top;">6.</td>
+        <td style="border-bottom:1pt solid #000000;border-left:1pt solid #000000;border-right:1pt solid #000000;border-top:1pt solid #000000;padding:5pt;vertical-align:top;">Franchisee Purchase Receipt</td>
+        <td style="border-bottom:1pt solid #000000;border-left:1pt solid #000000;border-right:1pt solid #000000;border-top:1pt solid #000000;padding:5pt;vertical-align:top;">Proforma</td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1pt solid #000000;border-left:1pt solid #000000;border-right:1pt solid #000000;border-top:1pt solid #000000;padding:5pt;vertical-align:top;">7.</td>
+        <td style="border-bottom:1pt solid #000000;border-left:1pt solid #000000;border-right:1pt solid #000000;border-top:1pt solid #000000;padding:5pt;vertical-align:top;">Franchisee Purchase Return</td>
+        <td style="border-bottom:1pt solid #000000;border-left:1pt solid #000000;border-right:1pt solid #000000;border-top:1pt solid #000000;padding:5pt;vertical-align:top;">Order</td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1pt solid #000000;border-left:1pt solid #000000;border-right:1pt solid #000000;border-top:1pt solid #000000;padding:5pt;vertical-align:top;">8.</td>
+        <td style="border-bottom:1pt solid #000000;border-left:1pt solid #000000;border-right:1pt solid #000000;border-top:1pt solid #000000;padding:5pt;vertical-align:top;">Stock IN</td>
+        <td style="border-bottom:1pt solid #000000;border-left:1pt solid #000000;border-right:1pt solid #000000;border-top:1pt solid #000000;padding:5pt;vertical-align:top;">Order Cancellation</td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1pt solid #000000;border-left:1pt solid #000000;border-right:1pt solid #000000;border-top:1pt solid #000000;padding:5pt;vertical-align:top;">9.</td>
+        <td style="border-bottom:1pt solid #000000;border-left:1pt solid #000000;border-right:1pt solid #000000;border-top:1pt solid #000000;padding:5pt;vertical-align:top;">Stock OUT</td>
+        <td style="border-bottom:1pt solid #000000;border-left:1pt solid #000000;border-right:1pt solid #000000;border-top:1pt solid #000000;padding:5pt;vertical-align:top;">Hold Bill</td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1pt solid #000000;border-left:1pt solid #000000;border-right:1pt solid #000000;border-top:1pt solid #000000;padding:5pt;vertical-align:top;">10.</td>
+        <td style="border-bottom:1pt solid #000000;border-left:1pt solid #000000;border-right:1pt solid #000000;border-top:1pt solid #000000;padding:5pt;vertical-align:top;">Bank Deposit</td>
+        <td style="border-bottom:1pt solid #000000;border-left:1pt solid #000000;border-right:1pt solid #000000;border-top:1pt solid #000000;padding:5pt;vertical-align:top;">&nbsp;</td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1pt solid #000000;border-left:1pt solid #000000;border-right:1pt solid #000000;border-top:1pt solid #000000;padding:5pt;vertical-align:top;">11.</td>
+        <td style="border-bottom:1pt solid #000000;border-left:1pt solid #000000;border-right:1pt solid #000000;border-top:1pt solid #000000;padding:5pt;vertical-align:top;">Location Transfer</td>
+        <td style="border-bottom:1pt solid #000000;border-left:1pt solid #000000;border-right:1pt solid #000000;border-top:1pt solid #000000;padding:5pt;vertical-align:top;">&nbsp;</td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1pt solid #000000;border-left:1pt solid #000000;border-right:1pt solid #000000;border-top:1pt solid #000000;padding:5pt;vertical-align:top;">12.</td>
+        <td style="border-bottom:1pt solid #000000;border-left:1pt solid #000000;border-right:1pt solid #000000;border-top:1pt solid #000000;padding:5pt;vertical-align:top;">Indent</td>
+        <td style="border-bottom:1pt solid #000000;border-left:1pt solid #000000;border-right:1pt solid #000000;border-top:1pt solid #000000;padding:5pt;vertical-align:top;">&nbsp;</td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1pt solid #000000;border-left:1pt solid #000000;border-right:1pt solid #000000;border-top:1pt solid #000000;padding:5pt;vertical-align:top;">13.</td>
+        <td style="border-bottom:1pt solid #000000;border-left:1pt solid #000000;border-right:1pt solid #000000;border-top:1pt solid #000000;padding:5pt;vertical-align:top;">Vendor Purchase Return</td>
+        <td style="border-bottom:1pt solid #000000;border-left:1pt solid #000000;border-right:1pt solid #000000;border-top:1pt solid #000000;padding:5pt;vertical-align:top;">&nbsp;</td>
+      </tr>
+    </tbody>
+  </table>
+</figure>
+<ul>
+  <li><strong>Discard button : This button on the creation and edit screen will allow users to redirect to the list screen without saving the changes.</strong></li>
+  <li><strong>Save button : This button on the creation and edit screen will allow users to redirect to the list screen post saving the changes.</strong></li>
+</ul>

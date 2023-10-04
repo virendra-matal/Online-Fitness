@@ -1,0 +1,45 @@
+<!--
+title: Client Apps
+description: 
+published: true
+date: 2023-02-17T05:00:05.226Z
+tags: api
+editor: ckeditor
+dateCreated: 2023-02-07T10:44:29.678Z
+-->
+
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; The Client Apps Feature in Ordazzle helps users to give an added security layer to the private APIs which have already been created in the API LIST module. This feature provides additional security to APIs with API keys when a private API is added to a specific client app.<br><br>Consider following example :&nbsp;<br><br><code>Scenario 1</code> -- Client App - Working as consumer and consuming service of other applications.</p>
+<p style="text-align:justify;">We can take an example of Ordazzle consuming services from Marketplaces like Lazada, Shopify etc.</p>
+<p style="text-align:justify;">We can create a Client App (public and Private) to consume those services.</p>
+<p style="text-align:justify;">The client App internally can be linked to an existing business process service to execute the business logic.</p>
+<p style="text-align:justify;"><code>Scenario 2</code> -- Client App - Working as producer and exposing service for other applications to consume.</p>
+<p style="text-align:justify;">We expose our business process service via a Client App.</p>
+<p style="text-align:justify;">In both the cases above, Client App acts as an interface over the underlying business process service and hence shields the business service from getting exposed directly.</p>
+<p style="text-align:justify;">While doing that, we have two options of exposing this service.</p>
+<p style="text-align:justify;">a.&nbsp; &nbsp; As a public service - It means that this service would be available to all clients of Ordazzle to execute.</p>
+<p style="text-align:justify;">b.&nbsp; &nbsp; As a private service - It means that we can expose the service per client, This is safe and recommended. This adds an extra security layer by creating an API Key (encrypted complex value), which the consumer to the service must know and pass as part of the service request.</p>
+<p style="text-align:justify;">&nbsp;</p>
+<figure class="image image_resized" style="width:100%;"><img src="https://lh4.googleusercontent.com/uTiwLPKmAnk3lXNJHrP_5tfeasIqKQWvaIckUjBxVSG8oU7hfBQqQ_BbKp-3z-HsfqH1pZAUyT_IqwRCtHZunLvcC3iJabBOzyBymoJ9S12HAvcvQnNVZdYa0x6_xFW3u5r9yybR8TU07NZhvqA-JQ"></figure>
+<h1 style="text-align:justify;">Searching API Using Filters</h1>
+<p style="text-align:justify;">The user can search for existing Client Apps using the search bar in the top section of the screen.&nbsp;</p>
+<h2 style="text-align:justify;">Add/Create New API:</h2>
+<figure class="image image_resized" style="width:100%;"><img src="https://lh4.googleusercontent.com/QOZBQzUX0hGiLoYx3tGY-dz5gERrZfESi0hmNO2iUJUvCrZh6nMxUv6PqXcB8JkD1ik59436UFvLhsiVxRE2WsUeQSf6vK-kbm2cmLtYyu-gzJJ36G4f-w64ppWrhrgNWj3z2YXpS6ICc7LPHPWntg"></figure>
+<p style="text-align:justify;">By clicking the “+” icon in the bottom right corner of the screen, the user can create a new Client App. In this screen, the user will have to input two pieces of information: Client App Name, and Description.</p>
+<p style="text-align:justify;"><code>Client App Name </code>:&nbsp; Name of the Client App which the user is creating</p>
+<p style="text-align:justify;"><code>Description</code> : Description of the Client App which the user is creating&nbsp;</p>
+<h2 style="text-align:justify;">Register New Client App:</h2>
+<figure class="image image_resized" style="width:100%;"><img src="https://lh6.googleusercontent.com/1kQj2VUAIsrhp_8QCanwT8pvdr2nhdjRMZNWwfjLswK4k2SUBBRfDcr_kKzXHLjzgz6jYFukZWfvhY-jDi0xpoXWbCjk3u63y8U0D2l5AMQ1xDhVsi5FVr5nkTz30Tuq_GXe8tQSB_FwCj0e5wUb3Q"></figure>
+<p style="text-align:justify;">After providing basic information to create a Client App, the user will be redirected to this screen. Initially the Client App would be in the ‘Created’ status. Once the user provides required information to the Client App it can be registered.&nbsp;</p>
+<p style="text-align:justify;">API Contracts: In this section all the private APIs which have been created by the user using API Creation are displayed. The user needs to select any private API from this dropdown to create a contract.</p>
+<p style="text-align:justify;">&nbsp;</p>
+<p style="text-align:justify;"><code>API Definition</code>:&nbsp; Documentation link of the API</p>
+<p style="text-align:justify;"><code>API Policy</code>: This is an added security over the API. Currently a basic authentication policy is being provided which provides basic security, based on username and password.</p>
+<p style="text-align:justify;">For the Private APIs, publishing does not mean it is accessible for all consumers. In order to consume the Private API user needs to include the private API in at least a single Client App.</p>
+<figure class="image image_resized" style="width:100%;"><img src="https://lh3.googleusercontent.com/-9zIk_5pGs9TfsYdzWj9SaE9qHeAUIr_21D7XdH9S9b1H_3x9RaNKudOJAuFCOckfB3U99gEGE3pahOF_yU9jjGhDgriYSTq76UQCpGrRRj0dEU4XYr9XoiGlSDnQyie_f6pE2F8LcztXuJ768Jm6g"></figure>
+<p style="text-align:justify;"><br>The user can click on the “NEW CONTRACT” button to create a contract between a Client App and selected Private API.</p>
+<figure class="image image_resized" style="width:100%;"><img src="https://lh6.googleusercontent.com/IeDObIkMhgVZV4ow0A4bNlKq09bSru6UMUO2gQkmjKns8C4OT-FEnEUuJ4aEp9mBPgfhrrZYBjupbHzdcUbvvfLYVZ50rVD63EHmDhLoEEik0qC05tk0LcV-Kx2yv90jZLWHQUkE6EpILpGIH6HB1w"></figure>
+<figure class="image image_resized" style="width:100%;"><img src="https://lh4.googleusercontent.com/bbsJT7p0KcH29pnB692el-BvU0DjLM5SoQVNnQnCIuv0-SAZ-Sbznzmqapkue_twGQ5VHfLvRFFXlNVvFsEzUSqAtniqb8QMrrJ1qV-_Y71ssCKeExMoQ5RKbs9ErFPNrmhHopKLlxRaTP7Urr8TJA"></figure>
+<figure class="image image_resized" style="width:100%;"><img src="https://lh3.googleusercontent.com/i-YTDiTyWAHHLU-fTv8zXK1vR_Pq-EJXj70M1_qgWuBkPwBtQxHnB5o0rI7AR0F_scdQE3VVrMhYRYBrk7gVx5Fv4Kx-mPEJ8WDMgYJkyq2sZO0gHm5xBgq8fsrIY5cNJJs-yUkqC79GYutPwato2Q"></figure>
+<p style="text-align:justify;">After successful contract creation, the API appears in the table, with the endpoint details available in the API Details column.<br><br>This endpoint is only active if the Client app is registered successfully. To do so, users can click on the “REGISTER” button on the top right corner. Users can also add another layer of security by adding Client App Policy which can provide a basic authentication for the API using a simple username and password.&nbsp;</p>
+<p style="text-align:justify;">Edit - Users can edit the Client App details or add any new Private API to the Client App by clicking on pencil icon or “CONSUME API” button.</p>
+<p style="text-align:justify;">Editing allows users to add new APIs i.e. to create new contracts with new APIs. Once these operations are done users need to RE-REGISTER the Client App using the “RE-REGISTER” button on the top right corner.&nbsp;</p>
